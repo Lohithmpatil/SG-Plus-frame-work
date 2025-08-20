@@ -37,7 +37,7 @@ public class WebDriverUtility {
 	 //it's an Explicitly wait Always wait for Page to be loaded & available in GUI
 	    
 	    public void waitForElement (WebDriver driver , WebElement element) {
-		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 		  wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	

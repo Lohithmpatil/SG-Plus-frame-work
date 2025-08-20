@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.LoginPage.java.copy.Loginpage;
+
 import com.sgplus.erp.genericutility.BaseClass;
 import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.DowntiemDashboard;
@@ -20,7 +20,7 @@ public class Dashboard extends BaseClass {
 	@Test
 	public void Dashboard() throws Throwable {
 		WebDriverUtility we = new WebDriverUtility();
-		Loginpage lp = new Loginpage();
+
 
 		HomePage hm = new HomePage(driver);
 

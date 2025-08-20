@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.DowntimeModule.DownTimeDasboardData">
+      <class name="com.DowntimeModule.Dashboard">
         <methods>
           <include name="configBM"/>
+          <include name="Dashboard"/>
           <include name="configBC"/>
-          <include name="DownTimeDasboardData"/>
         </methods>
-      </class> <!-- com.DowntimeModule.DownTimeDasboardData -->
+      </class> <!-- com.DowntimeModule.Dashboard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

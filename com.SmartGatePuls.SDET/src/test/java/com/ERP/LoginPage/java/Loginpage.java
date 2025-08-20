@@ -13,22 +13,23 @@ import com.sgplus.erp.pomRepository.LoginPage;
 
 public class Loginpage extends BaseClass {
 
-	
-@Test
+	@Test
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-	//WebDriver driver = new ChromeDriver();
-	/*	driver.get("http://sgp.smartiotsystem.com/login");
-		driver.manage().window().maximize();
-		driver.findElement(By.id("user_id")).sendKeys("superadmin");
-		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("admin@123");
-		driver.findElement(By.xpath("//input[@class=\"button\"]")).click(); */
-	
-		
-		  //create a object in pom repository
-    LoginPage lp=new LoginPage(driver);   
-    lp.logintoApp("superadmin", "admin@123");  
-    
+		// WebDriver driver = new ChromeDriver();
+		/*
+		 * driver.get("http://sgp.smartiotsystem.com/login");
+		 * driver.manage().window().maximize();
+		 * driver.findElement(By.id("user_id")).sendKeys("superadmin");
+		 * driver.findElement(By.xpath("//input[@name='password']")).sendKeys(
+		 * "admin@123");
+		 * driver.findElement(By.xpath("//input[@class=\"button\"]")).click();
+		 */
+
+		// create a object in pom repository
+		LoginPage lp = new LoginPage(driver);
+		lp.logintoApp("superadmin", "admin@123");
+
 	}
 
 }

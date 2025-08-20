@@ -16,7 +16,6 @@ public class DownTimeDasboardData extends BaseClass {
 	public void DownTimeDasboardData() throws InterruptedException {
 
 		WebDriverUtility we = new WebDriverUtility();
-		Loginpage lp = new Loginpage();
 
 		HomePage hm = new HomePage(driver);
 
@@ -60,7 +59,7 @@ public class DownTimeDasboardData extends BaseClass {
 		we.select(dt.getShiftDropDown(), "All");
 
 		we.waitAndClick(dt.getApplyFilter());
-		
+
 		// Verify Page Title
 		String expectedTitle = "Downtime Dashboard";
 		String actualTitle = driver.getTitle();
@@ -71,7 +70,8 @@ public class DownTimeDasboardData extends BaseClass {
 		}
 
 		// Verify if Total Downtime is displayed
-	WebElement totalDowntime = driver.findElement(By.xpath("//div[@class=\"align-self-center totalDowntime_totalDowntimeValue__1uE07\"]"));
+		WebElement totalDowntime = driver
+				.findElement(By.xpath("//div[@class=\"align-self-center totalDowntime_totalDowntimeValue__1uE07\"]"));
 		if (totalDowntime.isDisplayed()) {
 			System.out.println("Total Downtime is displayed.");
 		} else {
