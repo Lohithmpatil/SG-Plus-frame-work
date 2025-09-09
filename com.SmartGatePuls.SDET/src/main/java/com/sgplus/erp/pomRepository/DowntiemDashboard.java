@@ -93,6 +93,13 @@ public class DowntiemDashboard {
 	@FindBy(xpath= "//button[text()=\"Apply Filter\"]")
 	private WebElement ApplyFilter;
 	
+	public WebElement getBestPerfomingMachine() {
+		return BestPerfomingMachine;
+	}
+
+	@FindBy(xpath = "//div[contains(text(),'BEST PERFORMING MACHINES')]")
+	private WebElement BestPerfomingMachine;
+	
 	public WebElement getApplyFilter() {
 		return ApplyFilter;
 	}

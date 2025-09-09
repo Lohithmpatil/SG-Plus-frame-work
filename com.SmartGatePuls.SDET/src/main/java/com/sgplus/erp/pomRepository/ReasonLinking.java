@@ -7,139 +7,231 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ReasonLinking {
 
-	WebDriver driver;
+    WebDriver driver;
 
-	public ReasonLinking(WebDriver driver) {
+    public ReasonLinking(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
 
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
+    // Navigation
+    @FindBy(xpath = "//div[@title='Reason Linking']")
+    private WebElement reasonLinking;
 
-	@FindBy(xpath = "//div[@title=\"Reason Linking\"]")
-	private WebElement ReasonLinking;
+    public WebElement getReasonLinking() {
+        return reasonLinking;
+    }
 
-	public WebElement getReasonLinking() {
-		return ReasonLinking;
-	}
+    // Filters
+    @FindBy(xpath = "//select[@class='form-control custom-width']")
+    private WebElement buDropDown;
 
-	@FindBy(xpath = "//select[@class='form-control custom-width']")
-	private WebElement BUDropDown;
+    @FindBy(xpath = "//select[@class='form-control custom-width']")
+    private WebElement areaDropDown;
 
-	public WebElement getBUDropDown() {
-		return BUDropDown;
-	}
+    @FindBy(xpath = "//div[@class='dropdown-heading-value']")
+    private WebElement equipmentDropDown;
 
-	public WebElement getAreadropDown() {
-		return AreadropDown;
-	}
+    @FindBy(xpath = "//input[@class='form-control']")
+    private WebElement fromDate;
 
-	public WebElement getEquipemetsDropDown() {
-		return EquipemetsDropDown;
-	}
+    @FindBy(xpath = "//input[@id='formGridToDate']")
+    private WebElement toDate;
 
-	@FindBy(xpath = "//select[@class=\"form-control custom-width\"]")
-	private WebElement AreadropDown;
+    @FindBy(xpath = "//button[@title='Search']")
+    private WebElement searchButton;
 
-	@FindBy(xpath = "//div[@class=\"dropdown-heading-value\"]")
-	private WebElement EquipemetsDropDown;
+    public WebElement getBUDropDown() {
+        return buDropDown;
+    }
 
-	public WebElement getFromDate() {
-		return FromDate;
-	}
+    public WebElement getAreaDropDown() {
+        return areaDropDown;
+    }
 
-	public void setFromDate(WebElement fromDate) {
-		FromDate = fromDate;
-	}
+    public WebElement getEquipmentDropDown() {
+        return equipmentDropDown;
+    }
 
-	@FindBy(xpath = "//input[@class=\"form-control\"]")
-	private WebElement FromDate;
+    public WebElement getFromDate() {
+        return fromDate;
+    }
 
-	@FindBy(xpath = "//button[@title=\"Search\"]")
-	private WebElement SearchButton;
+    public WebElement getToDate() {
+        return toDate;
+    }
 
-	public WebElement getSearchButton() {
-		return SearchButton;
-	}
+    public WebElement getSearchButton() {
+        return searchButton;
+    }
 
-	public WebElement getLinkDropDown() {
-		return LinkDropDown;
-	}
+    // Link Dropdown
+    @FindBy(xpath = "//select[@class='form-control custom-width ml-0']")
+    private WebElement linkDropDown;
 
-	@FindBy(xpath = "//select[@class=\"form-control custom-width ml-0\"]")
-	private WebElement LinkDropDown;
+    public WebElement getLinkDropDown() {
+        return linkDropDown;
+    }
 
-	public WebElement getEqCheckBox() {
-		return EqCheckBox;
-	}
+    // Department Dropdowns
+    @FindBy(id = "formReasonId")
+    private WebElement departmentGroupDropdown;
 
-	@FindBy(xpath = "//input[@type='checkbox']")
-	private WebElement EqCheckBox;
+    @FindBy(xpath = "//select[@name='dept_id']")
+    private WebElement departmentDropdown;
 
-	@FindBy(xpath = "//button[@title=\"Export\"]")
-	private WebElement ExportButton;
+    public WebElement getDepartmentGroupDropdown() {
+        return departmentGroupDropdown;
+    }
 
-	@FindBy(xpath = "//div[@class=\"text-center reason-action-cell\"]")
-	private WebElement LinkButton;
+    public WebElement getDepartmentDropdown() {
+        return departmentDropdown;
+    }
 
-	public WebElement getDepartmentGroupDropdown() {
-		return DepartmentGroupDropdown;
-	}
+    // Reason Selection
+    @FindBy(xpath = "//input[@id='react-select-3-input']")
+    private WebElement reason;
 
-	public WebElement getDepartmentDropdown() {
-		return DepartmentDropdown;
-	}
+    @FindBy(xpath = "//div[text()='AUTO MANUAL SWITCH NOT WORKING-']")
+    private WebElement reasonOption;
 
-	@FindBy(id = "formReasonId")
-	private WebElement DepartmentGroupDropdown;
+    public WebElement getReason() {
+        return reason;
+    }
 
-	@FindBy(name = "dept_id")
-	private WebElement DepartmentDropdown;
+    public WebElement getReasonOption() {
+        return reasonOption;
+    }
 
-	@FindBy(xpath = "//input[@id='react-select-3-input']")
-	private WebElement Reason;
+    // Comment and Save
+    @FindBy(xpath = "//textarea[@name='comment']")
+    private WebElement commentField;
 
-	public WebElement getReason() {
-		return Reason;
-	}
+    @FindBy(xpath = "//button[text()='Save']")
+    private WebElement saveButton;
 
-	public WebElement getReasonOption() {
-		return ReasonOption;
-	}
+    public WebElement getCommentField() {
+        return commentField;
+    }
 
-	@FindBy(xpath = "//div[text()=\"AUTO MANUAL SWITCH NOT WORKING-\"]")
-	private WebElement ReasonOption;
-	
-	
-	public WebElement getCommentField() {
-		return CommentField;
-	}
+    public WebElement getSaveButton() {
+        return saveButton;
+    }
 
-	public WebElement getSaveButton() {
-		return SaveButton;
-	}
+    // Success Message
+    @FindBy(xpath = "//div[contains(text(),'Reason(s) linked to downtime successfully')]")
+    private WebElement successMsg;
 
-	@FindBy(xpath = "//textarea[@name='comment']")
-	private WebElement CommentField;
+    public WebElement getSuccessMsg() {
+        return successMsg;
+    }
 
-	
-	@FindBy(xpath = "//button[text()='Save']")
-	private WebElement SaveButton;
-	
-	@FindBy(xpath = "//div[contains(text(),'Reason(s) linked to downtime successfully')]")
-	private WebElement SuccesMsg;
-	
-	
-	
-	public WebElement getSuccesMsg() {
-		return SuccesMsg;
-	}
+    // Data Source Validations
+    @FindBy(xpath = "//table//td[contains(text(),'HandlingTime')]")
+    private WebElement handlingSourceTimeData;
 
-	public WebElement getExportButton() {
-		return ExportButton;
-	}
+    @FindBy(xpath = "//table//td[contains(text(),'CycleTime')]")
+    private WebElement cycleTimeSourceData;
 
-	public WebElement getLinkButton() {
-		return LinkButton;
-	}
+    public WebElement getHandlingSourceTimeData() {
+        return handlingSourceTimeData;
+    }
 
+    public WebElement getCycleTimeSourceData() {
+        return cycleTimeSourceData;
+    }
+
+    // Equipment Checkbox
+    @FindBy(xpath = "//input[@type='checkbox']")
+    private WebElement equipmentCheckbox;
+
+    public WebElement getEquipmentCheckbox() {
+        return equipmentCheckbox;
+    }
+
+    // Export & Link
+    @FindBy(xpath = "//button[@title='Export']")
+    private WebElement exportButton;
+
+    @FindBy(xpath = "//div[@class='text-center reason-action-cell']")
+    private WebElement linkButton;
+
+    public WebElement getExportButton() {
+        return exportButton;
+    }
+
+    public WebElement getLinkButton() {
+        return linkButton;
+    }
+
+    // Bulk Link Section
+    @FindBy(xpath = "//button[@title='Bulk Link']")
+    private WebElement bulkLinkButton;
+
+    @FindBy(xpath = "//button[text()='Bulk Link']")
+    private WebElement bulkLinkButton1;
+
+    @FindBy(xpath = "//select[@name='department_id']")
+    private WebElement bulkDepartmentDropdown;
+
+    @FindBy(xpath = "//input[@title='Toggle All Rows Selected']")
+    private WebElement checkBoxForBulkLink;
+
+    @FindBy(xpath = "(//select[@id='formReasonId'])[3]")
+    private WebElement reasonDropdownForBulkLink;
+
+    @FindBy(xpath = "//div[@class='Toastify__toast-body' and text()='Successfully Updated!']")
+    private WebElement bulkLinkUpdatedSuccessfully;
+
+    @FindBy(xpath = "//button[text()='OK']")
+    private WebElement okForBulkLink;
+
+    @FindBy(xpath = "//div[@class='modal-footer']//button[@class='btn btn-secondary'][text()='Cancel']//button[text()='OK']")
+    private WebElement cancelForBulkLink;
+
+    @FindBy(xpath = "//label[text()='Source']/following-sibling::select")
+    private WebElement sourceDropDown;
+
+    @FindBy(xpath = "//div[text()='Successfully exported']")
+    private WebElement successfullyExported;
+
+    public WebElement getBulkLinkButton() {
+        return bulkLinkButton;
+    }
+
+    public WebElement getBulkLinkButton1() {
+        return bulkLinkButton1;
+    }
+
+    public WebElement getBulkDepartmentDropdown() {
+        return bulkDepartmentDropdown;
+    }
+
+    public WebElement getCheckBoxForBulkLink() {
+        return checkBoxForBulkLink;
+    }
+
+    public WebElement getReasonDropdownForBulkLink() {
+        return reasonDropdownForBulkLink;
+    }
+
+    public WebElement getBulkLinkUpdatedSuccessfully() {
+        return bulkLinkUpdatedSuccessfully;
+    }
+
+    public WebElement getOkForBulkLink() {
+        return okForBulkLink;
+    }
+
+    public WebElement getCancelForBulkLink() {
+        return cancelForBulkLink;
+    }
+
+    public WebElement getSourceDropDown() {
+        return sourceDropDown;
+    }
+
+    public WebElement getSuccessfullyExported() {
+        return successfullyExported;
+    }
 }

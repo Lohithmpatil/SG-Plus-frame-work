@@ -23,7 +23,7 @@ public class BaseClass {
 	public ExcelUtility eLib = new ExcelUtility();
 	public JavaUtility jLib = new JavaUtility();
 
-	//@BeforeSuite(groups = { "smokeTest", "regressionTest" })
+	// @BeforeSuite(groups = { "smokeTest", "regressionTest" })
 	public void configBS() {
 
 		System.out.println("========================connect to DB========================");
@@ -53,22 +53,26 @@ public class BaseClass {
 		/* step 1 : login */
 		LoginPage lp = new LoginPage(driver);
 		lp.logintoApp(USERNAME, PASSWORD);
+		
+		System.out.println("=============Succesfully Login to the SmartGate application=======");
 	}
 
-	// @AfterMethod(groups={"smokeTest","regressionTest"})
+	//@AfterMethod(groups = { "smokeTest", "regressionTest" })
 	public void configAM() {
-	//step 6 : logout 
-	 HomePage homePage = new HomePage(driver);
-	 homePage.getLogOut();
-	 }
+		// step 6 : logout
+		HomePage homePage = new HomePage(driver);
+		homePage.getLogOut().click();
+		System.out.println("=============Succesfully Logout to the SmartGate application=======");
+		
+	}
 
-	// @AfterClass(groups={"smokeTest","regressionTest"})
+	 //@AfterClass(groups={"smokeTest","regressionTest"})
 	public void configAC() {
 		System.out.println("=============Close the Browser=======");
 		driver.quit();
 	}
 
-	//@AfterSuite(groups = { "smokeTest", "regressionTest" })
+	// @AfterSuite(groups = { "smokeTest", "regressionTest" })
 	public void configAS() {
 		System.out.println("========================close DB========================");
 
