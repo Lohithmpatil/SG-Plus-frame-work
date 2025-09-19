@@ -14,7 +14,7 @@ import com.sgplus.erp.pomRepository.HomePage;
 public class ReasonLinkingHandlingSourceFilterTest extends BaseClass {  // Test class extends BaseClass for setup and teardown
 
 	@Test
-	public void Reasonlinkingpage() throws InterruptedException {
+	public void ReasonLinkingHandlingSourceFilterTest () throws InterruptedException {
 
 		// Create an instance of WebDriverUtility to use its reusable methods like wait and select
 		WebDriverUtility we = new WebDriverUtility();

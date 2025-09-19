@@ -19,7 +19,8 @@ public class LoginPage { // Fixed the class name
 	}
 
 	// Web elements on the Login Page
-	@FindBy(id = "user_id")
+	//@FindBy(id = "user_id")
+	@FindBy(xpath="//input[@id=\"user_id\"]")
 	private WebElement userNameEdt;
 
 	@FindBy(xpath = "//input[@name='password']")

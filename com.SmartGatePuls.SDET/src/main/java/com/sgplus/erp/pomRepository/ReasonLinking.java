@@ -186,7 +186,7 @@ public class ReasonLinking {
     @FindBy(xpath = "//button[text()='OK']")
     private WebElement okForBulkLink;
 
-    @FindBy(xpath = "//div[@class='modal-footer']//button[@class='btn btn-secondary'][text()='Cancel']//button[text()='OK']")
+    @FindBy(xpath = "//div[@class='modal-footer']//button[text()='Cancel']")
     private WebElement cancelForBulkLink;
 
     @FindBy(xpath = "//label[text()='Source']/following-sibling::select")
@@ -194,6 +194,17 @@ public class ReasonLinking {
 
     @FindBy(xpath = "//div[text()='Successfully exported']")
     private WebElement successfullyExported;
+
+    public WebElement getBuDropDown() {
+		return buDropDown;
+	}
+
+	public WebElement getCancelbutton1() {
+		return Cancelbutton1;
+	}
+
+	@FindBy(xpath = "//div[@class=\"col-sm-10\"]//button[text()='Cancel']")
+    private WebElement Cancelbutton1;
 
     public WebElement getBulkLinkButton() {
         return bulkLinkButton;

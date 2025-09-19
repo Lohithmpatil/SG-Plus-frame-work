@@ -1,64 +1,61 @@
 package com.sgplus.erp.pomRepository;
 
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
-	WebDriver driver;
-	public HomePage(WebDriver driver) {
-	
-		this. driver = driver;
-		PageFactory.initElements(driver, this);
-	}
 
-	public WebElement getDownTime() {
-		return downTime;
-	}
+    private WebDriver driver;
 
-	public void setDownTime(WebElement downTime) {
-		this.downTime = downTime;
-	}
+    // Constructor
+    public HomePage(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
 
-	public WebElement getDowntimeDashboard() {
-		return downtimeDashboard;
-	}
+    // WebElements - identified using @FindBy
+    @FindBy(css = ".sidebarIcon.activeSidebarIcon")
+    private WebElement conditionalMonitoring;
 
-	public void setDowntimeDashboard(WebElement downtimeDashboard) {
-		this.downtimeDashboard = downtimeDashboard;
-	}
+    @FindBy(xpath = "//span[text()='Downtime']")
+    private WebElement downTime;
 
-	@FindBy(css="[class=\"sidebarIcon activeSidebarIcon\"]")     //Rule 2 Identify all the elements using @find and @findBYs and @findAll
-	private WebElement conditionalMontoring;
-	
-	@FindBy(xpath ="//span[text()='Downtime']")
-	private WebElement downTime;
-	
-	@FindBy(xpath = "//li[@class='nav-item']//span[text()='Dashboard']")
+    @FindBy(xpath = "//li[@class='nav-item']//span[text()='Dashboard']")
     private WebElement downtimeDashboard;
-	
-	public WebElement getLogOut() {
-		return LogOut;
-	}
 
+    @FindBy(xpath = "//span[text()='Logout']")
+    private WebElement logOut;
 
+    // Getters
+    public WebDriver getDriver() {
+        return driver;
+    }
 
-	public WebDriver getDriver() {
-		return driver;
-	}
+    public WebElement getConditionalMonitoring() {
+        return conditionalMonitoring;
+    }
 
-	public WebElement getConditionalMontoring() {
-		return conditionalMontoring;
-	}
+    public WebElement getDownTime() {
+        return downTime;
+    }
 
-	@FindBy(xpath = "//span[text()='Logout']")
-    private WebElement LogOut;
-	
-	
+    public WebElement getDowntimeDashboard() {
+        return downtimeDashboard;
+    }
 
-	
+    public WebElement getLogOut() {
+        return logOut;
+    }
+
+    // Setters (optional, but generally not needed for WebElements)
+    public void setDownTime(WebElement downTime) {
+        this.downTime = downTime;
+    }
+
+    public void setDowntimeDashboard(WebElement downtimeDashboard) {
+        this.downtimeDashboard = downtimeDashboard;
+    }
+
 }
-
-	

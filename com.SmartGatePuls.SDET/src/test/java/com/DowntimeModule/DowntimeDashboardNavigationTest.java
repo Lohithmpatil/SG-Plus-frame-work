@@ -13,7 +13,7 @@ import com.sgplus.erp.pomRepository.HomePage;
 public class DowntimeDashboardNavigationTest extends BaseClass {
 
 	@Test
-	public void Dashboard() throws Throwable {
+	public void DowntimeDashboardNavigationTest() throws Throwable {
 
 		// Create object of WebDriverUtility for custom Selenium helper methods
 		WebDriverUtility we = new WebDriverUtility();

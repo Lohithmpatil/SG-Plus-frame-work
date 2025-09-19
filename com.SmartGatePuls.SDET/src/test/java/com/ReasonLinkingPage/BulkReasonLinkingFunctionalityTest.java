@@ -15,7 +15,7 @@ import com.sgplus.erp.pomRepository.HomePage; // Page Object for Home Page
 public class BulkReasonLinkingFunctionalityTest extends BaseClass {
 
 	@Test
-	public void Reasonlinkingpage() throws InterruptedException {
+	public void BulkReasonLinkingFunctionalityTest() throws InterruptedException {
 
 		// Create utility object for custom WebDriver actions
 		WebDriverUtility we = new WebDriverUtility();

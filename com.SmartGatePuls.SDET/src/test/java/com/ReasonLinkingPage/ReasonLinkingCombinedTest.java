@@ -15,7 +15,7 @@ import com.sgplus.erp.pomRepository.HomePage; // Page Object Model class for Hom
 public class ReasonLinkingCombinedTest extends BaseClass { // Test class that extends BaseClass for driver setup
 
 	@Test
-	public void Reasonlinkingpage() throws InterruptedException {
+	public void ReasonLinkingCombinedTest() throws InterruptedException {
 
 		// Create object of WebDriverUtility to access utility methods
 		WebDriverUtility we = new WebDriverUtility();

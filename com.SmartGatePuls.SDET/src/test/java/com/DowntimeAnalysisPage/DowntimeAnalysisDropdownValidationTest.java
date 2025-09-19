@@ -19,7 +19,7 @@ public class DowntimeAnalysisDropdownValidationTest extends BaseClass {
 	// Test method to verify navigation and basic validations on the Downtime
 	// Analysis page
 	@Test
-	public void Reasonlinkingpage() throws InterruptedException {
+	public void DowntimeAnalysisDropdownValidationTest() throws InterruptedException {
 
 		// Create utility object for custom WebDriver actions like waits and dropdowns
 		WebDriverUtility we = new WebDriverUtility();

@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -168,5 +169,11 @@ public class WebDriverUtility {
 		File trg = new File("./screenshot.png");
 		FileUtils.copyFile(src, trg);
 	}
+
+	public boolean waitForElementToDisappear(By xpath, WebDriver driver) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 
 }

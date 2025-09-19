@@ -20,7 +20,7 @@ import com.sgplus.erp.pomRepository.HomePage;
 public class DowntimeWorstMachineTest extends BaseClass {
 
 	@Test
-	public void Dashboard() throws Throwable {
+	public void DowntimeWorstMachineTest() throws Throwable {
 
 		// Create instance of custom WebDriver utility class
 		WebDriverUtility we = new WebDriverUtility();

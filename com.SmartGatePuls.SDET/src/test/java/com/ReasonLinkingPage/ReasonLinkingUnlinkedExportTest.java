@@ -27,7 +27,7 @@ public class ReasonLinkingUnlinkedExportTest extends BaseClass {
 
 	@Test
 	// Mark this method as a TestNG test method
-	public void Reasonlinkingpage() throws InterruptedException {
+	public void ReasonLinkingUnlinkedExportTest() throws InterruptedException {
 		// Test method for verifying reason linking page export functionality
 
 		WebDriverUtility we = new WebDriverUtility();

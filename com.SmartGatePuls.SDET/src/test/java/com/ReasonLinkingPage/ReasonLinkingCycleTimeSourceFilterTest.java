@@ -12,7 +12,7 @@ import com.sgplus.erp.pomRepository.HomePage;
 public class ReasonLinkingCycleTimeSourceFilterTest extends BaseClass {  // Test class extending BaseClass to reuse setup/teardown
 
 	@Test
-	public void Reasonlinkingpage() throws InterruptedException {
+	public void ReasonLinkingCycleTimeSourceFilterTest() throws InterruptedException {
 
 		// Instantiate WebDriverUtility to use custom wait and select methods
 		WebDriverUtility we = new WebDriverUtility();

@@ -27,7 +27,7 @@ public class ReasonLinkingUnlinkedFilterTest extends BaseClass {
 
 	@Test
 	// Mark this method as a TestNG test
-	public void Reasonlinkingpage() throws InterruptedException {
+	public void ReasonLinkingUnlinkedFilterTest() throws InterruptedException {
 		// Test method for filtering unlinked reason linking records
 
 		WebDriverUtility we = new WebDriverUtility();

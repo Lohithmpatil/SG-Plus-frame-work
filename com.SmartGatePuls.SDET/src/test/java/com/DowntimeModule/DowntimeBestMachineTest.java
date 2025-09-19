@@ -24,7 +24,7 @@ import com.sgplus.erp.pomRepository.HomePage;
 public class DowntimeBestMachineTest extends BaseClass {
 
 	@Test
-	public void Dashboard() throws Throwable {
+	public void DowntimeBestMachineTest() throws Throwable {
 
 		// Initialize WebDriver utility for custom waits and actions
 		WebDriverUtility we = new WebDriverUtility();

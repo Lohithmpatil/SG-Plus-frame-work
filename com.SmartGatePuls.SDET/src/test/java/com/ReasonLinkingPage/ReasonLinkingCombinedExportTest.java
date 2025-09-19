@@ -18,7 +18,7 @@ import com.sgplus.erp.pomRepository.HomePage;
 public class ReasonLinkingCombinedExportTest extends BaseClass { // Test class extending BaseClass
 
 	@Test
-	public void Reasonlinkingpage() throws InterruptedException {
+	public void ReasonLinkingCombinedExportTest() throws InterruptedException {
 
 		// Create instance of WebDriver utility for custom methods
 		WebDriverUtility we = new WebDriverUtility();

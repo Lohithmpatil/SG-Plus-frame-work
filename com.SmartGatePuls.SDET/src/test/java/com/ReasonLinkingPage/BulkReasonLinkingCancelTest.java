@@ -1,10 +1,12 @@
 package com.ReasonLinkingPage;
 
+import java.time.Duration;
 // Import required Java and Selenium classes
-import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,7 +17,7 @@ import com.sgplus.erp.pomRepository.HomePage; // Page Object for Home Page
 public class BulkReasonLinkingCancelTest extends BaseClass {
 
 	@Test
-	public void Reasonlinkingpage() throws InterruptedException {
+	public void BulkReasonLinkingCancelTest() throws InterruptedException {
 
 		// Create utility object for custom WebDriver actions
 		WebDriverUtility we = new WebDriverUtility();
@@ -25,7 +27,7 @@ public class BulkReasonLinkingCancelTest extends BaseClass {
 
 		// Initialize ReasonLinking POM
 		com.sgplus.erp.pomRepository.ReasonLinking rs = new com.sgplus.erp.pomRepository.ReasonLinking(driver);
-		
+
 		we.waitForElementInDOM(driver);
 
 		// Click on the "DownTime" menu in the sidebar
@@ -112,24 +114,18 @@ public class BulkReasonLinkingCancelTest extends BaseClass {
 		// Click on the "Save" button to submit bulk linking
 		we.waitAndClick(rs.getSaveButton());
 
-		// Click "OK" in the confirmation popup
+		// Click "Cancel" in the confirmation popup
 		we.waitAndClick(rs.getCancelForBulkLink());
 
-	/*	// Wait and get the toast message element that confirms update
-		we.waitAndClick(rs.getBulkLinkUpadtedSucessfully());
-		WebElement toast = rs.getBulkLinkUpadtedSucessfully();
+		we.waitAndClick(rs.getCancelbutton1());
 
-		// Assert the toast text equals expected success message
-		Assert.assertEquals(toast.getText().trim(), "Successfully Updated!", "Toast message mismatch");
+		// ✅ Wait for modal to disappear
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		boolean isModalClosed = wait.until(
+				ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[contains(@class,'modal-content')]")));
 
-		// Store the toast text for logging
-		String toastText = toast.getText().trim();
-
-		// Log success/failure in console based on toast content
-		if (toastText.equals("Successfully Updated!")) {
-			System.out.println("✅ Test Passed: Toast message is correct.");
-		} else {
-			System.out.println("❌ Test Failed: Unexpected toast message - " + toastText);
-		}*/
+		// ✅ Validate
+		Assert.assertTrue(isModalClosed, "❌ Cancel did not close the modal!");
 	}
+
 }

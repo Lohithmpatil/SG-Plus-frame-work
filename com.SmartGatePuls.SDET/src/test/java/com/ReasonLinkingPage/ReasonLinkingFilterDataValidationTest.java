@@ -13,7 +13,7 @@ import com.sgplus.erp.pomRepository.HomePage;
 public class ReasonLinkingFilterDataValidationTest extends BaseClass {  // Test class extends BaseClass for setup/teardown
 
 	@Test
-	public void Reasonlinkingpage() throws InterruptedException {
+	public void ReasonLinkingFilterDataValidationTest() throws InterruptedException {
 
 		// Create instance of WebDriverUtility to use custom wait and select methods
 		WebDriverUtility we = new WebDriverUtility();

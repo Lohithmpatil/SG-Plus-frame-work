@@ -11,7 +11,7 @@ import com.sgplus.erp.pomRepository.HomePage;  // Imports the Page Object Model 
 public class ReasonLinkingLinkedFilterTest extends BaseClass {  // Defines the test class extending BaseClass for common setup/teardown
 
     @Test  // Marks this method as a TestNG test method
-    public void Reasonlinkingpage() throws InterruptedException {
+    public void ReasonLinkingLinkedFilterTest() throws InterruptedException {
 
         WebDriverUtility we = new WebDriverUtility();  // Creates instance of WebDriverUtility for reusable methods
 

@@ -10,7 +10,7 @@ import com.sgplus.erp.pomRepository.HomePage;  // Importing Page Object Model cl
 public class ReasonLinkingNavigationTest extends BaseClass {  // Declaring the test class, extending BaseClass for setup/teardown
 
     @Test  // Marks this method as a TestNG test method
-    public void Reasonlinkingpage() throws InterruptedException {
+    public void ReasonLinkingNavigationTest() throws InterruptedException {
 
         WebDriverUtility we = new WebDriverUtility();  // Create an instance of WebDriverUtility for helper methods
 
