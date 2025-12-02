@@ -36,6 +36,7 @@ public class DowntimeEnhacementTableExport extends BaseClass {
 
         // Waits for and clicks the "Business Unit" dropdown, then selects "BU3" from the dropdown
         we.waitAndClick(de.getBUDropDown());
+     
         we.select(de.getBUDropDown(), "BU3");
 
         // Waits for and clicks the "Area" dropdown, then selects "All" from the dropdown

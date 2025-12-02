@@ -56,7 +56,7 @@ public class DowntimeEnhacement {
 	@FindBy(xpath="//i[@class='fa fa-filter']")
 	private WebElement FilterButton;
 
-	@FindBy(xpath = "//select[@class=\"form-control\"]")
+	@FindBy(xpath = "//div[@aria-labelledby=\"Bu\"]")
 	private WebElement BUDropDown;
 
 	@FindBy(xpath = "//select[@class=\"form-control  \"]")

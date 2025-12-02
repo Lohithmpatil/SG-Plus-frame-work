@@ -26,7 +26,6 @@ public class WebDriverUtility {
 	// control if element available
 	public void waitForElementInDOM(WebDriver driver) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		;
 	}
 
 	// it's an Explicitly wait Always wait for Page to be loaded & available in GUI
@@ -174,6 +173,5 @@ public class WebDriverUtility {
 		// TODO Auto-generated method stub
 		return false;
 	}
-
 
 }

@@ -62,15 +62,17 @@ public class DowntimeAnalysisNavigationTest extends BaseClass {
 		we.waitAndClick(da.getEquipementDropDown());
 
 		// Click the first checkbox in the equipment list (select equipment)
-		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
+
+		we.waitAndClick(da.getCheckBoxEquipements());
 
 		// Close the dropdown by clicking on the arrow icon
-		driver.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
+		we.waitAndClick(da.getCheckBoxEquipementsSelect());
 
 		// Click on "Apply Filter" to load the filtered data/chart
 		we.waitAndClick(da.getApplyFilter());
 
-		// Locate the bar chart container (replace selector with actual chart element selector)
+		// Locate the bar chart container (replace selector with actual chart element
+		// selector)
 		WebElement barChart = driver.findElement(By.cssSelector("canvas, svg, or specific bar element"));
 
 		// Validate that the bar chart is visible

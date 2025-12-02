@@ -64,10 +64,11 @@ public class YearlyToMonthlyChartNavigationTest extends BaseClass {
 		we.waitAndClick(da.getEquipementDropDown());
 
 		// Click the first checkbox in the equipment list (select equipment)
-		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
+
+		we.waitAndClick(da.getCheckBoxEquipements());
 
 		// Close the dropdown by clicking on the arrow icon
-		driver.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
+		we.waitAndClick(da.getCheckBoxEquipementsSelect());
 
 		// Click on "Apply Filter" button to load the chart based on selected filters
 		we.waitAndClick(da.getApplyFilter());

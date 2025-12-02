@@ -51,20 +51,31 @@ public class DowntimeBestMachineTest extends BaseClass {
 		// Open BU (Business Unit) dropdown
 		we.waitAndClick(dt.getBUDropDown());
 
-		// Select "BU3" from BU dropdown
-		we.select(dt.getBUDropDown(), "BU3");
+		we.waitAndClick(dt.getBu3checkbox());
 
+		// Select "BU3" from BU dropdown
+		// we.select(dt.getBUDropDown(), "BU3");
+		driver.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
 		// Open Area dropdown
 		we.waitAndClick(dt.getAreaDropDown());
 
+		we.waitAndClick(dt.getAreaCheckox());
+		
 		// Select "TBM-PCR" from Area dropdown
-		we.select(dt.getAreaDropDown(), "TBM-PCR");
+		//we.select(dt.getAreaDropDown(), "TBM-PCR");
+		
+		driver.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
 
 		// Open Group dropdown
 		we.waitAndClick(dt.getGroupDropDown());
 
+		we.waitAndClick(dt.getGroupCheckbox());
+
 		// Select "Unistage" group from dropdown
-		we.select(dt.getGroupDropDown(), "Unistage");
+		//we.select(dt.getGroupDropDown(), "Unistage");
+		
+	    driver.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
+		//.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
 
 		// Open Equipment dropdown
 		we.waitAndClick(dt.getEquipementDropDown());
@@ -119,7 +130,7 @@ public class DowntimeBestMachineTest extends BaseClass {
 			assertFalse(machineName.isEmpty(), "Machine name is empty");
 
 			// Assert that downtime value is in expected format (e.g., "23.5 mins")
-			assertTrue(downtime.matches("\\d+(\\.\\d+)? mins"), "Invalid downtime format: " + downtime);
+			assertTrue(downtime.matches("\\d+(\\.\\d+)? mins"), "Invalid downtime format: " + downtime);  
 		}
 	}
 }

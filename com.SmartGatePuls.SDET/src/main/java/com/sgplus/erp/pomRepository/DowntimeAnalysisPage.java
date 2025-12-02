@@ -113,4 +113,5 @@ public class DowntimeAnalysisPage {
 	@FindBy(css = "[class=\"dropdown-heading-dropdown-arrow gray\"]")
 	private WebElement CheckBoxEquipementsSelect;
 
+	
 }

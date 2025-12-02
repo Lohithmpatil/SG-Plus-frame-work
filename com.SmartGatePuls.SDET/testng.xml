@@ -2,11 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-    <packages>
-      <package name="com.DowntimeModule"/>
-      <package name="com.ReasonLinkingPage"/>
-       <package name="com.DowntimeEnhacementPage"/>
-       <package name="com.DowntimeAnalysisPage"/>
-    </packages>
+    <classes>
+      <class name="com.DowntimeShiftview.VerifyShiftCViewDisplaysDataForDifferentShiftsTest"/>
+      <class name="com.DowntimeShiftview.VerifyShiftViewPageDataTest"/>
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

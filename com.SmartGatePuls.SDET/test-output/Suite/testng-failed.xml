@@ -3,6 +3,24 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.ReasonLinkingPage.ReasonLinkingSingleLinkTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="ReasonLinkingFunctionalityTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.ReasonLinkingPage.ReasonLinkingSingleLinkTest -->
+      <class name="com.DowntimeModule.DowntimeBestMachineTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="DowntimeBestMachineTest"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.DowntimeModule.DowntimeBestMachineTest -->
       <class name="com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest">
         <methods>
           <include name="configBM"/>
@@ -12,6 +30,87 @@
           <include name="DowntimeAnalysisDropdownValidationTest"/>
         </methods>
       </class> <!-- com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest -->
+      <class name="com.DowntimeAnalysisPage.DowntimeAnalysisNavigationTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="DowntimeAnalysisNavigationTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.DowntimeAnalysisPage.DowntimeAnalysisNavigationTest -->
+      <class name="com.DowntimeEnhacementPage.NavigateToDowntimeEnhancementPageTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="NavigateToDowntimeEnhancementPage"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.DowntimeEnhacementPage.NavigateToDowntimeEnhancementPageTest -->
+      <class name="com.DowntimeEnhacementPage.DowntimeEnhacemntTableDataTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="DowntimeEnhacemntTableDataTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.DowntimeEnhacementPage.DowntimeEnhacemntTableDataTest -->
+      <class name="com.DowntimeModule.DowntimeDashboardDataValidationTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="DowntimeDashboardDataValidationTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.DowntimeModule.DowntimeDashboardDataValidationTest -->
+      <class name="com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="YearlyToMonthlyChartNavigationTest"/>
+        </methods>
+      </class> <!-- com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest -->
+      <class name="com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="MonthWiseBarChartNavigationTest"/>
+        </methods>
+      </class> <!-- com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest -->
+      <class name="com.DowntimeModule.DowntimeWorstMachineTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="DowntimeWorstMachineTest"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.DowntimeModule.DowntimeWorstMachineTest -->
+      <class name="com.DowntimeEnhacementPage.DowntimeEnhacementTableExport">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="DowntimeEnhacementTableExport"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.DowntimeEnhacementPage.DowntimeEnhacementTableExport -->
+      <class name="com.DowntimeModule.DowntimeDashboardNavigationTest">
+        <methods>
+          <include name="DowntimeDashboardNavigationTest"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.DowntimeModule.DowntimeDashboardNavigationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

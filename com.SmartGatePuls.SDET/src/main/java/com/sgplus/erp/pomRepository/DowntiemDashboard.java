@@ -71,11 +71,31 @@ public class DowntiemDashboard {
 	@FindBy(xpath="//i[@class='fa fa-filter']")
 	private WebElement FilterButton;
 	
-	@FindBy(xpath= "//select[@class=\"form-control\"]")
+	@FindBy(xpath= "//div[@aria-labelledby=\"Bu\"]")
 	private WebElement BUDropDown;
 	
-	@FindBy(xpath= "//select[@class=\"form-control  \"]")
+	@FindBy(xpath= "//span[text()='BU3']")
+	private WebElement Bu3checkbox;
+	
+	public WebElement getBu3checkbox() {
+		return Bu3checkbox;
+	}
+
+	@FindBy(xpath= "//div[@aria-labelledby=\"Area\"]")
 	private WebElement AreaDropDown;
+	
+	public WebElement getAreaCheckox() {
+		return AreaCheckox;
+	}
+	@FindBy(xpath= "//span[text()='Unistage']")
+	private WebElement GroupCheckbox;
+
+	public WebElement getGroupCheckbox() {
+		return GroupCheckbox;
+	}
+
+	@FindBy(xpath= "//span[text()='TBM-PCR']")
+	private WebElement AreaCheckox;
 	
 	@FindBy(xpath= "//select[@class='form-control ']")
 	private WebElement GroupDropDown;

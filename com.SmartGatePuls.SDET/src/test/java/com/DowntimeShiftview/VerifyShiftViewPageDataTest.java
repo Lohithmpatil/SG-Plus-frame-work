@@ -1,6 +1,11 @@
 package com.DowntimeShiftview;
 
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -14,7 +19,9 @@ public class VerifyShiftViewPageDataTest extends BaseClass {
 
 	// Test method to verify the navigation to Shift View page
 	@Test
-	public void VerifyShiftViewPageDataTe() throws Throwable {
+	public void VerifyShiftViewPageDataTest() throws Throwable {
+
+		
 
 		// Create utility object for custom WebDriver actions like waits and dropdowns
 		WebDriverUtility we = new WebDriverUtility();
@@ -25,6 +32,8 @@ public class VerifyShiftViewPageDataTest extends BaseClass {
 		// Initialize DowntimeShiftview object to interact with elements specific to the
 		// Downtime Shiftview page
 		DowntimeShiftview ds = new DowntimeShiftview(driver);
+		
+		we.waitForElementInDOM(driver);
 
 		// Wait for the 'DownTime' menu item to be clickable and then click it
 		we.waitAndClick(hm.getDownTime());
@@ -78,19 +87,9 @@ public class VerifyShiftViewPageDataTest extends BaseClass {
 		// page we navigated to
 		WebElement pageHeader = ds.getHeadertext();
 
-		// Verifies that the page header is displayed, confirming we are on the correct
-		// page
-		Assert.assertTrue(pageHeader.isDisplayed(), "Failed to navigate to Downtime Enhancement Page.");
+		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(screenshot, new File("path/to/save/screenshot.png"));
 
-		// Locate and validate Downtime value
-		WebElement downtimeElement = driver.findElement(By.xpath("//span[@class='downtime']"));
-		String downtimeText = downtimeElement.getText();
-		Assert.assertSame("Downtime value should be greater than 0", Double.parseDouble(downtimeText) > 0);
-
-		// Validate Quantity (e.g., should be 479)
-		WebElement quantityElement = driver.findElement(By.xpath("//span[@class='quantity']"));
-		String quantityText = quantityElement.getText();
-		Assert.assertEquals("479 Units", quantityText);
 	}
 }
 

@@ -27,6 +27,14 @@ public class HomePage {
 
     @FindBy(xpath = "//span[text()='Logout']")
     private WebElement logOut;
+    
+    public WebElement getOEE() {
+		return OEE;
+	}
+
+	@FindBy(xpath = "//span[text()=\"OEE\"]")
+    private WebElement OEE;
+
 
     // Getters
     public WebDriver getDriver() {
