@@ -78,10 +78,6 @@
     <artifactId>selenium-java</artifactId>
     <version>4.34.0</version>
 </dependency>
-  	<dependency>
-  		<groupId>com.css.tys.SDET</groupId>
-  		<artifactId>com.css.tys.SDET</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+  
   </dependencies>
 </project>

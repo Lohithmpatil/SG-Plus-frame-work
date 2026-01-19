@@ -2,50 +2,69 @@ package com.sgplus.erp.genericutility;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
-
-// its developed using Apache POi libraries , which used to handle Microsoft Excel sheet
+import org.apache.poi.ss.usermodel.*;
 
 public class ExcelUtility {
-	
-// its used read the data from excel base don below arguments 
-		
-		public String getDataFromExcel(String sheetName , int rowNum, int celNum) throws Throwable {
-			FileInputStream fis  = new FileInputStream("C:\\Selenium webdriver\\Frame work Excel.xlsx");
-			Workbook wb = WorkbookFactory.create(fis);
-			Sheet sh = wb.getSheet(sheetName);
-			Row row = sh.getRow(rowNum);
-			String data = row.getCell(celNum).getStringCellValue();
-			wb.close();
-			return data;
-		}
 
-		 // used to get the last used row number on specified Sheet
+    // ✅ ONE SINGLE PATH (NO QUOTES)
+    private static final String EXCEL_PATH =
+            "C:\\Seleniumwebdriver\\Automation.xlsx";
 
-		public int getRowCount(String sheetName) throws Throwable {
-			FileInputStream fis  = new FileInputStream("C:\\Selenium webdriver\\Frame work Excel.xlsx");
-			Workbook wb = WorkbookFactory.create(fis);
-			Sheet sh = wb.getSheet(sheetName);
-			wb.close();
-			return sh.getLastRowNum();
-		}
-		
-		public void setDataExcel(String sheetName , int rowNum, int celNum ,String data) throws Throwable {
-			FileInputStream fis  = new FileInputStream("C:\\Selenium webdriver\\Frame work Excel.xlsx");
-			Workbook wb = WorkbookFactory.create(fis);
-			Sheet sh = wb.getSheet(sheetName);
-			Row row = sh.getRow(rowNum);
-			Cell cel = row.createCell(celNum);
-			cel.setCellValue(data);
-			FileOutputStream fos = new FileOutputStream("C:\\Selenium webdriver\\Frame work Excel.xlsx");
-			wb.write(fos);
-			wb.close();
-			
-		}
-	
+    // ---------------- READ DATA ----------------
+    public String getDataFromExcel(String sheetName, int rowNum, int cellNum)
+            throws Exception {
+
+        FileInputStream fis = new FileInputStream(EXCEL_PATH);
+        Workbook wb = WorkbookFactory.create(fis);
+
+        Sheet sh = wb.getSheet(sheetName);
+        Row row = sh.getRow(rowNum);
+        Cell cell = row.getCell(cellNum);
+
+        String data = cell.getStringCellValue();
+
+        wb.close();
+        fis.close();
+
+        return data;
+    }
+
+    // ---------------- ROW COUNT ----------------
+    public int getRowCount(String sheetName) throws Exception {
+
+        FileInputStream fis = new FileInputStream(EXCEL_PATH);
+        Workbook wb = WorkbookFactory.create(fis);
+
+        Sheet sh = wb.getSheet(sheetName);
+        int rowCount = sh.getLastRowNum();
+
+        wb.close();
+        fis.close();
+
+        return rowCount;
+    }
+
+    // ---------------- WRITE DATA ----------------
+    public void setDataExcel(String sheetName, int rowNum, int cellNum, String data)
+            throws Exception {
+
+        FileInputStream fis = new FileInputStream(EXCEL_PATH);
+        Workbook wb = WorkbookFactory.create(fis);
+
+        Sheet sh = wb.getSheet(sheetName);
+        Row row = sh.getRow(rowNum);
+        if (row == null) {
+            row = sh.createRow(rowNum);
+        }
+
+        Cell cell = row.createCell(cellNum);
+        cell.setCellValue(data);
+
+        FileOutputStream fos = new FileOutputStream(EXCEL_PATH);
+        wb.write(fos);
+
+        wb.close();
+        fis.close();
+        fos.close();
+    }
 }

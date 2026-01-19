@@ -1,0 +1,4 @@
+browser   chrome
+url 		http://sgp.smartiotsystem.com/login
+username     superadmin
+password     admin@123

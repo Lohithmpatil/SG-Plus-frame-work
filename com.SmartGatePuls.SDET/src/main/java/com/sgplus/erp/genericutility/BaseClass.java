@@ -61,7 +61,7 @@ public class BaseClass {
 	}
 
 	 @AfterMethod(groups = { "smokeTest", "regressionTest" })
-	public void configAM() {
+	/*public void configAM() {
 		// step 6 : logout
 		HomePage homePage = new HomePage(driver);
 		homePage.getLogOut().click();
@@ -73,7 +73,7 @@ public class BaseClass {
 	public void configAC() {
 		System.out.println("=============Close the Browser=======");
 		driver.quit();
-	}
+	}*/
 
 	// @AfterSuite(groups = { "smokeTest", "regressionTest" })
 	public void configAS() {

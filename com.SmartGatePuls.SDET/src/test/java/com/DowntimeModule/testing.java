@@ -47,10 +47,44 @@ public class testing extends BaseClass {
 		we.waitAndClick(dt.getAreaDropDown());
 
 		we.waitAndClick(dt.getAreaCheckox());
-		we.waitAndClick(dt.getAreaDropDown());
+	
 		
-		//driver.findElement(By.xpath("))
+		//driver.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
 
+		// Open Group dropdown
+		we.waitAndClick(dt.getGroupDropDown());
+
+		we.waitAndClick(dt.getGroupCheckbox());
+
+		// Select "Unistage" group from dropdown
+		//we.select(dt.getGroupDropDown(), "Unistage");
+		
+	    driver.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
+		//.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
+
+		// Open Equipment dropdown
+		we.waitAndClick(dt.getEquipementDropDown());
+
+		// Select a checkbox from equipment list (selects one equipment)
+		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
+
+		// Close the equipment dropdown
+		driver.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
+
+		// Open Period dropdown
+		we.waitAndClick(dt.getPeriodDropDown());
+
+		// Select "Year" from Period dropdown
+		we.select(dt.getPeriodDropDown(), "Year");
+
+		// Open Shift dropdown
+		we.waitAndClick(dt.getShiftDropDown());
+
+		// Select "All" shifts
+		we.select(dt.getShiftDropDown(), "All");
+
+		// Click on Apply Filter button to load dashboard data
+		we.waitAndClick(dt.getApplyFilter());
 
 
 	}

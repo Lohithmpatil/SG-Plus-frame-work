@@ -1,14 +1,15 @@
 package com.sgplus.erp.genericutility;
 
 import java.io.FileInputStream;
+import java.io.InputStream;
 import java.util.Properties;
 
 public class FileUtility {
 	
 	//its used to read the data from commonData.properties File based on Key which you pass as an argument
-	
+/*	
     public String getPropertyKeyValue(String key) throws Throwable {
-   	 FileInputStream fis = new FileInputStream("C:\\Selenium webdriver\\Commondata.properties.txt");
+   	 FileInputStream fis = new FileInputStream("C:\\Seleniumwebdriver\\commondata.properties");
    	 Properties pobj = new Properties();
    	 pobj.load(fis);
    	 String value = pobj.getProperty(key);
@@ -19,5 +20,27 @@ public class FileUtility {
 		// TODO Auto-generated method stub
 		return 0;   
 	}
+*/
 
-}
+
+	
+
+	    public String getPropertyKeyValue(String key) throws Throwable {
+
+	        Properties prop = new Properties();
+
+	        InputStream fis = getClass()
+	                .getClassLoader()
+	                .getResourceAsStream("Commondata.properties");
+
+	        if (fis == null) {
+	            throw new RuntimeException(
+	                "Commondata.properties NOT FOUND in src/test/resources");
+	        }
+
+	        prop.load(fis);
+	        return prop.getProperty(key);
+	    }
+	}
+
+

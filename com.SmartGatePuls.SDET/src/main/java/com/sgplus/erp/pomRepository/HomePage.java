@@ -28,6 +28,14 @@ public class HomePage {
     @FindBy(xpath = "//span[text()='Logout']")
     private WebElement logOut;
     
+    public WebElement getSettings() {
+		return Settings;
+	}
+
+	@FindBy(xpath = "//span[text()=\"Settings\"]")
+    private WebElement Settings;
+
+    
     public WebElement getOEE() {
 		return OEE;
 	}

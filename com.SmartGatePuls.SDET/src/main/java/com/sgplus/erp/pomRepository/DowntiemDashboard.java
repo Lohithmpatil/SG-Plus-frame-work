@@ -97,10 +97,10 @@ public class DowntiemDashboard {
 	@FindBy(xpath= "//span[text()='TBM-PCR']")
 	private WebElement AreaCheckox;
 	
-	@FindBy(xpath= "//select[@class='form-control ']")
+	@FindBy(xpath= "//div[@aria-labelledby=\"Group\"]")
 	private WebElement GroupDropDown;
 	
-	@FindBy(xpath= "//div[@class=\"dropdown-heading-value\"]")
+	@FindBy(xpath= "//div[@aria-labelledby=\"Equipments\"]")
 	private WebElement EquipementDropDown;
 	
 	@FindBy(xpath= "//select[@class=\"form-control w-100\"]")
