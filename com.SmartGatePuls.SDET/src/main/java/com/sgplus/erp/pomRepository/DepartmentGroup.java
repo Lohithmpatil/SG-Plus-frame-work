@@ -24,6 +24,12 @@ public class DepartmentGroup {
 	public WebElement getSuccessToast() {
 		return successToast;
 	}
+	@FindBy(xpath = "//button[text()=\"Update\"]")
+	private WebElement UpdateButton;
+
+	public WebElement getUpdateButton() {
+		return UpdateButton;
+	}
 
 	public WebDriver getDriver() {
 		return driver;

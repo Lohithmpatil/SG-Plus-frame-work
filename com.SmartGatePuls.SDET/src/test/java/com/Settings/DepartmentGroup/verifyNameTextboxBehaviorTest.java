@@ -1,42 +1,24 @@
 package com.Settings.DepartmentGroup;
 
-// Import Duration class for explicit waits
 import java.time.Duration;
 
-// Selenium explicit wait utilities
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-// TestNG assertion and test annotation
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-// Base class which contains WebDriver setup, login, DB connection, etc.
 import com.sgplus.erp.genericutility.BaseClass;
-
-// Utility class to read data from Excel
 import com.sgplus.erp.genericutility.ExcelUtility;
-
-// Utility class to read data from property/config files
 import com.sgplus.erp.genericutility.FileUtility;
-
-// Utility class to generate random numbers and Java-related helpers
 import com.sgplus.erp.genericutility.JavaUtility;
-
-// Utility class for common WebDriver actions like waits and clicks
 import com.sgplus.erp.genericutility.WebDriverUtility;
-
-// Page Object Model class for Department Group page
 import com.sgplus.erp.pomRepository.DepartmentGroup;
-
-// Page Object Model class for Home page
 import com.sgplus.erp.pomRepository.HomePage;
 
-public class verifyAddDepartmentGroup extends BaseClass {
-
+public class verifyNameTextboxBehaviorTest extends BaseClass {
 	// TestNG test method to verify Add Department Group functionality
 	@Test
-	public void verifyAddDepartmentGroup() throws Throwable {
+	public void verifyNameTextboxBehaviorTest() throws Throwable {
 
 		// Create WebDriverUtility object for custom wait and click operations
 		WebDriverUtility we = new WebDriverUtility();
@@ -106,21 +88,6 @@ public class verifyAddDepartmentGroup extends BaseClass {
 
 		// Print the success message in console for reference
 		System.out.println(actualMsg);
-
-		/*
-		 * Below are additional test scenarios that can be automated later:
-		 *
-		 * verifyAddDepartmentGroup()
-		 * verifySearchDepartmentGroup()
-		 * verifyEditDepartmentGroup()
-		 * verifyAddButtonDisabledState()
-		 * verifyRequiredFieldValidationForName()
-		 * verifyMTTRMTBFSourceRadioButtons()
-		 * verifyNameFieldInputLength()
-		 * verifyDefaultMTTRMTBFSourceSelection()
-		 * verifyValidationErrorOnEmptyName()
-		 * verifyNameTextboxBehavior()
-		 */
-
 	}
+
 }
