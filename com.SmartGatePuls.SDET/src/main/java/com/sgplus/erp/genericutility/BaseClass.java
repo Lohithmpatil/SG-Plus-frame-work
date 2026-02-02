@@ -52,7 +52,7 @@ public class BaseClass {
 		
 		/* Navigate to app */
 		driver.get(URL);
-
+		//System.out.println("URL USED BY DRIVER = " + URL);
 		/* step 1 : login */
 		LoginPage lp = new LoginPage(driver);
 		lp.logintoApp(USERNAME, PASSWORD);

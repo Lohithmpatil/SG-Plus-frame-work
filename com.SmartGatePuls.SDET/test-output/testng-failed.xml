@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Settings.DepartmentGroup.verifyRequiredFieldValidationForNameTest">
+      <class name="com.Settings.Departements.verifyEditDepartmenTest">
         <methods>
           <include name="configBM"/>
-          <include name="verifyRequiredFieldValidationForNameTest"/>
           <include name="configAS"/>
+          <include name="verifyEditDepartmenTest"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.Settings.DepartmentGroup.verifyRequiredFieldValidationForNameTest -->
+      </class> <!-- com.Settings.Departements.verifyEditDepartmenTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

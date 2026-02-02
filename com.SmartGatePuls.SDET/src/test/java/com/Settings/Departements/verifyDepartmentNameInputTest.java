@@ -1,40 +1,26 @@
-// Package declaration – defines the folder structure for Department tests
 package com.Settings.Departements;
 
-// Import Duration class for explicit wait timeout
 import java.time.Duration;
 
-// Import Selenium classes for locating elements and interacting with UI
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-// Import Selenium wait utilities
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-// Import TestNG assertion and annotation
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-// Import BaseClass which handles browser setup, login, and teardown
 import com.sgplus.erp.genericutility.BaseClass;
-
-// Import utility classes used across the framework
 import com.sgplus.erp.genericutility.ExcelUtility;
 import com.sgplus.erp.genericutility.FileUtility;
 import com.sgplus.erp.genericutility.JavaUtility;
 import com.sgplus.erp.genericutility.WebDriverUtility;
-
-// Import Page Object Model classes
 import com.sgplus.erp.pomRepository.Departments;
 import com.sgplus.erp.pomRepository.HomePage;
 
-// Test class for verifying Add Department functionality
-public class VerifyAddDepartmentTest extends BaseClass {
-
+public class verifyDepartmentNameInputTest extends BaseClass {
 	// TestNG test method annotation
 	@Test
-	public void VerifyAddDepartmentTest() throws Throwable {
+	public void verifyRequiredFieldValidationTest() throws Throwable {
 
 		// Create WebDriverUtility object for waits, clicks, dropdown handling
 		WebDriverUtility we = new WebDriverUtility();
@@ -111,7 +97,8 @@ public class VerifyAddDepartmentTest extends BaseClass {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		// Wait until the success message is visible on the UI
-		WebElement toastMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Department created successfully')]")));
+		WebElement toastMsg = wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Department created successfully')]")));
 
 		// Capture the actual success message text
 		String actualMessage = toastMsg.getText();
@@ -124,15 +111,3 @@ public class VerifyAddDepartmentTest extends BaseClass {
 		System.out.println("SUCCESS MESSAGE VERIFIED: " + actualMessage);
 	}
 }
-
-
-/*verifyAddDepartment()
-verifySearchDepartment()
-verifyEditDepartment()
-verifyViewDepartment()
-verifyRequiredFieldValidation()
-verifyDepartmentNameInput()
-verifyDepartmentGroupDropdownOptions()
-verifyEquipmentDropdownOptions()
-verifyDepartmentNameTextLength()
-verifyDepartmentNamePlaceholder() */

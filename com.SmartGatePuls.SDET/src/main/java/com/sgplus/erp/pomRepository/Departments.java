@@ -94,10 +94,10 @@ public class Departments {
 
 	@FindBy(xpath = "//button[text()=\"Cancel\"]")
 	private WebElement CancelButton;
-	
+
 	@FindBy(xpath = "//body[@class=\"sidebar-icon-only\"]")
 	private WebElement CheckBoxofEquipement;
-	
+
 	public WebElement getCheckBoxofEquipement() {
 		return CheckBoxofEquipement;
 	}
@@ -108,4 +108,11 @@ public class Departments {
 
 	@FindBy(css = "[class=\"dropdown-heading-dropdown-arrow gray\"]")
 	private WebElement ArrowButton;
+
+	@FindBy(xpath = "//button[@id=\"depts-action\"]")
+	private WebElement Edit3Dots;
+
+	public WebElement getEdit3Dots() {
+		return Edit3Dots;
+	}
 }

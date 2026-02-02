@@ -25,22 +25,26 @@ public class FileUtility {
 
 	
 
-	    public String getPropertyKeyValue(String key) throws Throwable {
+	public String getPropertyKeyValue(String key) throws Throwable {
 
-	        Properties prop = new Properties();
+	    Properties prop = new Properties();
 
-	        InputStream fis = getClass()
-	                .getClassLoader()
-	                .getResourceAsStream("Commondata.properties");
+	    InputStream fis = getClass()
+	            .getClassLoader()
+	            .getResourceAsStream("commondata.properties");
 
-	        if (fis == null) {
-	            throw new RuntimeException(
-	                "Commondata.properties NOT FOUND in src/test/resources");
-	        }
-
-	        prop.load(fis);
-	        return prop.getProperty(key);
+	    if (fis == null) {
+	        throw new RuntimeException("commondata.properties NOT FOUND");
 	    }
+
+	    prop.load(fis);
+
+	   // System.out.println("==== PROPERTIES FILE LOADED ====");
+	    //System.out.println("URL FROM FILE = " + prop.getProperty("url"));
+	    //System.out.println("================================");
+
+	    return prop.getProperty(key);
 	}
+}
 
 
