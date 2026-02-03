@@ -1,136 +1,160 @@
-package com.DowntimeModule;
+package com.DowntimeModule; 
+// Package name where this test class is stored
 
-// Static imports for assertions
+// Static imports for assertion methods from TestNG
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
+// Import for List interface
 import java.util.List;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+// Selenium imports
+import org.openqa.selenium.By;                     // Used to locate elements
+import org.openqa.selenium.JavascriptExecutor;    // Used to execute JavaScript in browser
+import org.openqa.selenium.WebElement;            // Represents a web element
+import org.openqa.selenium.interactions.Actions;  // Used for advanced user interactions
+import org.openqa.selenium.support.ui.ExpectedConditions; // Used for wait conditions
+import org.openqa.selenium.support.ui.WebDriverWait;     // Used for explicit waits
+
+// TestNG imports
+import org.testng.Assert;                         // Assertion class
+import org.testng.annotations.Test;               // Used to mark test methods
 
 // Base class and utility imports
-import com.sgplus.erp.genericutility.BaseClass;
-import com.sgplus.erp.genericutility.WebDriverUtility;
-import com.sgplus.erp.pomRepository.DowntiemDashboard;
-import com.sgplus.erp.pomRepository.HomePage;
+import com.sgplus.erp.genericutility.BaseClass;          // Base class for setup & teardown
+import com.sgplus.erp.genericutility.WebDriverUtility;  // Utility class for waits and actions
+import com.sgplus.erp.pomRepository.DowntimeDashboardPage; // POM class for Downtime page
+import com.sgplus.erp.pomRepository.HomePage;           // POM class for Home page
 
+// Test class extending BaseClass to inherit WebDriver setup
 public class DowntimeBestMachineTest extends BaseClass {
 
-	@Test
-	public void DowntimeBestMachineTest() throws Throwable {
+    // TestNG test method
+    @Test
+    public void DowntimeBestMachineTest() throws Throwable {
 
-		// Initialize WebDriver utility for custom waits and actions
-		WebDriverUtility we = new WebDriverUtility();
+        // Create object of WebDriverUtility for common operations like wait and click
+        WebDriverUtility we = new WebDriverUtility();
 
-		// Initialize POM class for Home Page
-		HomePage hm = new HomePage(driver);
+        // Create object of HomePage POM class
+        HomePage hm = new HomePage(driver);
 
-		// Initialize POM class for Downtime Dashboard page
-		DowntiemDashboard dt = new DowntiemDashboard(driver);
+        // Create object of DowntimeDashboardPage POM class
+        DowntimeDashboardPage dt = new DowntimeDashboardPage(driver);
 
-		// Wait for the page and DOM to fully load
-		we.waitUntilPageLoad(driver);
-		we.waitForElementInDOM(driver);
+        // Wait until the page is fully loaded
+        we.waitUntilPageLoad(driver);
 
-		// Navigate to "Down Time" module via the homepage
-		we.waitAndClick(hm.getDownTime());
+        // Wait until all elements are loaded in the DOM
+        we.waitForElementInDOM(driver);
 
-		// Click on the "Downtime Dashboard" link in the menu
-		we.waitAndClick(hm.getDowntimeDashboard());
+        // Click on Down Time module from home page
+        we.waitAndClick(hm.getDownTime());
 
-		// Click the "Filter" button to open filter options
-		we.waitAndClick(dt.getFilterButton());
+        // Click on Downtime Dashboard option
+        we.waitAndClick(hm.getDowntimeDashboard());
 
-		// Open BU (Business Unit) dropdown
-		we.waitAndClick(dt.getBUDropDown());
+        // Click on filter button
+        we.waitAndClick(dt.getFilterButton());
 
-		we.waitAndClick(dt.getBu3checkbox());
+        // Click on BU dropdown
+        we.waitAndClick(dt.getBUDropDown());
 
-		// Select "BU3" from BU dropdown
-		// we.select(dt.getBUDropDown(), "BU3");
-		driver.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
-		// Open Area dropdown
-		we.waitAndClick(dt.getAreaDropDown());
+        // Select BU3 checkbox
+        we.waitAndClick(dt.getBu3checkbox());
 
-		we.waitAndClick(dt.getAreaCheckox());
-		
-		// Select "TBM-PCR" from Area dropdown
-		//we.select(dt.getAreaDropDown(), "TBM-PCR");
-		
-		driver.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
+        // Collapse BU dropdown
+        we.waitAndClick(dt.getCollpaseBUdropdown());
 
-		// Open Group dropdown
-		we.waitAndClick(dt.getGroupDropDown());
+        // Click on Area dropdown
+        we.waitAndClick(dt.getAreaDropDown());
 
-		we.waitAndClick(dt.getGroupCheckbox());
+        // Select Area checkbox (TBM-PCR)
+        we.waitAndClick(dt.getAreaCheckox());
 
-		// Select "Unistage" group from dropdown
-		//we.select(dt.getGroupDropDown(), "Unistage");
-		
-	    driver.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
-		//.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
+        // Collapse Area dropdown
+        we.waitAndClick(dt.getCollpaseAreadropdown());
 
-		// Open Equipment dropdown
-		we.waitAndClick(dt.getEquipementDropDown());
+        // Click on Group dropdown
+        we.waitAndClick(dt.getGroupDropDown());
 
-		// Select a checkbox from equipment list (selects one equipment)
-		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
+        // Select Group checkbox (Unistage)
+        we.waitAndClick(dt.getGroupCheckbox());
 
-		// Close the equipment dropdown
-		driver.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
+        // Collapse Group dropdown
+        we.waitAndClick(dt.getCollpaseGroupdropdown());
 
-		// Open Period dropdown
-		we.waitAndClick(dt.getPeriodDropDown());
+        // Click on Equipment dropdown
+        we.waitAndClick(dt.getEquipementDropDown());
 
-		// Select "Year" from Period dropdown
-		we.select(dt.getPeriodDropDown(), "Year");
+        // Select Equipment checkbox
+        we.waitAndClick(dt.getEquipementCheckbox());
 
-		// Open Shift dropdown
-		we.waitAndClick(dt.getShiftDropDown());
+        // Collapse Equipment dropdown
+        we.waitAndClick(dt.getCollpaseEquipementsdropdown());
 
-		// Select "All" shifts
-		we.select(dt.getShiftDropDown(), "All");
+        // Click on Period dropdown
+        we.waitAndClick(dt.getPeriodDropDown());
 
-		// Click on Apply Filter button to load dashboard data
-		we.waitAndClick(dt.getApplyFilter());
+        // Select "Range" option from Period dropdown
+        we.select(dt.getPeriodDropDown(), "Range");
 
-		// Scroll to the bottom of the page to bring performance tables into view
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+        // Click on From Date input field
+        we.waitAndClick(dt.getFromdateSelection());
 
-		// Click to open the "Best Performing Machines" section
-		we.waitAndClick(dt.getBestPerfomingMachine());
+        // Enter From Date value
+        dt.getFromdateSelection().sendKeys("01-01-2025");
 
-		// Fetch rows from the Best Performing Machines table
-		List<WebElement> bestRows = driver.findElements(
-				By.xpath("//div[contains(text(),'BEST PERFORMING MACHINES')]/following::table[1]/tbody/tr"));
+        // Click on To Date input field
+        we.waitAndClick(dt.getTodateSelection());
 
-		// Assert that at least one machine is listed
-		assertTrue(bestRows.size() > 0, "No best performing machines found");
+        // Enter To Date value
+        dt.getTodateSelection().sendKeys("30-01-2025");
 
-		// Iterate over each row in the table
-		for (WebElement row : bestRows) {
-			// Get all <td> elements (columns) in the current row
-			List<WebElement> cols = row.findElements(By.tagName("td"));
+        // Click on Shift dropdown
+        we.waitAndClick(dt.getShiftDropDown());
 
-			// Extract machine name from first column
-			String machineName = cols.get(0).getText().trim();
+        // Select "All" from Shift dropdown
+        we.select(dt.getShiftDropDown(), "All");
 
-			// Extract downtime value from second column
-			String downtime = cols.get(1).getText().trim();
+        // Click on Apply Filter button
+        we.waitAndClick(dt.getApplyFilter());
 
-			// Assert that the machine name is not empty
-			assertFalse(machineName.isEmpty(), "Machine name is empty");
+        // Create JavaScriptExecutor object to scroll the page
+        JavascriptExecutor js = (JavascriptExecutor) driver;
 
-			// Assert that downtime value is in expected format (e.g., "23.5 mins")
-			assertTrue(downtime.matches("\\d+(\\.\\d+)? mins"), "Invalid downtime format: " + downtime);  
-		}
-	}
+        // Scroll to the bottom of the page
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+
+        // Click on Best Performing Machines section
+        we.waitAndClick(dt.getBestPerfomingMachine());
+
+        // Get all rows from Best Performing Machines table
+        List<WebElement> bestRows = driver.findElements(
+            By.xpath("//div[contains(text(),'BEST PERFORMING MACHINES')]/following::table[1]/tbody/tr")
+        );
+
+        // Verify that at least one row is present
+        assertTrue(bestRows.size() > 0, "No best performing machines found");
+
+        // Loop through each row in the table
+        for (WebElement row : bestRows) {
+
+            // Get all column cells (td) in the row
+            List<WebElement> cols = row.findElements(By.tagName("td"));
+
+            // Get machine name from first column
+            String machineName = cols.get(0).getText().trim();
+
+            // Get downtime value from second column
+            String downtime = cols.get(1).getText().trim();
+
+            // Validate machine name is not empty
+            assertFalse(machineName.isEmpty(), "Machine name is empty");
+
+            // Validate downtime format (example: 23.5 mins)
+            assertTrue(downtime.matches("\\d+(\\.\\d+)? mins"),
+                       "Invalid downtime format: " + downtime);
+        }
+    }
 }

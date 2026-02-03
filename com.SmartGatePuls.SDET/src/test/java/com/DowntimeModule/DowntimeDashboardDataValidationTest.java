@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 // Import base classes and utilities
 import com.sgplus.erp.genericutility.BaseClass;
 import com.sgplus.erp.genericutility.WebDriverUtility;
-import com.sgplus.erp.pomRepository.DowntiemDashboard;
+import com.sgplus.erp.pomRepository.DowntimeDashboardPage;
 import com.sgplus.erp.pomRepository.HomePage;
 
 public class DowntimeDashboardDataValidationTest extends BaseClass {
@@ -23,65 +23,85 @@ public class DowntimeDashboardDataValidationTest extends BaseClass {
 		HomePage hm = new HomePage(driver);
 
 		// Initialize Downtime Dashboard POM
-		DowntiemDashboard dt = new DowntiemDashboard(driver);
+		DowntimeDashboardPage dt = new DowntimeDashboardPage(driver);
 
-		// Wait until the full page is loaded
+		// Wait until the page is fully loaded
 		we.waitUntilPageLoad(driver);
 
-		// Wait until all DOM elements are ready
+		// Wait until all elements are loaded in the DOM
 		we.waitForElementInDOM(driver);
 
-		// Click on "Downtime" menu in the homepage
+		// Click on Down Time module from home page
 		we.waitAndClick(hm.getDownTime());
 
-		// Click on "Downtime Dashboard" under the Downtime menu
+		// Click on Downtime Dashboard option
 		we.waitAndClick(hm.getDowntimeDashboard());
 
-		// Click on "Filter" button to open filter options
+		// Click on filter button
 		we.waitAndClick(dt.getFilterButton());
 
-		// Click on "Business Unit" dropdown
+		// Click on BU dropdown
 		we.waitAndClick(dt.getBUDropDown());
 
-		// Select BU3 from the dropdown
-		we.select(dt.getBUDropDown(), "BU3");
+		// Select BU3 checkbox
+		we.waitAndClick(dt.getBu3checkbox());
 
-		// Click on "Area" dropdown
+		// Collapse BU dropdown
+		we.waitAndClick(dt.getCollpaseBUdropdown());
+
+		// Click on Area dropdown
 		we.waitAndClick(dt.getAreaDropDown());
 
-		// Select area "TBM-PCR"
-		we.select(dt.getAreaDropDown(), "TBM-PCR");
+		// Select Area checkbox (TBM-PCR)
+		we.waitAndClick(dt.getAreaCheckox());
 
-		// Click on "Group" dropdown
+		// Collapse Area dropdown
+		we.waitAndClick(dt.getCollpaseAreadropdown());
+
+		// Click on Group dropdown
 		we.waitAndClick(dt.getGroupDropDown());
 
-		// Select group "Unistage"
-		we.select(dt.getGroupDropDown(), "Unistage");
+		// Select Group checkbox (Unistage)
+		we.waitAndClick(dt.getGroupCheckbox());
 
-		// Click on Equipment dropdown to open equipment list
+		// Collapse Group dropdown
+		we.waitAndClick(dt.getCollpaseGroupdropdown());
+
+		// Click on Equipment dropdown
 		we.waitAndClick(dt.getEquipementDropDown());
 
-		// Select first equipment by clicking on its checkbox
-		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
+		// Select Equipment checkbox
+		we.waitAndClick(dt.getEquipementCheckbox());
 
-		// Close the equipment dropdown
-		driver.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
+		// Collapse Equipment dropdown
+		we.waitAndClick(dt.getCollpaseEquipementsdropdown());
 
-		// Click on "Period" dropdown
+		// Click on Period dropdown
 		we.waitAndClick(dt.getPeriodDropDown());
 
-		// Select "Year" from period options
-		we.select(dt.getPeriodDropDown(), "Year");
+		// Select "Range" option from Period dropdown
+		we.select(dt.getPeriodDropDown(), "Range");
 
-		// Click on "Shift" dropdown
+		// Click on From Date input field
+		we.waitAndClick(dt.getFromdateSelection());
+
+		// Enter From Date value
+		dt.getFromdateSelection().sendKeys("01-01-2025");
+
+		// Click on To Date input field
+		we.waitAndClick(dt.getTodateSelection());
+
+		// Enter To Date value
+		dt.getTodateSelection().sendKeys("30-01-2025");
+
+		// Click on Shift dropdown
 		we.waitAndClick(dt.getShiftDropDown());
 
-		// Select "All" shifts
+		// Select "All" from Shift dropdown
 		we.select(dt.getShiftDropDown(), "All");
-
-		// Click on "Apply Filter" button to load filtered dashboard data
-		we.waitAndClick(dt.getApplyFilter());
-
+		
+		 // Click on Apply Filter button
+        we.waitAndClick(dt.getApplyFilter());
 		// ------------------------------------------
 		// ✅ Data Validations Start Here
 		// ------------------------------------------
@@ -96,8 +116,7 @@ public class DowntimeDashboardDataValidationTest extends BaseClass {
 		}
 
 		// Check if Total Downtime value is visible on the dashboard
-		WebElement totalDowntime = driver.findElement(
-			By.xpath("//div[@class=\"align-self-center totalDowntime_totalDowntimeValue__1uE07\"]"));
+		WebElement totalDowntime = driver.findElement(By.xpath("//div[@class=\"align-self-center totalDowntime_totalDowntimeValue__hy1PE\"]"));
 		if (totalDowntime.isDisplayed()) {
 			System.out.println("Total Downtime is displayed.");
 		} else {

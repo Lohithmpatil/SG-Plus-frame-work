@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 // Import base class and utility classes
 import com.sgplus.erp.genericutility.BaseClass;
 import com.sgplus.erp.genericutility.WebDriverUtility;
-import com.sgplus.erp.pomRepository.DowntiemDashboard;
+import com.sgplus.erp.pomRepository.DowntimeDashboardPage;
 import com.sgplus.erp.pomRepository.HomePage;
 
 public class DowntimeWorstMachineTest extends BaseClass {
@@ -29,54 +29,85 @@ public class DowntimeWorstMachineTest extends BaseClass {
 		HomePage hm = new HomePage(driver);
 
 		// Create object for Downtime Dashboard POM
-		DowntiemDashboard dt = new DowntiemDashboard(driver);
+		DowntimeDashboardPage dt = new DowntimeDashboardPage(driver);
 
-		// Wait until full page load is complete
-		we.waitUntilPageLoad(driver);
+		// Wait until the page is fully loaded
+        we.waitUntilPageLoad(driver);
 
-		// Wait until all elements in the DOM are available
-		we.waitForElementInDOM(driver);
+        // Wait until all elements are loaded in the DOM
+        we.waitForElementInDOM(driver);
 
-		// Click on "Downtime" tab on homepage to open downtime module
-		we.waitAndClick(hm.getDownTime());
+        // Click on Down Time module from home page
+        we.waitAndClick(hm.getDownTime());
 
-		// Click on "Downtime Dashboard" from the downtime menu
-		we.waitAndClick(hm.getDowntimeDashboard());
+        // Click on Downtime Dashboard option
+        we.waitAndClick(hm.getDowntimeDashboard());
 
-		// Click on filter button to open filter options
-		we.waitAndClick(dt.getFilterButton());
+        // Click on filter button
+        we.waitAndClick(dt.getFilterButton());
 
-		// Select "BU3" from Business Unit dropdown
-		we.waitAndClick(dt.getBUDropDown());
-		we.select(dt.getBUDropDown(), "BU3");
+        // Click on BU dropdown
+        we.waitAndClick(dt.getBUDropDown());
 
-		// Select "TBM-PCR" from Area dropdown
-		we.waitAndClick(dt.getAreaDropDown());
-		we.select(dt.getAreaDropDown(), "TBM-PCR");
+        // Select BU3 checkbox
+        we.waitAndClick(dt.getBu3checkbox());
 
-		// Select "Unistage" from Group dropdown
-		we.waitAndClick(dt.getGroupDropDown());
-		we.select(dt.getGroupDropDown(), "Unistage");
+        // Collapse BU dropdown
+        we.waitAndClick(dt.getCollpaseBUdropdown());
 
-		// Click on Equipment dropdown to open equipment list
-		we.waitAndClick(dt.getEquipementDropDown());
+        // Click on Area dropdown
+        we.waitAndClick(dt.getAreaDropDown());
 
-		// Select a specific equipment by clicking on its checkbox
-		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
+        // Select Area checkbox (TBM-PCR)
+        we.waitAndClick(dt.getAreaCheckox());
 
-		// Close the dropdown list
-		driver.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
+        // Collapse Area dropdown
+        we.waitAndClick(dt.getCollpaseAreadropdown());
 
-		// Click on Period dropdown and select "Year"
-		we.waitAndClick(dt.getPeriodDropDown());
-		we.select(dt.getPeriodDropDown(), "Year");
+        // Click on Group dropdown
+        we.waitAndClick(dt.getGroupDropDown());
 
-		// Click on Shift dropdown and select "All"
-		we.waitAndClick(dt.getShiftDropDown());
-		we.select(dt.getShiftDropDown(), "All");
+        // Select Group checkbox (Unistage)
+        we.waitAndClick(dt.getGroupCheckbox());
 
-		// Click on Apply Filter button to load data
-		we.waitAndClick(dt.getApplyFilter());
+        // Collapse Group dropdown
+        we.waitAndClick(dt.getCollpaseGroupdropdown());
+
+        // Click on Equipment dropdown
+        we.waitAndClick(dt.getEquipementDropDown());
+
+        // Select Equipment checkbox
+        we.waitAndClick(dt.getEquipementCheckbox());
+
+        // Collapse Equipment dropdown
+        we.waitAndClick(dt.getCollpaseEquipementsdropdown());
+
+        // Click on Period dropdown
+        we.waitAndClick(dt.getPeriodDropDown());
+
+        // Select "Range" option from Period dropdown
+        we.select(dt.getPeriodDropDown(), "Range");
+
+        // Click on From Date input field
+        we.waitAndClick(dt.getFromdateSelection());
+
+        // Enter From Date value
+        dt.getFromdateSelection().sendKeys("01-01-2025");
+
+        // Click on To Date input field
+        we.waitAndClick(dt.getTodateSelection());
+
+        // Enter To Date value
+        dt.getTodateSelection().sendKeys("30-01-2025");
+
+        // Click on Shift dropdown
+        we.waitAndClick(dt.getShiftDropDown());
+
+        // Select "All" from Shift dropdown
+        we.select(dt.getShiftDropDown(), "All");
+
+        // Click on Apply Filter button
+        we.waitAndClick(dt.getApplyFilter());
 
 		// Scroll to the bottom of the page to make machine tables visible
 		JavascriptExecutor js = (JavascriptExecutor) driver;

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import com.sgplus.erp.genericutility.BaseClass;
 import com.sgplus.erp.genericutility.WebDriverUtility;
-import com.sgplus.erp.pomRepository.DowntiemDashboard;
+import com.sgplus.erp.pomRepository.DowntimeDashboardPage;
 import com.sgplus.erp.pomRepository.HomePage;
 
 public class testing extends BaseClass {
@@ -20,7 +20,7 @@ public class testing extends BaseClass {
 		HomePage hm = new HomePage(driver);
 
 		// Initialize POM class for Downtime Dashboard page
-		DowntiemDashboard dt = new DowntiemDashboard(driver);
+		DowntimeDashboardPage dt = new DowntimeDashboardPage(driver);
 
 		// Wait for the page and DOM to fully load
 		we.waitUntilPageLoad(driver);

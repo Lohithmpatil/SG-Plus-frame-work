@@ -5,23 +5,26 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DowntimeEnhacement {
+public class DowntimeDashboardPage {
 
 	WebDriver driver;
 
-	public DowntimeEnhacement(WebDriver driver) {
-
+	public DowntimeDashboardPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	/* ================= DASHBOARD ================= */
 
-	@FindBy(xpath = "//span[text()='Enhancement']")
-	private WebElement EnhacementModule;
+	@FindBy(xpath = "//li[@class='nav-item']//span[text()='Dashboard']")
+	private WebElement downtimeDashboard;
 
-	public WebElement getEnhacementModule() {
-		return EnhacementModule;
+	public WebElement getDowntimeDashboard() {
+		return downtimeDashboard;
+	}
+
+	public void setDowntimeDashboard(WebElement downtimeDashboard) {
+		this.downtimeDashboard = downtimeDashboard;
 	}
 
 	/* ================= FILTER ================= */
@@ -165,7 +168,7 @@ public class DowntimeEnhacement {
 
 	/* ================= DATE ================= */
 
-	@FindBy(xpath = "//input[@class=\\\"form-control\\")
+	@FindBy(xpath = "//label[text()='From Dates ']/following-sibling::input")
 	private WebElement FromdateSelection;
 
 	@FindBy(xpath = "//label[text()='To Date ']/following-sibling::input")
@@ -191,23 +194,14 @@ public class DowntimeEnhacement {
 	public void setApplyFilter(WebElement applyFilter) {
 		ApplyFilter = applyFilter;
 	}
-	
-	
+
 	/* ================= VALIDATION ================= */
 
-	@FindBy(xpath = "//div[@class=\"w-100  overflow-scroll mt-4\"]")
-	private WebElement Table;
-	
-	@FindBy(xpath = "//span[text()=\"DOWNTIME DETAIL ENHANCEMENT\"]")
-	private WebElement HeaderText;
+	@FindBy(xpath = "//div[contains(text(),'BEST PERFORMING MACHINES')]")
+	private WebElement BestPerfomingMachine;
 
-
-	public WebElement getHeaderText() {
-		return HeaderText;
-	}
-
-	public WebElement getTable() {
-		return Table;
+	public WebElement getBestPerfomingMachine() {
+		return BestPerfomingMachine;
 	}
 
 }
