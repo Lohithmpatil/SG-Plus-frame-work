@@ -15,36 +15,163 @@ public class DowntimeAnalysisPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public WebElement getBUDropDown() {
-		return BUDropDown;
-	}
+	@FindBy(xpath = "//span[text()='Analysis']")
+	private WebElement DowntimeAnalysis;
 
-	public WebElement getAreaDropDown() {
-		return AreaDropDown;
-	}
-
-	public WebElement getGroupDropDown() {
-		return GroupDropDown;
-	}
+	/* ================= DASHBOARD ================= */
 
 	public WebElement getDowntimeAnalysis() {
 		return DowntimeAnalysis;
 	}
+	/* ================= FILTER ================= */
 
-	public WebElement getEquipementDropDown() {
-		return EquipementDropDown;
-	}
+	@FindBy(xpath = "//i[@class='fa fa-filter']")
+	private WebElement FilterButton;
 
 	public WebElement getFilterButton() {
 		return FilterButton;
 	}
 
-	public WebElement getMontwisebarchart() {
-		return Montwisebarchart;
+	public void setFilterButton(WebElement filterButton) {
+		FilterButton = filterButton;
 	}
+
+	/* ================= BU ================= */
+
+	@FindBy(xpath = "//div[@aria-labelledby=\"Bu\"]")
+	private WebElement BUDropDown;
+
+	@FindBy(xpath = "//span[text()='BU3']")
+	private WebElement Bu3checkbox;
+
+	@FindBy(xpath = "//div[@aria-labelledby=\"Bu\"]")
+	private WebElement CollpaseBUdropdown;
+
+	public WebElement getBUDropDown() {
+		return BUDropDown;
+	}
+
+	public WebElement getBu3checkbox() {
+		return Bu3checkbox;
+	}
+
+	public WebElement getCollpaseBUdropdown() {
+		return CollpaseBUdropdown;
+	}
+
+	/* ================= AREA ================= */
+
+	@FindBy(xpath = "//div[@aria-labelledby=\"Area\"]")
+	private WebElement AreaDropDown;
+
+	@FindBy(xpath = "//span[text()='TBM-PCR']")
+	private WebElement AreaCheckox;
+
+	@FindBy(xpath = "//div[@aria-labelledby=\"Area\"]")
+	private WebElement CollpaseAreadropdown;
+
+	public WebElement getAreaDropDown() {
+		return AreaDropDown;
+	}
+
+	public void setAreaDropDown(WebElement areaDropDown) {
+		AreaDropDown = areaDropDown;
+	}
+
+	public WebElement getAreaCheckox() {
+		return AreaCheckox;
+	}
+
+	public WebElement getCollpaseAreadropdown() {
+		return CollpaseAreadropdown;
+	}
+
+	/* ================= GROUP ================= */
+
+	@FindBy(xpath = "//div[@aria-labelledby=\"Group\"]")
+	private WebElement GroupDropDown;
+
+	@FindBy(xpath = "//span[text()='Unistage']")
+	private WebElement GroupCheckbox;
+
+	@FindBy(xpath = "//div[@aria-labelledby=\"Group\"]")
+	private WebElement CollpaseGroupdropdown;
+
+	public WebElement getGroupDropDown() {
+		return GroupDropDown;
+	}
+
+	public void setGroupDropDown(WebElement groupDropDown) {
+		GroupDropDown = groupDropDown;
+	}
+
+	public WebElement getGroupCheckbox() {
+		return GroupCheckbox;
+	}
+
+	public WebElement getCollpaseGroupdropdown() {
+		return CollpaseGroupdropdown;
+	}
+
+	/* ================= EQUIPMENT ================= */
+
+	@FindBy(xpath = "//div[@aria-labelledby=\"Equipments\"]")
+	private WebElement EquipementDropDown;
+
+	@FindBy(xpath = "//input[@type='checkbox']")
+	private WebElement EquipementCheckbox;
+
+	@FindBy(xpath = "//div[@aria-labelledby=\"Equipments\"]")
+	private WebElement CollpaseEquipementsdropdown;
+
+	public WebElement getEquipementDropDown() {
+		return EquipementDropDown;
+	}
+
+	public void setEquipementDropDown(WebElement equipementDropDown) {
+		EquipementDropDown = equipementDropDown;
+	}
+
+	public WebElement getEquipementCheckbox() {
+		return EquipementCheckbox;
+	}
+
+	public WebElement getCollpaseEquipementsdropdown() {
+		return CollpaseEquipementsdropdown;
+	}
+
+	/* ================= APPLY FILTER ================= */
+
+	@FindBy(xpath = "//button[text()=\"Apply Filter\"]")
+	private WebElement ApplyFilter;
 
 	public WebElement getApplyFilter() {
 		return ApplyFilter;
+	}
+
+	public void setApplyFilter(WebElement applyFilter) {
+		ApplyFilter = applyFilter;
+	}
+
+	/* ================= VALIDATION ================= */
+
+	@FindBy(css = "[aria-label=\"2025-04, 1,218.84. Actual.\"]")
+	private WebElement Montwisebarchart;
+
+	@FindBy(css = "[aria-label=\"2024, 5,998.37. 2024.\"]")
+	private WebElement Yearlywisebarchart;
+
+	@FindBy(xpath = "//select[@name=\"department_grp_id\"]")
+	private WebElement DepartmentGroupDropdown;
+
+	@FindBy(xpath = "//select[@name=\"dept_id\"]")
+	private WebElement DepartmentDropdown;
+
+	@FindBy(xpath = "//button[text()=\"Go\"]")
+	private WebElement GoButton;
+
+	public WebElement getMontwisebarchart() {
+		return Montwisebarchart;
 	}
 
 	public WebElement getYearlywisebarchart() {
@@ -63,55 +190,4 @@ public class DowntimeAnalysisPage {
 		return GoButton;
 	}
 
-	public WebElement getCheckBoxEquipements() {
-		return CheckBoxEquipements;
-	}
-
-	public WebElement getCheckBoxEquipementsSelect() {
-		return CheckBoxEquipementsSelect;
-	}
-
-	@FindBy(xpath = "//select[@class=\"form-control\"]")
-	private WebElement BUDropDown;
-
-	@FindBy(xpath = "//button[text()=\"Apply Filter\"]")
-	private WebElement ApplyFilter;
-
-	@FindBy(xpath = "//i[@class='fa fa-filter']")
-	private WebElement FilterButton;
-
-	@FindBy(xpath = "//select[@class=\"form-control  \"]")
-	private WebElement AreaDropDown;
-
-	@FindBy(xpath = "//select[@class='form-control ']")
-	private WebElement GroupDropDown;
-
-	@FindBy(xpath = "//div[@class=\"dropdown-heading-value\"]")
-	private WebElement EquipementDropDown;
-
-	@FindBy(xpath = "//span[text()='Analysis']")
-	private WebElement DowntimeAnalysis;
-
-	@FindBy(css = "[aria-label=\"2025-04, 1,218.84. Actual.\"]")
-	private WebElement Montwisebarchart;
-
-	@FindBy(css = "[aria-label=\"2024, 5,998.37. 2024.\"]")
-	private WebElement Yearlywisebarchart;
-
-	@FindBy(xpath = "//select[@name=\"department_grp_id\"]")
-	private WebElement DepartmentGroupDropdown;
-
-	@FindBy(xpath = "//select[@name=\"dept_id\"]")
-	private WebElement DepartmentDropdown;
-
-	@FindBy(xpath = "//button[text()=\"Go\"]")
-	private WebElement GoButton;
-
-	@FindBy(xpath = "//input[@type='checkbox']")
-	private WebElement CheckBoxEquipements;
-
-	@FindBy(css = "[class=\"dropdown-heading-dropdown-arrow gray\"]")
-	private WebElement CheckBoxEquipementsSelect;
-
-	
 }

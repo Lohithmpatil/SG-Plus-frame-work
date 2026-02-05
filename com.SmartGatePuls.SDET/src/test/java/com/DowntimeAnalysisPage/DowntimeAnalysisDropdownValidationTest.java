@@ -19,7 +19,7 @@ public class DowntimeAnalysisDropdownValidationTest extends BaseClass {
 	// Test method to verify navigation and basic validations on the Downtime
 	// Analysis page
 	@Test
-	public void DowntimeAnalysisDropdownValidationTest() throws InterruptedException {
+	public void DowntimeAnalysisDropdownValidationTest() throws Throwable {
 
 		// Create utility object for custom WebDriver actions like waits and dropdowns
 		WebDriverUtility we = new WebDriverUtility();
@@ -37,38 +37,46 @@ public class DowntimeAnalysisDropdownValidationTest extends BaseClass {
 		// Wait for and click the "Downtime Analysis" option under Downtime
 		we.waitAndClick(da.getDowntimeAnalysis());
 
-		// Click on the filter button to reveal filter options
+		// Waits until Filter button is clickable and then clicks it
 		we.waitAndClick(da.getFilterButton());
 
-		// Open Business Unit dropdown
+		// Waits until Business Unit dropdown is clickable and clicks it
 		we.waitAndClick(da.getBUDropDown());
 
-		// Select "BU3" from Business Unit dropdown
-		we.select(da.getBUDropDown(), "BU3");
+		// Selects BU3 checkbox from Business Unit dropdown
+		we.waitAndClick(da.getBu3checkbox());
 
-		// Open Area dropdown
+		// Collapses the Business Unit dropdown
+		we.waitAndClick(da.getCollpaseBUdropdown());
+
+		// Opens Area dropdown
 		we.waitAndClick(da.getAreaDropDown());
 
-		// Select "TBM-PCR" from Area dropdown
-		we.select(da.getAreaDropDown(), "TBM-PCR");
+		// Selects Area checkbox
+		we.waitAndClick(da.getAreaCheckox());
 
-		// Open Group dropdown
+		// Collapses Area dropdown
+		we.waitAndClick(da.getCollpaseAreadropdown());
+
+		// Opens Group dropdown
 		we.waitAndClick(da.getGroupDropDown());
 
-		// Select "All" from Group dropdown
-		we.select(da.getGroupDropDown(), "All");
+		// Selects Group checkbox
+		we.waitAndClick(da.getGroupCheckbox());
 
-		// Open Equipment dropdown
+		// Collapses Group dropdown
+		we.waitAndClick(da.getCollpaseGroupdropdown());
+
+		// Opens Equipment dropdown
 		we.waitAndClick(da.getEquipementDropDown());
 
-		// Click the first checkbox in the equipment list (select equipment)
+		// Selects Equipment checkbox
+		we.waitAndClick(da.getEquipementCheckbox());
 
-		we.waitAndClick(da.getCheckBoxEquipements());
+		// Collapses Equipment dropdown
+		we.waitAndClick(da.getCollpaseEquipementsdropdown());
 
-		// Close the dropdown by clicking on the arrow icon
-		we.waitAndClick(da.getCheckBoxEquipementsSelect());
-
-		// Click on "Apply Filter" to load the filtered data/chart
+		// Clicks on Apply Filter button
 		we.waitAndClick(da.getApplyFilter());
 
 		we.waitAndClick(da.getDepartmentGroupDropdown());

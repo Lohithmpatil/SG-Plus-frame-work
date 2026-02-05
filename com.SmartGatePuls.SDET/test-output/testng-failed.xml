@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.DowntimeEnhacementPage.DowntimeEnhacementTableExportTest">
+      <class name="com.OEEDashBoard.OEEdashboardpagenavigationTest">
         <methods>
           <include name="configBM"/>
           <include name="configAS"/>
-          <include name="DowntimeEnhacementTableExport"/>
+          <include name="OEEdashboardpagenavigationTest"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.DowntimeEnhacementPage.DowntimeEnhacementTableExportTest -->
+      </class> <!-- com.OEEDashBoard.OEEdashboardpagenavigationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

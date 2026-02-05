@@ -11,68 +11,96 @@ import com.sgplus.erp.pomRepository.HomePage;
 
 public class NavigateToDowntimeEnhancementPageTest extends BaseClass {
 
-    // Test annotation marks this method as a TestNG test case
-    @Test 
-    public void NavigateToDowntimeEnhancementPage() throws InterruptedException {
+	// Test annotation marks this method as a TestNG test case
+	@Test
+	public void NavigateToDowntimeEnhancementPage() throws Throwable {
 
-        // Creates instance of WebDriverUtility for reusable methods like waitAndClick, select, etc.
-        WebDriverUtility we = new WebDriverUtility(); 
+		// Creating object of WebDriverUtility to use utility methods
+		WebDriverUtility we = new WebDriverUtility();
 
-        // Initializes HomePage object to interact with elements on the Home Page (Page Object Model)
-        HomePage hm = new HomePage(driver); 
+		// Creating HomePage object to access Home page elements
+		HomePage hm = new HomePage(driver);
 
-        // Initializes DowntimeEnhacement object to interact with elements on the Downtime Enhancement page
-        DowntimeEnhacement de = new DowntimeEnhacement(driver);
+		// Creating DowntimeEnhacement object to access Downtime Enhancement page
+		// elements
+		DowntimeEnhacement de = new DowntimeEnhacement(driver);
 
-        // Waits for the "DownTime" link or button on the Home Page and clicks it
-        we.waitAndClick(hm.getDownTime());
+		// Waits until DownTime button is clickable and then clicks it
+		we.waitAndClick(hm.getDownTime());
 
-        // Waits for and clicks the "Enhancement Module" link/button on the Downtime Enhancement page
-        we.waitAndClick(de.getEnhacementModule());
+		// Waits until Enhancement Module button is clickable and then clicks it
+		we.waitAndClick(de.getEnhacementModule());
 
-        // Waits for and clicks the "Filter" button to open filter options on the Downtime Enhancement page
-        we.waitAndClick(de.getFilterButton());
+		// Waits until Filter button is clickable and then clicks it
+		we.waitAndClick(de.getFilterButton());
 
-        // Waits for and clicks the "Business Unit" dropdown
-        we.waitAndClick(de.getBUDropDown());
+		// Waits until Business Unit dropdown is clickable and clicks it
+		we.waitAndClick(de.getBUDropDown());
 
-        // Selects "BU3" from the Business Unit dropdown
-        we.select(de.getBUDropDown(), "BU3");
+		// Selects BU3 checkbox from Business Unit dropdown
+		we.waitAndClick(de.getBu3checkbox());
 
-        // Waits for and clicks the "Area" dropdown
-        we.waitAndClick(de.getAreaDropDown());
+		// Collapses the Business Unit dropdown
+		we.waitAndClick(de.getCollpaseBUdropdown());
 
-        // Selects "All" from the Area dropdown
-        we.select(de.getAreaDropDown(), "All");
+		// Opens Area dropdown
+		we.waitAndClick(de.getAreaDropDown());
 
-        // Waits for and clicks the "Group" dropdown
-        we.waitAndClick(de.getGroupDropDown());
+		// Selects Area checkbox
+		we.waitAndClick(de.getAreaCheckox());
 
-        // Selects "All" from the Group dropdown
-        we.select(de.getGroupDropDown(), "All");
+		// Collapses Area dropdown
+		we.waitAndClick(de.getCollpaseAreadropdown());
 
-        // Waits for and clicks the "Equipment" dropdown
-        we.waitAndClick(de.getEquipementDropDown());
+		// Opens Group dropdown
+		we.waitAndClick(de.getGroupDropDown());
 
-        // Waits for and clicks the checkbox for selecting equipment
-        we.waitAndClick(de.getCheckBoxEquipements());
+		// Selects Group checkbox
+		we.waitAndClick(de.getGroupCheckbox());
 
-        // Clears any existing text in the "From Date" input field (used for filtering by date)
-        driver.findElement(By.xpath("//input[@class=\"form-control\"]")).clear();
+		// Collapses Group dropdown
+		we.waitAndClick(de.getCollpaseGroupdropdown());
 
-        // Inputs the date "01-01-2025" into the "From Date" input field to filter results starting from this date
-        driver.findElement(By.xpath("//input[@class=\"form-control\"]")).sendKeys("01-01-2025");
+		// Opens Equipment dropdown
+		we.waitAndClick(de.getEquipementDropDown());
 
-        // Waits for and clicks the "Apply Filter" button to apply the selected filters
-        we.waitAndClick(de.getApplyFilter());
+		// Selects Equipment checkbox
+		we.waitAndClick(de.getEquipementCheckbox());
 
-        // Waits for and clicks the table (presumably to load the data after filters are applied)
-        we.waitAndClick(de.getTable());
+		// Collapses Equipment dropdown
+		we.waitAndClick(de.getCollpaseEquipementsdropdown());
 
-        // Retrieves the header text from the Downtime Enhancement page to confirm we are on the correct page
-        WebElement pageHeader = de.getHeaderText();
+		// Clicks on From Date field
+		we.waitAndClick(de.getFromdateSelection());
 
-        // Verifies that the page header is displayed, confirming successful navigation to the Downtime Enhancement page
-        Assert.assertTrue(pageHeader.isDisplayed(), "Failed to navigate to Downtime Enhancement Page.");
-    }
+		// Clears existing value in From Date field
+		de.getFromdateSelection().clear();
+
+		// Enters From Date value
+		de.getFromdateSelection().sendKeys("01-01-2025");
+
+		// Clicks on To Date field
+		we.waitAndClick(de.getTodateSelection());
+
+		// Clears existing value in To Date field
+		de.getTodateSelection().clear();
+
+		// Enters To Date value
+		de.getTodateSelection().sendKeys("30-01-2025");
+
+		// Clicks on Apply Filter button
+		we.waitAndClick(de.getApplyFilter());
+
+		// Waits for and clicks the table (presumably to load the data after filters are
+		// applied)
+		we.waitAndClick(de.getTable());
+
+		// Retrieves the header text from the Downtime Enhancement page to confirm we
+		// are on the correct page
+		WebElement pageHeader = de.getHeaderText();
+
+		// Verifies that the page header is displayed, confirming successful navigation
+		// to the Downtime Enhancement page
+		Assert.assertTrue(pageHeader.isDisplayed(), "Failed to navigate to Downtime Enhancement Page.");
+	}
 }

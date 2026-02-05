@@ -12,65 +12,97 @@ import com.sgplus.erp.pomRepository.HomePage;
 
 public class DowntimeEnhacemntTableDataTest extends BaseClass {
 
-    // The @Test annotation marks this method as a TestNG test case
-    @Test
-    public void DowntimeEnhacemntTableDataTest() throws InterruptedException {
+	// The @Test annotation marks this method as a TestNG test case
+	@Test
+	public void DowntimeEnhacemntTableDataTest() throws Throwable {
 
-        // Creating an instance of WebDriverUtility for reusable helper methods (e.g., waitAndClick, select)
-        WebDriverUtility we = new WebDriverUtility(); 
+		// Creating object of WebDriverUtility to use utility methods
+		WebDriverUtility we = new WebDriverUtility();
 
-        // Initializes HomePage object to interact with elements on the Home Page
-        HomePage hm = new HomePage(driver); 
+		// Creating HomePage object to access Home page elements
+		HomePage hm = new HomePage(driver);
 
-        // Initializes DowntimeEnhacement object to interact with elements on the Downtime Enhancement page
-        DowntimeEnhacement de = new DowntimeEnhacement(driver);
+		// Creating DowntimeEnhacement object to access Downtime Enhancement page
+		// elements
+		DowntimeEnhacement de = new DowntimeEnhacement(driver);
 
-        // Waits for and clicks the "DownTime" link or button on the HomePage
-        we.waitAndClick(hm.getDownTime());
+		// Waits until DownTime button is clickable and then clicks it
+		we.waitAndClick(hm.getDownTime());
 
-        // Waits for and clicks the "Enhancement Module" link or button on the Downtime Enhancement page
-        we.waitAndClick(de.getEnhacementModule());
+		// Waits until Enhancement Module button is clickable and then clicks it
+		we.waitAndClick(de.getEnhacementModule());
 
-        // Waits for and clicks the "Filter" button on the Downtime Enhancement page to open the filter options
-        we.waitAndClick(de.getFilterButton());
+		// Waits until Filter button is clickable and then clicks it
+		we.waitAndClick(de.getFilterButton());
 
-        // Waits for and clicks the "Business Unit" dropdown and selects "BU3" from the dropdown
-        we.waitAndClick(de.getBUDropDown());
-        we.select(de.getBUDropDown(), "BU3");
+		// Waits until Business Unit dropdown is clickable and clicks it
+		we.waitAndClick(de.getBUDropDown());
 
-        // Waits for and clicks the "Area" dropdown and selects "All" from the dropdown (for all areas)
-        we.waitAndClick(de.getAreaDropDown());
-        we.select(de.getAreaDropDown(), "All");
+		// Selects BU3 checkbox from Business Unit dropdown
+		we.waitAndClick(de.getBu3checkbox());
 
-        // Waits for and clicks the "Group" dropdown and selects "All" from the dropdown (for all groups)
-        we.waitAndClick(de.getGroupDropDown());
-        we.select(de.getGroupDropDown(), "All");
+		// Collapses the Business Unit dropdown
+		we.waitAndClick(de.getCollpaseBUdropdown());
 
-        // Waits for and clicks the "Equipment" dropdown to expand the equipment options
-        we.waitAndClick(de.getEquipementDropDown());
+		// Opens Area dropdown
+		we.waitAndClick(de.getAreaDropDown());
 
-        // Waits for and clicks the checkbox for selecting equipment in the dropdown
-        we.waitAndClick(de.getCheckBoxEquipements());
+		// Selects Area checkbox
+		we.waitAndClick(de.getAreaCheckox());
 
-        // Clears any existing text in the "From Date" input field (likely used for filtering data by date)
-        driver.findElement(By.xpath("//input[@class=\"form-control\"]")).clear(); 
+		// Collapses Area dropdown
+		we.waitAndClick(de.getCollpaseAreadropdown());
 
-        // Inputs the date "01-01-2025" into the "From Date" field to filter the data starting from this date
-        driver.findElement(By.xpath("//input[@class=\"form-control\"]")).sendKeys("01-01-2025");
+		// Opens Group dropdown
+		we.waitAndClick(de.getGroupDropDown());
 
-        // Waits for and clicks the "Apply Filter" button to apply all selected filters and display the relevant data
-        we.waitAndClick(de.getApplyFilter());
+		// Selects Group checkbox
+		we.waitAndClick(de.getGroupCheckbox());
 
-        // Waits for and clicks the table to ensure it's loaded or interacts with the table for further actions
-        we.waitAndClick(de.getTable());
-        
-        WebElement table = de.getTable();
-        List<WebElement> rows = table.findElements(By.tagName("tr"));
-        Assert.assertTrue(rows.size() > 1, "Table has no rows or header row is missing.");
+		// Collapses Group dropdown
+		we.waitAndClick(de.getCollpaseGroupdropdown());
 
-        // Verifying column count (example: 5 columns in total, including Machine, Total Occ, Linked, Compliance)
-        List<WebElement> headerColumns = table.findElements(By.xpath("//table//th"));
-        Assert.assertTrue(headerColumns.size() > 5, "Column count mismatch in table");
+		// Opens Equipment dropdown
+		we.waitAndClick(de.getEquipementDropDown());
 
-    }
+		// Selects Equipment checkbox
+		we.waitAndClick(de.getEquipementCheckbox());
+
+		// Collapses Equipment dropdown
+		we.waitAndClick(de.getCollpaseEquipementsdropdown());
+
+		// Clicks on From Date field
+		we.waitAndClick(de.getFromdateSelection());
+
+		// Clears existing value in From Date field
+		de.getFromdateSelection().clear();
+
+		// Enters From Date value
+		de.getFromdateSelection().sendKeys("01-01-2025");
+
+		// Clicks on To Date field
+		we.waitAndClick(de.getTodateSelection());
+
+		// Clears existing value in To Date field
+		de.getTodateSelection().clear();
+
+		// Enters To Date value
+		de.getTodateSelection().sendKeys("30-01-2025");
+
+		// Clicks on Apply Filter button
+		we.waitAndClick(de.getApplyFilter());
+		// Waits for and clicks the table to ensure it's loaded or interacts with the
+		// table for further actions
+		we.waitAndClick(de.getTable());
+
+		WebElement table = de.getTable();
+		List<WebElement> rows = table.findElements(By.tagName("tr"));
+		Assert.assertTrue(rows.size() > 1, "Table has no rows or header row is missing.");
+
+		// Verifying column count (example: 5 columns in total, including Machine, Total
+		// Occ, Linked, Compliance)
+		List<WebElement> headerColumns = table.findElements(By.xpath("//table//th"));
+		Assert.assertTrue(headerColumns.size() > 5, "Column count mismatch in table");
+
+	}
 }

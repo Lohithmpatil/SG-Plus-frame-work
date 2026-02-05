@@ -14,7 +14,7 @@ public class DowntimeEnhacement {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	/* ================= DASHBOARD ================= */
 
 	@FindBy(xpath = "//span[text()='Enhancement']")
@@ -165,7 +165,7 @@ public class DowntimeEnhacement {
 
 	/* ================= DATE ================= */
 
-	@FindBy(xpath = "//input[@class=\\\"form-control\\")
+	@FindBy(xpath = "//input[@class=\"form-control\"]")
 	private WebElement FromdateSelection;
 
 	@FindBy(xpath = "//label[text()='To Date ']/following-sibling::input")
@@ -191,16 +191,25 @@ public class DowntimeEnhacement {
 	public void setApplyFilter(WebElement applyFilter) {
 		ApplyFilter = applyFilter;
 	}
-	
-	
+
 	/* ================= VALIDATION ================= */
 
 	@FindBy(xpath = "//div[@class=\"w-100  overflow-scroll mt-4\"]")
 	private WebElement Table;
-	
+
 	@FindBy(xpath = "//span[text()=\"DOWNTIME DETAIL ENHANCEMENT\"]")
 	private WebElement HeaderText;
 
+	@FindBy(xpath = "//button[@title=\"Export\"]")
+	private WebElement ExportButtton;
+
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+	public WebElement getExportButtton() {
+		return ExportButtton;
+	}
 
 	public WebElement getHeaderText() {
 		return HeaderText;

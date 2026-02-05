@@ -18,7 +18,6 @@ public class OEEdashboardpagenavigationTest extends BaseClass {
 
 	@Test
 	public void OEEdashboardpagenavigationTest() throws Throwable {
-
 		// Initialize WebDriver utility for custom waits and actions
 		WebDriverUtility we = new WebDriverUtility();
 
@@ -27,60 +26,77 @@ public class OEEdashboardpagenavigationTest extends BaseClass {
 
 		// Initialize POM class for Downtime Dashboard page
 		OEEdashboard oe = new OEEdashboard(driver);
-
-		// Wait for the page and DOM to fully load
-		// we.waitUntilPageLoad(driver);
-		// we.waitForElementInDOM(driver);
-
 		// Navigate to "OEE " module via the homepage
+
 		we.waitAndClick(hm.getOEE());
 
 		// Click on the "oee Dashboard" link in the menu
 		we.waitAndClick(oe.getOEEdashboard());
 
-		// Click the "Filter" button to open filter options
+		// Waits until Filter button is clickable and then clicks it
 		we.waitAndClick(oe.getFilterButton());
 
-		// Open BU (Business Unit) dropdown
+		// Waits until Business Unit dropdown is clickable and clicks it
 		we.waitAndClick(oe.getBUDropDown());
 
-		// Select "BU3" from BU dropdown
-		we.select(oe.getBUDropDown(), "BU3");
+		// Selects BU3 checkbox from Business Unit dropdown
+		we.waitAndClick(oe.getBu3checkbox());
 
-		// Open Area dropdown
+		// Collapses the Business Unit dropdown
+		we.waitAndClick(oe.getCollpaseBUdropdown());
+
+		// Opens Area dropdown
 		we.waitAndClick(oe.getAreaDropDown());
 
-		// Select "TBM-PCR" from Area dropdown
-		we.select(oe.getAreaDropDown(), "TBM-PCR");
+		// Selects Area checkbox
+		we.waitAndClick(oe.getAreaCheckox());
 
-		// Open Group dropdown
+		// Collapses Area dropdown
+		we.waitAndClick(oe.getCollpaseAreadropdown());
+
+		// Opens Group dropdown
 		we.waitAndClick(oe.getGroupDropDown());
 
-		// Select "Unistage" group from dropdown
-		we.select(oe.getGroupDropDown(), "Unistage");
+		// Selects Group checkbox
+		we.waitAndClick(oe.getGroupCheckbox());
 
-		// Open Equipment dropdown
+		// Collapses Group dropdown
+		we.waitAndClick(oe.getCollpaseGroupdropdown());
+
+		// Opens Equipment dropdown
 		we.waitAndClick(oe.getEquipementDropDown());
 
-		// Select a checkbox from equipment list (selects one equipment)
-		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
+		// Selects Equipment checkbox
+		we.waitAndClick(oe.getEquipementCheckbox());
 
-		// Close the equipment dropdown
-		driver.findElement(By.cssSelector("[class=\"dropdown-heading-dropdown-arrow gray\"]")).click();
+		// Collapses Equipment dropdown
+		we.waitAndClick(oe.getCollpaseEquipementsdropdown());
 
-		// Open Period dropdown
+		// Click on Period dropdown
 		we.waitAndClick(oe.getPeriodDropDown());
 
-		// Select "Year" from Period dropdown
-		we.select(oe.getPeriodDropDown(), "Year");
+		// Select "Range" option from Period dropdown
+		we.select(oe.getPeriodDropDown(), "Range");
 
-		// Open Shift dropdown
-		we.waitAndClick(oe.getShiftDropDown());
+		// Clicks on From Date field
+		we.waitAndClick(oe.getFromdateSelection());
 
-		// Select "All" shifts
-		we.select(oe.getShiftDropDown(), "All");
+		// Clears existing value in From Date field
+		oe.getFromdateSelection().clear();
 
-		// Click on Apply Filter button to load dashboard data
+		// Enters From Date value
+		oe.getFromdateSelection().sendKeys("01-01-2025");
+
+		// Clicks on To Date field
+		we.waitAndClick(oe.getTodateSelection());
+
+		// Clears existing value in To Date field
+		oe.getTodateSelection().clear();
+
+		// Enters To Date value
+		oe.getTodateSelection().sendKeys("30-01-2025");
+
+		// Clicks on Apply Filter button
 		we.waitAndClick(oe.getApplyFilter());
 
 		// 1. Verify OEE Dashboard page navigation

@@ -14,7 +14,7 @@ import com.sgplus.erp.pomRepository.HomePage;
 public class DowntimeDashboardDataValidationTest extends BaseClass {
 
 	@Test
-	public void DowntimeDashboardDataValidationTest() throws InterruptedException {
+	public void DowntimeDashboardDataValidationTest() throws Throwable {
 
 		// Initialize WebDriver utility class for custom wait and actions
 		WebDriverUtility we = new WebDriverUtility();
