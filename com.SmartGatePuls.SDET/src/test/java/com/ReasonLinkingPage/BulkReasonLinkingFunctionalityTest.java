@@ -76,6 +76,7 @@ public class BulkReasonLinkingFunctionalityTest extends BaseClass {
 		// Click the "Bulk Link" button to start bulk linking
 		we.waitAndClick(rs.getBulkLinkButton());
 
+		Thread.sleep(100);
 		// Hover over the checkbox before clicking it (maybe for tooltip/UI reason)
 		we.mouseOverOnElement1(driver, rs.getCheckBoxForBulkLink());
 

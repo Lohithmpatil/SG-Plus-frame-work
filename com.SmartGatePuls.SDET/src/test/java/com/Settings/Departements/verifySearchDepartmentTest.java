@@ -81,6 +81,8 @@ public class verifySearchDepartmentTest extends BaseClass {
 
 		// Validation
 		Assert.assertEquals(resultName.getText(), "AutomatonTest970");
+		
+		we.waitAndClick(dp.getSucessPopupmessageClose());
 
 	}
 

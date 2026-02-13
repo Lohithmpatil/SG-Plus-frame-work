@@ -43,7 +43,7 @@ public class ReasonLinkingNavigationTest extends BaseClass {  // Declaring the t
 
         we.waitAndClick(rs.getSearchButton());  // Wait for and click the Search button to apply filters and fetch results
 
-        String expectedURL = "http://sgp.smartiotsystem.com/downtime";  // Expected URL after navigation to the downtime page
+        String expectedURL = "http://192.168.5.77:3000/downtime";  // Expected URL after navigation to the downtime page
 
         String actualURL = driver.getCurrentUrl();  // Get the current URL from the browser
 

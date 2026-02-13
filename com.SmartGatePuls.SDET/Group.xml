@@ -8,6 +8,8 @@
        <package name="com.DowntimeEnhacementPage"/>
        <package name="com.DowntimeAnalysisPage"/>
          <package name="com.DowntimeShiftview"/>
+            <package name="com.Settings.Departements"/>
+                 <package name="com.Settings.DepartmentGroup"/>
     </packages>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

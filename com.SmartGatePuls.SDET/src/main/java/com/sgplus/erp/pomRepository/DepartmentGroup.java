@@ -87,5 +87,12 @@ public class DepartmentGroup {
 
 	@FindBy(xpath = "//button[text()=\"Close\"]")
 	private WebElement CloseButton;
+	
+	public WebElement getSucessPopupmessageClose() {
+		return SucessPopupmessageClose;
+	}
+
+	@FindBy(xpath = "//div[contains(@class,'Toastify')]//button\"")
+	private WebElement SucessPopupmessageClose;
 
 }

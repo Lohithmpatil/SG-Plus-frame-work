@@ -75,6 +75,7 @@ public class verifyEditDepartmenTest extends BaseClass {
 
 		we.waitAndClick(dp.getSubmitButton());
 		
+		we.waitAndClick(dp.getSucessPopupmessageClose());
 		
 
 	}

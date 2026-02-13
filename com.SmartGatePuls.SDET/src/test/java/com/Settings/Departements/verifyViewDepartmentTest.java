@@ -66,5 +66,7 @@ public class verifyViewDepartmentTest extends BaseClass {
 		Assert.assertTrue(viewHeader.getText().contains("View"));
 
 		we.waitAndClick(dp.getCancelButton());
+		
+		we.waitAndClick(dp.getSucessPopupmessageClose());
 	}
 }

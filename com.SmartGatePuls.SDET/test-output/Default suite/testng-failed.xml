@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.OEEDashBoard.OEEdashboardpagenavigationTest">
+      <class name="com.ReasonLinkingPage.BulkReasonLinkingCancelTest">
         <methods>
           <include name="configBM"/>
-          <include name="configAS"/>
-          <include name="OEEdashboardpagenavigationTest"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
           <include name="configBC"/>
+          <include name="BulkReasonLinkingCancelTest"/>
         </methods>
-      </class> <!-- com.OEEDashBoard.OEEdashboardpagenavigationTest -->
+      </class> <!-- com.ReasonLinkingPage.BulkReasonLinkingCancelTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

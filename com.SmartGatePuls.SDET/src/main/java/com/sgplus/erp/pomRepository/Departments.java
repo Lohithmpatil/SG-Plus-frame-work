@@ -97,6 +97,13 @@ public class Departments {
 
 	@FindBy(xpath = "//body[@class=\"sidebar-icon-only\"]")
 	private WebElement CheckBoxofEquipement;
+	
+	public WebElement getSucessPopupmessageClose() {
+		return SucessPopupmessageClose;
+	}
+
+	@FindBy(xpath = "//div[contains(@class,'Toastify')]//button\"")
+	private WebElement SucessPopupmessageClose;
 
 	public WebElement getCheckBoxofEquipement() {
 		return CheckBoxofEquipement;

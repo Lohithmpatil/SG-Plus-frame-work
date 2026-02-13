@@ -80,5 +80,6 @@ public class verifySearchDepartmentGroupTest extends BaseClass {
 		// Validation
 		Assert.assertEquals(resultName.getText(), "Automation224");
 
+		we.waitAndClick(dg.getSucessPopupmessageClose());
 	}
 }

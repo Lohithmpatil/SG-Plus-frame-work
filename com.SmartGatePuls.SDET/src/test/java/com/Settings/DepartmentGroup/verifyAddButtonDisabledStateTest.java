@@ -68,6 +68,9 @@ public class verifyAddButtonDisabledStateTest extends BaseClass {
 		WebElement AddButton = dg.getAddButton();
 
 		Assert.assertFalse(AddButton.isEnabled(), "Add button should be disabled when popup opens");
+		
+		we.waitAndClick(dg.getCloseButton());
+		we.waitAndClick(dg.getSucessPopupmessageClose());
 
 	}
 }

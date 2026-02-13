@@ -89,6 +89,8 @@ public class verifyRequiredFieldValidationForNameTest extends BaseClass {
 
 		// Print the success message in console for reference
 		System.out.println(actualMsg);
+		
+		we.waitAndClick(dg.getSucessPopupmessageClose());
 
 	}
 }

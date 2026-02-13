@@ -106,6 +106,8 @@ public class verifyAddDepartmentGroupTest extends BaseClass {
 
 		// Print the success message in console for reference
 		System.out.println(actualMsg);
+		
+		we.waitAndClick(dg.getSucessPopupmessageClose());
 
 		/*
 		 * Below are additional test scenarios that can be automated later:

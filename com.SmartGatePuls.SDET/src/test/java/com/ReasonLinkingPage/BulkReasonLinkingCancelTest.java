@@ -77,6 +77,7 @@ public class BulkReasonLinkingCancelTest extends BaseClass {
 
 		// Click the "Bulk Link" button to start bulk linking
 		we.waitAndClick(rs.getBulkLinkButton());
+		
 
 		// Hover over the checkbox before clicking it (maybe for tooltip/UI reason)
 		we.mouseOverOnElement1(driver, rs.getCheckBoxForBulkLink());
@@ -111,13 +112,10 @@ public class BulkReasonLinkingCancelTest extends BaseClass {
 		// Enter comment text for the reason linking
 		rs.getCommentField().sendKeys("Bulk Reason linking Automation test reason");
 
-		// Click on the "Save" button to submit bulk linking
-		we.waitAndClick(rs.getSaveButton());
-
 		// Click "Cancel" in the confirmation popup
 		we.waitAndClick(rs.getCancelForBulkLink());
 
-		we.waitAndClick(rs.getCancelbutton1());
+		//we.waitAndClick(rs.getCancelbutton1());
 
 		// ✅ Wait for modal to disappear
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

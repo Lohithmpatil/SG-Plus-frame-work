@@ -57,6 +57,10 @@ public class verifyEditDepartmentGroupTest extends BaseClass {
 		we.waitAndClick(dg.getGroupname());
 		dg.getGroupname().sendKeys("EditTest");
 		we.waitAndClick(dg.getUpdateButton());
+		
+		we.waitAndClick(dg.getSucessPopupmessageClose());
+		
+	
 	
 	}
 }

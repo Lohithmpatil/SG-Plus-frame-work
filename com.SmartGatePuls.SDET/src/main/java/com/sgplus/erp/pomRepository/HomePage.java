@@ -25,7 +25,7 @@ public class HomePage {
     @FindBy(xpath = "//li[@class='nav-item']//span[text()='Dashboard']")
     private WebElement downtimeDashboard;
 
-    @FindBy(xpath = "//span[text()='Logout']")
+    @FindBy(xpath = "//span[text()=\"Logout\"]")
     private WebElement logOut;
     
     public WebElement getSettings() {

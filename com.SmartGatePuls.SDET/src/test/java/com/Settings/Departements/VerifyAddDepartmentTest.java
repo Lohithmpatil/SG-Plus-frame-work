@@ -122,6 +122,9 @@ public class VerifyAddDepartmentTest extends BaseClass {
 
 		// Print the success message in console for verification
 		System.out.println("SUCCESS MESSAGE VERIFIED: " + actualMessage);
+		
+		we.waitAndClick(dp.getSucessPopupmessageClose());
+
 	}
 }
 
