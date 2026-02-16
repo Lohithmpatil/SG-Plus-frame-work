@@ -127,8 +127,44 @@ public class ReasonMaster {
 		return EquipementsCheckbox;
 	}
 
-	@FindBy(xpath = "//span[text()=\"All items are selected.\"]")
+	@FindBy(xpath = "//span[text()=\"SCPTBD05\"]")
 	private WebElement EquipementsCheckbox;
 	
+	@FindBy(xpath = "//label[text()='Area']/following::div[contains(@class,'dropdown-container')][1]")
+	private WebElement CollpaseAreadropdown;
+	
+
+	public WebElement getCollpaseEquipementdropdown() {
+		return CollpaseEquipementdropdown;
+	}
+
+	@FindBy(xpath = "//label[text()='Equipment']/following::div[contains(@class,'dropdown-container')][1]")
+	private WebElement CollpaseEquipementdropdown;
+	
+	public WebElement getDepartmentCheckbox() {
+		return DepartmentCheckbox;
+	}
+
+	public WebElement getCollapseDepartmentdropdown() {
+		return CollapseDepartmentdropdown;
+	}
+
+	@FindBy(xpath = "//span[text()=\"Electrical\"]")
+	private WebElement DepartmentCheckbox;
+	
+	@FindBy(xpath = "//label[text()='Department']/following::div[contains(@class,'dropdown-container')][1]")
+	private WebElement CollapseDepartmentdropdown;
+
+	
+	public WebElement getEdit3Dots() {
+		return Edit3Dots;
+	}
+
+	@FindBy(xpath = "//button[@aria-haspopup=\"true\"]")
+	private WebElement Edit3Dots;
+
+	public WebElement getCollpaseAreadropdown() {
+		return CollpaseAreadropdown;
+	}
 
 }
