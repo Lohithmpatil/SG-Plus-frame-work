@@ -47,7 +47,7 @@ public class AddReasonfuntionalityTest extends BaseClass {
 		int intRanNum = jlib.getRandomNumber();
 
 		// Read Reason Name from Excel and append random number
-		String ReasonName = elib.getDataFromExcel("Sheet1", 1, 1) + intRanNum;
+		String ReasonName = elib.getDataFromExcel("Sheet1", 1, 2) + intRanNum;
 
 		// Read SAP Code from Excel and append random number
 		String Sapcode = elib.getDataFromExcel("Sheet1", 1, 1) + intRanNum;

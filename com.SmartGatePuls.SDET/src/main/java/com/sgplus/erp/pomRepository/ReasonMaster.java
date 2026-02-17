@@ -162,6 +162,13 @@ public class ReasonMaster {
 
 	@FindBy(xpath = "//button[@aria-haspopup=\"true\"]")
 	private WebElement Edit3Dots;
+	
+	public WebElement getEditEquipementsCheckbox() {
+		return EditEquipementsCheckbox;
+	}
+
+	@FindBy(xpath = "//span[text()=\"SCPTBD06\"]")
+	private WebElement EditEquipementsCheckbox;
 
 	public WebElement getCollpaseAreadropdown() {
 		return CollpaseAreadropdown;

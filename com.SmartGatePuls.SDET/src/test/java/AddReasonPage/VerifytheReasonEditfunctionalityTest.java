@@ -1,5 +1,12 @@
 package AddReasonPage;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.sgplus.erp.genericutility.BaseClass;
@@ -12,7 +19,7 @@ import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.ReasonMaster;
 
 public class VerifytheReasonEditfunctionalityTest extends BaseClass {
-	
+
 	@Test
 	public void VerifytheReasonEditfunctionalityTest() throws Throwable {
 
@@ -33,13 +40,11 @@ public class VerifytheReasonEditfunctionalityTest extends BaseClass {
 		// Create ReasonMaster page object
 		ReasonMaster rm = new ReasonMaster(driver);
 
-
-		
 		// Generate a random number to make department group name unique
 		int intRanNum = jlib.getRandomNumber();
 
 		// Read base group name from Excel and append random number
-		String Groupname = elib.getDataFromExcel("Sheet1", 1, 0) + intRanNum;
+		String Groupname = elib.getDataFromExcel("Sheet1", 1, 2) + intRanNum;
 
 		// Wait until DOM elements are loaded
 		we.waitForElementInDOM(driver);
@@ -52,10 +57,41 @@ public class VerifytheReasonEditfunctionalityTest extends BaseClass {
 
 		// Click on Department Group option under Settings
 		we.waitAndClick(rm.getReasondashboard());
-		
+
 		we.waitAndClick(rm.getEdit3Dots());
-		
+
 		we.waitAndClick(rm.getEditbutton());
+
+		Thread.sleep(200);
+
+		rm.getReasonNamefield().sendKeys("Edited");
+
+		we.waitAndClick(rm.getEquipementsdropdown());
+
+		we.waitAndClick(rm.getEditEquipementsCheckbox());
+
+		we.waitAndClick(rm.getCollpaseEquipementdropdown());
+
+		we.waitAndClick(rm.getDepartmentdropdown());
+
+		we.waitAndClick(rm.getDepartmentCheckbox());
+
+		we.waitAndClick(rm.getCollapseDepartmentdropdown());
+
+		we.waitAndClick(rm.getSubmitbutton());
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+		WebElement successMsg = wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Reason updated successfully')]")));
+
+		String actualMsg = successMsg.getText();
+		String expectedMsg = "Reason updated successfully";
+
+		System.out.println("Toast Message: " + actualMsg);
+
+		Assert.assertEquals(actualMsg, expectedMsg);
+
 	}
 
 }

@@ -19,10 +19,10 @@ import com.sgplus.erp.pomRepository.DepartmentGroup;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.ReasonMaster;
 
-public class VerifytheRecipesearchfunctionalityTest extends BaseClass {
+public class VerifytheReasonsearchfunctionalityTest extends BaseClass {
 	// TestNG test method
 		@Test
-		public void VerifytheRecipesearchfunctionalityTest() throws Throwable {
+		public void VerifytheReasonsearchfunctionalityTest() throws Throwable {
 
 			// Create WebDriverUtility object (custom utility for wait, click, etc.)
 			WebDriverUtility wb = new WebDriverUtility();

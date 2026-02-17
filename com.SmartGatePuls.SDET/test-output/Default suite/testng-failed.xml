@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AddReasonPage.VerifytheRecipesearchfunctionalityTest">
+      <class name="AddReasonPage.VerifytheReasonEditfunctionalityTest">
         <methods>
           <include name="configBM"/>
-          <include name="VerifytheRecipesearchfunctionalityTest"/>
           <include name="configBC"/>
+          <include name="VerifytheReasonEditfunctionalityTest"/>
         </methods>
-      </class> <!-- AddReasonPage.VerifytheRecipesearchfunctionalityTest -->
+      </class> <!-- AddReasonPage.VerifytheReasonEditfunctionalityTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
