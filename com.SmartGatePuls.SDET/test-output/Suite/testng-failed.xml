@@ -3,23 +3,20 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.Settings.DepartmentGroup.verifyDefaultMTTRMTBFSourceSelectionTest">
+      <class name="com.Settings.DepartmentGroup.verifyAddDepartmentGroupTest">
         <methods>
           <include name="configBM"/>
-          <include name="verifyDefaultMTTRMTBFSourceSelectionTest"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="verifyAddDepartmentGroupTest"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.Settings.DepartmentGroup.verifyDefaultMTTRMTBFSourceSelectionTest -->
-      <class name="com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configBC"/>
-          <include name="DowntimeAnalysisDropdownValidationTest"/>
-        </methods>
-      </class> <!-- com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest -->
+      </class> <!-- com.Settings.DepartmentGroup.verifyAddDepartmentGroupTest -->
       <class name="com.ReasonLinkingPage.BulkReasonLinkingCancelTest">
         <methods>
           <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
           <include name="configBC"/>
           <include name="BulkReasonLinkingCancelTest"/>
         </methods>
@@ -27,31 +24,30 @@
       <class name="com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest">
         <methods>
           <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
           <include name="configBC"/>
           <include name="YearlyToMonthlyChartNavigationTest"/>
         </methods>
       </class> <!-- com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest -->
-      <class name="com.ReasonLinkingPage.ReasonLinkingHandlingSourceFilterTest">
+      <class name="com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest">
         <methods>
           <include name="configBM"/>
-          <include name="ReasonLinkingHandlingSourceFilterTest"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
           <include name="configBC"/>
+          <include name="DowntimeAnalysisDropdownValidationTest"/>
         </methods>
-      </class> <!-- com.ReasonLinkingPage.ReasonLinkingHandlingSourceFilterTest -->
+      </class> <!-- com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest -->
       <class name="com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest">
         <methods>
           <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
           <include name="configBC"/>
           <include name="MonthWiseBarChartNavigationTest"/>
         </methods>
       </class> <!-- com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest -->
-      <class name="com.Settings.DepartmentGroup.verifyRequiredFieldValidationForNameTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="verifyRequiredFieldValidationForNameTest"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.Settings.DepartmentGroup.verifyRequiredFieldValidationForNameTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

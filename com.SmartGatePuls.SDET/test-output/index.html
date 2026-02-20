@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\W066520\AppData\Local\Temp\testng-eclipse-1564774880\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\W066520\git\SG-Plus-frame-work\SG-Plus-frame-work\com.SmartGatePuls.SDET\Group.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,240 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">43 methods, 5 failed,   38 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ReasonLinkingPage.BulkReasonLinkingCancelTest" class="method navigator-link" hash-for-method="BulkReasonLinkingCancelTest">BulkReasonLinkingCancelTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest" class="method navigator-link" hash-for-method="DowntimeAnalysisDropdownValidationTest">DowntimeAnalysisDropdownValidationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest" class="method navigator-link" hash-for-method="MonthWiseBarChartNavigationTest">MonthWiseBarChartNavigationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest" class="method navigator-link" hash-for-method="YearlyToMonthlyChartNavigationTest">YearlyToMonthlyChartNavigationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Settings.DepartmentGroup.verifyAddDepartmentGroupTest" class="method navigator-link" hash-for-method="verifyAddDepartmentGroupTest">verifyAddDepartmentGroupTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="AddReasonPage.VerifytheReasonEditfunctionalityTest" class="method navigator-link" hash-for-method="VerifytheReasonEditfunctionalityTest">VerifytheReasonEditfunctionalityTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.ReasonLinkingPage.BulkReasonLinkingFunctionalityTest" class="method navigator-link" hash-for-method="BulkReasonLinkingFunctionalityTest">BulkReasonLinkingFunctionalityTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeAnalysisPage.DowntimeAnalysisNavigationTest" class="method navigator-link" hash-for-method="DowntimeAnalysisNavigationTest">DowntimeAnalysisNavigationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeModule.DowntimeBestMachineTest" class="method navigator-link" hash-for-method="DowntimeBestMachineTest">DowntimeBestMachineTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeModule.DowntimeDashboardDataValidationTest" class="method navigator-link" hash-for-method="DowntimeDashboardDataValidationTest">DowntimeDashboardDataValidationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeModule.DowntimeDashboardNavigationTest" class="method navigator-link" hash-for-method="DowntimeDashboardNavigationTest">DowntimeDashboardNavigationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeEnhacementPage.DowntimeEnhacementTableExportTest" class="method navigator-link" hash-for-method="DowntimeEnhacementTableExport">DowntimeEnhacementTableExport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeEnhacementPage.DowntimeEnhacemntTableDataTest" class="method navigator-link" hash-for-method="DowntimeEnhacemntTableDataTest">DowntimeEnhacemntTableDataTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeModule.DowntimeWorstMachineTest" class="method navigator-link" hash-for-method="DowntimeWorstMachineTest">DowntimeWorstMachineTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeEnhacementPage.NavigateToDowntimeEnhancementPageTest" class="method navigator-link" hash-for-method="NavigateToDowntimeEnhancementPage">NavigateToDowntimeEnhancementPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ReasonLinkingPage.ReasonLinkingCombinedExportTest" class="method navigator-link" hash-for-method="ReasonLinkingCombinedExportTest">ReasonLinkingCombinedExportTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ReasonLinkingPage.ReasonLinkingCombinedTest" class="method navigator-link" hash-for-method="ReasonLinkingCombinedTest">ReasonLinkingCombinedTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ReasonLinkingPage.ReasonLinkingCycleTimeSourceFilterTest" class="method navigator-link" hash-for-method="ReasonLinkingCycleTimeSourceFilterTest">ReasonLinkingCycleTimeSourceFilterTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ReasonLinkingPage.ReasonLinkingFilterDataValidationTest" class="method navigator-link" hash-for-method="ReasonLinkingFilterDataValidationTest">ReasonLinkingFilterDataValidationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ReasonLinkingPage.ReasonLinkingSingleLinkTest" class="method navigator-link" hash-for-method="ReasonLinkingFunctionalityTest">ReasonLinkingFunctionalityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ReasonLinkingPage.ReasonLinkingHandlingSourceFilterTest" class="method navigator-link" hash-for-method="ReasonLinkingHandlingSourceFilterTest">ReasonLinkingHandlingSourceFilterTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ReasonLinkingPage.ReasonLinkingLinkedExportTest" class="method navigator-link" hash-for-method="ReasonLinkingLinkedExportTest">ReasonLinkingLinkedExportTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ReasonLinkingPage.ReasonLinkingLinkedFilterTest" class="method navigator-link" hash-for-method="ReasonLinkingLinkedFilterTest">ReasonLinkingLinkedFilterTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ReasonLinkingPage.ReasonLinkingNavigationTest" class="method navigator-link" hash-for-method="ReasonLinkingNavigationTest">ReasonLinkingNavigationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ReasonLinkingPage.ReasonLinkingUnlinkedExportTest" class="method navigator-link" hash-for-method="ReasonLinkingUnlinkedExportTest">ReasonLinkingUnlinkedExportTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ReasonLinkingPage.ReasonLinkingUnlinkedFilterTest" class="method navigator-link" hash-for-method="ReasonLinkingUnlinkedFilterTest">ReasonLinkingUnlinkedFilterTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Settings.Departements.VerifyAddDepartmentTest" class="method navigator-link" hash-for-method="VerifyAddDepartmentTest">VerifyAddDepartmentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Settings.Departements.verifySearchDepartmentTest" class="method navigator-link" hash-for-method="VerifyAddDepartmentTest">VerifyAddDepartmentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeShiftview.VerifyNavigationToShiftViewPageTest" class="method navigator-link" hash-for-method="VerifyNavigationToShiftViewPageTest">VerifyNavigationToShiftViewPageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeShiftview.VerifyShiftAViewDisplaysDataForDifferentShiftsTest" class="method navigator-link" hash-for-method="VerifyShiftAViewDisplaysDataForDifferentShiftsTest">VerifyShiftAViewDisplaysDataForDifferentShiftsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeShiftview.VerifyShiftCViewDisplaysDataForDifferentShiftsTest" class="method navigator-link" hash-for-method="VerifyShiftBViewDisplaysDataForDifferentShiftsTest">VerifyShiftBViewDisplaysDataForDifferentShiftsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeShiftview.VerifyShiftBViewDisplaysDataForDifferentShiftsTest" class="method navigator-link" hash-for-method="VerifyShiftBViewDisplaysDataForDifferentShiftsTest">VerifyShiftBViewDisplaysDataForDifferentShiftsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.DowntimeShiftview.VerifyShiftViewPageDataTest" class="method navigator-link" hash-for-method="VerifyShiftViewPageDataTest">VerifyShiftViewPageDataTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Settings.DepartmentGroup.verifyAddButtonDisabledStateTest" class="method navigator-link" hash-for-method="verifyAddButtonDisabledStateTest">verifyAddButtonDisabledStateTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Settings.DepartmentGroup.verifyMTTRMTBFSourceRadioButtonsTest" class="method navigator-link" hash-for-method="verifyAddDepartmentGroupTest">verifyAddDepartmentGroupTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Settings.DepartmentGroup.verifyDefaultMTTRMTBFSourceSelectionTest" class="method navigator-link" hash-for-method="verifyDefaultMTTRMTBFSourceSelectionTest">verifyDefaultMTTRMTBFSourceSelectionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Settings.Departements.verifyEditDepartmenTest" class="method navigator-link" hash-for-method="verifyEditDepartmenTest">verifyEditDepartmenTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Settings.DepartmentGroup.verifyEditDepartmentGroupTest" class="method navigator-link" hash-for-method="verifyEditDepartmentGroupTest">verifyEditDepartmentGroupTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Settings.DepartmentGroup.verifyNameTextboxBehaviorTest" class="method navigator-link" hash-for-method="verifyNameTextboxBehaviorTest">verifyNameTextboxBehaviorTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Settings.DepartmentGroup.verifyRequiredFieldValidationForNameTest" class="method navigator-link" hash-for-method="verifyRequiredFieldValidationForNameTest">verifyRequiredFieldValidationForNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Settings.Departements.verifyRequiredFieldValidationTest" class="method navigator-link" hash-for-method="verifyRequiredFieldValidationTest">verifyRequiredFieldValidationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Settings.Departements.verifyDepartmentNameInputTest" class="method navigator-link" hash-for-method="verifyRequiredFieldValidationTest">verifyRequiredFieldValidationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Settings.DepartmentGroup.verifySearchDepartmentGroupTest" class="method navigator-link" hash-for-method="verifySearchDepartmentGroupTest">verifySearchDepartmentGroupTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Settings.Departements.verifyViewDepartmentTest" class="method navigator-link" hash-for-method="verifyViewDepartmentTest">verifyViewDepartmentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,126 +336,2052 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">AddReasonPage.VerifytheReasonEditfunctionalityTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.Settings.DepartmentGroup.verifyAddDepartmentGroupTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifytheReasonEditfunctionalityTest">
-                  </a> <!-- VerifytheReasonEditfunctionalityTest -->
-                  <span class="method-name">VerifytheReasonEditfunctionalityTest</span>
+                  <a name="verifyAddDepartmentGroupTest">
+                  </a> <!-- verifyAddDepartmentGroupTest -->
+                  <span class="method-name">verifyAddDepartmentGroupTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&quot;Department Group Name&quot;]&quot;}
+  (Session info: chrome=145.0.7632.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c4f811f82ef574e10ef743da3f958bfe, findElement {value=//input[@placeholder=&quot;Department Group Name&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.109, chrome: {chromedriverVersion: 145.0.7632.77 (da516187054a..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53647}, goog:processID: 7376, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53647/devtoo..., se:cdpVersion: 145.0.7632.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c4f811f82ef574e10ef743da3f958bfe
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+	at com.Settings.DepartmentGroup.verifyAddDepartmentGroupTest.verifyAddDepartmentGroupTest(verifyAddDepartmentGroupTest.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ReasonLinkingPage.BulkReasonLinkingCancelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BulkReasonLinkingCancelTest">
+                  </a> <!-- BulkReasonLinkingCancelTest -->
+                  <span class="method-name">BulkReasonLinkingCancelTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#formReasonId&quot;}
+  (Session info: chrome=145.0.7632.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d9a7de1c0d3f749b641467bd8ae6a982, findElement {value=formReasonId, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.109, chrome: {chromedriverVersion: 145.0.7632.77 (da516187054a..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49677}, goog:processID: 4924, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49677/devtoo..., se:cdpVersion: 145.0.7632.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9a7de1c0d3f749b641467bd8ae6a982
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:41)
+	at com.sgplus.erp.genericutility.WebDriverUtility.select(WebDriverUtility.java:98)
+	at com.ReasonLinkingPage.BulkReasonLinkingCancelTest.BulkReasonLinkingCancelTest(BulkReasonLinkingCancelTest.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="YearlyToMonthlyChartNavigationTest">
+                  </a> <!-- YearlyToMonthlyChartNavigationTest -->
+                  <span class="method-name">YearlyToMonthlyChartNavigationTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Year-wise chart not expanded. expected [true] but found [false]
+	at com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest.YearlyToMonthlyChartNavigationTest(YearlyToMonthlyChartNavigationTest.java:97)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DowntimeAnalysisDropdownValidationTest">
+                  </a> <!-- DowntimeAnalysisDropdownValidationTest -->
+                  <span class="method-name">DowntimeAnalysisDropdownValidationTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@name=&quot;department_grp_id&quot;]&quot;}
+  (Session info: chrome=145.0.7632.109)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4269a5566e8407ff74e63d9e88df8a13, findElement {value=//select[@name=&quot;department_grp_id&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.109, chrome: {chromedriverVersion: 145.0.7632.77 (da516187054a..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63179}, goog:processID: 35504, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63179/devtoo..., se:cdpVersion: 145.0.7632.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4269a5566e8407ff74e63d9e88df8a13
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.isEnabled(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.assertSelectIsEnabled(Select.java:408)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:343)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
+	at com.sgplus.erp.genericutility.WebDriverUtility.select(WebDriverUtility.java:106)
+	at com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest.DowntimeAnalysisDropdownValidationTest(DowntimeAnalysisDropdownValidationTest.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MonthWiseBarChartNavigationTest">
+                  </a> <!-- MonthWiseBarChartNavigationTest -->
+                  <span class="method-name">MonthWiseBarChartNavigationTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Day-wise chart not expanded. expected [true] but found [false]
+	at com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest.MonthWiseBarChartNavigationTest(MonthWiseBarChartNavigationTest.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Settings.Departements.verifyViewDepartmentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyViewDepartmentTest">
+                  </a> <!-- verifyViewDepartmentTest -->
+                  <span class="method-name">verifyViewDepartmentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ReasonLinkingPage.ReasonLinkingSingleLinkTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReasonLinkingFunctionalityTest">
+                  </a> <!-- ReasonLinkingFunctionalityTest -->
+                  <span class="method-name">ReasonLinkingFunctionalityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ReasonLinkingPage.ReasonLinkingLinkedExportTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReasonLinkingLinkedExportTest">
+                  </a> <!-- ReasonLinkingLinkedExportTest -->
+                  <span class="method-name">ReasonLinkingLinkedExportTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ReasonLinkingPage.ReasonLinkingUnlinkedExportTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReasonLinkingUnlinkedExportTest">
+                  </a> <!-- ReasonLinkingUnlinkedExportTest -->
+                  <span class="method-name">ReasonLinkingUnlinkedExportTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Settings.DepartmentGroup.verifySearchDepartmentGroupTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchDepartmentGroupTest">
+                  </a> <!-- verifySearchDepartmentGroupTest -->
+                  <span class="method-name">verifySearchDepartmentGroupTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Settings.Departements.verifySearchDepartmentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAddDepartmentTest">
+                  </a> <!-- VerifyAddDepartmentTest -->
+                  <span class="method-name">VerifyAddDepartmentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DowntimeShiftview.VerifyShiftCViewDisplaysDataForDifferentShiftsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyShiftBViewDisplaysDataForDifferentShiftsTest">
+                  </a> <!-- VerifyShiftBViewDisplaysDataForDifferentShiftsTest -->
+                  <span class="method-name">VerifyShiftBViewDisplaysDataForDifferentShiftsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DowntimeEnhacementPage.DowntimeEnhacemntTableDataTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DowntimeEnhacemntTableDataTest">
+                  </a> <!-- DowntimeEnhacemntTableDataTest -->
+                  <span class="method-name">DowntimeEnhacemntTableDataTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Settings.DepartmentGroup.verifyMTTRMTBFSourceRadioButtonsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddDepartmentGroupTest">
+                  </a> <!-- verifyAddDepartmentGroupTest -->
+                  <span class="method-name">verifyAddDepartmentGroupTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DowntimeShiftview.VerifyShiftAViewDisplaysDataForDifferentShiftsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyShiftAViewDisplaysDataForDifferentShiftsTest">
+                  </a> <!-- VerifyShiftAViewDisplaysDataForDifferentShiftsTest -->
+                  <span class="method-name">VerifyShiftAViewDisplaysDataForDifferentShiftsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DowntimeModule.DowntimeWorstMachineTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DowntimeWorstMachineTest">
+                  </a> <!-- DowntimeWorstMachineTest -->
+                  <span class="method-name">DowntimeWorstMachineTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DowntimeModule.DowntimeBestMachineTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DowntimeBestMachineTest">
+                  </a> <!-- DowntimeBestMachineTest -->
+                  <span class="method-name">DowntimeBestMachineTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DowntimeShiftview.VerifyShiftViewPageDataTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyShiftViewPageDataTest">
+                  </a> <!-- VerifyShiftViewPageDataTest -->
+                  <span class="method-name">VerifyShiftViewPageDataTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DowntimeModule.DowntimeDashboardNavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DowntimeDashboardNavigationTest">
+                  </a> <!-- DowntimeDashboardNavigationTest -->
+                  <span class="method-name">DowntimeDashboardNavigationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Settings.DepartmentGroup.verifyNameTextboxBehaviorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNameTextboxBehaviorTest">
+                  </a> <!-- verifyNameTextboxBehaviorTest -->
+                  <span class="method-name">verifyNameTextboxBehaviorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ReasonLinkingPage.BulkReasonLinkingFunctionalityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BulkReasonLinkingFunctionalityTest">
+                  </a> <!-- BulkReasonLinkingFunctionalityTest -->
+                  <span class="method-name">BulkReasonLinkingFunctionalityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DowntimeModule.DowntimeDashboardDataValidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DowntimeDashboardDataValidationTest">
+                  </a> <!-- DowntimeDashboardDataValidationTest -->
+                  <span class="method-name">DowntimeDashboardDataValidationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ReasonLinkingPage.ReasonLinkingHandlingSourceFilterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReasonLinkingHandlingSourceFilterTest">
+                  </a> <!-- ReasonLinkingHandlingSourceFilterTest -->
+                  <span class="method-name">ReasonLinkingHandlingSourceFilterTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ReasonLinkingPage.ReasonLinkingNavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReasonLinkingNavigationTest">
+                  </a> <!-- ReasonLinkingNavigationTest -->
+                  <span class="method-name">ReasonLinkingNavigationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Settings.Departements.verifyDepartmentNameInputTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRequiredFieldValidationTest">
+                  </a> <!-- verifyRequiredFieldValidationTest -->
+                  <span class="method-name">verifyRequiredFieldValidationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DowntimeShiftview.VerifyShiftBViewDisplaysDataForDifferentShiftsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyShiftBViewDisplaysDataForDifferentShiftsTest">
+                  </a> <!-- VerifyShiftBViewDisplaysDataForDifferentShiftsTest -->
+                  <span class="method-name">VerifyShiftBViewDisplaysDataForDifferentShiftsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Settings.DepartmentGroup.verifyEditDepartmentGroupTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditDepartmentGroupTest">
+                  </a> <!-- verifyEditDepartmentGroupTest -->
+                  <span class="method-name">verifyEditDepartmentGroupTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ReasonLinkingPage.ReasonLinkingCycleTimeSourceFilterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReasonLinkingCycleTimeSourceFilterTest">
+                  </a> <!-- ReasonLinkingCycleTimeSourceFilterTest -->
+                  <span class="method-name">ReasonLinkingCycleTimeSourceFilterTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Settings.Departements.VerifyAddDepartmentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAddDepartmentTest">
+                  </a> <!-- VerifyAddDepartmentTest -->
+                  <span class="method-name">VerifyAddDepartmentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Settings.Departements.verifyRequiredFieldValidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRequiredFieldValidationTest">
+                  </a> <!-- verifyRequiredFieldValidationTest -->
+                  <span class="method-name">verifyRequiredFieldValidationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Settings.DepartmentGroup.verifyDefaultMTTRMTBFSourceSelectionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDefaultMTTRMTBFSourceSelectionTest">
+                  </a> <!-- verifyDefaultMTTRMTBFSourceSelectionTest -->
+                  <span class="method-name">verifyDefaultMTTRMTBFSourceSelectionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DowntimeAnalysisPage.DowntimeAnalysisNavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DowntimeAnalysisNavigationTest">
+                  </a> <!-- DowntimeAnalysisNavigationTest -->
+                  <span class="method-name">DowntimeAnalysisNavigationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DowntimeEnhacementPage.NavigateToDowntimeEnhancementPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NavigateToDowntimeEnhancementPage">
+                  </a> <!-- NavigateToDowntimeEnhancementPage -->
+                  <span class="method-name">NavigateToDowntimeEnhancementPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ReasonLinkingPage.ReasonLinkingFilterDataValidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReasonLinkingFilterDataValidationTest">
+                  </a> <!-- ReasonLinkingFilterDataValidationTest -->
+                  <span class="method-name">ReasonLinkingFilterDataValidationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ReasonLinkingPage.ReasonLinkingUnlinkedFilterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReasonLinkingUnlinkedFilterTest">
+                  </a> <!-- ReasonLinkingUnlinkedFilterTest -->
+                  <span class="method-name">ReasonLinkingUnlinkedFilterTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ReasonLinkingPage.ReasonLinkingLinkedFilterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReasonLinkingLinkedFilterTest">
+                  </a> <!-- ReasonLinkingLinkedFilterTest -->
+                  <span class="method-name">ReasonLinkingLinkedFilterTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ReasonLinkingPage.ReasonLinkingCombinedExportTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReasonLinkingCombinedExportTest">
+                  </a> <!-- ReasonLinkingCombinedExportTest -->
+                  <span class="method-name">ReasonLinkingCombinedExportTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Settings.DepartmentGroup.verifyRequiredFieldValidationForNameTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRequiredFieldValidationForNameTest">
+                  </a> <!-- verifyRequiredFieldValidationForNameTest -->
+                  <span class="method-name">verifyRequiredFieldValidationForNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Settings.Departements.verifyEditDepartmenTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditDepartmenTest">
+                  </a> <!-- verifyEditDepartmenTest -->
+                  <span class="method-name">verifyEditDepartmenTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DowntimeEnhacementPage.DowntimeEnhacementTableExportTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DowntimeEnhacementTableExport">
+                  </a> <!-- DowntimeEnhacementTableExport -->
+                  <span class="method-name">DowntimeEnhacementTableExport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Settings.DepartmentGroup.verifyAddButtonDisabledStateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddButtonDisabledStateTest">
+                  </a> <!-- verifyAddButtonDisabledStateTest -->
+                  <span class="method-name">verifyAddButtonDisabledStateTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.DowntimeShiftview.VerifyNavigationToShiftViewPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyNavigationToShiftViewPageTest">
+                  </a> <!-- VerifyNavigationToShiftViewPageTest -->
+                  <span class="method-name">VerifyNavigationToShiftViewPageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ReasonLinkingPage.ReasonLinkingCombinedTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ReasonLinkingCombinedTest">
+                  </a> <!-- ReasonLinkingCombinedTest -->
+                  <span class="method-name">ReasonLinkingCombinedTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\W066520\AppData\Local\Temp\testng-eclipse-1564774880\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\W066520\git\SG-Plus-frame-work\SG-Plus-frame-work\com.SmartGatePuls.SDET\Group.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.DowntimeModule&quot;/&gt;
+      &lt;package name=&quot;com.ReasonLinkingPage&quot;/&gt;
+      &lt;package name=&quot;com.DowntimeEnhacementPage&quot;/&gt;
+      &lt;package name=&quot;com.DowntimeAnalysisPage&quot;/&gt;
+      &lt;package name=&quot;com.DowntimeShiftview&quot;/&gt;
+      &lt;package name=&quot;com.Settings.Departements&quot;/&gt;
+      &lt;package name=&quot;com.Settings.DepartmentGroup&quot;/&gt;
+    &lt;/packages&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;AddReasonPage.VerifytheReasonEditfunctionalityTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;VerifytheReasonEditfunctionalityTest&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- AddReasonPage.VerifytheReasonEditfunctionalityTest --&gt;
+      &lt;class name=&quot;com.DowntimeModule.DowntimeBestMachineTest&quot;/&gt;
+      &lt;class name=&quot;com.DowntimeModule.DowntimeDashboardDataValidationTest&quot;/&gt;
+      &lt;class name=&quot;com.DowntimeModule.DowntimeDashboardNavigationTest&quot;/&gt;
+      &lt;class name=&quot;com.DowntimeModule.DowntimeWorstMachineTest&quot;/&gt;
+      &lt;class name=&quot;com.ReasonLinkingPage.BulkReasonLinkingCancelTest&quot;/&gt;
+      &lt;class name=&quot;com.ReasonLinkingPage.BulkReasonLinkingFunctionalityTest&quot;/&gt;
+      &lt;class name=&quot;com.ReasonLinkingPage.ReasonLinkingCombinedExportTest&quot;/&gt;
+      &lt;class name=&quot;com.ReasonLinkingPage.ReasonLinkingCombinedTest&quot;/&gt;
+      &lt;class name=&quot;com.ReasonLinkingPage.ReasonLinkingCycleTimeSourceFilterTest&quot;/&gt;
+      &lt;class name=&quot;com.ReasonLinkingPage.ReasonLinkingFilterDataValidationTest&quot;/&gt;
+      &lt;class name=&quot;com.ReasonLinkingPage.ReasonLinkingHandlingSourceFilterTest&quot;/&gt;
+      &lt;class name=&quot;com.ReasonLinkingPage.ReasonLinkingLinkedExportTest&quot;/&gt;
+      &lt;class name=&quot;com.ReasonLinkingPage.ReasonLinkingLinkedFilterTest&quot;/&gt;
+      &lt;class name=&quot;com.ReasonLinkingPage.ReasonLinkingNavigationTest&quot;/&gt;
+      &lt;class name=&quot;com.ReasonLinkingPage.ReasonLinkingSingleLinkTest&quot;/&gt;
+      &lt;class name=&quot;com.ReasonLinkingPage.ReasonLinkingUnlinkedExportTest&quot;/&gt;
+      &lt;class name=&quot;com.ReasonLinkingPage.ReasonLinkingUnlinkedFilterTest&quot;/&gt;
+      &lt;class name=&quot;com.DowntimeEnhacementPage.DowntimeEnhacementTableExportTest&quot;/&gt;
+      &lt;class name=&quot;com.DowntimeEnhacementPage.DowntimeEnhacemntTableDataTest&quot;/&gt;
+      &lt;class name=&quot;com.DowntimeEnhacementPage.NavigateToDowntimeEnhancementPageTest&quot;/&gt;
+      &lt;class name=&quot;com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest&quot;/&gt;
+      &lt;class name=&quot;com.DowntimeAnalysisPage.DowntimeAnalysisNavigationTest&quot;/&gt;
+      &lt;class name=&quot;com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest&quot;/&gt;
+      &lt;class name=&quot;com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest&quot;/&gt;
+      &lt;class name=&quot;com.DowntimeShiftview.VerifyNavigationToShiftViewPageTest&quot;/&gt;
+      &lt;class name=&quot;com.DowntimeShiftview.VerifyShiftAViewDisplaysDataForDifferentShiftsTest&quot;/&gt;
+      &lt;class name=&quot;com.DowntimeShiftview.VerifyShiftBViewDisplaysDataForDifferentShiftsTest&quot;/&gt;
+      &lt;class name=&quot;com.DowntimeShiftview.VerifyShiftCViewDisplaysDataForDifferentShiftsTest&quot;/&gt;
+      &lt;class name=&quot;com.DowntimeShiftview.VerifyShiftViewPageDataTest&quot;/&gt;
+      &lt;class name=&quot;com.Settings.Departements.VerifyAddDepartmentTest&quot;/&gt;
+      &lt;class name=&quot;com.Settings.Departements.verifyDepartmentNameInputTest&quot;/&gt;
+      &lt;class name=&quot;com.Settings.Departements.verifyEditDepartmenTest&quot;/&gt;
+      &lt;class name=&quot;com.Settings.Departements.verifyRequiredFieldValidationTest&quot;/&gt;
+      &lt;class name=&quot;com.Settings.Departements.verifySearchDepartmentTest&quot;/&gt;
+      &lt;class name=&quot;com.Settings.Departements.verifyViewDepartmentTest&quot;/&gt;
+      &lt;class name=&quot;com.Settings.DepartmentGroup.verifyAddButtonDisabledStateTest&quot;/&gt;
+      &lt;class name=&quot;com.Settings.DepartmentGroup.verifyAddDepartmentGroupTest&quot;/&gt;
+      &lt;class name=&quot;com.Settings.DepartmentGroup.verifyDefaultMTTRMTBFSourceSelectionTest&quot;/&gt;
+      &lt;class name=&quot;com.Settings.DepartmentGroup.verifyEditDepartmentGroupTest&quot;/&gt;
+      &lt;class name=&quot;com.Settings.DepartmentGroup.verifyMTTRMTBFSourceRadioButtonsTest&quot;/&gt;
+      &lt;class name=&quot;com.Settings.DepartmentGroup.verifyNameTextboxBehaviorTest&quot;/&gt;
+      &lt;class name=&quot;com.Settings.DepartmentGroup.verifyRequiredFieldValidationForNameTest&quot;/&gt;
+      &lt;class name=&quot;com.Settings.DepartmentGroup.verifySearchDepartmentGroupTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (43 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(43);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifytheReasonEditfunctionalityTest')
-data.setCell(0, 2, 'AddReasonPage.VerifytheReasonEditfunctionalityTest')
-data.setCell(0, 3, 3785);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'verifyAddDepartmentGroupTest')
+data.setCell(0, 2, 'com.Settings.DepartmentGroup.verifyAddDepartmentGroupTest')
+data.setCell(0, 3, 1895159);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'BulkReasonLinkingCancelTest')
+data.setCell(1, 2, 'com.ReasonLinkingPage.BulkReasonLinkingCancelTest')
+data.setCell(1, 3, 653858);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'YearlyToMonthlyChartNavigationTest')
+data.setCell(2, 2, 'com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest')
+data.setCell(2, 3, 26381);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'MonthWiseBarChartNavigationTest')
+data.setCell(3, 2, 'com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest')
+data.setCell(3, 3, 26373);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyRequiredFieldValidationTest')
+data.setCell(4, 2, 'com.Settings.Departements.verifyRequiredFieldValidationTest')
+data.setCell(4, 3, 25713);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'VerifyAddDepartmentTest')
+data.setCell(5, 2, 'com.Settings.Departements.VerifyAddDepartmentTest')
+data.setCell(5, 3, 24969);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyRequiredFieldValidationTest')
+data.setCell(6, 2, 'com.Settings.Departements.verifyDepartmentNameInputTest')
+data.setCell(6, 3, 24847);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyNameTextboxBehaviorTest')
+data.setCell(7, 2, 'com.Settings.DepartmentGroup.verifyNameTextboxBehaviorTest')
+data.setCell(7, 3, 24622);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyRequiredFieldValidationForNameTest')
+data.setCell(8, 2, 'com.Settings.DepartmentGroup.verifyRequiredFieldValidationForNameTest')
+data.setCell(8, 3, 24355);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyAddDepartmentGroupTest')
+data.setCell(9, 2, 'com.Settings.DepartmentGroup.verifyMTTRMTBFSourceRadioButtonsTest')
+data.setCell(9, 3, 23975);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyEditDepartmenTest')
+data.setCell(10, 2, 'com.Settings.Departements.verifyEditDepartmenTest')
+data.setCell(10, 3, 23857);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyDefaultMTTRMTBFSourceSelectionTest')
+data.setCell(11, 2, 'com.Settings.DepartmentGroup.verifyDefaultMTTRMTBFSourceSelectionTest')
+data.setCell(11, 3, 23830);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifySearchDepartmentGroupTest')
+data.setCell(12, 2, 'com.Settings.DepartmentGroup.verifySearchDepartmentGroupTest')
+data.setCell(12, 3, 23608);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyViewDepartmentTest')
+data.setCell(13, 2, 'com.Settings.Departements.verifyViewDepartmentTest')
+data.setCell(13, 3, 23506);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'VerifyAddDepartmentTest')
+data.setCell(14, 2, 'com.Settings.Departements.verifySearchDepartmentTest')
+data.setCell(14, 3, 23169);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyAddButtonDisabledStateTest')
+data.setCell(15, 2, 'com.Settings.DepartmentGroup.verifyAddButtonDisabledStateTest')
+data.setCell(15, 3, 23144);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyEditDepartmentGroupTest')
+data.setCell(16, 2, 'com.Settings.DepartmentGroup.verifyEditDepartmentGroupTest')
+data.setCell(16, 3, 23057);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'DowntimeWorstMachineTest')
+data.setCell(17, 2, 'com.DowntimeModule.DowntimeWorstMachineTest')
+data.setCell(17, 3, 14195);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'DowntimeBestMachineTest')
+data.setCell(18, 2, 'com.DowntimeModule.DowntimeBestMachineTest')
+data.setCell(18, 3, 12614);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'DowntimeEnhacementTableExport')
+data.setCell(19, 2, 'com.DowntimeEnhacementPage.DowntimeEnhacementTableExportTest')
+data.setCell(19, 3, 11787);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'DowntimeDashboardDataValidationTest')
+data.setCell(20, 2, 'com.DowntimeModule.DowntimeDashboardDataValidationTest')
+data.setCell(20, 3, 11339);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'NavigateToDowntimeEnhancementPage')
+data.setCell(21, 2, 'com.DowntimeEnhacementPage.NavigateToDowntimeEnhancementPageTest')
+data.setCell(21, 3, 10634);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'ReasonLinkingUnlinkedExportTest')
+data.setCell(22, 2, 'com.ReasonLinkingPage.ReasonLinkingUnlinkedExportTest')
+data.setCell(22, 3, 10140);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'DowntimeEnhacemntTableDataTest')
+data.setCell(23, 2, 'com.DowntimeEnhacementPage.DowntimeEnhacemntTableDataTest')
+data.setCell(23, 3, 8638);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'ReasonLinkingCombinedExportTest')
+data.setCell(24, 2, 'com.ReasonLinkingPage.ReasonLinkingCombinedExportTest')
+data.setCell(24, 3, 8439);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'VerifyShiftBViewDisplaysDataForDifferentShiftsTest')
+data.setCell(25, 2, 'com.DowntimeShiftview.VerifyShiftBViewDisplaysDataForDifferentShiftsTest')
+data.setCell(25, 3, 7885);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'VerifyShiftAViewDisplaysDataForDifferentShiftsTest')
+data.setCell(26, 2, 'com.DowntimeShiftview.VerifyShiftAViewDisplaysDataForDifferentShiftsTest')
+data.setCell(26, 3, 7228);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'ReasonLinkingFunctionalityTest')
+data.setCell(27, 2, 'com.ReasonLinkingPage.ReasonLinkingSingleLinkTest')
+data.setCell(27, 3, 7176);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'BulkReasonLinkingFunctionalityTest')
+data.setCell(28, 2, 'com.ReasonLinkingPage.BulkReasonLinkingFunctionalityTest')
+data.setCell(28, 3, 6930);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'DowntimeDashboardNavigationTest')
+data.setCell(29, 2, 'com.DowntimeModule.DowntimeDashboardNavigationTest')
+data.setCell(29, 3, 6784);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'ReasonLinkingLinkedExportTest')
+data.setCell(30, 2, 'com.ReasonLinkingPage.ReasonLinkingLinkedExportTest')
+data.setCell(30, 3, 6402);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'ReasonLinkingCycleTimeSourceFilterTest')
+data.setCell(31, 2, 'com.ReasonLinkingPage.ReasonLinkingCycleTimeSourceFilterTest')
+data.setCell(31, 3, 6299);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'DowntimeAnalysisDropdownValidationTest')
+data.setCell(32, 2, 'com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest')
+data.setCell(32, 3, 6239);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'DowntimeAnalysisNavigationTest')
+data.setCell(33, 2, 'com.DowntimeAnalysisPage.DowntimeAnalysisNavigationTest')
+data.setCell(33, 3, 6051);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'VerifyShiftBViewDisplaysDataForDifferentShiftsTest')
+data.setCell(34, 2, 'com.DowntimeShiftview.VerifyShiftCViewDisplaysDataForDifferentShiftsTest')
+data.setCell(34, 3, 5875);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'ReasonLinkingHandlingSourceFilterTest')
+data.setCell(35, 2, 'com.ReasonLinkingPage.ReasonLinkingHandlingSourceFilterTest')
+data.setCell(35, 3, 5354);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'VerifyShiftViewPageDataTest')
+data.setCell(36, 2, 'com.DowntimeShiftview.VerifyShiftViewPageDataTest')
+data.setCell(36, 3, 5063);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'ReasonLinkingUnlinkedFilterTest')
+data.setCell(37, 2, 'com.ReasonLinkingPage.ReasonLinkingUnlinkedFilterTest')
+data.setCell(37, 3, 4598);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'ReasonLinkingLinkedFilterTest')
+data.setCell(38, 2, 'com.ReasonLinkingPage.ReasonLinkingLinkedFilterTest')
+data.setCell(38, 3, 4497);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'VerifyNavigationToShiftViewPageTest')
+data.setCell(39, 2, 'com.DowntimeShiftview.VerifyNavigationToShiftViewPageTest')
+data.setCell(39, 3, 4375);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'ReasonLinkingNavigationTest')
+data.setCell(40, 2, 'com.ReasonLinkingPage.ReasonLinkingNavigationTest')
+data.setCell(40, 3, 4333);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'ReasonLinkingCombinedTest')
+data.setCell(41, 2, 'com.ReasonLinkingPage.ReasonLinkingCombinedTest')
+data.setCell(41, 3, 4321);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'ReasonLinkingFilterDataValidationTest')
+data.setCell(42, 2, 'com.ReasonLinkingPage.ReasonLinkingFilterDataValidationTest')
+data.setCell(42, 3, 3410);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 51 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">AddReasonPage.VerifytheReasonEditfunctionalityTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.DowntimeModule.DowntimeBestMachineTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">configBC</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">configBM</span>
-                <span class="method-start">2350 ms</span>
+                <span class="method-start">2761 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">VerifytheReasonEditfunctionalityTest</span>
-                <span class="method-start">4396 ms</span>
+                <span class="method-name">DowntimeBestMachineTest</span>
+                <span class="method-start">4379 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">16997 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">17135 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ReasonLinkingPage.BulkReasonLinkingCancelTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">17521 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">18553 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">BulkReasonLinkingCancelTest</span>
+                <span class="method-start">20133 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">673994 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">674147 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DowntimeEnhacementPage.DowntimeEnhacementTableExportTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">674725 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">676064 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DowntimeEnhacementTableExport</span>
+                <span class="method-start">677709 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">689498 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">689703 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">690144 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">691542 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DowntimeAnalysisDropdownValidationTest</span>
+                <span class="method-start">693420 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">699663 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">699749 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DowntimeShiftview.VerifyNavigationToShiftViewPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">700030 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">701329 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyNavigationToShiftViewPageTest</span>
+                <span class="method-start">702994 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">707370 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">707458 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Settings.Departements.VerifyAddDepartmentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">707720 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">708899 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyAddDepartmentTest</span>
+                <span class="method-start">710726 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">735699 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">735799 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Settings.DepartmentGroup.verifyAddButtonDisabledStateTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">736196 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">737373 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddButtonDisabledStateTest</span>
+                <span class="method-start">739089 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">762234 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">762329 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DowntimeModule.DowntimeDashboardDataValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">762819 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">764166 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DowntimeDashboardDataValidationTest</span>
+                <span class="method-start">765908 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">777250 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">777352 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ReasonLinkingPage.BulkReasonLinkingFunctionalityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">777739 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">779096 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BulkReasonLinkingFunctionalityTest</span>
+                <span class="method-start">781000 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">787931 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">788889 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DowntimeEnhacementPage.DowntimeEnhacemntTableDataTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">789196 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">790437 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DowntimeEnhacemntTableDataTest</span>
+                <span class="method-start">792124 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">800763 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">800850 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DowntimeAnalysisPage.DowntimeAnalysisNavigationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">801222 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">802473 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DowntimeAnalysisNavigationTest</span>
+                <span class="method-start">804599 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">810651 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">810741 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DowntimeShiftview.VerifyShiftAViewDisplaysDataForDifferentShiftsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">811037 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">812423 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyShiftAViewDisplaysDataForDifferentShiftsTest</span>
+                <span class="method-start">814129 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">821357 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">821429 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Settings.Departements.verifyDepartmentNameInputTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">821856 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">823245 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRequiredFieldValidationTest</span>
+                <span class="method-start">825230 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">850078 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">850205 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Settings.DepartmentGroup.verifyAddDepartmentGroupTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">850523 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">851751 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddDepartmentGroupTest</span>
+                <span class="method-start">853772 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">2748948 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">2749081 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DowntimeModule.DowntimeDashboardNavigationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">2749780 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">2751640 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DowntimeDashboardNavigationTest</span>
+                <span class="method-start">2753313 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">2760097 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">2760231 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ReasonLinkingPage.ReasonLinkingCombinedExportTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">2760627 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">2762403 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ReasonLinkingCombinedExportTest</span>
+                <span class="method-start">2764459 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">2772899 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">2773856 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DowntimeEnhacementPage.NavigateToDowntimeEnhancementPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">2774375 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">2776179 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NavigateToDowntimeEnhancementPage</span>
+                <span class="method-start">2778575 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">2789210 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">2789313 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">2789786 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">2791592 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MonthWiseBarChartNavigationTest</span>
+                <span class="method-start">2793666 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">2820041 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">2820144 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DowntimeShiftview.VerifyShiftBViewDisplaysDataForDifferentShiftsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">2820705 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">2822530 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyShiftBViewDisplaysDataForDifferentShiftsTest</span>
+                <span class="method-start">2824356 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">2832241 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">2832347 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Settings.Departements.verifyEditDepartmenTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">2832802 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">2834608 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEditDepartmenTest</span>
+                <span class="method-start">2836299 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">2860156 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">2860293 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Settings.DepartmentGroup.verifyDefaultMTTRMTBFSourceSelectionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">2860814 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">2862605 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDefaultMTTRMTBFSourceSelectionTest</span>
+                <span class="method-start">2864785 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">2888616 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">2888717 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DowntimeModule.DowntimeWorstMachineTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">2889300 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">2891057 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DowntimeWorstMachineTest</span>
+                <span class="method-start">2892999 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">2907200 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">2907310 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ReasonLinkingPage.ReasonLinkingCombinedTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">2907778 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">2909510 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ReasonLinkingCombinedTest</span>
+                <span class="method-start">2911453 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">2915774 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">2915966 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">2916324 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">2918141 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">YearlyToMonthlyChartNavigationTest</span>
+                <span class="method-start">2920250 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">2946631 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">2946763 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DowntimeShiftview.VerifyShiftCViewDisplaysDataForDifferentShiftsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">2947313 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">2949180 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyShiftBViewDisplaysDataForDifferentShiftsTest</span>
+                <span class="method-start">2951180 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">2957056 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">2957177 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Settings.Departements.verifyRequiredFieldValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">2957578 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">2959418 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRequiredFieldValidationTest</span>
+                <span class="method-start">2961269 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">2986983 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">2987083 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Settings.DepartmentGroup.verifyEditDepartmentGroupTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">2987600 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">2989359 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEditDepartmentGroupTest</span>
+                <span class="method-start">2991283 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3014345 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3014457 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ReasonLinkingPage.ReasonLinkingCycleTimeSourceFilterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3014991 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3017024 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ReasonLinkingCycleTimeSourceFilterTest</span>
+                <span class="method-start">3018890 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3025189 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3025365 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.DowntimeShiftview.VerifyShiftViewPageDataTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3025889 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3027741 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyShiftViewPageDataTest</span>
+                <span class="method-start">3029620 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3034684 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3034808 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Settings.Departements.verifySearchDepartmentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3035383 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3037249 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerifyAddDepartmentTest</span>
+                <span class="method-start">3039039 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3062208 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3062405 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Settings.DepartmentGroup.verifyMTTRMTBFSourceRadioButtonsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3062942 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3064741 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddDepartmentGroupTest</span>
+                <span class="method-start">3066790 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3090765 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3090932 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ReasonLinkingPage.ReasonLinkingFilterDataValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3091433 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3093191 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ReasonLinkingFilterDataValidationTest</span>
+                <span class="method-start">3095074 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3098484 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3098645 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Settings.Departements.verifyViewDepartmentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3099029 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3100841 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyViewDepartmentTest</span>
+                <span class="method-start">3102980 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3126487 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3126604 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Settings.DepartmentGroup.verifyNameTextboxBehaviorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3127138 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3128983 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNameTextboxBehaviorTest</span>
+                <span class="method-start">3130604 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3155226 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3155335 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ReasonLinkingPage.ReasonLinkingHandlingSourceFilterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3155859 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3157576 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ReasonLinkingHandlingSourceFilterTest</span>
+                <span class="method-start">3160187 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3165541 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3165641 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Settings.DepartmentGroup.verifyRequiredFieldValidationForNameTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3166006 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3167790 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRequiredFieldValidationForNameTest</span>
+                <span class="method-start">3169960 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3194315 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3194436 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ReasonLinkingPage.ReasonLinkingLinkedExportTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3194946 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3196757 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ReasonLinkingLinkedExportTest</span>
+                <span class="method-start">3198797 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3205199 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3206157 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Settings.DepartmentGroup.verifySearchDepartmentGroupTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3206642 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3208409 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchDepartmentGroupTest</span>
+                <span class="method-start">3210290 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3233899 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3234010 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ReasonLinkingPage.ReasonLinkingLinkedFilterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3234535 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3236352 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ReasonLinkingLinkedFilterTest</span>
+                <span class="method-start">3238316 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3242813 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3242983 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ReasonLinkingPage.ReasonLinkingNavigationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3243447 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3245264 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ReasonLinkingNavigationTest</span>
+                <span class="method-start">3247334 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3251667 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3251895 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ReasonLinkingPage.ReasonLinkingSingleLinkTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3252361 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3254232 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ReasonLinkingFunctionalityTest</span>
+                <span class="method-start">3255980 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3263157 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3264086 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ReasonLinkingPage.ReasonLinkingUnlinkedExportTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3264489 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3266338 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ReasonLinkingUnlinkedExportTest</span>
+                <span class="method-start">3268029 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3278170 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3279128 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ReasonLinkingPage.ReasonLinkingUnlinkedFilterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configBC</span>
+                <span class="method-start">3279603 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">3281484 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ReasonLinkingUnlinkedFilterTest</span>
+                <span class="method-start">3283167 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">3287765 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">configAC</span>
+                <span class="method-start">3287866 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
