@@ -3,15 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.Settings.DepartmentGroup.verifyAddDepartmentGroupTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="verifyAddDepartmentGroupTest"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.Settings.DepartmentGroup.verifyAddDepartmentGroupTest -->
       <class name="com.ReasonLinkingPage.BulkReasonLinkingCancelTest">
         <methods>
           <include name="configBM"/>
@@ -21,15 +12,78 @@
           <include name="BulkReasonLinkingCancelTest"/>
         </methods>
       </class> <!-- com.ReasonLinkingPage.BulkReasonLinkingCancelTest -->
-      <class name="com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest">
+      <class name="com.Settings.DepartmentGroup.verifyMTTRMTBFSourceRadioButtonsTest">
+        <methods>
+          <include name="verifyAddDepartmentGroupTest"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.Settings.DepartmentGroup.verifyMTTRMTBFSourceRadioButtonsTest -->
+      <class name="com.ReasonLinkingPage.ReasonLinkingHandlingSourceFilterTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="ReasonLinkingHandlingSourceFilterTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.ReasonLinkingPage.ReasonLinkingHandlingSourceFilterTest -->
+      <class name="com.DowntimeShiftview.VerifyShiftCViewDisplaysDataForDifferentShiftsTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="VerifyShiftBViewDisplaysDataForDifferentShiftsTest"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.DowntimeShiftview.VerifyShiftCViewDisplaysDataForDifferentShiftsTest -->
+      <class name="com.Settings.DepartmentGroup.verifySearchDepartmentGroupTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="verifySearchDepartmentGroupTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.Settings.DepartmentGroup.verifySearchDepartmentGroupTest -->
+      <class name="com.DowntimeShiftview.VerifyShiftBViewDisplaysDataForDifferentShiftsTest">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
           <include name="configBC"/>
-          <include name="YearlyToMonthlyChartNavigationTest"/>
+          <include name="VerifyShiftBViewDisplaysDataForDifferentShiftsTest"/>
         </methods>
-      </class> <!-- com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest -->
+      </class> <!-- com.DowntimeShiftview.VerifyShiftBViewDisplaysDataForDifferentShiftsTest -->
+      <class name="com.Settings.DepartmentGroup.verifyDefaultMTTRMTBFSourceSelectionTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="verifyDefaultMTTRMTBFSourceSelectionTest"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.Settings.DepartmentGroup.verifyDefaultMTTRMTBFSourceSelectionTest -->
+      <class name="com.ReasonLinkingPage.ReasonLinkingSingleLinkTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="ReasonLinkingFunctionalityTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.ReasonLinkingPage.ReasonLinkingSingleLinkTest -->
+      <class name="com.Settings.DepartmentGroup.verifyAddDepartmentGroupTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="verifyAddDepartmentGroupTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.Settings.DepartmentGroup.verifyAddDepartmentGroupTest -->
       <class name="com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest">
         <methods>
           <include name="configBM"/>
@@ -39,6 +93,24 @@
           <include name="DowntimeAnalysisDropdownValidationTest"/>
         </methods>
       </class> <!-- com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest -->
+      <class name="com.ReasonLinkingPage.ReasonLinkingCombinedExportTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="ReasonLinkingCombinedExportTest"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.ReasonLinkingPage.ReasonLinkingCombinedExportTest -->
+      <class name="com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="YearlyToMonthlyChartNavigationTest"/>
+        </methods>
+      </class> <!-- com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest -->
       <class name="com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest">
         <methods>
           <include name="configBM"/>
@@ -48,6 +120,42 @@
           <include name="MonthWiseBarChartNavigationTest"/>
         </methods>
       </class> <!-- com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest -->
+      <class name="com.Settings.DepartmentGroup.verifyAddButtonDisabledStateTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="verifyAddButtonDisabledStateTest"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.Settings.DepartmentGroup.verifyAddButtonDisabledStateTest -->
+      <class name="com.Settings.DepartmentGroup.verifyEditDepartmentGroupTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="verifyEditDepartmentGroupTest"/>
+        </methods>
+      </class> <!-- com.Settings.DepartmentGroup.verifyEditDepartmentGroupTest -->
+      <class name="com.Settings.DepartmentGroup.verifyNameTextboxBehaviorTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="verifyNameTextboxBehaviorTest"/>
+        </methods>
+      </class> <!-- com.Settings.DepartmentGroup.verifyNameTextboxBehaviorTest -->
+      <class name="com.Settings.DepartmentGroup.verifyRequiredFieldValidationForNameTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="verifyRequiredFieldValidationForNameTest"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.Settings.DepartmentGroup.verifyRequiredFieldValidationForNameTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -15,7 +15,7 @@ public class DepartmentGroup {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//span[text()=\"Group\"]")
+	@FindBy(xpath = "//span[text()=\"Department Group\"]")
 	private WebElement Group;
 
 	@FindBy(xpath = "//div[contains(text(),'Department Group created successfully')]")
