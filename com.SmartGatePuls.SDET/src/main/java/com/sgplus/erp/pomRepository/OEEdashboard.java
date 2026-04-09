@@ -230,8 +230,17 @@ public class OEEdashboard {
 
 	@FindBy(xpath = "//div[@class='legend-class']")
 	private WebElement Legends;
+	
+	@FindBy(xpath = "//div[@id=\"group_bar_chart\"]")
+	private WebElement MachinelevelComparisongraph;
+
+	public WebElement getMachinelevelComparisongraph() {
+		return MachinelevelComparisongraph;
+	}
 
 	public WebElement getLegends() {
 		return Legends;
+		
+		
 	}
 }

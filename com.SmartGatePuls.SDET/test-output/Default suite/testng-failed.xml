@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Settings.DepartmentGroup.verifyMTTRMTBFSourceRadioButtonsTest">
+      <class name="com.RecipeMasterPage.VerifytheaddRecipefunctionalityTest">
         <methods>
-          <include name="verifyAddDepartmentGroupTest"/>
           <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
+          <include name="VerifytheaddRecipefunctionalityTest"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.Settings.DepartmentGroup.verifyMTTRMTBFSourceRadioButtonsTest -->
+      </class> <!-- com.RecipeMasterPage.VerifytheaddRecipefunctionalityTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
