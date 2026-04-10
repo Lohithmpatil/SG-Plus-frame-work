@@ -144,5 +144,19 @@ public class MasterRecipe {
 
 	@FindBy(xpath = "//button[@title=\"Download Format\"]")
 	private WebElement Exportbutton;
+	
+	@FindBy(xpath = "//div[contains(@class,'Toastify')]//button\"")
+	private WebElement SucessPopupmessageClose;
+	
+	public WebElement getEdit3Dots() {
+		return Edit3Dots;
+	}
+
+	@FindBy(xpath = "//button[@id=\"depts-action\"]")
+	private WebElement Edit3Dots;
+
+	public WebElement getSucessPopupmessageClose() {
+		return SucessPopupmessageClose;
+	}
 
 }

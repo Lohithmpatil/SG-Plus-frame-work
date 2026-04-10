@@ -14,15 +14,14 @@ import com.sgplus.erp.genericutility.ExcelUtility;
 import com.sgplus.erp.genericutility.FileUtility;
 import com.sgplus.erp.genericutility.JavaUtility;
 import com.sgplus.erp.genericutility.WebDriverUtility;
-import com.sgplus.erp.pomRepository.Departments;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.MasterRecipe;
 
-public class VerifytheaddRecipefunctionalityTest extends BaseClass {
+public class VerifyTheRecipeEditFunctionalityTest extends BaseClass {
 
 	// TestNG test method annotation
 	@Test
-	public void VerifytheaddRecipefunctionalityTest() throws Throwable {
+	public void VerifytheRecipeEditfunctionalityTest() throws Throwable {
 
 		// Create WebDriverUtility object for waits, clicks, dropdown handling
 		WebDriverUtility we = new WebDriverUtility();
@@ -48,7 +47,7 @@ public class VerifytheaddRecipefunctionalityTest extends BaseClass {
 
 		// Read department base name from Excel (Sheet1, Row 2, Column 2)
 		// Append random number to avoid duplication
-		String Recipecode = elib.getDataFromExcel("Sheet1", 1, 1) + intRanNum;
+		String Departmentname = elib.getDataFromExcel("Sheet1", 1, 1) + intRanNum;
 
 		// Wait until all DOM elements are loaded
 		we.waitForElementInDOM(driver);
@@ -62,70 +61,34 @@ public class VerifytheaddRecipefunctionalityTest extends BaseClass {
 		// Click on the Departments option under Settings
 		we.waitAndClick(re.getRecipedashboard());
 
-		we.waitAndClick(re.getAddRecipeButton());
+		we.waitAndClick(re.getEdit3Dots());
 
+		we.waitAndClick(re.getEditbutton());
+		
 		we.waitAndClick(re.getRecipecodeFiled());
+		
+		re.getRecipecodeFiled().clear();
 
-		re.getRecipecodeFiled().sendKeys(Recipecode);
+		re.getRecipecodeFiled().sendKeys("EditRecipe");
 
-		we.waitAndClick(re.getCycletimefield());
-
-		re.getCycletimefield().sendKeys(String.valueOf(20));
-
-		we.waitAndClick(re.getSapcode());
-
-		// re.getSapcode().sendKeys(String.valueOf("SAP123"));
-
-		re.getSapcode().sendKeys("SAP123");
-
-		we.waitAndClick(re.getProductionTypedropdown());
-
-		we.select(re.getProductionTypedropdown(), "MCR");
-
-		// we.waitAndClick(re.getAreadropdown());
-
-		// we.select(re.getAreadropdown(), "TBM-PCR");
-
-		// we.waitAndClick(re.getAreaChekbox());
-
-		// we.waitAndClick(re.getAreadropdowncollapse());
-
-		we.waitAndClick(re.getEquipementdropdown());
-
-		we.select(re.getEquipementdropdown(), "SC4RC");
-
-		we.waitAndClick(re.getCycleqtyfield());
-		re.getCycleqtyfield().sendKeys(String.valueOf(1));
-
-		we.waitAndClick(re.getSubmitbutton());
-
+	   we.waitAndClick(re.getSubmitbutton());
 		// Create explicit wait to wait for success toast message
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		// Wait until the success message is visible on the UI
 		WebElement toastMsg = wait.until(ExpectedConditions
-				.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Recipe created successfully')]")));
+				.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Recipe updated successfully')]")));
 
 		// Capture the actual success message text
 		String actualMessage = toastMsg.getText();
 
 		// Assert that the success message contains expected text
-		Assert.assertTrue(actualMessage.contains("Recipe created successfully"),
-				"Recipe creation success message is NOT displayed");
+		Assert.assertTrue(actualMessage.contains("Recipe updated successfully"),
+				"Recipe update success message is NOT displayed");
 
 		// Print the success message in console for verification
 		System.out.println("SUCCESS MESSAGE VERIFIED: " + actualMessage);
 
-		we.waitAndClick(re.getSucessPopupmessageClose());
-
-		/*
-		 * VerifyTheAddRecipeFunctionalityTest VerifyTheRecipeSearchFunctionalityTest
-		 * VerifyTheRecipeEditFunctionalityTest VerifyTheRecipeViewFunctionalityTest
-		 * VerifyTheBulkLinkRecipeFunctionalityTest
-		 * ValidateRequiredFieldsInAddRecipeFormTest VerifyRecipeCodeFieldInputTest
-		 * VerifyCycleTimeFieldInputTest VerifySAPCodeFieldInputTest
-		 * VerifyProductionTypeDropdownFunctionalityTest
-		 */
+		we.waitAndClick(re.getSucessPopupmessageClose());  
 	}
-
 }
