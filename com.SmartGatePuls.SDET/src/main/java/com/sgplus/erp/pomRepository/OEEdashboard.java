@@ -234,6 +234,20 @@ public class OEEdashboard {
 	@FindBy(xpath = "//div[@id=\"group_bar_chart\"]")
 	private WebElement MachinelevelComparisongraph;
 
+	@FindBy(xpath = "//select[@id=\"groupBy\"]")
+	private WebElement ShiftProductionGropByDrodown ;
+	
+	@FindBy(xpath = "//input[@id=\"percentageToggle\"]")
+	private WebElement MinutestoPercentageToggleButton ;
+	
+	public WebElement getMinutestoPercentageToggleButton() {
+		return MinutestoPercentageToggleButton;
+	}
+
+	public WebElement getShiftProductionGropByDrodown() {
+		return ShiftProductionGropByDrodown;
+	}
+
 	public WebElement getMachinelevelComparisongraph() {
 		return MachinelevelComparisongraph;
 	}
