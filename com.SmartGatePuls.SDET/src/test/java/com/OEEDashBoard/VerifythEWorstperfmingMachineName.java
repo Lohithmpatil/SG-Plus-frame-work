@@ -1,10 +1,12 @@
 package com.OEEDashBoard;
 
-import java.util.List;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.sgplus.erp.genericutility.BaseClass;
@@ -12,9 +14,10 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.OEEdashboard;
 
-public class VerifyMchinelevelComparisonGraphisdisplayedTest extends BaseClass {
+public class VerifythEWorstperfmingMachineName extends BaseClass{
+	
 	@Test
-	public void VerifyMchinelevelComparisonGraphisdisplayedTest() throws Throwable {
+	public void VerifyDisplaytheBestPerformingMachine() throws Throwable {
 		// Initialize WebDriver utility for custom waits and actions
 		WebDriverUtility we = new WebDriverUtility();
 
@@ -96,12 +99,25 @@ public class VerifyMchinelevelComparisonGraphisdisplayedTest extends BaseClass {
 		// Clicks on Apply Filter button
 		we.waitAndClick(oe.getApplyFilter());
 
-		we.waitAndClick(oe.getMachinelevelComparisongraph());
+		// Scroll to the bottom of the page to make machine tables visible
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,700)");
 
-		WebElement chart = oe.getMachinelevelComparisongraph();
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-		// WebElement chart = driver.findElement(By.id("group_bar_chart"));
-		Assert.assertTrue(chart.isDisplayed(), "Bar chart is not displayed");
+	        // Wait for Best Performing Machines heading
+	        wait.until(ExpectedConditions.visibilityOfElementLocated(
+	                By.xpath("//*[contains(text(),'WORST PERFORMING MACHINES')]")));
 
+	        // Get first machine name
+	        WebElement worstMachine = wait.until(ExpectedConditions.visibilityOfElementLocated(
+	                By.xpath("(//div[contains(text(),'WORST PERFORMING MACHINES')]/following::table//tr[1]/td[1])[1]")));
+
+	        // Get OEE value
+	        WebElement worstOEE = wait.until(ExpectedConditions.visibilityOfElementLocated(
+	                By.xpath("(//div[contains(text(),'WORST PERFORMING MACHINES')]/following::table//tr[1]/td[2])[1]")));
+
+	        System.out.println("WORST Performing Machine : " + worstMachine.getText());
+	        System.out.println("OEE Value : " + worstOEE.getText());
 	}
 }

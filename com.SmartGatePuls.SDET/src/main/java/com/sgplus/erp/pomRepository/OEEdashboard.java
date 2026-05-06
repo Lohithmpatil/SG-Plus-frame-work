@@ -240,6 +240,13 @@ public class OEEdashboard {
 	@FindBy(xpath = "//input[@id=\"percentageToggle\"]")
 	private WebElement MinutestoPercentageToggleButton ;
 	
+	@FindBy(xpath = "//div[contains(text(),'BEST PERFORMING MACHINES')]")
+	private WebElement BestPerformingMachineOEE;
+	
+	public WebElement getBestPerformingMachineOEE() {
+		return BestPerformingMachineOEE;
+	}
+
 	public WebElement getMinutestoPercentageToggleButton() {
 		return MinutestoPercentageToggleButton;
 	}

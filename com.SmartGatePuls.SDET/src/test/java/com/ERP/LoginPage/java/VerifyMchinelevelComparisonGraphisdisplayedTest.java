@@ -1,14 +1,9 @@
-package com.OEEDashBoard;
+package com.ERP.LoginPage.java;
 
-import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,10 +12,9 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.OEEdashboard;
 
-public class VerifytheShiftproductionreportEquipemntwise extends BaseClass {
-
+public class VerifyMchinelevelComparisonGraphisdisplayedTest extends BaseClass {
 	@Test
-	public void VerifytheShiftproductionreportEquipemntwise() throws Throwable {
+	public void VerifyMchinelevelComparisonGraphisdisplayedTest() throws Throwable {
 		// Initialize WebDriver utility for custom waits and actions
 		WebDriverUtility we = new WebDriverUtility();
 
@@ -101,33 +95,13 @@ public class VerifytheShiftproductionreportEquipemntwise extends BaseClass {
 
 		// Clicks on Apply Filter button
 		we.waitAndClick(oe.getApplyFilter());
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,600)");
 
-		we.waitAndClick(oe.getShiftProductionGropByDrodown());
+		we.waitAndClick(oe.getMachinelevelComparisongraph());
 
-		we.select(oe.getShiftProductionGropByDrodown(), "Equipment");
+		WebElement chart = oe.getMachinelevelComparisongraph();
 
-		WebElement dropdown = driver.findElement(By.xpath("//select[@id=\"groupBy\"]"));
-		Select select = new Select(dropdown);
+		// WebElement chart = driver.findElement(By.id("group_bar_chart"));
+		Assert.assertTrue(chart.isDisplayed(), "Bar chart is not displayed");
 
-		String selectedOption = select.getFirstSelectedOption().getText();
-
-		if (selectedOption.equals("Equipment")) {
-			System.out.println("PASS: Equipment is selected in Group By dropdown");
-		} else {
-			System.out.println("FAIL: Expected 'Equipment' but found: " + selectedOption);
-		}
-
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table/tbody/tr[2]/td[1]")));
-
-		String header = driver.findElement(By.xpath("//table/tbody/tr[2]/td[1]")).getText();
-
-		if (header.equals("SCPTBS20")) {
-			System.out.println("PASS: Table header is Equipment");
-		} else {
-			System.out.println("FAIL: Header is " + header);
-		}
 	}
 }

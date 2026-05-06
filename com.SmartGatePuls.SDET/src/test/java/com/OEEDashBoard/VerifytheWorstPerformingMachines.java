@@ -1,26 +1,26 @@
 package com.OEEDashBoard;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.internal.BaseClassFinder;
 
 import com.sgplus.erp.genericutility.BaseClass;
 import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.OEEdashboard;
 
-public class VerifytheShiftproductionreportEquipemntwise extends BaseClass {
-
+public class VerifytheWorstPerformingMachines extends BaseClass {
 	@Test
-	public void VerifytheShiftproductionreportEquipemntwise() throws Throwable {
+	public void VerifytheWorstPerformingMachines() throws Throwable {
 		// Initialize WebDriver utility for custom waits and actions
 		WebDriverUtility we = new WebDriverUtility();
 
@@ -101,33 +101,35 @@ public class VerifytheShiftproductionreportEquipemntwise extends BaseClass {
 
 		// Clicks on Apply Filter button
 		we.waitAndClick(oe.getApplyFilter());
+
+		// Scroll to the bottom of the page to make machine tables visible
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,600)");
+		js.executeScript("window.scrollBy(0,700)");
 
-		we.waitAndClick(oe.getShiftProductionGropByDrodown());
+		// Locate all OEE values from Best Performing Machines table
+		List<WebElement> oeeElements = driver.findElements(
+				By.xpath("//div[contains(text(),'WORST PERFORMING MACHINES')]/following::table[1]//tbody/tr/td[2]"));
 
-		we.select(oe.getShiftProductionGropByDrodown(), "Equipment");
+		List<Double> actualValues = new ArrayList<>();
 
-		WebElement dropdown = driver.findElement(By.xpath("//select[@id=\"groupBy\"]"));
-		Select select = new Select(dropdown);
-
-		String selectedOption = select.getFirstSelectedOption().getText();
-
-		if (selectedOption.equals("Equipment")) {
-			System.out.println("PASS: Equipment is selected in Group By dropdown");
-		} else {
-			System.out.println("FAIL: Expected 'Equipment' but found: " + selectedOption);
+		// Read values from UI
+		for (WebElement ele : oeeElements) {
+			String value = ele.getText().trim();
+			actualValues.add(Double.parseDouble(value));
 		}
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table/tbody/tr[2]/td[1]")));
+		// Create expected sorted list
+		List<Double> expectedValues = new ArrayList<>(actualValues);
+		expectedValues.sort(Collections.reverseOrder());
 
-		String header = driver.findElement(By.xpath("//table/tbody/tr[2]/td[1]")).getText();
-
-		if (header.equals("SCPTBS20")) {
-			System.out.println("PASS: Table header is Equipment");
+		// Validation
+		if (actualValues.equals(expectedValues)) {
+			System.out.println("PASS : WORST Performing Machines are sorted correctly");
 		} else {
-			System.out.println("FAIL: Header is " + header);
+			System.out.println("FAIL : WORST Performing Machines are NOT sorted correctly");
+			System.out.println("Actual Values  : " + actualValues);
+			System.out.println("Expected Values: " + expectedValues);
 		}
+
 	}
 }

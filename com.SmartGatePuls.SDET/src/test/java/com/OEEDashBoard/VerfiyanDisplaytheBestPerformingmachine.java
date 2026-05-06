@@ -1,15 +1,12 @@
 package com.OEEDashBoard;
 
 import java.time.Duration;
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.sgplus.erp.genericutility.BaseClass;
@@ -17,10 +14,10 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.OEEdashboard;
 
-public class VerifytheShiftproductionreportEquipemntwise extends BaseClass {
+public class VerfiyanDisplaytheBestPerformingmachine extends BaseClass {
 
 	@Test
-	public void VerifytheShiftproductionreportEquipemntwise() throws Throwable {
+	public void VerifyDisplaytheBestPerformingMachine() throws Throwable {
 		// Initialize WebDriver utility for custom waits and actions
 		WebDriverUtility we = new WebDriverUtility();
 
@@ -101,33 +98,27 @@ public class VerifytheShiftproductionreportEquipemntwise extends BaseClass {
 
 		// Clicks on Apply Filter button
 		we.waitAndClick(oe.getApplyFilter());
+
+		// Scroll to the bottom of the page to make machine tables visible
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,600)");
+		js.executeScript("window.scrollBy(0,700)");
 
-		we.waitAndClick(oe.getShiftProductionGropByDrodown());
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-		we.select(oe.getShiftProductionGropByDrodown(), "Equipment");
+	        // Wait for Best Performing Machines heading
+	        wait.until(ExpectedConditions.visibilityOfElementLocated(
+	                By.xpath("//*[contains(text(),'BEST PERFORMING MACHINES')]")));
 
-		WebElement dropdown = driver.findElement(By.xpath("//select[@id=\"groupBy\"]"));
-		Select select = new Select(dropdown);
+	        // Get first machine name
+	        WebElement bestMachine = wait.until(ExpectedConditions.visibilityOfElementLocated(
+	                By.xpath("(//div[contains(text(),'BEST PERFORMING MACHINES')]/following::table//tr[1]/td[1])[1]")));
 
-		String selectedOption = select.getFirstSelectedOption().getText();
+	        // Get OEE value
+	        WebElement bestOEE = wait.until(ExpectedConditions.visibilityOfElementLocated(
+	                By.xpath("(//div[contains(text(),'BEST PERFORMING MACHINES')]/following::table//tr[1]/td[2])[1]")));
 
-		if (selectedOption.equals("Equipment")) {
-			System.out.println("PASS: Equipment is selected in Group By dropdown");
-		} else {
-			System.out.println("FAIL: Expected 'Equipment' but found: " + selectedOption);
-		}
-
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table/tbody/tr[2]/td[1]")));
-
-		String header = driver.findElement(By.xpath("//table/tbody/tr[2]/td[1]")).getText();
-
-		if (header.equals("SCPTBS20")) {
-			System.out.println("PASS: Table header is Equipment");
-		} else {
-			System.out.println("FAIL: Header is " + header);
-		}
+	        System.out.println("Best Performing Machine : " + bestMachine.getText());
+	        System.out.println("OEE Value : " + bestOEE.getText());
 	}
+
 }

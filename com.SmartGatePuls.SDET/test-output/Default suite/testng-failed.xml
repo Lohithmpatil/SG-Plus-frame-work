@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.OEEDashBoard.VerifyctheMinutesToPercenatgeShiftproductiontable">
+      <class name="com.OEEDashBoard.DisplayllWorstPerfoemingMachines">
         <methods>
+          <include name="VerifytheWorstPerformingMachines"/>
           <include name="configBM"/>
-          <include name="VerifyctheMinutesToPercenatgeShiftproductiontable"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.OEEDashBoard.VerifyctheMinutesToPercenatgeShiftproductiontable -->
+      </class> <!-- com.OEEDashBoard.DisplayllWorstPerfoemingMachines -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
