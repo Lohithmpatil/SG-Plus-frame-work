@@ -77,8 +77,7 @@ public class BaseClass {
 
 	// @AfterSuite(groups = { "smokeTest", "regressionTest" })
 	public void configAS() {
-		System.out.println("========================close DB========================"); 
-
 	} 
+
 
 }

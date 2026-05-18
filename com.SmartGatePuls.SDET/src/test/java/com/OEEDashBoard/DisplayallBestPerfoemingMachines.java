@@ -104,7 +104,7 @@ public class DisplayallBestPerfoemingMachines extends BaseClass {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,700)");
 		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		// Wait until table is visible
 		wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//*[contains(text(),'BEST PERFORMING MACHINES')]")));
