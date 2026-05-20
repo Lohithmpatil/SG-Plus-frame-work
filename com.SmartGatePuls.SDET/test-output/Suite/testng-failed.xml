@@ -30,15 +30,6 @@
           <include name="configBC"/>
         </methods>
       </class> <!-- com.OEEDashBoard.VerifytheShiftproductionreportEquipemntwise -->
-      <class name="com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="DowntimeAnalysisDropdownValidationTest"/>
-        </methods>
-      </class> <!-- com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest -->
       <class name="com.OEEDashBoard.ProductionCapacitylossgraphTest">
         <methods>
           <include name="configBM"/>
@@ -48,6 +39,15 @@
           <include name="ProductionCapacitylossgraphTest"/>
         </methods>
       </class> <!-- com.OEEDashBoard.ProductionCapacitylossgraphTest -->
+      <class name="com.RecipeMasterPage.VerifyProductionTypeDropdownFunctionalityTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifyProductionTypeDropdownFunctionalityTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RecipeMasterPage.VerifyProductionTypeDropdownFunctionalityTest -->
       <class name="com.ReasonLinkingPage.BulkReasonLinkingCancelTest">
         <methods>
           <include name="configBM"/>
@@ -57,15 +57,6 @@
           <include name="BulkReasonLinkingCancelTest"/>
         </methods>
       </class> <!-- com.ReasonLinkingPage.BulkReasonLinkingCancelTest -->
-      <class name="com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="YearlyToMonthlyChartNavigationTest"/>
-        </methods>
-      </class> <!-- com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest -->
       <class name="com.OEEDashBoard.VerifytheShiftproductionreportEquipmentandPeriodwise">
         <methods>
           <include name="configBM"/>
@@ -75,15 +66,15 @@
           <include name="configBC"/>
         </methods>
       </class> <!-- com.OEEDashBoard.VerifytheShiftproductionreportEquipmentandPeriodwise -->
-      <class name="com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest">
+      <class name="com.RecipeMasterPage.VerifytheaddRecipefunctionalityTest">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
+          <include name="VerifytheaddRecipefunctionalityTest"/>
           <include name="configBC"/>
-          <include name="MonthWiseBarChartNavigationTest"/>
         </methods>
-      </class> <!-- com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest -->
+      </class> <!-- com.RecipeMasterPage.VerifytheaddRecipefunctionalityTest -->
       <class name="com.OEEDashBoard.OEEdashboardpagedatapresentedTest">
         <methods>
           <include name="configBM"/>
@@ -93,6 +84,15 @@
           <include name="configBC"/>
         </methods>
       </class> <!-- com.OEEDashBoard.OEEdashboardpagedatapresentedTest -->
+      <class name="com.RecipeMasterPage.VerifyTheRecipeSearchFunctionalityTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifytheRecipeSearchfunctionalityTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RecipeMasterPage.VerifyTheRecipeSearchFunctionalityTest -->
       <class name="AddReasonPage.VerifytheReasonsearchfunctionalityTest">
         <methods>
           <include name="configBM"/>
@@ -102,15 +102,105 @@
           <include name="configBC"/>
         </methods>
       </class> <!-- AddReasonPage.VerifytheReasonsearchfunctionalityTest -->
-      <class name="com.OEEDashBoard.NoOfEquipemntFunctionalityTableTest">
+      <class name="com.RecipeMasterPage.VerifyTheRecipeViewFunctionalityTest">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
           <include name="configBC"/>
-          <include name="NoOfEquipemntFunctionalityTableTest"/>
+          <include name="VerifytheRecipeViewfunctionalityTest"/>
         </methods>
-      </class> <!-- com.OEEDashBoard.NoOfEquipemntFunctionalityTableTest -->
+      </class> <!-- com.RecipeMasterPage.VerifyTheRecipeViewFunctionalityTest -->
+      <class name="com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="DowntimeAnalysisDropdownValidationTest"/>
+        </methods>
+      </class> <!-- com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest -->
+      <class name="com.RecipeMasterPage.VerifyRecipeCodeFieldInputTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifyRecipeCodeFieldInputTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RecipeMasterPage.VerifyRecipeCodeFieldInputTest -->
+      <class name="com.RecipeMasterPage.VerifySAPCodeFieldInputTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifySAPCodeFieldInputTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RecipeMasterPage.VerifySAPCodeFieldInputTest -->
+      <class name="com.RecipeMasterPage.ValidateRequiredFieldsInAddRecipeFormTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="ValidateRequiredFieldsInAddRecipeFormTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RecipeMasterPage.ValidateRequiredFieldsInAddRecipeFormTest -->
+      <class name="com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="YearlyToMonthlyChartNavigationTest"/>
+        </methods>
+      </class> <!-- com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest -->
+      <class name="com.RecipeMasterPage.VerifyTheRecipeEditFunctionalityTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifytheRecipeEditfunctionalityTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RecipeMasterPage.VerifyTheRecipeEditFunctionalityTest -->
+      <class name="com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="MonthWiseBarChartNavigationTest"/>
+        </methods>
+      </class> <!-- com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest -->
+      <class name="com.Settings.DepartmentGroup.verifyRequiredFieldValidationForNameTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="verifyRequiredFieldValidationForNameTest"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.Settings.DepartmentGroup.verifyRequiredFieldValidationForNameTest -->
+      <class name="com.RecipeMasterPage.VerifyCycleTimeFieldInputTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifyCycleTimeFieldInputTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RecipeMasterPage.VerifyCycleTimeFieldInputTest -->
+      <class name="com.OEEDashBoard.VerifythEWorstperfmingMachineName">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifyDisplaytheBestPerformingMachine"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.OEEDashBoard.VerifythEWorstperfmingMachineName -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

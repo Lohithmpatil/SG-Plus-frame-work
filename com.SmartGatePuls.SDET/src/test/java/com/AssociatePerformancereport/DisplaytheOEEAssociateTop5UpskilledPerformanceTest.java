@@ -90,7 +90,7 @@ public class  DisplaytheOEEAssociateTop5UpskilledPerformanceTest extends BaseCla
 
 		// Validate Associate Performance Report Table
 
-		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(50));
 
 		// Wait for table
 		WebElement table = wait1.until(

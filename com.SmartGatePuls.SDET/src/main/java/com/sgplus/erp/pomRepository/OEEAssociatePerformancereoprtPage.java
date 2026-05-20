@@ -82,6 +82,18 @@ public class OEEAssociatePerformancereoprtPage {
 	@FindBy(xpath = "//button[text()=\"Apply Filter\"]")
 	private WebElement ApplyFilter;
 	
+	public WebElement getStatusdropdown() {
+		return statusdropdown;
+	}
+
+	@FindBy(xpath = "//div[@class=\" css-1xc3v61-indicatorContainer\"]")
+	private WebElement statusdropdown;
 	
+	@FindBy(xpath = "//button[@title=\"Export\"]")
+	private WebElement Exportbutton;
+
+	public WebElement getExportbutton() {
+		return Exportbutton;
+	}
 	
 }

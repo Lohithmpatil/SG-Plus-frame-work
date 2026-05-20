@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -19,10 +18,9 @@ import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.OEEAssociatePerformancereoprtPage;
 import com.sgplus.erp.pomRepository.OEEdashboard;
 
-public class VerfiytheOverAllPerformanceGraph extends BaseClass {
-
+public class VerifytheAssociateperformancetable extends BaseClass {
 	@Test
-	public void VerfiytheOverAllPerformanceGraph() throws Throwable {
+	public void VerifytheAssociateperformancetable() throws Throwable {
 		// Initialize WebDriver utility for custom waits and actions
 		WebDriverUtility we = new WebDriverUtility();
 
@@ -85,51 +83,34 @@ public class VerfiytheOverAllPerformanceGraph extends BaseClass {
 		// Wait for the 'Apply Filter' button to be clickable and then click it
 		we.waitAndClick(aso.getApplyFilter());
 		
-		 // ==========================
-        // WAIT FOR GRAPH LOAD
-        // ==========================
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//*[name()='svg']")));
+		js.executeScript("window.scrollBy(0,500)");
 
-     // ==========================
-     // VALIDATE GRAPH DISPLAYED
-     // ==========================
-
-     WebElement graph = driver.findElement(
-             By.xpath("//*[name()='svg']"));
-
-     Assert.assertTrue(graph.isDisplayed(),
-             "Performance graph is not displayed");
-
-     System.out.println("Graph displayed successfully");
-  // ==========================
-  // VALIDATE GRAPH POINTS
-  // ==========================
-
-  // Wait until graph points are visible
-  WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(50));
-
-  List<WebElement> graphPoints = wait1.until(
-          ExpectedConditions.visibilityOfAllElementsLocatedBy(
-                  By.cssSelector(".highcharts-point")));
-
-  System.out.println("Total graph points: " + graphPoints.size());
-
-  Assert.assertTrue(graphPoints.size() > 0,
-          "No graph points found");
-
-  // ==========================
-  // PRINT GRAPH DATA
-  // ==========================
-
-  for (WebElement point : graphPoints)
-  {
-      String graphData = point.getAttribute("aria-label");
-
-      System.out.println("Graph Data : " + graphData);
-  }
 		
-	}
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(80));
 
+		// Wait for rows
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(
+		        By.xpath("//table[contains(@class,'table-hover')]//tbody/tr")));
+
+		List<WebElement> rows = driver.findElements(
+		        By.xpath("//table[contains(@class,'table-hover')]//tbody/tr"));
+
+		System.out.println("Total Rows : " + rows.size());
+
+		for (int i = 0; i < rows.size(); i++)
+		{
+		    List<WebElement> cols = rows.get(i).findElements(By.tagName("td"));
+
+		    System.out.println("===== ROW " + (i + 1) + " =====");
+
+		    for (WebElement col : cols)
+		    {
+		        System.out.print(col.getText() + " | ");
+		    }
+
+		    System.out.println();
+		}
+		}
 }

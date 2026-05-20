@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.AssociatePerformancereport.DisplaytheOEEAssociateTop5UpskilledPerformanceTest">
+      <class name="com.AssociatePerformancereport.VerifyExportfeature">
         <methods>
           <include name="configBM"/>
-          <include name="DisplaytheOEEAssociateTop5UpskilledPerformanceTest"/>
           <include name="configBC"/>
+          <include name="VerifyExportfeature"/>
         </methods>
-      </class> <!-- com.AssociatePerformancereport.DisplaytheOEEAssociateTop5UpskilledPerformanceTest -->
+      </class> <!-- com.AssociatePerformancereport.VerifyExportfeature -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
