@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.AssociatePerformancereport.VerifyExportfeature">
+      <class name="com.AssociatePerformancereport.VerifytheLossrReport">
         <methods>
           <include name="configBM"/>
+          <include name="VerifytheLossReport"/>
           <include name="configBC"/>
-          <include name="VerifyExportfeature"/>
         </methods>
-      </class> <!-- com.AssociatePerformancereport.VerifyExportfeature -->
+      </class> <!-- com.AssociatePerformancereport.VerifytheLossrReport -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

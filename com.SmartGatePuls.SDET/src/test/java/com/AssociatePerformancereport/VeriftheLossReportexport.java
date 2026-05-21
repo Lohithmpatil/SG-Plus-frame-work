@@ -17,10 +17,10 @@ import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.OEEAssociatePerformancereoprtPage;
 import com.sgplus.erp.pomRepository.OEEdashboard;
 
-public class VerifyExportfeature extends BaseClass {
+public class VeriftheLossReportexport extends BaseClass {
 
 	@Test
-	public void VerifyExportfeature() throws Throwable {
+	public void VeriftheLossReportexport() throws Throwable {
 		// Initialize WebDriver utility for custom waits and actions
 		WebDriverUtility we = new WebDriverUtility();
 
@@ -69,6 +69,10 @@ public class VerifyExportfeature extends BaseClass {
 		we.waitAndClick(aso.getEquipementDropDown());
 
 		// Clears any existing text in the "From Date" input field (ensuring clean
+		
+		we.waitAndClick(aso.getReportType());
+		
+		we.select(aso.getReportType(), "Loss Report");
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -95,5 +99,4 @@ public class VerifyExportfeature extends BaseClass {
 		Assert.assertTrue(exportButton.isDisplayed(), "Export button is not displayed");
 		Assert.assertTrue(exportButton.isEnabled(), "Export button is not enabled");
 	}
-
 }

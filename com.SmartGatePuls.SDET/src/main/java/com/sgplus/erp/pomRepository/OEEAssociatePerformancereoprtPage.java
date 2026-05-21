@@ -91,6 +91,13 @@ public class OEEAssociatePerformancereoprtPage {
 	
 	@FindBy(xpath = "//button[@title=\"Export\"]")
 	private WebElement Exportbutton;
+	
+	@FindBy(xpath="//label[text()='Report Type']/following-sibling::select")
+	private WebElement ReportType;
+
+	public WebElement getReportType() {
+		return ReportType;
+	}
 
 	public WebElement getExportbutton() {
 		return Exportbutton;

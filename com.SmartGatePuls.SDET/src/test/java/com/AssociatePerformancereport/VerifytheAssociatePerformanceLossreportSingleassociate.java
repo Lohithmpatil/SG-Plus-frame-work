@@ -8,7 +8,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.sgplus.erp.genericutility.BaseClass;
@@ -17,10 +16,10 @@ import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.OEEAssociatePerformancereoprtPage;
 import com.sgplus.erp.pomRepository.OEEdashboard;
 
-public class VerifyExportfeature extends BaseClass {
+public class VerifytheAssociatePerformanceLossreportSingleassociate extends BaseClass {
 
 	@Test
-	public void VerifyExportfeature() throws Throwable {
+	public void VerifytheAssociatePerformanceLossreportSingleassociate() throws Throwable {
 		// Initialize WebDriver utility for custom waits and actions
 		WebDriverUtility we = new WebDriverUtility();
 
@@ -87,13 +86,26 @@ public class VerifyExportfeature extends BaseClass {
 
 		js.executeScript("window.scrollBy(0,500)");
 
-		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(80));
-		WebElement exportButton = wait1.until(ExpectedConditions.elementToBeClickable(aso.getExportbutton()));
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(100));
 
-		we.waitAndClick(aso.getExportbutton());
+		// Wait for table to load first
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table")));
 
-		Assert.assertTrue(exportButton.isDisplayed(), "Export button is not displayed");
-		Assert.assertTrue(exportButton.isEnabled(), "Export button is not enabled");
+		// Scroll down slowly
+		JavascriptExecutor js1 = (JavascriptExecutor) driver;
+		js1.executeScript("window.scrollBy(0,3000)");
+
+		Thread.sleep(3000);
+
+		// Use contains with normalize-space
+		WebElement associateName = wait1.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//*[contains(normalize-space(),'Karthick S')]")));
+
+		js1.executeScript("arguments[0].scrollIntoView(true);", associateName);
+
+		System.out.println("Associate Found : " + associateName.getText());
+
+		associateName.click();
+
 	}
-
 }

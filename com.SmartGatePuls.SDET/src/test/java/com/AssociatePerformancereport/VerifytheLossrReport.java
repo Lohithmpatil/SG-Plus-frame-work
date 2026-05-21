@@ -1,6 +1,7 @@
 package com.AssociatePerformancereport;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -17,10 +18,10 @@ import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.OEEAssociatePerformancereoprtPage;
 import com.sgplus.erp.pomRepository.OEEdashboard;
 
-public class VerifyExportfeature extends BaseClass {
+public class VerifytheLossrReport extends BaseClass {
 
 	@Test
-	public void VerifyExportfeature() throws Throwable {
+	public void VerifytheLossReport() throws Throwable {
 		// Initialize WebDriver utility for custom waits and actions
 		WebDriverUtility we = new WebDriverUtility();
 
@@ -68,6 +69,10 @@ public class VerifyExportfeature extends BaseClass {
 
 		we.waitAndClick(aso.getEquipementDropDown());
 
+		we.waitAndClick(aso.getReportType());
+
+		we.select(aso.getReportType(), "Loss Report");
+
 		// Clears any existing text in the "From Date" input field (ensuring clean
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -80,20 +85,19 @@ public class VerifyExportfeature extends BaseClass {
 		monthYear.sendKeys(Keys.DELETE);
 		monthYear.sendKeys("04/2023");
 		monthYear.sendKeys(Keys.ENTER);
-		// Wait for the 'Apply Filter' button to be clickable and then click it
+	
+
+		// Click Apply Filter
 		we.waitAndClick(aso.getApplyFilter());
-
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-
-		js.executeScript("window.scrollBy(0,500)");
-
+		
+		
 		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(80));
-		WebElement exportButton = wait1.until(ExpectedConditions.elementToBeClickable(aso.getExportbutton()));
 
-		we.waitAndClick(aso.getExportbutton());
+		WebElement table = wait1.until(
+		        ExpectedConditions.visibilityOfElementLocated(
+		                By.id("tbl_exporttable_to_xls")));
 
-		Assert.assertTrue(exportButton.isDisplayed(), "Export button is not displayed");
-		Assert.assertTrue(exportButton.isEnabled(), "Export button is not enabled");
+		Assert.assertTrue(table.isDisplayed(), "Table is not displayed");
+		
 	}
-
-}
+	}
