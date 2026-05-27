@@ -30,6 +30,15 @@
           <include name="AddReasonfuctionalityTest"/>
         </methods>
       </class> <!-- AddReasonPage.AddReasonfuntionalityTest -->
+      <class name="com.RecipeMasterPage.VerifyProductionTypeDropdownFunctionalityTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifyProductionTypeDropdownFunctionalityTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RecipeMasterPage.VerifyProductionTypeDropdownFunctionalityTest -->
       <class name="com.ReasonLinkingPage.BulkReasonLinkingCancelTest">
         <methods>
           <include name="configBM"/>
@@ -39,6 +48,15 @@
           <include name="BulkReasonLinkingCancelTest"/>
         </methods>
       </class> <!-- com.ReasonLinkingPage.BulkReasonLinkingCancelTest -->
+      <class name="com.Settings.DepartmentGroup.verifyMTTRMTBFSourceRadioButtonsTest">
+        <methods>
+          <include name="verifyAddDepartmentGroupTest"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.Settings.DepartmentGroup.verifyMTTRMTBFSourceRadioButtonsTest -->
       <class name="com.OEEDashBoard.VerifytheShiftproductionreportEquipmentandPeriodwise">
         <methods>
           <include name="configBM"/>
@@ -102,15 +120,24 @@
           <include name="VerifytheRecipeViewfunctionalityTest"/>
         </methods>
       </class> <!-- com.RecipeMasterPage.VerifyTheRecipeViewFunctionalityTest -->
-      <class name="com.ReasonLinkingPage.ReasonLinkingSingleLinkTest">
+      <class name="com.DowntimeShiftview.VerifyShiftCViewDisplaysDataForDifferentShiftsTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="VerifyShiftBViewDisplaysDataForDifferentShiftsTest"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.DowntimeShiftview.VerifyShiftCViewDisplaysDataForDifferentShiftsTest -->
+      <class name="com.ReasonLinkingPage.ReasonLinkingCycleTimeSourceFilterTest">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
-          <include name="ReasonLinkingFunctionalityTest"/>
+          <include name="ReasonLinkingCycleTimeSourceFilterTest"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.ReasonLinkingPage.ReasonLinkingSingleLinkTest -->
+      </class> <!-- com.ReasonLinkingPage.ReasonLinkingCycleTimeSourceFilterTest -->
       <class name="com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest">
         <methods>
           <include name="configBM"/>
@@ -183,15 +210,6 @@
           <include name="configBC"/>
         </methods>
       </class> <!-- com.ReasonLinkingPage.BulkReasonLinkingFunctionalityTest -->
-      <class name="com.RecipeMasterPage.VerifyCycleTimeFieldInputTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifyCycleTimeFieldInputTest"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.RecipeMasterPage.VerifyCycleTimeFieldInputTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

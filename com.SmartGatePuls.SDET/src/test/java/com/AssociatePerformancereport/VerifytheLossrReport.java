@@ -91,7 +91,7 @@ public class VerifytheLossrReport extends BaseClass {
 		we.waitAndClick(aso.getApplyFilter());
 		
 		
-		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(100));
 
 		WebElement table = wait1.until(
 		        ExpectedConditions.visibilityOfElementLocated(

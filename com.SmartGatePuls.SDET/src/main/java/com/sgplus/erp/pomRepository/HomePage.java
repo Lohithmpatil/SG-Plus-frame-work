@@ -43,7 +43,13 @@ public class HomePage {
 	@FindBy(xpath = "//span[text()=\"OEE\"]")
     private WebElement OEE;
 
+	
+	public WebElement getCyletime() {
+		return Cyletime;
+	}
 
+	@FindBy(xpath = "//span[text()=\"Cycle Time\"]")
+    private WebElement Cyletime; 
     // Getters
     public WebDriver getDriver() {
         return driver;
