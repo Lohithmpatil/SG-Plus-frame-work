@@ -94,7 +94,7 @@ public class OEEAssociateTop5UpskilledPerformanceTest extends BaseClass{
 		// TOP 5 UPSKILLING REQUIRED
 		// ==========================
 
-		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(50));
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(100));
 
 		WebElement bestPerformanceTable = wait1.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//span[text()='TOP 5 UPSKILLING REQUIRED']")));

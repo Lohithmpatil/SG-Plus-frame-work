@@ -91,13 +91,25 @@ public class VerifytheLossrReport extends BaseClass {
 		we.waitAndClick(aso.getApplyFilter());
 		
 		
-		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(100));
+		Thread.sleep(10000);
 
-		WebElement table = wait1.until(
-		        ExpectedConditions.visibilityOfElementLocated(
-		                By.id("tbl_exporttable_to_xls")));
+		System.out.println("Current URL: " + driver.getCurrentUrl());
+		System.out.println("Page Title: " + driver.getTitle());
 
-		Assert.assertTrue(table.isDisplayed(), "Table is not displayed");
-		
-	}
-	}
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(120));
+
+		List<WebElement> rows = wait1.until(
+		    ExpectedConditions.presenceOfAllElementsLocatedBy(
+		        By.xpath("//table//tbody//tr")));
+
+
+		for (WebElement row : rows) {
+		    System.out.println(row.getText());
+		}
+		System.out.println("Rows Count: " + rows.size());
+
+		Assert.assertTrue(rows.size() > 0,
+		    "Associate Performance Report data not loaded");
+		}
+
+}

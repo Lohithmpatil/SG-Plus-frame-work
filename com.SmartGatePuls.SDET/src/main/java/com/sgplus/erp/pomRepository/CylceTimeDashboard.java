@@ -129,4 +129,35 @@ public WebElement getApplyFilter() {
 }
 /* ================= VALIDATION ================= */
 
+
+@FindBy(xpath = "//select[@id=\"totalDowntimeUnitType\"]")
+private WebElement unitdropdown;
+
+
+
+public WebElement getUnitdropdown() {
+	return unitdropdown;
+}
+
+public WebElement getRecipedropdown() {
+	return Recipedropdown;
+}
+
+public WebElement getXaxisDropdown() {
+	return XaxisDropdown;
+}
+
+@FindBy(xpath = "//div[@aria-labelledby=\"Select Recipes\"]")
+private WebElement Recipedropdown;
+
+@FindBy(xpath = "//select[@placeholder=\"Select\"]")
+private WebElement XaxisDropdown;
+
+public WebElement getExportButton() {
+	return ExportButton;
+}
+
+@FindBy(xpath = "//button[@title=\"Export\"]")
+private WebElement ExportButton;
+
 }

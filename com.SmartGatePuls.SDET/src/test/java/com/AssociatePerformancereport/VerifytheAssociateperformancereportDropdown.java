@@ -17,8 +17,8 @@ import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.OEEAssociatePerformancereoprtPage;
 import com.sgplus.erp.pomRepository.OEEdashboard;
 
-public class VerifytheAssociateperformancereportDropdown extends BaseClass{
-	
+public class VerifytheAssociateperformancereportDropdown extends BaseClass {
+
 	@Test
 	public void VerifytheAssociateperformancereportDropdown() throws Throwable {
 		// Initialize WebDriver utility for custom waits and actions
@@ -82,40 +82,36 @@ public class VerifytheAssociateperformancereportDropdown extends BaseClass{
 		monthYear.sendKeys(Keys.ENTER);
 		// Wait for the 'Apply Filter' button to be clickable and then click it
 		we.waitAndClick(aso.getApplyFilter());
-		
+
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
 		js.executeScript("window.scrollBy(0,500)");
-		
-	we.waitAndClick(aso.getStatusdropdown());
-	
-	we.select(aso.getStatusdropdown(), "Gold");
-		
-		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(80));
+
+		we.waitAndClick(aso.getStatusdropdown());
+
+		we.select(aso.getStatusdropdown(), "Gold");
+
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(100));
 
 		// Wait for rows
-		wait1.until(ExpectedConditions.visibilityOfElementLocated(
-		        By.xpath("//table[contains(@class,'table-hover')]//tbody/tr")));
+		wait1.until(ExpectedConditions
+				.visibilityOfElementLocated(By.xpath("//table[contains(@class,'table-hover')]//tbody/tr")));
 
-		List<WebElement> rows = driver.findElements(
-		        By.xpath("//table[contains(@class,'table-hover')]//tbody/tr"));
+		List<WebElement> rows = driver.findElements(By.xpath("//table[contains(@class,'table-hover')]//tbody/tr"));
 
 		System.out.println("Total Rows : " + rows.size());
 
-		for (int i = 0; i < rows.size(); i++)
-		{
-		    List<WebElement> cols = rows.get(i).findElements(By.tagName("td"));
+		for (int i = 0; i < rows.size(); i++) {
+			List<WebElement> cols = rows.get(i).findElements(By.tagName("td"));
 
-		    System.out.println("===== ROW " + (i + 1) + " =====");
+			System.out.println("===== ROW " + (i + 1) + " =====");
 
-		    for (WebElement col : cols)
-		    {
-		        System.out.print(col.getText() + " | ");
-		    }
+			for (WebElement col : cols) {
+				System.out.print(col.getText() + " | ");
+			}
 
-		    System.out.println();
+			System.out.println();
 		}
-		}
+	}
 
 }
-

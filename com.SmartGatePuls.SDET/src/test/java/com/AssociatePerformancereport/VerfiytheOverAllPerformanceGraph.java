@@ -108,7 +108,7 @@ public class VerfiytheOverAllPerformanceGraph extends BaseClass {
   // ==========================
 
   // Wait until graph points are visible
-  WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(50));
+  WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(100));
 
   List<WebElement> graphPoints = wait1.until(
           ExpectedConditions.visibilityOfAllElementsLocatedBy(

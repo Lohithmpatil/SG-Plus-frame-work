@@ -2,24 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-27T17:46:39 IST" name="Default suite" finished-at="2026-05-27T17:46:53 IST" duration-ms="14150">
+  <suite started-at="2026-06-03T17:25:54 IST" name="Default suite" finished-at="2026-06-03T17:26:11 IST" duration-ms="17080">
     <groups>
     </groups>
-    <test started-at="2026-05-27T17:46:39 IST" name="Default test" finished-at="2026-05-27T17:46:53 IST" duration-ms="14150">
-      <class name="com.CycleTimeDashboard.verifyTheBarChart">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.verifyTheBarChart@394a2528]" started-at="2026-05-27T17:46:39 IST" name="configBC" finished-at="2026-05-27T17:46:41 IST" duration-ms="1622" status="PASS">
+    <test started-at="2026-06-03T17:25:54 IST" name="Default test" finished-at="2026-06-03T17:26:11 IST" duration-ms="17080">
+      <class name="com.CycleTimeDashboard.VerifytheRecipesdropdown">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytheRecipesdropdown@3f56875e]" started-at="2026-06-03T17:25:54 IST" name="configBC" finished-at="2026-06-03T17:25:58 IST" duration-ms="3563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.verifyTheBarChart@394a2528]" started-at="2026-05-27T17:46:41 IST" name="configBM" finished-at="2026-05-27T17:46:42 IST" duration-ms="1474" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytheRecipesdropdown@3f56875e]" started-at="2026-06-03T17:25:58 IST" name="configBM" finished-at="2026-06-03T17:26:00 IST" duration-ms="2169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifyTheBarchart()[pri:0, instance:com.CycleTimeDashboard.verifyTheBarChart@394a2528]" started-at="2026-05-27T17:46:42 IST" name="VerifyTheBarchart" finished-at="2026-05-27T17:46:53 IST" duration-ms="11015" status="PASS">
+        <test-method signature="VerifytheRecipesdropdown()[pri:0, instance:com.CycleTimeDashboard.VerifytheRecipesdropdown@3f56875e]" started-at="2026-06-03T17:26:00 IST" name="VerifytheRecipesdropdown" finished-at="2026-06-03T17:26:10 IST" duration-ms="10399" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyTheBarchart -->
-      </class> <!-- com.CycleTimeDashboard.verifyTheBarChart -->
+        </test-method> <!-- VerifytheRecipesdropdown -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytheRecipesdropdown@3f56875e]" started-at="2026-06-03T17:26:10 IST" name="configAM" finished-at="2026-06-03T17:26:11 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytheRecipesdropdown@3f56875e]" started-at="2026-06-03T17:26:11 IST" name="configAC" finished-at="2026-06-03T17:26:11 IST" duration-ms="639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.CycleTimeDashboard.VerifytheRecipesdropdown -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

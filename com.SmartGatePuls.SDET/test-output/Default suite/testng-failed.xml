@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.CycleTimeDashboard.VerifytheTooltipdataOfBarchart">
+      <class name="com.CycleTimeDashboard.VerifytheRecipesdropdown">
         <methods>
           <include name="configBM"/>
-          <include name="VeirfytheTooltipdataBarchart"/>
+          <include name="configAM"/>
+          <include name="VerifytheRecipesdropdown"/>
+          <include name="configAC"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.CycleTimeDashboard.VerifytheTooltipdataOfBarchart -->
+      </class> <!-- com.CycleTimeDashboard.VerifytheRecipesdropdown -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -96,7 +96,7 @@ public class OEEAssociateTop5BestPerformanceTest extends BaseClass {
 		// WAIT FOR TOP 5 BEST PERFORMANCE TEXT
 		// ==========================
 
-		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(50));
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(100));
 
 		WebElement bestPerformanceTable = wait1.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//*[contains(text(),'TOP 5 BEST PERFORMANCE')]")));

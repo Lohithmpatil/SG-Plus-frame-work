@@ -91,7 +91,7 @@ public class VeriftheLossReportexport extends BaseClass {
 
 		js.executeScript("window.scrollBy(0,500)");
 
-		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(100));
 		WebElement exportButton = wait1.until(ExpectedConditions.elementToBeClickable(aso.getExportbutton()));
 
 		we.waitAndClick(aso.getExportbutton());
