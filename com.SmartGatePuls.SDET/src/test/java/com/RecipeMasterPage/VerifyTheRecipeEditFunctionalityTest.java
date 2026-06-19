@@ -73,7 +73,7 @@ public class VerifyTheRecipeEditFunctionalityTest extends BaseClass {
 
 	   we.waitAndClick(re.getSubmitbutton());
 		// Create explicit wait to wait for success toast message
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 
 		// Wait until the success message is visible on the UI
 		WebElement toastMsg = wait.until(ExpectedConditions

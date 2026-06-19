@@ -65,18 +65,18 @@ public class VerifyTheRecipeSearchFunctionalityTest extends BaseClass {
 
 		searchfield.clear();
 
-		searchfield.sendKeys("AutomatonTest553");
+		searchfield.sendKeys("testing");
 
 		searchfield.sendKeys(Keys.ENTER);
 		// Wait for table to update
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[text()='AutomatonTest553']")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[text()='testing']")));
 
 		// Fetch table result
-		WebElement resultName = driver.findElement(By.xpath("//td[text()='AutomatonTest553']"));
+		WebElement resultName = driver.findElement(By.xpath("//td[text()='testing']"));
 
 		// Validation
-		Assert.assertEquals(resultName.getText(), "AutomatonTest553");
+		Assert.assertEquals(resultName.getText(), "testing");
 	}
 
 }

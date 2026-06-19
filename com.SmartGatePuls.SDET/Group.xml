@@ -4,13 +4,14 @@
 	<test thread-count="5" name="Test">
 		<packages>
 			<package name="com.DowntimeModule" />
+			<package name="com.AssociatePerformancereport" />
+            <package name="com.CycleTimeDashboard" />
 			<package name="com.ReasonLinkingPage" />
 			<package name="com.DowntimeEnhacementPage" />
 			<package name="com.DowntimeAnalysisPage" />
 			<package name="com.DowntimeShiftview" />
 			<package name="com.Settings.Departements" />
 			<package name="com.Settings.DepartmentGroup" />
-			<package name="com.ReasonLinkingPage" />
 			<package name="com.RecipeMasterPage" />
 			<package name="com.OEEDashBoard" />
 			<package name="AddReasonPage" />

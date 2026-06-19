@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.CycleTimeDashboard.VerifytheRecipesdropdown">
+      <class name="com.UserCreate.VerifytheResetPasswordFunctionality">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
-          <include name="VerifytheRecipesdropdown"/>
+          <include name="VerifytheResetPasswordFunctionality"/>
           <include name="configAC"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.CycleTimeDashboard.VerifytheRecipesdropdown -->
+      </class> <!-- com.UserCreate.VerifytheResetPasswordFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
