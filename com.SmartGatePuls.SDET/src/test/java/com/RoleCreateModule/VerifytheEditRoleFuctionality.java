@@ -1,4 +1,4 @@
-package com.UserCreate;
+package com.RoleCreateModule;
 
 import java.time.Duration;
 
@@ -15,13 +15,13 @@ import com.sgplus.erp.genericutility.FileUtility;
 import com.sgplus.erp.genericutility.JavaUtility;
 import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
+import com.sgplus.erp.pomRepository.RoleCreate;
 import com.sgplus.erp.pomRepository.UserCreate;
 
-public class VerifytheUserChangeStatusFunationality extends BaseClass{
-	
+public class VerifytheEditRoleFuctionality extends BaseClass {
 
 	@Test
-	public void VerifytheUserChangeStatusFunationality() throws Throwable {
+	public void VerifytheEditRoleFuctionality() throws Throwable {
 
 		// Create WebDriverUtility object for custom wait and click operations
 		WebDriverUtility we = new WebDriverUtility();
@@ -38,50 +38,43 @@ public class VerifytheUserChangeStatusFunationality extends BaseClass{
 		// Create HomePage object to interact with home page elements
 		HomePage hm = new HomePage(driver);
 
-		UserCreate us = new UserCreate(driver);
+		RoleCreate rl = new RoleCreate(driver);
 
 		// Generate a random number to make department group name unique
 		int intRanNum = jlib.getRandomNumber();
 
 		// Read base group name from Excel and append random number
-		String username = elib.getDataFromExcel("Sheet1", 1, 3) + intRanNum;
 
-		String userID = elib.getDataFromExcel("Sheet1", 1, 5) + intRanNum;
-
-		String password = elib.getDataFromExcel("Sheet1", 1, 4) + intRanNum;
-
-		// String email = elib.getDataFromExcel("Sheet1", 1, 6) + intRanNum;
+		String rolename = elib.getDataFromExcel("Sheet1", 1, 7) + intRanNum;
 		// Click on Settings menu from home page
 		we.waitAndClick(hm.getSettings());
 
-		we.waitAndClick(us.getUsermodule());
+		we.waitAndClick(rl.getRolemoduleNavigation());
 
-		we.waitAndClick(us.getDots3());
-
-		we.waitAndClick(us.getChnageStatusButton());
+		we.waitAndClick(rl.getDots3Button());
 		
-	we.waitAndClick(us.getYesStatusChangeButton());
-	
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		we.waitAndClick(rl.getEditButton());
 
-	WebElement toast = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@role='alert']")));
+		we.waitAndClick(rl.getOEECheckbox());
 
-	String actualMsg = toast.getText();
+		we.waitAndClick(rl.getSubmitButton());
 
-	// Print the message in Console
-	System.out.println("Success Message: " + actualMsg);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-	// Verify the message
-	Assert.assertTrue(actualMsg.contains(" user status changed"),
-			"User Change status failed. Actual message: " + actualMsg);
+		WebElement toast = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@role='alert']")));
 
-	
-	WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(15));
+		String actualMsg = toast.getText();
 
-	// Wait until toast disappears
-	wait1.until(ExpectedConditions.invisibilityOfElementLocated(
-	        By.cssSelector(".Toastify__toast-body")));
+		// Print the message in Console
+		System.out.println("Success Message: " + actualMsg);
 
-		
+		// Verify the message
+		Assert.assertTrue(actualMsg.contains("Role updated successfully"),
+				"User update failed. Actual message: " + actualMsg);
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+		// Wait until toast disappears
+		wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".Toastify__toast-body")));
+
 	}
 }

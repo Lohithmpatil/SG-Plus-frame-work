@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.UserCreate.VerifytheResetPasswordFunctionality">
+      <class name="com.RCAReport.green">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
-          <include name="VerifytheResetPasswordFunctionality"/>
-          <include name="configAC"/>
+          <include name="VerifytheWeightedAveragesModeValuedata"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.UserCreate.VerifytheResetPasswordFunctionality -->
+      </class> <!-- com.RCAReport.green -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -17,10 +17,11 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.UserCreate;
 
-public class VerifytheDeleteUserFunctionality extends BaseClass {
+public class VerifytheUserChangeStatusFuctionality extends BaseClass{
+	
 
 	@Test
-	public void VerifytheDeleteUserFunctionality() throws Throwable {
+	public void VerifytheUserChangeStatusFutionality() throws Throwable {
 
 		// Create WebDriverUtility object for custom wait and click operations
 		WebDriverUtility we = new WebDriverUtility();
@@ -57,26 +58,30 @@ public class VerifytheDeleteUserFunctionality extends BaseClass {
 
 		we.waitAndClick(us.getDots3());
 
-		we.waitAndClick(us.getDeleteBitton());
-		we.waitAndClick(us.getDeleteYesButton());
+		we.waitAndClick(us.getChnageStatusButton());
+		
+	we.waitAndClick(us.getYesStatusChangeButton());
+	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebElement toast = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@role='alert']")));
 
-		WebElement toast = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@role='alert']")));
+	String actualMsg = toast.getText();
 
-		String actualMsg = toast.getText();
+	// Print the message in Console
+	System.out.println("Success Message: " + actualMsg);
 
-		// Print the message in Console
-		System.out.println("Success Message: " + actualMsg);
+	// Verify the message
+	Assert.assertTrue(actualMsg.contains(" user status changed"),
+			"User Change status failed. Actual message: " + actualMsg);
 
-		// Verify the message
-		Assert.assertTrue(actualMsg.contains("User deleted successfully"),
-				"user Change status failed. Actual message: " + actualMsg);
-		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(15));
+	
+	WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(15));
 
-		// Wait until toast disappears
-		wait1.until(ExpectedConditions.invisibilityOfElementLocated(
-		        By.cssSelector(".Toastify__toast-body")));
+	// Wait until toast disappears
+	wait1.until(ExpectedConditions.invisibilityOfElementLocated(
+	        By.cssSelector(".Toastify__toast-body")));
 
+		
 	}
 }

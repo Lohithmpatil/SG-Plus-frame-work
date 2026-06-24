@@ -1,4 +1,4 @@
-package com.UserCreate;
+package com.RoleCreateModule;
 
 import java.time.Duration;
 
@@ -17,10 +17,10 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.UserCreate;
 
-public class VerifytheDeleteUserFunctionality extends BaseClass {
+public class VerifytheDeleteRoleCancelFunctionality extends BaseClass {
 
 	@Test
-	public void VerifytheDeleteUserFunctionality() throws Throwable {
+	public void VerifytheDeleteRoleCancelFunctionality() throws Throwable {
 
 		// Create WebDriverUtility object for custom wait and click operations
 		WebDriverUtility we = new WebDriverUtility();
@@ -58,25 +58,20 @@ public class VerifytheDeleteUserFunctionality extends BaseClass {
 		we.waitAndClick(us.getDots3());
 
 		we.waitAndClick(us.getDeleteBitton());
-		we.waitAndClick(us.getDeleteYesButton());
+
+		we.waitAndClick(us.getDeleteNoButton());
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-		WebElement toast = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@role='alert']")));
+		boolean popupClosed = wait.until(
+				ExpectedConditions.invisibilityOfElementLocated(By.xpath("//h4[contains(text(),'Add Users')]")));
 
-		String actualMsg = toast.getText();
+		Assert.assertTrue(popupClosed, "Change role Status popup did not close after clicking Cancel");
 
-		// Print the message in Console
-		System.out.println("Success Message: " + actualMsg);
-
-		// Verify the message
-		Assert.assertTrue(actualMsg.contains("User deleted successfully"),
-				"user Change status failed. Actual message: " + actualMsg);
-		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(15));
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		// Wait until toast disappears
-		wait1.until(ExpectedConditions.invisibilityOfElementLocated(
-		        By.cssSelector(".Toastify__toast-body")));
+		wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".Toastify__toast-body")));
 
 	}
 }

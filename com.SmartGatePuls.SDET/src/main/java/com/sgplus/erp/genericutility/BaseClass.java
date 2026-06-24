@@ -60,9 +60,9 @@ public class BaseClass {
 		System.out.println("=============Succesfully Login to the SmartGate application=======");
 	}
 
-	@AfterMethod(groups = { "smokeTest", "regressionTest" })
+ @AfterMethod(groups = { "smokeTest", "regressionTest" })
 	public void configAM() {
-		// step 6 : logout
+/*		// step 6 : logout
 		HomePage homePage = new HomePage(driver);
 		homePage.getLogOut().click();
 		System.out.println("=============Succesfully Logout to the SmartGate application=======");
@@ -76,6 +76,6 @@ public class BaseClass {
 	} 
 
 	// @AfterSuite(groups = { "smokeTest", "regressionTest" })
-	public void configAS() {
+	public void configAS() {*/
 	} 
 }

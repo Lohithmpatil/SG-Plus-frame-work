@@ -15,7 +15,7 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.OEEdashboard;
 
-public class DisplayllWorstPerfoemingMachines extends BaseClass {
+public class DisplayAllWorstPerformingMachines extends BaseClass {
 
 	@Test
 	public void VerifytheWorstPerformingMachines() throws Throwable {
