@@ -3,15 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="AddReasonPage.AddReasonfuntionalityTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="AddReasonfuctionalityTest"/>
-        </methods>
-      </class> <!-- AddReasonPage.AddReasonfuntionalityTest -->
       <class name="com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest">
         <methods>
           <include name="configBM"/>
@@ -30,24 +21,33 @@
           <include name="DowntimeAnalysisDropdownValidationTest"/>
         </methods>
       </class> <!-- com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest -->
-      <class name="com.CycleTimeDashboard.VerifytheUnitdropdown">
+      <class name="com.DowntimeShiftview.VerifyShiftBViewDisplaysDataForDifferentShiftsTest">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
           <include name="configBC"/>
-          <include name="VeirfytheUnitdropdown"/>
+          <include name="VerifyShiftBViewDisplaysDataForDifferentShiftsTest"/>
         </methods>
-      </class> <!-- com.CycleTimeDashboard.VerifytheUnitdropdown -->
-      <class name="com.DowntimeShiftview.VerifyNavigationToShiftViewPageTest">
+      </class> <!-- com.DowntimeShiftview.VerifyShiftBViewDisplaysDataForDifferentShiftsTest -->
+      <class name="com.AssociatePerformancereport.DisplaytheOEEAssociateTop5UpskilledPerformanceTest">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
-          <include name="VerifyNavigationToShiftViewPageTest"/>
+          <include name="DisplaytheOEEAssociateTop5UpskilledPerformanceTest"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.DowntimeShiftview.VerifyNavigationToShiftViewPageTest -->
+      </class> <!-- com.AssociatePerformancereport.DisplaytheOEEAssociateTop5UpskilledPerformanceTest -->
+      <class name="com.ReasonLinkingPage.BulkReasonLinkingFunctionalityTest">
+        <methods>
+          <include name="BulkReasonLinkingFunctionalityTest"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.ReasonLinkingPage.BulkReasonLinkingFunctionalityTest -->
       <class name="com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingOperator">
         <methods>
           <include name="VeriftyheExportFeatureBySelectingOperator"/>
@@ -57,12 +57,21 @@
           <include name="configBC"/>
         </methods>
       </class> <!-- com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingOperator -->
-      <class name="com.DowntimeShiftview.VerifyShiftCViewDisplaysDataForDifferentShiftsTest">
+      <class name="com.ReasonLinkingPage.ReasonLinkingSingleLinkTest">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
+          <include name="ReasonLinkingFunctionalityTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.ReasonLinkingPage.ReasonLinkingSingleLinkTest -->
+      <class name="com.DowntimeShiftview.VerifyShiftCViewDisplaysDataForDifferentShiftsTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
           <include name="VerifyShiftBViewDisplaysDataForDifferentShiftsTest"/>
+          <include name="configAC"/>
           <include name="configBC"/>
         </methods>
       </class> <!-- com.DowntimeShiftview.VerifyShiftCViewDisplaysDataForDifferentShiftsTest -->
@@ -75,6 +84,141 @@
           <include name="YearlyToMonthlyChartNavigationTest"/>
         </methods>
       </class> <!-- com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest -->
+      <class name="com.DowntimeEnhacementPage.DowntimeEnhacementTableExportTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="DowntimeEnhacementTableExport"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.DowntimeEnhacementPage.DowntimeEnhacementTableExportTest -->
+      <class name="com.CycleTimeDashboard.VerifytheMinutevalueTooltipdata">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="VeirfytheMinutevalueTooltipdata"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.CycleTimeDashboard.VerifytheMinutevalueTooltipdata -->
+      <class name="com.RecipeMasterPage.VerifyRecipeCodeFieldInputTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifyRecipeCodeFieldInputTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RecipeMasterPage.VerifyRecipeCodeFieldInputTest -->
+      <class name="com.AssociatePerformancereport.VerifytheLossrReport">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifytheLossReport"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.AssociatePerformancereport.VerifytheLossrReport -->
+      <class name="com.AssociatePerformancereport.VeriftheLossReportexport">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="VeriftheLossReportexport"/>
+        </methods>
+      </class> <!-- com.AssociatePerformancereport.VeriftheLossReportexport -->
+      <class name="com.CycleTimeDashboard.VerfytheTotalGoodQuantity">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="verifytheTotalGoodQuantity"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.CycleTimeDashboard.VerfytheTotalGoodQuantity -->
+      <class name="com.Settings.DepartmentGroup.verifyNameTextboxBehaviorTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="verifyNameTextboxBehaviorTest"/>
+        </methods>
+      </class> <!-- com.Settings.DepartmentGroup.verifyNameTextboxBehaviorTest -->
+      <class name="AddReasonPage.AddReasonfuntionalityTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="AddReasonfuctionalityTest"/>
+        </methods>
+      </class> <!-- AddReasonPage.AddReasonfuntionalityTest -->
+      <class name="com.DowntimeShiftview.VerifyShiftAViewDisplaysDataForDifferentShiftsTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifyShiftAViewDisplaysDataForDifferentShiftsTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.DowntimeShiftview.VerifyShiftAViewDisplaysDataForDifferentShiftsTest -->
+      <class name="com.DowntimeShiftview.VerifyNavigationToShiftViewPageTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifyNavigationToShiftViewPageTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.DowntimeShiftview.VerifyNavigationToShiftViewPageTest -->
+      <class name="com.CycleTimeDashboard.VerifytheRecipesdropdown">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="VerifytheRecipesdropdown"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.CycleTimeDashboard.VerifytheRecipesdropdown -->
+      <class name="com.RecipeMasterPage.VerifyTheRecipeEditFunctionalityTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifytheRecipeEditfunctionalityTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RecipeMasterPage.VerifyTheRecipeEditFunctionalityTest -->
+      <class name="com.OEEDashBoard.OEEAssociatePerformanceLossReportTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="OEEAssociatePerformanceLossReportTest"/>
+        </methods>
+      </class> <!-- com.OEEDashBoard.OEEAssociatePerformanceLossReportTest -->
+      <class name="com.CycleTimeDashboard.verifyCycleTimeDashboardPageNavigationTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="verifyCycleTimeDashboardNavigationTest"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.CycleTimeDashboard.verifyCycleTimeDashboardPageNavigationTest -->
+      <class name="com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByEquipementvalue">
+        <methods>
+          <include name="configBM"/>
+          <include name="VerifytheTooltipdatabyselectingByEquipementvalue"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByEquipementvalue -->
       <class name="AddReasonPage.VerifytheReasonsearchfunctionalityTest">
         <methods>
           <include name="configBM"/>
@@ -84,6 +228,24 @@
           <include name="configBC"/>
         </methods>
       </class> <!-- AddReasonPage.VerifytheReasonsearchfunctionalityTest -->
+      <class name="com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="VerfiytheOverAllPerformanceGraph"/>
+        </methods>
+      </class> <!-- com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph -->
+      <class name="com.UserCreate.VerifytheUserResetPasswordCancelFunctionality">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifytheUserResetPasswordCancelFunctionality"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.UserCreate.VerifytheUserResetPasswordCancelFunctionality -->
       <class name="com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown">
         <methods>
           <include name="configBM"/>
@@ -93,6 +255,15 @@
           <include name="VerifytheAssociateperformancereportDropdown"/>
         </methods>
       </class> <!-- com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown -->
+      <class name="com.AssociatePerformancereport.VerifyExportfeature">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="VerifyExportfeature"/>
+        </methods>
+      </class> <!-- com.AssociatePerformancereport.VerifyExportfeature -->
       <class name="com.AssociatePerformancereport.OEEAssociateTop5UpskilledPerformanceTest">
         <methods>
           <include name="configBM"/>
@@ -102,24 +273,24 @@
           <include name="configBC"/>
         </methods>
       </class> <!-- com.AssociatePerformancereport.OEEAssociateTop5UpskilledPerformanceTest -->
-      <class name="com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByOperatorvalue">
+      <class name="com.AssociatePerformancereport.VerifytheAssociateperformancetable">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifytheAssociateperformancetable"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.AssociatePerformancereport.VerifytheAssociateperformancetable -->
+      <class name="com.UserCreate.VerifyAssignOnlySingleEquipementToUser">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
           <include name="configBC"/>
-          <include name="VerifytheXaxisdropdownselectingByOperatorvalue"/>
+          <include name="VerifyAssignOnlySingleEquipementToUser"/>
         </methods>
-      </class> <!-- com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByOperatorvalue -->
-      <class name="com.Settings.DepartmentGroup.verifyMTTRMTBFSourceRadioButtonsTest">
-        <methods>
-          <include name="verifyAddDepartmentGroupTest"/>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.Settings.DepartmentGroup.verifyMTTRMTBFSourceRadioButtonsTest -->
+      </class> <!-- com.UserCreate.VerifyAssignOnlySingleEquipementToUser -->
       <class name="AddReasonPage.VerifytheReasonEditfunctionalityTest">
         <methods>
           <include name="configBM"/>
@@ -129,6 +300,33 @@
           <include name="VerifytheReasonEditfunctionalityTest"/>
         </methods>
       </class> <!-- AddReasonPage.VerifytheReasonEditfunctionalityTest -->
+      <class name="com.CycleTimeDashboard.VerifytheXaxisdropdown">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="VeirfytheAaxisdropdown"/>
+        </methods>
+      </class> <!-- com.CycleTimeDashboard.VerifytheXaxisdropdown -->
+      <class name="com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingEquipement">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VeriftyheExportFeatureBySelectingEquipement"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingEquipement -->
+      <class name="com.AssociatePerformancereport.OEEAssociatePerformanceReportNavigationTest">
+        <methods>
+          <include name="OEEAssociatePerformanceReportNavigationTest"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.AssociatePerformancereport.OEEAssociatePerformanceReportNavigationTest -->
       <class name="com.ReasonLinkingPage.BulkReasonLinkingCancelTest">
         <methods>
           <include name="configBM"/>
@@ -138,15 +336,15 @@
           <include name="BulkReasonLinkingCancelTest"/>
         </methods>
       </class> <!-- com.ReasonLinkingPage.BulkReasonLinkingCancelTest -->
-      <class name="com.OEEDashBoard.VerifytheShiftproductionreportEquipmentandPeriodwise">
+      <class name="com.ReasonLinkingPage.ReasonLinkingCombinedExportTest">
         <methods>
           <include name="configBM"/>
+          <include name="ReasonLinkingCombinedExportTest"/>
           <include name="configAM"/>
           <include name="configAC"/>
-          <include name="VerifytheShiftproductionreportEquipmentandPeriodwise"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.OEEDashBoard.VerifytheShiftproductionreportEquipmentandPeriodwise -->
+      </class> <!-- com.ReasonLinkingPage.ReasonLinkingCombinedExportTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

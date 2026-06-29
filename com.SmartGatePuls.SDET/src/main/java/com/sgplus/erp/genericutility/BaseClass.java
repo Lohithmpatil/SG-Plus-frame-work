@@ -47,12 +47,9 @@ public class BaseClass {
 		String URL = fLib.getPropertyKeyValue("url");
 		String BROWSER = fLib.getPropertyKeyValue("browser");
 
-		
-		
-		
 		/* Navigate to app */
 		driver.get(URL);
-		//System.out.println("URL USED BY DRIVER = " + URL);
+		// System.out.println("URL USED BY DRIVER = " + URL);
 		/* step 1 : login */
 		LoginPage lp = new LoginPage(driver);
 		lp.logintoApp(USERNAME, PASSWORD);
@@ -60,22 +57,23 @@ public class BaseClass {
 		System.out.println("=============Succesfully Login to the SmartGate application=======");
 	}
 
- @AfterMethod(groups = { "smokeTest", "regressionTest" })
+	@AfterMethod(groups = { "smokeTest", "regressionTest" })
 	public void configAM() {
-/*		// step 6 : logout
+
+		// step 6 : logout
 		HomePage homePage = new HomePage(driver);
 		homePage.getLogOut().click();
 		System.out.println("=============Succesfully Logout to the SmartGate application=======");
 
 	}
 
-	 @AfterClass(groups={"smokeTest","regressionTest"})
+	@AfterClass(groups = { "smokeTest", "regressionTest" })
 	public void configAC() {
 		System.out.println("=============Close the Browser=======");
 		driver.quit();
-	} 
+	}
 
 	// @AfterSuite(groups = { "smokeTest", "regressionTest" })
-	public void configAS() {*/
-	} 
+	public void configAS() {
+	}
 }

@@ -5,7 +5,7 @@
 		<packages>
 			<package name="com.DowntimeModule" />
 			<package name="com.AssociatePerformancereport" />
-            <package name="com.CycleTimeDashboard" />
+			<package name="com.CycleTimeDashboard" />
 			<package name="com.ReasonLinkingPage" />
 			<package name="com.DowntimeEnhacementPage" />
 			<package name="com.DowntimeAnalysisPage" />
@@ -15,6 +15,8 @@
 			<package name="com.RecipeMasterPage" />
 			<package name="com.OEEDashBoard" />
 			<package name="AddReasonPage" />
+			<package name="com.UserCreate" />
+			<package name="com.RoleCreateModule" />
 		</packages>
 	</test> <!--
 	Test -->
