@@ -1,43 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="5" failed="7" skipped="0">
+<testng-results ignored="0" total="22" passed="21" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-29T17:36:16 IST" name="Default suite" finished-at="2026-06-29T17:41:09 IST" duration-ms="292449">
+  <suite started-at="2026-06-30T17:00:49 IST" name="Default suite" finished-at="2026-06-30T17:06:00 IST" duration-ms="311275">
     <groups>
     </groups>
-    <test started-at="2026-06-29T17:36:16 IST" name="Default test" finished-at="2026-06-29T17:41:09 IST" duration-ms="292449">
-      <class name="com.AssociatePerformancereport.OEEAssociateTop5BestPerformanceTest">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.AssociatePerformancereport.OEEAssociateTop5BestPerformanceTest@50caa560]" started-at="2026-06-29T17:36:16 IST" name="configBC" finished-at="2026-06-29T17:36:19 IST" duration-ms="2476" status="PASS">
+    <test started-at="2026-06-30T17:00:49 IST" name="Default test" finished-at="2026-06-30T17:06:00 IST" duration-ms="311275">
+      <class name="com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByEquipementvalue">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByEquipementvalue@3c947bc5]" started-at="2026-06-30T17:01:02 IST" name="configBC" finished-at="2026-06-30T17:01:03 IST" duration-ms="1117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.AssociatePerformancereport.OEEAssociateTop5BestPerformanceTest@50caa560]" started-at="2026-06-29T17:36:19 IST" name="configBM" finished-at="2026-06-29T17:36:21 IST" duration-ms="2274" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByEquipementvalue@3c947bc5]" started-at="2026-06-30T17:01:03 IST" name="configBM" finished-at="2026-06-30T17:01:04 IST" duration-ms="1410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="OEEAssociateTop5BestPerformanceTest()[pri:0, instance:com.AssociatePerformancereport.OEEAssociateTop5BestPerformanceTest@50caa560]" started-at="2026-06-29T17:36:21 IST" name="OEEAssociateTop5BestPerformanceTest" finished-at="2026-06-29T17:37:06 IST" duration-ms="45403" status="PASS">
+        <test-method signature="VeirfytheXaxixdropdownslectingByEquipementvalue()[pri:0, instance:com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByEquipementvalue@3c947bc5]" started-at="2026-06-30T17:01:04 IST" name="VeirfytheXaxixdropdownslectingByEquipementvalue" finished-at="2026-06-30T17:01:18 IST" duration-ms="13617" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OEEAssociateTop5BestPerformanceTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.AssociatePerformancereport.OEEAssociateTop5BestPerformanceTest@50caa560]" started-at="2026-06-29T17:37:06 IST" name="configAM" finished-at="2026-06-29T17:37:07 IST" duration-ms="122" status="PASS">
+        </test-method> <!-- VeirfytheXaxixdropdownslectingByEquipementvalue -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByEquipementvalue@3c947bc5]" started-at="2026-06-30T17:01:18 IST" name="configAM" finished-at="2026-06-30T17:01:18 IST" duration-ms="56" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.AssociatePerformancereport.OEEAssociateTop5BestPerformanceTest@50caa560]" started-at="2026-06-29T17:37:07 IST" name="configAC" finished-at="2026-06-29T17:37:07 IST" duration-ms="410" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByEquipementvalue@3c947bc5]" started-at="2026-06-30T17:01:18 IST" name="configAC" finished-at="2026-06-30T17:01:18 IST" duration-ms="426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.AssociatePerformancereport.OEEAssociateTop5BestPerformanceTest -->
-      <class name="com.AssociatePerformancereport.VerifyExportfeature">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.AssociatePerformancereport.VerifyExportfeature@11c9af63]" started-at="2026-06-29T17:37:07 IST" name="configBC" finished-at="2026-06-29T17:37:08 IST" duration-ms="1100" status="PASS">
+      </class> <!-- com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByEquipementvalue -->
+      <class name="com.CycleTimeDashboard.VerifytheBadQuantity">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytheBadQuantity@5f16132a]" started-at="2026-06-30T17:00:49 IST" name="configBC" finished-at="2026-06-30T17:00:50 IST" duration-ms="1710" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.AssociatePerformancereport.VerifyExportfeature@11c9af63]" started-at="2026-06-29T17:37:08 IST" name="configBM" finished-at="2026-06-29T17:37:10 IST" duration-ms="1834" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytheBadQuantity@5f16132a]" started-at="2026-06-30T17:00:50 IST" name="configBM" finished-at="2026-06-30T17:00:52 IST" duration-ms="1512" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifyExportfeature()[pri:0, instance:com.AssociatePerformancereport.VerifyExportfeature@11c9af63]" started-at="2026-06-29T17:37:10 IST" name="VerifyExportfeature" finished-at="2026-06-29T17:37:14 IST" duration-ms="4171" status="FAIL">
+        <test-method signature="verifytheTotalBaDQuantity()[pri:0, instance:com.CycleTimeDashboard.VerifytheBadQuantity@5f16132a]" started-at="2026-06-30T17:00:52 IST" name="verifytheTotalBaDQuantity" finished-at="2026-06-30T17:01:01 IST" duration-ms="9196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytheTotalBaDQuantity -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytheBadQuantity@5f16132a]" started-at="2026-06-30T17:01:01 IST" name="configAM" finished-at="2026-06-30T17:01:01 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytheBadQuantity@5f16132a]" started-at="2026-06-30T17:01:01 IST" name="configAC" finished-at="2026-06-30T17:01:02 IST" duration-ms="396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.CycleTimeDashboard.VerifytheBadQuantity -->
+      <class name="com.CycleTimeDashboard.VerifytheTotalProduction">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytheTotalProduction@55f616cf]" started-at="2026-06-30T17:01:29 IST" name="configBC" finished-at="2026-06-30T17:01:30 IST" duration-ms="1203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytheTotalProduction@55f616cf]" started-at="2026-06-30T17:01:30 IST" name="configBM" finished-at="2026-06-30T17:01:32 IST" duration-ms="1494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="verifytheTotalProduction()[pri:0, instance:com.CycleTimeDashboard.VerifytheTotalProduction@55f616cf]" started-at="2026-06-30T17:01:32 IST" name="verifytheTotalProduction" finished-at="2026-06-30T17:01:40 IST" duration-ms="8374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytheTotalProduction -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytheTotalProduction@55f616cf]" started-at="2026-06-30T17:01:40 IST" name="configAM" finished-at="2026-06-30T17:01:40 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytheTotalProduction@55f616cf]" started-at="2026-06-30T17:01:40 IST" name="configAC" finished-at="2026-06-30T17:01:41 IST" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.CycleTimeDashboard.VerifytheTotalProduction -->
+      <class name="com.CycleTimeDashboard.VerfytheTotalGoodQuantity">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerfytheTotalGoodQuantity@609db43b]" started-at="2026-06-30T17:01:18 IST" name="configBC" finished-at="2026-06-30T17:01:19 IST" duration-ms="1130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerfytheTotalGoodQuantity@609db43b]" started-at="2026-06-30T17:01:19 IST" name="configBM" finished-at="2026-06-30T17:01:21 IST" duration-ms="1392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="verifytheTotalGoodQuantity()[pri:0, instance:com.CycleTimeDashboard.VerfytheTotalGoodQuantity@609db43b]" started-at="2026-06-30T17:01:21 IST" name="verifytheTotalGoodQuantity" finished-at="2026-06-30T17:01:29 IST" duration-ms="8116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytheTotalGoodQuantity -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerfytheTotalGoodQuantity@609db43b]" started-at="2026-06-30T17:01:29 IST" name="configAM" finished-at="2026-06-30T17:01:29 IST" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerfytheTotalGoodQuantity@609db43b]" started-at="2026-06-30T17:01:29 IST" name="configAC" finished-at="2026-06-30T17:01:29 IST" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.CycleTimeDashboard.VerfytheTotalGoodQuantity -->
+      <class name="com.CycleTimeDashboard.verifyCycleTimeDashboardPageNavigationTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.verifyCycleTimeDashboardPageNavigationTest@1356d4d4]" started-at="2026-06-30T17:01:41 IST" name="configBC" finished-at="2026-06-30T17:01:42 IST" duration-ms="1105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.verifyCycleTimeDashboardPageNavigationTest@1356d4d4]" started-at="2026-06-30T17:01:42 IST" name="configBM" finished-at="2026-06-30T17:01:43 IST" duration-ms="1461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="verifyCycleTimeDashboardNavigationTest()[pri:0, instance:com.CycleTimeDashboard.verifyCycleTimeDashboardPageNavigationTest@1356d4d4]" started-at="2026-06-30T17:01:43 IST" name="verifyCycleTimeDashboardNavigationTest" finished-at="2026-06-30T17:01:49 IST" duration-ms="5715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCycleTimeDashboardNavigationTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.verifyCycleTimeDashboardPageNavigationTest@1356d4d4]" started-at="2026-06-30T17:01:49 IST" name="configAM" finished-at="2026-06-30T17:01:49 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.verifyCycleTimeDashboardPageNavigationTest@1356d4d4]" started-at="2026-06-30T17:01:49 IST" name="configAC" finished-at="2026-06-30T17:01:49 IST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.CycleTimeDashboard.verifyCycleTimeDashboardPageNavigationTest -->
+      <class name="com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingOperator">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingOperator@c03cf28]" started-at="2026-06-30T17:01:49 IST" name="configBC" finished-at="2026-06-30T17:01:51 IST" duration-ms="1115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingOperator@c03cf28]" started-at="2026-06-30T17:01:51 IST" name="configBM" finished-at="2026-06-30T17:01:52 IST" duration-ms="1414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VeriftyheExportFeatureBySelectingOperator()[pri:0, instance:com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingOperator@c03cf28]" started-at="2026-06-30T17:01:52 IST" name="VeriftyheExportFeatureBySelectingOperator" finished-at="2026-06-30T17:02:15 IST" duration-ms="23200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VeriftyheExportFeatureBySelectingOperator -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingOperator@c03cf28]" started-at="2026-06-30T17:02:15 IST" name="configAM" finished-at="2026-06-30T17:02:15 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingOperator@c03cf28]" started-at="2026-06-30T17:02:15 IST" name="configAC" finished-at="2026-06-30T17:02:16 IST" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingOperator -->
+      <class name="com.CycleTimeDashboard.VerifytheWeightedAvgCycleTime">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytheWeightedAvgCycleTime@6497b078]" started-at="2026-06-30T17:02:24 IST" name="configBC" finished-at="2026-06-30T17:02:25 IST" duration-ms="1146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytheWeightedAvgCycleTime@6497b078]" started-at="2026-06-30T17:02:25 IST" name="configBM" finished-at="2026-06-30T17:02:27 IST" duration-ms="1394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="verifytheWeightedAvgCycleTime()[pri:0, instance:com.CycleTimeDashboard.VerifytheWeightedAvgCycleTime@6497b078]" started-at="2026-06-30T17:02:27 IST" name="verifytheWeightedAvgCycleTime" finished-at="2026-06-30T17:02:36 IST" duration-ms="8952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytheWeightedAvgCycleTime -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytheWeightedAvgCycleTime@6497b078]" started-at="2026-06-30T17:02:36 IST" name="configAM" finished-at="2026-06-30T17:02:36 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytheWeightedAvgCycleTime@6497b078]" started-at="2026-06-30T17:02:36 IST" name="configAC" finished-at="2026-06-30T17:02:36 IST" duration-ms="380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.CycleTimeDashboard.VerifytheWeightedAvgCycleTime -->
+      <class name="com.CycleTimeDashboard.VerifytheRecipesdropdown">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytheRecipesdropdown@1329eff]" started-at="2026-06-30T17:02:16 IST" name="configBC" finished-at="2026-06-30T17:02:17 IST" duration-ms="1104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytheRecipesdropdown@1329eff]" started-at="2026-06-30T17:02:17 IST" name="configBM" finished-at="2026-06-30T17:02:18 IST" duration-ms="1362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheRecipesdropdown()[pri:0, instance:com.CycleTimeDashboard.VerifytheRecipesdropdown@1329eff]" started-at="2026-06-30T17:02:18 IST" name="VerifytheRecipesdropdown" finished-at="2026-06-30T17:02:24 IST" duration-ms="5668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheRecipesdropdown -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytheRecipesdropdown@1329eff]" started-at="2026-06-30T17:02:24 IST" name="configAM" finished-at="2026-06-30T17:02:24 IST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytheRecipesdropdown@1329eff]" started-at="2026-06-30T17:02:24 IST" name="configAC" finished-at="2026-06-30T17:02:24 IST" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.CycleTimeDashboard.VerifytheRecipesdropdown -->
+      <class name="com.CycleTimeDashboard.VerifytehMinuteSetValue">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytehMinuteSetValue@41c2284a]" started-at="2026-06-30T17:02:36 IST" name="configBC" finished-at="2026-06-30T17:02:37 IST" duration-ms="1143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytehMinuteSetValue@41c2284a]" started-at="2026-06-30T17:02:37 IST" name="configBM" finished-at="2026-06-30T17:02:39 IST" duration-ms="1762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VeirfytheMinutesetvalue()[pri:0, instance:com.CycleTimeDashboard.VerifytehMinuteSetValue@41c2284a]" started-at="2026-06-30T17:02:39 IST" name="VeirfytheMinutesetvalue" finished-at="2026-06-30T17:02:52 IST" duration-ms="12751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VeirfytheMinutesetvalue -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytehMinuteSetValue@41c2284a]" started-at="2026-06-30T17:02:52 IST" name="configAM" finished-at="2026-06-30T17:02:52 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytehMinuteSetValue@41c2284a]" started-at="2026-06-30T17:02:52 IST" name="configAC" finished-at="2026-06-30T17:02:52 IST" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.CycleTimeDashboard.VerifytehMinuteSetValue -->
+      <class name="com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByOperatorvalue">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByOperatorvalue@46fa7c39]" started-at="2026-06-30T17:03:04 IST" name="configBC" finished-at="2026-06-30T17:03:05 IST" duration-ms="1102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByOperatorvalue@46fa7c39]" started-at="2026-06-30T17:03:05 IST" name="configBM" finished-at="2026-06-30T17:03:06 IST" duration-ms="1452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheXaxisdropdownselectingByOperatorvalue()[pri:0, instance:com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByOperatorvalue@46fa7c39]" started-at="2026-06-30T17:03:06 IST" name="VerifytheXaxisdropdownselectingByOperatorvalue" finished-at="2026-06-30T17:03:10 IST" duration-ms="3857" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Cannot locate option with text: Unistage
@@ -55,7 +231,7 @@ Driver info: driver.version: unknown
 at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
 at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
 at com.sgplus.erp.genericutility.WebDriverUtility.select(WebDriverUtility.java:106)
-at com.AssociatePerformancereport.VerifyExportfeature.VerifyExportfeature(VerifyExportfeature.java:59)
+at com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByOperatorvalue.VerifytheXaxisdropdownselectingByOperatorvalue(VerifytheXaxisdropdownselectingByOperatorvalue.java:60)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -87,8 +263,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyExportfeature -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.AssociatePerformancereport.VerifyExportfeature@11c9af63]" started-at="2026-06-29T17:37:14 IST" name="configAM" finished-at="2026-06-29T17:37:15 IST" duration-ms="1101" status="FAIL">
+        </test-method> <!-- VerifytheXaxisdropdownselectingByOperatorvalue -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByOperatorvalue@46fa7c39]" started-at="2026-06-30T17:03:10 IST" name="configAM" finished-at="2026-06-30T17:03:11 IST" duration-ms="1085" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (1457, 42). Other element would receive the click: <div class="headerContent">...</div>
@@ -96,10 +272,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 Build info: version: '4.38.0', revision: '6b412e825c'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8408f8d730c6b8a75d4c4864cfa4d88f, clickElement {id=f.BB2FC01AF5F3D499743CC3F553861F42.d.7FCF7683A90E9D734608AF02558B1D29.e.84}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53370}, goog:processID: 26012, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53370/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8408f8d730c6b8a75d4c4864cfa4d88f)] -> xpath: //span[text()="Logout"]]
-Session ID: 8408f8d730c6b8a75d4c4864cfa4d88f]]>
+Command: [53ee6a53c253713ceb430ce5ab7ad284, clickElement {id=f.77BF13F794453CE895A2639D0BF10C28.d.BA8D6A01C36AC9E3EC2DC4EF3803A08C.e.82}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62217}, goog:processID: 22896, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62217/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (53ee6a53c253713ceb430ce5ab7ad284)] -> xpath: //span[text()="Logout"]]
+Session ID: 53ee6a53c253713ceb430ce5ab7ad284]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (1457, 42). Other element would receive the click: <div class="headerContent">...</div>
@@ -107,10 +283,10 @@ Session ID: 8408f8d730c6b8a75d4c4864cfa4d88f]]>
 Build info: version: '4.38.0', revision: '6b412e825c'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8408f8d730c6b8a75d4c4864cfa4d88f, clickElement {id=f.BB2FC01AF5F3D499743CC3F553861F42.d.7FCF7683A90E9D734608AF02558B1D29.e.84}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53370}, goog:processID: 26012, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53370/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8408f8d730c6b8a75d4c4864cfa4d88f)] -> xpath: //span[text()="Logout"]]
-Session ID: 8408f8d730c6b8a75d4c4864cfa4d88f
+Command: [53ee6a53c253713ceb430ce5ab7ad284, clickElement {id=f.77BF13F794453CE895A2639D0BF10C28.d.BA8D6A01C36AC9E3EC2DC4EF3803A08C.e.82}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62217}, goog:processID: 22896, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62217/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (53ee6a53c253713ceb430ce5ab7ad284)] -> xpath: //span[text()="Logout"]]
+Session ID: 53ee6a53c253713ceb430ce5ab7ad284
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -165,902 +341,275 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.AssociatePerformancereport.VerifyExportfeature@11c9af63]" started-at="2026-06-29T17:37:15 IST" name="configAC" finished-at="2026-06-29T17:37:15 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByOperatorvalue@46fa7c39]" started-at="2026-06-30T17:03:11 IST" name="configAC" finished-at="2026-06-30T17:03:11 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.AssociatePerformancereport.VerifyExportfeature -->
-      <class name="com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown@757acd7b]" started-at="2026-06-29T17:37:15 IST" name="configBC" finished-at="2026-06-29T17:37:16 IST" duration-ms="1062" status="PASS">
+      </class> <!-- com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByOperatorvalue -->
+      <class name="com.CycleTimeDashboard.VerifytheXaxisdropdown">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytheXaxisdropdown@53aad5d5]" started-at="2026-06-30T17:02:52 IST" name="configBC" finished-at="2026-06-30T17:02:53 IST" duration-ms="1095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown@757acd7b]" started-at="2026-06-29T17:37:16 IST" name="configBM" finished-at="2026-06-29T17:37:18 IST" duration-ms="1558" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytheXaxisdropdown@53aad5d5]" started-at="2026-06-30T17:02:53 IST" name="configBM" finished-at="2026-06-30T17:02:55 IST" duration-ms="1431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifytheAssociateperformancereportDropdown()[pri:0, instance:com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown@757acd7b]" started-at="2026-06-29T17:37:18 IST" name="VerifytheAssociateperformancereportDropdown" finished-at="2026-06-29T17:37:44 IST" duration-ms="25693" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class=" css-1xc3v61-indicatorContainer"]"}
-  (Session info: chrome=148.0.7778.217)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b10ddfea7e6f35deadd5f618ae297245, findElement {using=xpath, value=//div[@class=" css-1xc3v61-indicatorContainer"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57457}, goog:processID: 19212, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57457/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b10ddfea7e6f35deadd5f618ae297245]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class=" css-1xc3v61-indicatorContainer"]"}
-  (Session info: chrome=148.0.7778.217)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b10ddfea7e6f35deadd5f618ae297245, findElement {using=xpath, value=//div[@class=" css-1xc3v61-indicatorContainer"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57457}, goog:processID: 19212, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57457/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b10ddfea7e6f35deadd5f618ae297245
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.getTagName(Unknown Source)
-at org.openqa.selenium.support.ui.Select.<init>(Select.java:41)
-at com.sgplus.erp.genericutility.WebDriverUtility.select(WebDriverUtility.java:105)
-at com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown.VerifytheAssociateperformancereportDropdown(VerifytheAssociateperformancereportDropdown.java:92)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="VeirfytheAaxisdropdown()[pri:0, instance:com.CycleTimeDashboard.VerifytheXaxisdropdown@53aad5d5]" started-at="2026-06-30T17:02:55 IST" name="VeirfytheAaxisdropdown" finished-at="2026-06-30T17:03:03 IST" duration-ms="8383" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifytheAssociateperformancereportDropdown -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown@757acd7b]" started-at="2026-06-29T17:37:44 IST" name="configAM" finished-at="2026-06-29T17:37:44 IST" duration-ms="70" status="PASS">
+        </test-method> <!-- VeirfytheAaxisdropdown -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytheXaxisdropdown@53aad5d5]" started-at="2026-06-30T17:03:03 IST" name="configAM" finished-at="2026-06-30T17:03:03 IST" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown@757acd7b]" started-at="2026-06-29T17:37:44 IST" name="configAC" finished-at="2026-06-29T17:37:44 IST" duration-ms="765" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytheXaxisdropdown@53aad5d5]" started-at="2026-06-30T17:03:03 IST" name="configAC" finished-at="2026-06-30T17:03:04 IST" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown -->
-      <class name="com.AssociatePerformancereport.OEEAssociatePerformanceReportNavigationTest">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.AssociatePerformancereport.OEEAssociatePerformanceReportNavigationTest@36b4fe2a]" started-at="2026-06-29T17:37:44 IST" name="configBC" finished-at="2026-06-29T17:37:45 IST" duration-ms="1119" status="PASS">
+      </class> <!-- com.CycleTimeDashboard.VerifytheXaxisdropdown -->
+      <class name="com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByEquipementvalue">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByEquipementvalue@1fb700ee]" started-at="2026-06-30T17:03:11 IST" name="configBC" finished-at="2026-06-30T17:03:12 IST" duration-ms="1123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.AssociatePerformancereport.OEEAssociatePerformanceReportNavigationTest@36b4fe2a]" started-at="2026-06-29T17:37:45 IST" name="configBM" finished-at="2026-06-29T17:37:47 IST" duration-ms="1351" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByEquipementvalue@1fb700ee]" started-at="2026-06-30T17:03:12 IST" name="configBM" finished-at="2026-06-30T17:03:16 IST" duration-ms="3795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="OEEAssociatePerformanceReportNavigationTest()[pri:0, instance:com.AssociatePerformancereport.OEEAssociatePerformanceReportNavigationTest@36b4fe2a]" started-at="2026-06-29T17:37:47 IST" name="OEEAssociatePerformanceReportNavigationTest" finished-at="2026-06-29T17:37:51 IST" duration-ms="4136" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Cannot locate option with text: Unistage
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Unistage
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
-at com.sgplus.erp.genericutility.WebDriverUtility.select(WebDriverUtility.java:106)
-at com.AssociatePerformancereport.OEEAssociatePerformanceReportNavigationTest.OEEAssociatePerformanceReportNavigationTest(OEEAssociatePerformanceReportNavigationTest.java:58)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="VerifytheTooltipdatabyselectingByEquipementvalue()[pri:0, instance:com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByEquipementvalue@1fb700ee]" started-at="2026-06-30T17:03:16 IST" name="VerifytheTooltipdatabyselectingByEquipementvalue" finished-at="2026-06-30T17:03:31 IST" duration-ms="15117" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OEEAssociatePerformanceReportNavigationTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.AssociatePerformancereport.OEEAssociatePerformanceReportNavigationTest@36b4fe2a]" started-at="2026-06-29T17:37:51 IST" name="configAM" finished-at="2026-06-29T17:37:52 IST" duration-ms="1122" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (1457, 42). Other element would receive the click: <div class="headerContent">...</div>
-  (Session info: chrome=148.0.7778.217)
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [96334be71580de2cccaa148bf938e3c7, clickElement {id=f.2097BD62E773FE887EEA861386A67820.d.EC6B58F1DDDF593D0E11F0A2BA97DD3D.e.98}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58230}, goog:processID: 36952, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58230/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (96334be71580de2cccaa148bf938e3c7)] -> xpath: //span[text()="Logout"]]
-Session ID: 96334be71580de2cccaa148bf938e3c7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (1457, 42). Other element would receive the click: <div class="headerContent">...</div>
-  (Session info: chrome=148.0.7778.217)
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [96334be71580de2cccaa148bf938e3c7, clickElement {id=f.2097BD62E773FE887EEA861386A67820.d.EC6B58F1DDDF593D0E11F0A2BA97DD3D.e.98}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58230}, goog:processID: 36952, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58230/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (96334be71580de2cccaa148bf938e3c7)] -> xpath: //span[text()="Logout"]]
-Session ID: 96334be71580de2cccaa148bf938e3c7
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at com.sgplus.erp.genericutility.BaseClass.configAM(BaseClass.java:65)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        </test-method> <!-- VerifytheTooltipdatabyselectingByEquipementvalue -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByEquipementvalue@1fb700ee]" started-at="2026-06-30T17:03:31 IST" name="configAM" finished-at="2026-06-30T17:03:31 IST" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.AssociatePerformancereport.OEEAssociatePerformanceReportNavigationTest@36b4fe2a]" started-at="2026-06-29T17:37:52 IST" name="configAC" finished-at="2026-06-29T17:37:52 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByEquipementvalue@1fb700ee]" started-at="2026-06-30T17:03:31 IST" name="configAC" finished-at="2026-06-30T17:03:32 IST" duration-ms="340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.AssociatePerformancereport.OEEAssociatePerformanceReportNavigationTest -->
-      <class name="com.AssociatePerformancereport.VeriftheLossReportexport">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.AssociatePerformancereport.VeriftheLossReportexport@574b560f]" started-at="2026-06-29T17:37:52 IST" name="configBC" finished-at="2026-06-29T17:37:53 IST" duration-ms="1057" status="PASS">
+      </class> <!-- com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByEquipementvalue -->
+      <class name="com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByOperatorvalue">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByOperatorvalue@4a668b6e]" started-at="2026-06-30T17:03:47 IST" name="configBC" finished-at="2026-06-30T17:03:48 IST" duration-ms="1172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.AssociatePerformancereport.VeriftheLossReportexport@574b560f]" started-at="2026-06-29T17:37:53 IST" name="configBM" finished-at="2026-06-29T17:37:55 IST" duration-ms="1378" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByOperatorvalue@4a668b6e]" started-at="2026-06-30T17:03:48 IST" name="configBM" finished-at="2026-06-30T17:03:50 IST" duration-ms="1348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VeriftheLossReportexport()[pri:0, instance:com.AssociatePerformancereport.VeriftheLossReportexport@574b560f]" started-at="2026-06-29T17:37:55 IST" name="VeriftheLossReportexport" finished-at="2026-06-29T17:38:37 IST" duration-ms="42956" status="PASS">
+        <test-method signature="VerifytheTooltipdatabyselectingByOperatorvalue()[pri:0, instance:com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByOperatorvalue@4a668b6e]" started-at="2026-06-30T17:03:50 IST" name="VerifytheTooltipdatabyselectingByOperatorvalue" finished-at="2026-06-30T17:04:03 IST" duration-ms="13833" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VeriftheLossReportexport -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.AssociatePerformancereport.VeriftheLossReportexport@574b560f]" started-at="2026-06-29T17:38:37 IST" name="configAM" finished-at="2026-06-29T17:38:38 IST" duration-ms="114" status="PASS">
+        </test-method> <!-- VerifytheTooltipdatabyselectingByOperatorvalue -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByOperatorvalue@4a668b6e]" started-at="2026-06-30T17:04:03 IST" name="configAM" finished-at="2026-06-30T17:04:03 IST" duration-ms="57" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.AssociatePerformancereport.VeriftheLossReportexport@574b560f]" started-at="2026-06-29T17:38:38 IST" name="configAC" finished-at="2026-06-29T17:38:38 IST" duration-ms="423" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByOperatorvalue@4a668b6e]" started-at="2026-06-30T17:04:03 IST" name="configAC" finished-at="2026-06-30T17:04:04 IST" duration-ms="471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.AssociatePerformancereport.VeriftheLossReportexport -->
-      <class name="com.AssociatePerformancereport.OEEAssociateTop5UpskilledPerformanceTest">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.AssociatePerformancereport.OEEAssociateTop5UpskilledPerformanceTest@28975c28]" started-at="2026-06-29T17:38:47 IST" name="configBC" finished-at="2026-06-29T17:38:48 IST" duration-ms="1073" status="PASS">
+      </class> <!-- com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByOperatorvalue -->
+      <class name="com.CycleTimeDashboard.VerifytheMinutevalueTooltipdata">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytheMinutevalueTooltipdata@4f67eb2a]" started-at="2026-06-30T17:03:32 IST" name="configBC" finished-at="2026-06-30T17:03:33 IST" duration-ms="1085" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.AssociatePerformancereport.OEEAssociateTop5UpskilledPerformanceTest@28975c28]" started-at="2026-06-29T17:38:48 IST" name="configBM" finished-at="2026-06-29T17:38:49 IST" duration-ms="1352" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytheMinutevalueTooltipdata@4f67eb2a]" started-at="2026-06-30T17:03:33 IST" name="configBM" finished-at="2026-06-30T17:03:34 IST" duration-ms="1463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="OEEAssociateTop5UpskilledPerformanceTest()[pri:0, instance:com.AssociatePerformancereport.OEEAssociateTop5UpskilledPerformanceTest@28975c28]" started-at="2026-06-29T17:38:49 IST" name="OEEAssociateTop5UpskilledPerformanceTest" finished-at="2026-06-29T17:38:54 IST" duration-ms="4424" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Cannot locate option with text: Unistage
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Unistage
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
-at com.sgplus.erp.genericutility.WebDriverUtility.select(WebDriverUtility.java:106)
-at com.AssociatePerformancereport.OEEAssociateTop5UpskilledPerformanceTest.OEEAssociateTop5UpskilledPerformanceTest(OEEAssociateTop5UpskilledPerformanceTest.java:58)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="VeirfytheMinutevalueTooltipdata()[pri:0, instance:com.CycleTimeDashboard.VerifytheMinutevalueTooltipdata@4f67eb2a]" started-at="2026-06-30T17:03:34 IST" name="VeirfytheMinutevalueTooltipdata" finished-at="2026-06-30T17:03:47 IST" duration-ms="12482" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OEEAssociateTop5UpskilledPerformanceTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.AssociatePerformancereport.OEEAssociateTop5UpskilledPerformanceTest@28975c28]" started-at="2026-06-29T17:38:54 IST" name="configAM" finished-at="2026-06-29T17:38:55 IST" duration-ms="1101" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (1457, 42). Other element would receive the click: <div class="headerContent">...</div>
-  (Session info: chrome=148.0.7778.217)
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [300a1de72642e5f45e385fca57b3bb19, clickElement {id=f.BF4DD718A3966BBD682F137405033BC1.d.E1A906BDC4B0D3F2F712801CF61A7CAC.e.87}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53951}, goog:processID: 12400, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53951/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (300a1de72642e5f45e385fca57b3bb19)] -> xpath: //span[text()="Logout"]]
-Session ID: 300a1de72642e5f45e385fca57b3bb19]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (1457, 42). Other element would receive the click: <div class="headerContent">...</div>
-  (Session info: chrome=148.0.7778.217)
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [300a1de72642e5f45e385fca57b3bb19, clickElement {id=f.BF4DD718A3966BBD682F137405033BC1.d.E1A906BDC4B0D3F2F712801CF61A7CAC.e.87}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53951}, goog:processID: 12400, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53951/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (300a1de72642e5f45e385fca57b3bb19)] -> xpath: //span[text()="Logout"]]
-Session ID: 300a1de72642e5f45e385fca57b3bb19
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at com.sgplus.erp.genericutility.BaseClass.configAM(BaseClass.java:65)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        </test-method> <!-- VeirfytheMinutevalueTooltipdata -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytheMinutevalueTooltipdata@4f67eb2a]" started-at="2026-06-30T17:03:47 IST" name="configAM" finished-at="2026-06-30T17:03:47 IST" duration-ms="64" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.AssociatePerformancereport.OEEAssociateTop5UpskilledPerformanceTest@28975c28]" started-at="2026-06-29T17:38:55 IST" name="configAC" finished-at="2026-06-29T17:38:55 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytheMinutevalueTooltipdata@4f67eb2a]" started-at="2026-06-30T17:03:47 IST" name="configAC" finished-at="2026-06-30T17:03:47 IST" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.AssociatePerformancereport.OEEAssociateTop5UpskilledPerformanceTest -->
-      <class name="com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph@ba54932]" started-at="2026-06-29T17:38:38 IST" name="configBC" finished-at="2026-06-29T17:38:39 IST" duration-ms="1139" status="PASS">
+      </class> <!-- com.CycleTimeDashboard.VerifytheMinutevalueTooltipdata -->
+      <class name="com.CycleTimeDashboard.verifyTheBarChart">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.verifyTheBarChart@5f683daf]" started-at="2026-06-30T17:04:04 IST" name="configBC" finished-at="2026-06-30T17:04:05 IST" duration-ms="1116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph@ba54932]" started-at="2026-06-29T17:38:39 IST" name="configBM" finished-at="2026-06-29T17:38:42 IST" duration-ms="2528" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.verifyTheBarChart@5f683daf]" started-at="2026-06-30T17:04:05 IST" name="configBM" finished-at="2026-06-30T17:04:07 IST" duration-ms="1598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerfiytheOverAllPerformanceGraph()[pri:0, instance:com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph@ba54932]" started-at="2026-06-29T17:38:42 IST" name="VerfiytheOverAllPerformanceGraph" finished-at="2026-06-29T17:38:46 IST" duration-ms="4219" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Cannot locate option with text: Unistage
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Unistage
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
-at com.sgplus.erp.genericutility.WebDriverUtility.select(WebDriverUtility.java:106)
-at com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph.VerfiytheOverAllPerformanceGraph(VerfiytheOverAllPerformanceGraph.java:61)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="VerifyTheBarchart()[pri:0, instance:com.CycleTimeDashboard.verifyTheBarChart@5f683daf]" started-at="2026-06-30T17:04:07 IST" name="VerifyTheBarchart" finished-at="2026-06-30T17:04:15 IST" duration-ms="8408" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerfiytheOverAllPerformanceGraph -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph@ba54932]" started-at="2026-06-29T17:38:46 IST" name="configAM" finished-at="2026-06-29T17:38:47 IST" duration-ms="1058" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (1457, 42). Other element would receive the click: <div class="headerContent">...</div>
-  (Session info: chrome=148.0.7778.217)
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17cd433cc5b41b161fe86e2a83c16cfb, clickElement {id=f.D135C8E6E45DF27B1CF9F973923949B0.d.AEF466B315C334637B0D49CFE324A1A6.e.82}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55947}, goog:processID: 25364, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55947/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (17cd433cc5b41b161fe86e2a83c16cfb)] -> xpath: //span[text()="Logout"]]
-Session ID: 17cd433cc5b41b161fe86e2a83c16cfb]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (1457, 42). Other element would receive the click: <div class="headerContent">...</div>
-  (Session info: chrome=148.0.7778.217)
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17cd433cc5b41b161fe86e2a83c16cfb, clickElement {id=f.D135C8E6E45DF27B1CF9F973923949B0.d.AEF466B315C334637B0D49CFE324A1A6.e.82}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55947}, goog:processID: 25364, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55947/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (17cd433cc5b41b161fe86e2a83c16cfb)] -> xpath: //span[text()="Logout"]]
-Session ID: 17cd433cc5b41b161fe86e2a83c16cfb
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at com.sgplus.erp.genericutility.BaseClass.configAM(BaseClass.java:65)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        </test-method> <!-- VerifyTheBarchart -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.verifyTheBarChart@5f683daf]" started-at="2026-06-30T17:04:15 IST" name="configAM" finished-at="2026-06-30T17:04:15 IST" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph@ba54932]" started-at="2026-06-29T17:38:47 IST" name="configAC" finished-at="2026-06-29T17:38:47 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.verifyTheBarChart@5f683daf]" started-at="2026-06-30T17:04:15 IST" name="configAC" finished-at="2026-06-30T17:04:15 IST" duration-ms="376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph -->
-      <class name="com.AssociatePerformancereport.VerifytheLossrReport">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.AssociatePerformancereport.VerifytheLossrReport@157853da]" started-at="2026-06-29T17:40:02 IST" name="configBC" finished-at="2026-06-29T17:40:03 IST" duration-ms="1094" status="PASS">
+      </class> <!-- com.CycleTimeDashboard.verifyTheBarChart -->
+      <class name="com.CycleTimeDashboard.VerifytheWeightedAvgCTinMinute">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytheWeightedAvgCTinMinute@78ffe6dc]" started-at="2026-06-30T17:04:15 IST" name="configBC" finished-at="2026-06-30T17:04:17 IST" duration-ms="1080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.AssociatePerformancereport.VerifytheLossrReport@157853da]" started-at="2026-06-29T17:40:03 IST" name="configBM" finished-at="2026-06-29T17:40:05 IST" duration-ms="1713" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytheWeightedAvgCTinMinute@78ffe6dc]" started-at="2026-06-30T17:04:17 IST" name="configBM" finished-at="2026-06-30T17:04:18 IST" duration-ms="1574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifytheLossReport()[pri:0, instance:com.AssociatePerformancereport.VerifytheLossrReport@157853da]" started-at="2026-06-29T17:40:05 IST" name="VerifytheLossReport" finished-at="2026-06-29T17:40:50 IST" duration-ms="45484" status="PASS">
+        <test-method signature="verifytheWeightedAvgCTMinute()[pri:0, instance:com.CycleTimeDashboard.VerifytheWeightedAvgCTinMinute@78ffe6dc]" started-at="2026-06-30T17:04:18 IST" name="verifytheWeightedAvgCTMinute" finished-at="2026-06-30T17:04:27 IST" duration-ms="9101" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifytheLossReport -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.AssociatePerformancereport.VerifytheLossrReport@157853da]" started-at="2026-06-29T17:40:50 IST" name="configAM" finished-at="2026-06-29T17:40:50 IST" duration-ms="88" status="PASS">
+        </test-method> <!-- verifytheWeightedAvgCTMinute -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytheWeightedAvgCTinMinute@78ffe6dc]" started-at="2026-06-30T17:04:27 IST" name="configAM" finished-at="2026-06-30T17:04:27 IST" duration-ms="64" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.AssociatePerformancereport.VerifytheLossrReport@157853da]" started-at="2026-06-29T17:40:50 IST" name="configAC" finished-at="2026-06-29T17:40:51 IST" duration-ms="417" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytheWeightedAvgCTinMinute@78ffe6dc]" started-at="2026-06-30T17:04:27 IST" name="configAC" finished-at="2026-06-30T17:04:28 IST" duration-ms="365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.AssociatePerformancereport.VerifytheLossrReport -->
-      <class name="com.AssociatePerformancereport.DisplaytheOEEAssociateTop5UpskilledPerformanceTest">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.AssociatePerformancereport.DisplaytheOEEAssociateTop5UpskilledPerformanceTest@343570b7]" started-at="2026-06-29T17:39:18 IST" name="configBC" finished-at="2026-06-29T17:39:19 IST" duration-ms="1279" status="PASS">
+      </class> <!-- com.CycleTimeDashboard.VerifytheWeightedAvgCTinMinute -->
+      <class name="com.CycleTimeDashboard.VerifytheUnitdropdown">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytheUnitdropdown@8317c52]" started-at="2026-06-30T17:04:28 IST" name="configBC" finished-at="2026-06-30T17:04:29 IST" duration-ms="1126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.AssociatePerformancereport.DisplaytheOEEAssociateTop5UpskilledPerformanceTest@343570b7]" started-at="2026-06-29T17:39:19 IST" name="configBM" finished-at="2026-06-29T17:39:21 IST" duration-ms="1527" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytheUnitdropdown@8317c52]" started-at="2026-06-30T17:04:29 IST" name="configBM" finished-at="2026-06-30T17:04:30 IST" duration-ms="1325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="DisplaytheOEEAssociateTop5UpskilledPerformanceTest()[pri:0, instance:com.AssociatePerformancereport.DisplaytheOEEAssociateTop5UpskilledPerformanceTest@343570b7]" started-at="2026-06-29T17:39:21 IST" name="DisplaytheOEEAssociateTop5UpskilledPerformanceTest" finished-at="2026-06-29T17:40:01 IST" duration-ms="40814" status="PASS">
+        <test-method signature="VeirfytheUnitdropdown()[pri:0, instance:com.CycleTimeDashboard.VerifytheUnitdropdown@8317c52]" started-at="2026-06-30T17:04:30 IST" name="VeirfytheUnitdropdown" finished-at="2026-06-30T17:04:38 IST" duration-ms="7856" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DisplaytheOEEAssociateTop5UpskilledPerformanceTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.AssociatePerformancereport.DisplaytheOEEAssociateTop5UpskilledPerformanceTest@343570b7]" started-at="2026-06-29T17:40:01 IST" name="configAM" finished-at="2026-06-29T17:40:01 IST" duration-ms="92" status="PASS">
+        </test-method> <!-- VeirfytheUnitdropdown -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytheUnitdropdown@8317c52]" started-at="2026-06-30T17:04:38 IST" name="configAM" finished-at="2026-06-30T17:04:38 IST" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.AssociatePerformancereport.DisplaytheOEEAssociateTop5UpskilledPerformanceTest@343570b7]" started-at="2026-06-29T17:40:01 IST" name="configAC" finished-at="2026-06-29T17:40:02 IST" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytheUnitdropdown@8317c52]" started-at="2026-06-30T17:04:38 IST" name="configAC" finished-at="2026-06-30T17:04:38 IST" duration-ms="394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.AssociatePerformancereport.DisplaytheOEEAssociateTop5UpskilledPerformanceTest -->
-      <class name="com.AssociatePerformancereport.VeriftyheExportFeatureBySelectingRecipe">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.AssociatePerformancereport.VeriftyheExportFeatureBySelectingRecipe@3943a2be]" started-at="2026-06-29T17:38:55 IST" name="configBC" finished-at="2026-06-29T17:38:56 IST" duration-ms="1113" status="PASS">
+      </class> <!-- com.CycleTimeDashboard.VerifytheUnitdropdown -->
+      <class name="com.CycleTimeDashboard.VerifythethedropdownSeletingSecondsToMinutevalue">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifythethedropdownSeletingSecondsToMinutevalue@76f2bbc1]" started-at="2026-06-30T17:04:38 IST" name="configBC" finished-at="2026-06-30T17:04:39 IST" duration-ms="1102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.AssociatePerformancereport.VeriftyheExportFeatureBySelectingRecipe@3943a2be]" started-at="2026-06-29T17:38:56 IST" name="configBM" finished-at="2026-06-29T17:38:57 IST" duration-ms="1395" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifythethedropdownSeletingSecondsToMinutevalue@76f2bbc1]" started-at="2026-06-30T17:04:39 IST" name="configBM" finished-at="2026-06-30T17:04:41 IST" duration-ms="1278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifytheExportFeatureBySlectingRecipe()[pri:0, instance:com.AssociatePerformancereport.VeriftyheExportFeatureBySelectingRecipe@3943a2be]" started-at="2026-06-29T17:38:57 IST" name="VerifytheExportFeatureBySlectingRecipe" finished-at="2026-06-29T17:39:17 IST" duration-ms="19862" status="PASS">
+        <test-method signature="VeirfythedropdownSeletingSecondsToMinutevalue()[pri:0, instance:com.CycleTimeDashboard.VerifythethedropdownSeletingSecondsToMinutevalue@76f2bbc1]" started-at="2026-06-30T17:04:41 IST" name="VeirfythedropdownSeletingSecondsToMinutevalue" finished-at="2026-06-30T17:04:50 IST" duration-ms="8945" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifytheExportFeatureBySlectingRecipe -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.AssociatePerformancereport.VeriftyheExportFeatureBySelectingRecipe@3943a2be]" started-at="2026-06-29T17:39:17 IST" name="configAM" finished-at="2026-06-29T17:39:17 IST" duration-ms="62" status="PASS">
+        </test-method> <!-- VeirfythedropdownSeletingSecondsToMinutevalue -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifythethedropdownSeletingSecondsToMinutevalue@76f2bbc1]" started-at="2026-06-30T17:04:50 IST" name="configAM" finished-at="2026-06-30T17:04:50 IST" duration-ms="52" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.AssociatePerformancereport.VeriftyheExportFeatureBySelectingRecipe@3943a2be]" started-at="2026-06-29T17:39:17 IST" name="configAC" finished-at="2026-06-29T17:39:18 IST" duration-ms="385" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifythethedropdownSeletingSecondsToMinutevalue@76f2bbc1]" started-at="2026-06-30T17:04:50 IST" name="configAC" finished-at="2026-06-30T17:04:50 IST" duration-ms="379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.AssociatePerformancereport.VeriftyheExportFeatureBySelectingRecipe -->
-      <class name="com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate@236e3f4e]" started-at="2026-06-29T17:41:00 IST" name="configBC" finished-at="2026-06-29T17:41:01 IST" duration-ms="1083" status="PASS">
+      </class> <!-- com.CycleTimeDashboard.VerifythethedropdownSeletingSecondsToMinutevalue -->
+      <class name="com.CycleTimeDashboard.verifyCycleTimeDataTable">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.verifyCycleTimeDataTable@68e965f5]" started-at="2026-06-30T17:04:50 IST" name="configBC" finished-at="2026-06-30T17:04:51 IST" duration-ms="1113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate@236e3f4e]" started-at="2026-06-29T17:41:01 IST" name="configBM" finished-at="2026-06-29T17:41:03 IST" duration-ms="2381" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.verifyCycleTimeDataTable@68e965f5]" started-at="2026-06-30T17:04:51 IST" name="configBM" finished-at="2026-06-30T17:04:53 IST" duration-ms="1423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifytheAssociatePerformanceLossreportSingleassociate()[pri:0, instance:com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate@236e3f4e]" started-at="2026-06-29T17:41:03 IST" name="VerifytheAssociatePerformanceLossreportSingleassociate" finished-at="2026-06-29T17:41:08 IST" duration-ms="4336" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Cannot locate option with text: Unistage
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Unistage
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
-at com.sgplus.erp.genericutility.WebDriverUtility.select(WebDriverUtility.java:106)
-at com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate.VerifytheAssociatePerformanceLossreportSingleassociate(VerifytheAssociatePerformanceLossreportSingleassociate.java:58)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifCycleTimeDataTable()[pri:0, instance:com.CycleTimeDashboard.verifyCycleTimeDataTable@68e965f5]" started-at="2026-06-30T17:04:53 IST" name="verifCycleTimeDataTable" finished-at="2026-06-30T17:05:04 IST" duration-ms="11052" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifytheAssociatePerformanceLossreportSingleassociate -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate@236e3f4e]" started-at="2026-06-29T17:41:08 IST" name="configAM" finished-at="2026-06-29T17:41:09 IST" duration-ms="1111" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (1457, 42). Other element would receive the click: <div class="headerContent">...</div>
-  (Session info: chrome=148.0.7778.217)
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c2d6613fd7425e172c64b1d15ce9ca1, clickElement {id=f.48E2A06AFF72275C0B80F5963392EC94.d.31B08748FE956D6F87FB0B1593FAD0B1.e.95}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56408}, goog:processID: 22216, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56408/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6c2d6613fd7425e172c64b1d15ce9ca1)] -> xpath: //span[text()="Logout"]]
-Session ID: 6c2d6613fd7425e172c64b1d15ce9ca1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (1457, 42). Other element would receive the click: <div class="headerContent">...</div>
-  (Session info: chrome=148.0.7778.217)
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c2d6613fd7425e172c64b1d15ce9ca1, clickElement {id=f.48E2A06AFF72275C0B80F5963392EC94.d.31B08748FE956D6F87FB0B1593FAD0B1.e.95}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56408}, goog:processID: 22216, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56408/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6c2d6613fd7425e172c64b1d15ce9ca1)] -> xpath: //span[text()="Logout"]]
-Session ID: 6c2d6613fd7425e172c64b1d15ce9ca1
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at com.sgplus.erp.genericutility.BaseClass.configAM(BaseClass.java:65)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        </test-method> <!-- verifCycleTimeDataTable -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.verifyCycleTimeDataTable@68e965f5]" started-at="2026-06-30T17:05:04 IST" name="configAM" finished-at="2026-06-30T17:05:04 IST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate@236e3f4e]" started-at="2026-06-29T17:41:09 IST" name="configAC" finished-at="2026-06-29T17:41:09 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.verifyCycleTimeDataTable@68e965f5]" started-at="2026-06-30T17:05:04 IST" name="configAC" finished-at="2026-06-30T17:05:04 IST" duration-ms="407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate -->
-      <class name="com.AssociatePerformancereport.VerifytheAssociateperformancetable">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.AssociatePerformancereport.VerifytheAssociateperformancetable@71c3b41]" started-at="2026-06-29T17:40:51 IST" name="configBC" finished-at="2026-06-29T17:40:52 IST" duration-ms="1111" status="PASS">
+      </class> <!-- com.CycleTimeDashboard.verifyCycleTimeDataTable -->
+      <class name="com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingEquipement">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingEquipement@f381794]" started-at="2026-06-30T17:05:30 IST" name="configBC" finished-at="2026-06-30T17:05:31 IST" duration-ms="1070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.AssociatePerformancereport.VerifytheAssociateperformancetable@71c3b41]" started-at="2026-06-29T17:40:52 IST" name="configBM" finished-at="2026-06-29T17:40:54 IST" duration-ms="2014" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingEquipement@f381794]" started-at="2026-06-30T17:05:31 IST" name="configBM" finished-at="2026-06-30T17:05:33 IST" duration-ms="1554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifytheAssociateperformancetable()[pri:0, instance:com.AssociatePerformancereport.VerifytheAssociateperformancetable@71c3b41]" started-at="2026-06-29T17:40:54 IST" name="VerifytheAssociateperformancetable" finished-at="2026-06-29T17:40:59 IST" duration-ms="5062" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Cannot locate option with text: Unistage
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Unistage
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:397)
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
-at com.sgplus.erp.genericutility.WebDriverUtility.select(WebDriverUtility.java:106)
-at com.AssociatePerformancereport.VerifytheAssociateperformancetable.VerifytheAssociateperformancetable(VerifytheAssociateperformancetable.java:59)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="VeriftyheExportFeatureBySelectingEquipement()[pri:0, instance:com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingEquipement@f381794]" started-at="2026-06-30T17:05:33 IST" name="VeriftyheExportFeatureBySelectingEquipement" finished-at="2026-06-30T17:05:58 IST" duration-ms="25273" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifytheAssociateperformancetable -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.AssociatePerformancereport.VerifytheAssociateperformancetable@71c3b41]" started-at="2026-06-29T17:40:59 IST" name="configAM" finished-at="2026-06-29T17:41:00 IST" duration-ms="1051" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (1457, 42). Other element would receive the click: <div class="headerContent">...</div>
-  (Session info: chrome=148.0.7778.217)
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bdf38f51765dbd79b068fb0bfaa03701, clickElement {id=f.F637AEF0D0AEA2CB485AEC4690EA24F5.d.3B3DCAE9DF13B73D9DCE9ECA06F039BF.e.86}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51603}, goog:processID: 38832, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51603/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (bdf38f51765dbd79b068fb0bfaa03701)] -> xpath: //span[text()="Logout"]]
-Session ID: bdf38f51765dbd79b068fb0bfaa03701]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (1457, 42). Other element would receive the click: <div class="headerContent">...</div>
-  (Session info: chrome=148.0.7778.217)
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bdf38f51765dbd79b068fb0bfaa03701, clickElement {id=f.F637AEF0D0AEA2CB485AEC4690EA24F5.d.3B3DCAE9DF13B73D9DCE9ECA06F039BF.e.86}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51603}, goog:processID: 38832, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51603/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (bdf38f51765dbd79b068fb0bfaa03701)] -> xpath: //span[text()="Logout"]]
-Session ID: bdf38f51765dbd79b068fb0bfaa03701
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at com.sgplus.erp.genericutility.BaseClass.configAM(BaseClass.java:65)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        </test-method> <!-- VeriftyheExportFeatureBySelectingEquipement -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingEquipement@f381794]" started-at="2026-06-30T17:05:58 IST" name="configAM" finished-at="2026-06-30T17:05:58 IST" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.AssociatePerformancereport.VerifytheAssociateperformancetable@71c3b41]" started-at="2026-06-29T17:41:00 IST" name="configAC" finished-at="2026-06-29T17:41:00 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingEquipement@f381794]" started-at="2026-06-30T17:05:58 IST" name="configAC" finished-at="2026-06-30T17:06:00 IST" duration-ms="1982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.AssociatePerformancereport.VerifytheAssociateperformancetable -->
+      </class> <!-- com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingEquipement -->
+      <class name="com.CycleTimeDashboard.VerifytheTotalSetValue">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytheTotalSetValue@6c779568]" started-at="2026-06-30T17:05:18 IST" name="configBC" finished-at="2026-06-30T17:05:19 IST" duration-ms="1102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytheTotalSetValue@6c779568]" started-at="2026-06-30T17:05:19 IST" name="configBM" finished-at="2026-06-30T17:05:21 IST" duration-ms="1745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="verifytheTotalSetValue()[pri:0, instance:com.CycleTimeDashboard.VerifytheTotalSetValue@6c779568]" started-at="2026-06-30T17:05:21 IST" name="verifytheTotalSetValue" finished-at="2026-06-30T17:05:30 IST" duration-ms="8427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytheTotalSetValue -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytheTotalSetValue@6c779568]" started-at="2026-06-30T17:05:30 IST" name="configAM" finished-at="2026-06-30T17:05:30 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytheTotalSetValue@6c779568]" started-at="2026-06-30T17:05:30 IST" name="configAC" finished-at="2026-06-30T17:05:30 IST" duration-ms="402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.CycleTimeDashboard.VerifytheTotalSetValue -->
+      <class name="com.CycleTimeDashboard.VerifytheTooltipdataOfBarchart">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.CycleTimeDashboard.VerifytheTooltipdataOfBarchart@6f27a732]" started-at="2026-06-30T17:05:04 IST" name="configBC" finished-at="2026-06-30T17:05:05 IST" duration-ms="1149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.CycleTimeDashboard.VerifytheTooltipdataOfBarchart@6f27a732]" started-at="2026-06-30T17:05:05 IST" name="configBM" finished-at="2026-06-30T17:05:07 IST" duration-ms="1422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VeirfytheTooltipdataBarchart()[pri:0, instance:com.CycleTimeDashboard.VerifytheTooltipdataOfBarchart@6f27a732]" started-at="2026-06-30T17:05:07 IST" name="VeirfytheTooltipdataBarchart" finished-at="2026-06-30T17:05:18 IST" duration-ms="11072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VeirfytheTooltipdataBarchart -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.CycleTimeDashboard.VerifytheTooltipdataOfBarchart@6f27a732]" started-at="2026-06-30T17:05:18 IST" name="configAM" finished-at="2026-06-30T17:05:18 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.CycleTimeDashboard.VerifytheTooltipdataOfBarchart@6f27a732]" started-at="2026-06-30T17:05:18 IST" name="configAC" finished-at="2026-06-30T17:05:18 IST" duration-ms="318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.CycleTimeDashboard.VerifytheTooltipdataOfBarchart -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

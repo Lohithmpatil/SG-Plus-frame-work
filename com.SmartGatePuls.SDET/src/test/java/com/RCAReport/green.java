@@ -14,7 +14,7 @@ import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.RCAReport;
 
 public class green extends BaseClass {
-	
+
 	@Test
 	public void VerifytheWeightedAveragesModeValuedata() throws Throwable {
 
@@ -57,8 +57,7 @@ public class green extends BaseClass {
 
 		we.select(rc.getGroupDropDown(), "Unistage");
 
-		// Commented out code: Wait and select an Equipment dropdown option (not being
-		// used)
+		// Commented out code: Wait and select an Equipment dropdown option (not beingused)
 
 		we.waitAndClick(rc.getEquipementDropDown());
 
@@ -92,36 +91,48 @@ public class green extends BaseClass {
 		// Enters To Date value
 		rc.getTodateSelection().sendKeys("30-01-2025");
 
+		we.waitAndClick(rc.getRecipeDropDown());
+
+		we.waitAndClick(rc.getRecipeDropDownCheckbox());
+
+		we.waitAndClick(rc.getCollapseRecipedropdown());
+
 		// Click on Apply Filter button to load data
 		we.waitAndClick(rc.getApplyFilter());
-		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-		String skuName = "Green SKU's";
-
-		WebElement skuCount = wait.until(
-		    ExpectedConditions.visibilityOfElementLocated(
-		        By.xpath("//span[contains(text(),'"+skuName+"')]/following::div[contains(@class,'fs-4')][1]")));
-
-		System.out.println(skuName + " = " + skuCount.getText());
-
-		/*WebElement yellowSku = wait.until(
-		        ExpectedConditions.visibilityOfElementLocated(
-		                By.xpath("//span[contains(text(),\"Yellow SKU's\")]/following::div[contains(@class,'fs-4')][1]")));
-
-		System.out.println("Yellow SKU Count = " + yellowSku.getText());
-
-		WebElement purpleSku = wait.until(
-		        ExpectedConditions.visibilityOfElementLocated(
-		                By.xpath("//span[contains(text(),\"Purple SKU's\")]/following::div[contains(@class,'fs-4')][1]")));
-
-		System.out.println("Purple SKU Count = " + purpleSku.getText());
-
-		WebElement redSku = wait.until(
-		        ExpectedConditions.visibilityOfElementLocated(
-		                By.xpath("//span[contains(text(),\"Red SKU's\")]/following::div[contains(@class,'fs-4')][1]")));
-
-		System.out.println("Red SKU Count = " + redSku.getText());*/
+		/*
+		 * WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		 * 
+		 * String skuName = "Green SKU's";
+		 * 
+		 * WebElement skuCount = wait.until(
+		 * ExpectedConditions.visibilityOfElementLocated(
+		 * By.xpath("//span[contains(text(),'"+skuName+
+		 * "')]/following::div[contains(@class,'fs-4')][1]")));
+		 * 
+		 * System.out.println(skuName + " = " + skuCount.getText());
+		 * 
+		 * WebElement yellowSku = wait.until(
+		 * ExpectedConditions.visibilityOfElementLocated( By.
+		 * xpath("//span[contains(text(),\"Yellow SKU's\")]/following::div[contains(@class,'fs-4')][1]"
+		 * )));
+		 * 
+		 * System.out.println("Yellow SKU Count = " + yellowSku.getText());
+		 * 
+		 * WebElement purpleSku = wait.until(
+		 * ExpectedConditions.visibilityOfElementLocated( By.
+		 * xpath("//span[contains(text(),\"Purple SKU's\")]/following::div[contains(@class,'fs-4')][1]"
+		 * )));
+		 * 
+		 * System.out.println("Purple SKU Count = " + purpleSku.getText());
+		 * 
+		 * WebElement redSku = wait.until(
+		 * ExpectedConditions.visibilityOfElementLocated( By.
+		 * xpath("//span[contains(text(),\"Red SKU's\")]/following::div[contains(@class,'fs-4')][1]"
+		 * )));
+		 * 
+		 * System.out.println("Red SKU Count = " + redSku.getText());
+		 */
 	}
 
 }

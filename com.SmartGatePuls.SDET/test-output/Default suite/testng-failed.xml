@@ -3,69 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.AssociatePerformancereport.VerifytheAssociateperformancetable">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifytheAssociateperformancetable"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.AssociatePerformancereport.VerifytheAssociateperformancetable -->
-      <class name="com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate">
-        <methods>
-          <include name="configBM"/>
-          <include name="VerifytheAssociatePerformanceLossreportSingleassociate"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate -->
-      <class name="com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown">
+      <class name="com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByOperatorvalue">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
           <include name="configBC"/>
-          <include name="VerifytheAssociateperformancereportDropdown"/>
+          <include name="VerifytheXaxisdropdownselectingByOperatorvalue"/>
         </methods>
-      </class> <!-- com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown -->
-      <class name="com.AssociatePerformancereport.OEEAssociateTop5UpskilledPerformanceTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="OEEAssociateTop5UpskilledPerformanceTest"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.AssociatePerformancereport.OEEAssociateTop5UpskilledPerformanceTest -->
-      <class name="com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="VerfiytheOverAllPerformanceGraph"/>
-        </methods>
-      </class> <!-- com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph -->
-      <class name="com.AssociatePerformancereport.OEEAssociatePerformanceReportNavigationTest">
-        <methods>
-          <include name="OEEAssociatePerformanceReportNavigationTest"/>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.AssociatePerformancereport.OEEAssociatePerformanceReportNavigationTest -->
-      <class name="com.AssociatePerformancereport.VerifyExportfeature">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="VerifyExportfeature"/>
-        </methods>
-      </class> <!-- com.AssociatePerformancereport.VerifyExportfeature -->
+      </class> <!-- com.CycleTimeDashboard.VerifytheXaxisdropdownselectingByOperatorvalue -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

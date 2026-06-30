@@ -114,6 +114,29 @@ public class RCAReport {
 	@FindBy(xpath = "//label[text()='To Date ']/following-sibling::input")
 	private WebElement TodateSelection;
 
+	
+	public WebElement getRecipeDropDown() {
+		return RecipeDropDown;
+	}
+
+	public WebElement getRecipeDropDownCheckbox() {
+		return RecipeDropDownCheckbox;
+	}
+
+	public WebElement getCollapseRecipedropdown() {
+		return CollapseRecipedropdown;
+	}
+
+	@FindBy(xpath = "//label[normalize-space()='Recipes']/following-sibling::div//div[@tabindex='0']")
+	private WebElement RecipeDropDown;
+	
+	@FindBy(xpath = "//input[@type='checkbox']")
+	private WebElement RecipeDropDownCheckbox;
+	
+	@FindBy(xpath = "//label[normalize-space()='Recipes']/following-sibling::div//div[@tabindex='0']")
+	private WebElement CollapseRecipedropdown;
+	
+	
 	/* ================= APPLY FILTER ================= */
 
 	@FindBy(xpath = "//button[text()=\"Apply Filter\"]")
