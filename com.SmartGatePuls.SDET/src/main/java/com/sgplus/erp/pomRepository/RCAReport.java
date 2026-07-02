@@ -141,6 +141,14 @@ public class RCAReport {
 
 	@FindBy(xpath = "//button[text()=\"Apply Filter\"]")
 	private WebElement ApplyFilter;
+	
+	public WebElement getExportButton() {
+		return ExportButton;
+	}
+
+	@FindBy(xpath = "//button[@title=\"Export\"]")
+	private WebElement ExportButton;
+
 
 	public WebElement getApplyFilter() {
 					return ApplyFilter;

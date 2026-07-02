@@ -1,16 +1,14 @@
 package com.RCAReport;
 
 import java.time.Duration;
-import java.util.ArrayList;
 import java.util.List;
 
-import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.devtools.idealized.Javascript;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.sgplus.erp.genericutility.BaseClass;
@@ -18,10 +16,10 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.RCAReport;
 
-public class VerifyMachinewiseSummaryBarChart extends BaseClass {
+public class VerifytheRunningCTModeANDTargetCT   extends BaseClass {
 
 	@Test
-	public void VerifyMachinewiseSummaryBarChart() throws Throwable {
+	public void VerifytheRunningCTModeANDTargetCT () throws Throwable {
 
 		// Create WebDriverUtility object for handling waits and actions
 		WebDriverUtility we = new WebDriverUtility();
@@ -108,41 +106,29 @@ public class VerifyMachinewiseSummaryBarChart extends BaseClass {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
-		js.executeScript("window.scrollBy(0,400)");
+		js.executeScript("window.scrollBy(0,600)");
 
+		// Wait for the table to be visible
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class,'js-plotly-plot')]")));
+		WebElement table = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Aggregated_table"))); // Table
+																													// ID
+																													// from
+																													// your
+																													// screenshot
 
-		List<WebElement> textElements = driver.findElements(By.xpath("//*[name()='svg']//*[name()='text']"));
+		// Get all rows from tbody
+		List<WebElement> rows = table.findElements(By.xpath(".//tbody/tr"));
 
-		List<String> values = new ArrayList<>();
-		List<String> machines = new ArrayList<>();
+		for (int i = 0; i < rows.size(); i++) {
 
-		for (WebElement e : textElements) {
+			List<WebElement> cols = rows.get(i).findElements(By.tagName("td"));
 
-			String txt = e.getText().trim();
+			int targetCT = Integer.parseInt(cols.get(3).getText().trim());
+			int runningCT = Integer.parseInt(cols.get(4).getText().trim());
 
-			if (txt.matches("\\d+(\\.\\d+)?")) {
-				values.add(txt);
-			} else if (txt.startsWith("SCPTBS")) {
-				machines.add(txt);
-			}
-		}
-
-		System.out.println("========= Machine Wise Summary =========");
-
-		for (int i = 0; i < machines.size(); i++) {
-
-			int index = i * 3;
-
-			System.out.println("--------------------------------");
-			System.out.println("Machine : " + machines.get(i));
-			System.out.println("Actual  : " + values.get(index));
-			System.out.println("Mode    : " + values.get(index + 1));
-			System.out.println("Set     : " + values.get(index + 2));
+			System.out.println("Row " + (i + 1) + " -> Target CT = " + targetCT + ", Running CT = " + runningCT);
 
 		}
 	}
-
 }

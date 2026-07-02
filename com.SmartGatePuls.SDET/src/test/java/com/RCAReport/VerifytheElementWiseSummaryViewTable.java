@@ -1,16 +1,13 @@
 package com.RCAReport;
 
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
 
-import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.devtools.idealized.Javascript;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.sgplus.erp.genericutility.BaseClass;
@@ -18,10 +15,12 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.RCAReport;
 
-public class VerifyMachinewiseSummaryBarChart extends BaseClass {
+public class VerifytheElementWiseSummaryViewTable extends BaseClass{
+
+	
 
 	@Test
-	public void VerifyMachinewiseSummaryBarChart() throws Throwable {
+	public void VerifytheElementWiseSummaryViewTable() throws Throwable {
 
 		// Create WebDriverUtility object for handling waits and actions
 		WebDriverUtility we = new WebDriverUtility();
@@ -32,7 +31,7 @@ public class VerifyMachinewiseSummaryBarChart extends BaseClass {
 		// Create CycleTimeDashboard object to access dashboard elements
 		RCAReport rc = new RCAReport(driver);
 
-		// Click on Cycle Time module from home page
+		// Click on Cycle Time module from home pageA
 		we.waitAndClick(hm.getCyletime());
 
 		// Click on Cycle Time Dashboard menu
@@ -86,7 +85,7 @@ public class VerifyMachinewiseSummaryBarChart extends BaseClass {
 		rc.getFromdateSelection().clear();
 
 		// Enters From Date value
-		rc.getFromdateSelection().sendKeys("01-01-2025");
+		rc.getFromdateSelection().sendKeys("01-04-2023");
 
 		// Clicks on To Date field
 		we.waitAndClick(rc.getTodateSelection());
@@ -95,7 +94,7 @@ public class VerifyMachinewiseSummaryBarChart extends BaseClass {
 		rc.getTodateSelection().clear();
 
 		// Enters To Date value
-		rc.getTodateSelection().sendKeys("30-01-2025");
+		rc.getTodateSelection().sendKeys("30-04-2023");
 
 		we.waitAndClick(rc.getRecipeDropDown());
 
@@ -107,42 +106,14 @@ public class VerifyMachinewiseSummaryBarChart extends BaseClass {
 		we.waitAndClick(rc.getApplyFilter());
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+		
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
 
-		js.executeScript("window.scrollBy(0,400)");
+		WebElement table = wait.until(ExpectedConditions.visibilityOfElementLocated(
+		        By.id("element_table")));
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class,'js-plotly-plot')]")));
-
-		List<WebElement> textElements = driver.findElements(By.xpath("//*[name()='svg']//*[name()='text']"));
-
-		List<String> values = new ArrayList<>();
-		List<String> machines = new ArrayList<>();
-
-		for (WebElement e : textElements) {
-
-			String txt = e.getText().trim();
-
-			if (txt.matches("\\d+(\\.\\d+)?")) {
-				values.add(txt);
-			} else if (txt.startsWith("SCPTBS")) {
-				machines.add(txt);
-			}
-		}
-
-		System.out.println("========= Machine Wise Summary =========");
-
-		for (int i = 0; i < machines.size(); i++) {
-
-			int index = i * 3;
-
-			System.out.println("--------------------------------");
-			System.out.println("Machine : " + machines.get(i));
-			System.out.println("Actual  : " + values.get(index));
-			System.out.println("Mode    : " + values.get(index + 1));
-			System.out.println("Set     : " + values.get(index + 2));
-
-		}
+		Assert.assertTrue(table.isDisplayed(), "Element Wise Summary View table is not displayed.");
 	}
-
 }

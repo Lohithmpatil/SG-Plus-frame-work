@@ -4,11 +4,9 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.devtools.idealized.Javascript;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -18,10 +16,10 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.RCAReport;
 
-public class VerifyMachinewiseSummaryBarChart extends BaseClass {
+public class VerifytheAggregatedSummaryViewTable extends BaseClass {
 
 	@Test
-	public void VerifyMachinewiseSummaryBarChart() throws Throwable {
+	public void VerifytheAggregatedSummaryViewTable() throws Throwable {
 
 		// Create WebDriverUtility object for handling waits and actions
 		WebDriverUtility we = new WebDriverUtility();
@@ -108,41 +106,37 @@ public class VerifyMachinewiseSummaryBarChart extends BaseClass {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
-		js.executeScript("window.scrollBy(0,400)");
-
+		js.executeScript("window.scrollBy(0,600)");
+		// Wait for the table to be visible
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class,'js-plotly-plot')]")));
+		WebElement table = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("Aggregated_table"))); // Table
+																													// ID
+																													// from
+																													// your
+																													// screenshot
 
-		List<WebElement> textElements = driver.findElements(By.xpath("//*[name()='svg']//*[name()='text']"));
+		// Get all rows from tbody
+		List<WebElement> rows = table.findElements(By.xpath(".//tbody/tr"));
 
-		List<String> values = new ArrayList<>();
-		List<String> machines = new ArrayList<>();
+		System.out.println("Total Rows: " + rows.size());
 
-		for (WebElement e : textElements) {
+		for (int i = 0; i < rows.size(); i++) {
 
-			String txt = e.getText().trim();
+			List<WebElement> cols = rows.get(i).findElements(By.tagName("td"));
 
-			if (txt.matches("\\d+(\\.\\d+)?")) {
-				values.add(txt);
-			} else if (txt.startsWith("SCPTBS")) {
-				machines.add(txt);
-			}
-		}
+			System.out.println("----------- Row " + (i + 1) + " -----------");
 
-		System.out.println("========= Machine Wise Summary =========");
-
-		for (int i = 0; i < machines.size(); i++) {
-
-			int index = i * 3;
-
-			System.out.println("--------------------------------");
-			System.out.println("Machine : " + machines.get(i));
-			System.out.println("Actual  : " + values.get(index));
-			System.out.println("Mode    : " + values.get(index + 1));
-			System.out.println("Set     : " + values.get(index + 2));
+			System.out.println("Sr No             : " + cols.get(0).getText());
+			System.out.println("Machine           : " + cols.get(1).getText());
+			System.out.println("Recipe            : " + cols.get(2).getText());
+			System.out.println("Target CT         : " + cols.get(3).getText());
+			System.out.println("Running CT Mode   : " + cols.get(4).getText());
+			System.out.println("Minimum CT        : " + cols.get(5).getText());
+			System.out.println("Production        : " + cols.get(6).getText());
+			System.out.println("Potential Loss    : " + cols.get(7).getText());
+			System.out.println("Date of Production: " + cols.get(8).getText());
 
 		}
 	}
-
 }

@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.RCAReport.VerifyMachinewiseSummaryBarChart">
+      <class name="com.RCAReport.VerifytheElementSummaryviewTableHeadersAndData">
         <methods>
           <include name="configBM"/>
-          <include name="VerifytheSkus"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifytheElementSummaryViewtableHeadersAndData"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.RCAReport.VerifyMachinewiseSummaryBarChart -->
+      </class> <!-- com.RCAReport.VerifytheElementSummaryviewTableHeadersAndData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
