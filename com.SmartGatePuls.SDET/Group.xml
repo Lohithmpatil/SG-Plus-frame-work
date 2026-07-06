@@ -17,6 +17,7 @@
 			<package name="AddReasonPage" />
 			<package name="com.UserCreate" />
 			<package name="com.RoleCreateModule" />
+			<package name="com.RCAReport" />
 		</packages>
 	</test> <!--
 	Test -->
