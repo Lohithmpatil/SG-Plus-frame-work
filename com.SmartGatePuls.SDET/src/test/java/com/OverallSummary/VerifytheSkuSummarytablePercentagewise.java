@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -94,11 +95,14 @@ public class VerifytheSkuSummarytablePercentagewise extends BaseClass {
 
 		// Click on Apply Filter button to load data
 		we.waitAndClick(os.getApplyFilter());
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(0, 0);");
 
 		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(60));
 
 		WebElement toggle = wait1
-				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='custom-switch']")));
+				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[@for='custom-switch']")));
 
 		wait1.until(ExpectedConditions.elementToBeClickable(toggle));
 

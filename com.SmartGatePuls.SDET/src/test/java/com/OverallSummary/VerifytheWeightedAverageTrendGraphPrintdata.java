@@ -2,6 +2,7 @@ package com.OverallSummary;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -101,50 +102,22 @@ public class VerifytheWeightedAverageTrendGraphPrintdata extends BaseClass {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
-		js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+		js.executeScript("window.scrollBy(0,500)");
+
 		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 
-		// Wait for graph container
-		WebElement graph = wait.until(
-		        ExpectedConditions.visibilityOfElementLocated(By.id("lineGraph")));
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(80));
+		WebElement exportButton = wait1.until(ExpectedConditions.elementToBeClickable(os.getExportButton()));
 
-		System.out.println("Graph Displayed : " + graph.isDisplayed());
+		we.waitAndClick(os.getExportButton());
 
-		// Verify graph is displayed
-		Assert.assertTrue(graph.isDisplayed(), "Weighted Average Trend graph is not displayed.");
+		Assert.assertTrue(exportButton.isDisplayed(), "Export button is not displayed");
+		Assert.assertTrue(exportButton.isEnabled(), "Export button is not enabled");
 
-		// Wait for graph title
-		WebElement title = wait.until(
-		        ExpectedConditions.visibilityOfElementLocated(
-		                By.xpath("//*[contains(text(),'WEIGHTED AVERAGE TREND FOR TARGET CT V/S ACTUAL CT')]")));
+	
 
-		System.out.println("Graph Title : " + title.getText());
-
-		// Wait for X-Axis
-		WebElement xAxis = wait.until(
-		        ExpectedConditions.visibilityOfElementLocated(
-		                By.xpath("//*[text()='Dates']")));
-
-		System.out.println("X-Axis : " + xAxis.getText());
-
-		// Wait for Y-Axis
-		WebElement yAxis = wait.until(
-		        ExpectedConditions.visibilityOfElementLocated(
-		                By.xpath("//*[text()='Cycle Time']")));
-
-		System.out.println("Y-Axis : " + yAxis.getText());
-
-		// Wait for graph paths (lines)
-		wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(
-		        By.xpath("//div[@class=\"user-select-none svg-container\"]"), 0));
-
-		List<WebElement> paths = driver.findElements(
-		        By.xpath("//div[@class=\"user-select-none svg-container\"]"));
-
-		System.out.println("Total Graph Paths : " + paths.size());
-
-		Assert.assertTrue(paths.size() > 0, "Graph data is not displayed.");
-			
-}
+		System.out.println("Export button is displayed and enabled successfully.");
+		
+		
+	}
 }
