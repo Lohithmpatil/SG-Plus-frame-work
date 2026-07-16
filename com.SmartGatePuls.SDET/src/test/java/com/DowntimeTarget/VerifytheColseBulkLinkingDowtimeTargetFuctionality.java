@@ -1,4 +1,4 @@
-package com.OEETarget;
+package com.DowntimeTarget;
 
 import java.time.Duration;
 
@@ -10,13 +10,12 @@ import org.testng.annotations.Test;
 
 import com.sgplus.erp.genericutility.BaseClass;
 import com.sgplus.erp.genericutility.WebDriverUtility;
+import com.sgplus.erp.pomRepository.DowntimeTarget;
 import com.sgplus.erp.pomRepository.HomePage;
-import com.sgplus.erp.pomRepository.OEETarget;
 
-public class VerifyCloseBulkLinkingFunctionality extends BaseClass{
-	
+public class VerifytheColseBulkLinkingDowtimeTargetFuctionality extends BaseClass {
 	@Test
-	public void VerifyCloseBulkLinkingFunctionality() throws Throwable {
+	public void VerifytheColseBulkLinkingDowntimeTargetFuctionality() throws Throwable {
 
 		// Create WebDriverUtility object for handling waits and actions
 		WebDriverUtility we = new WebDriverUtility();
@@ -24,65 +23,66 @@ public class VerifyCloseBulkLinkingFunctionality extends BaseClass{
 		// Create HomePage object to access home page elements
 		HomePage hm = new HomePage(driver);
 
-		OEETarget oe = new OEETarget(driver);
+		DowntimeTarget dt = new DowntimeTarget(driver);
 
 		we.waitAndClick(hm.getSettings());
 		// Click on Cycle Time module from home page
-		we.waitAndClick(oe.getOEETargetPage());
+		we.waitAndClick(dt.getDowntimeTargetPage());
 
 		// Click on Filter button to open filter options
-		we.waitAndClick(oe.getFilterButton());
+		we.waitAndClick(dt.getFilterButton());
 
 		// Wait for the 'BU Dropdown' to be clickable and then click it
-		we.waitAndClick(oe.getBUDropDown());
+		we.waitAndClick(dt.getBUDropDown());
 
 		// Select "BU3" from the Business Unit dropdown
-		we.select(oe.getBUDropDown(), "BU3");
+		we.select(dt.getBUDropDown(), "BU3");
 
 		// Wait for the 'Area Dropdown' to be clickable and then click it
-		we.waitAndClick(oe.getAreaDropDown());
+		we.waitAndClick(dt.getAreaDropDown());
 
 		// Select "TBM-PCR" from the Area dropdown
 
-		we.select(oe.getAreaDropDown(), "TBM-PCR");
+		we.select(dt.getAreaDropDown(), "TBM-PCR");
 
 		// Wait for the 'Group Dropdown' to be clickable and then click it
 
-		we.waitAndClick(oe.getGroupDropDown());
+		we.waitAndClick(dt.getGroupDropDown());
 
 		// Select "Unistage" from the Group dropdown
 
-		we.select(oe.getGroupDropDown(), "Unistage");
+		we.select(dt.getGroupDropDown(), "Unistage");
 
 		// Click on Apply Filter button to load data
-		we.waitAndClick(oe.getApplyFilter());
+		we.waitAndClick(dt.getApplyFilter());
 
-		we.waitAndClick(oe.getBulkButton());
+		we.waitAndClick(dt.getBulkButton());
 
-		we.waitAndClick(oe.getCheckBOx());
-		
-		we.waitAndClick(oe.getBulkButton2());
-		we.waitAndClick(oe.getOEETargetTextFeild());
+		we.waitAndClick(dt.getBulkButton());
 
-		oe.getOEETargetTextFeild().clear();
+		we.waitAndClick(dt.getCheckBOx());
 
-		oe.getOEETargetTextFeild().sendKeys("50");
+		we.waitAndClick(dt.getBulkButton2());
 		
-		we.waitAndClick(oe.getCancelButton());
-		
-		we.waitAndClick(oe.getCloseBulkLinkButton());
-		
+		we.waitAndClick(dt.getDowntimeTargetTextFeild());
+
+		dt.getOEETargetTextFeild().clear();
+
+		dt.getOEETargetTextFeild().sendKeys("50");
+
+		we.waitAndClick(dt.getCancelButton());
+
+		we.waitAndClick(dt.getCloseBulkLinkButton());
+
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		// Verify popup is closed
-		wait.until(ExpectedConditions.invisibilityOf(oe.getUpdateButton()));
+		wait.until(ExpectedConditions.invisibilityOf(dt.getUpdateButton()));
 
-		Assert.assertTrue(
-		    driver.findElements(By.xpath("//h4[text()='OEE Bulk Update']")).isEmpty(),
-		    "Bulk Update popup is still displayed."
-		);
+		Assert.assertTrue(driver.findElements(By.xpath("//h4[text()='Downtime Bulk Update']")).isEmpty(),
+				"Bulk Update popup is still displayed.");
 
 		System.out.println("Close Bulk link  button functionality verified successfully.");
-		
-	}	
+
+	}
 
 }

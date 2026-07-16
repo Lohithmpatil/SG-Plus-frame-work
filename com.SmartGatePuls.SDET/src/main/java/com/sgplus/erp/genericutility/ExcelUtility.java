@@ -10,7 +10,7 @@ public class ExcelUtility {
     private static final String EXCEL_PATH =
             "C:\\Seleniumwebdriver\\Automation.xlsx";
 
-    // ---------------- READ DATA ----------------
+  /*  // ---------------- READ DATA ----------------
     public String getDataFromExcel(String sheetName, int rowNum, int cellNum)
             throws Exception {
 
@@ -22,6 +22,27 @@ public class ExcelUtility {
         Cell cell = row.getCell(cellNum);
 
         String data = cell.getStringCellValue();
+
+        wb.close();
+        fis.close();
+
+        return data;
+    }  */
+    
+    
+    
+    public String getDataFromExcel(String sheetName, int rowNum, int cellNum)
+            throws Exception {
+
+        FileInputStream fis = new FileInputStream(EXCEL_PATH);
+        Workbook wb = WorkbookFactory.create(fis);
+
+        Sheet sh = wb.getSheet(sheetName);
+        Row row = sh.getRow(rowNum);
+        Cell cell = row.getCell(cellNum);
+
+        DataFormatter formatter = new DataFormatter();
+        String data = formatter.formatCellValue(cell);
 
         wb.close();
         fis.close();

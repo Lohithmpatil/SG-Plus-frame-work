@@ -3,6 +3,7 @@ package com.OEETarget;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -13,10 +14,10 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.OEETarget;
 
-public class VerifyCloseBulkLinkingFunctionality extends BaseClass{
-	
+public class VerifytheOeeTargettableisDisplayed extends BaseClass{
+
 	@Test
-	public void VerifyCloseBulkLinkingFunctionality() throws Throwable {
+	public void VerifytheOeeTargettableisDisplayed() throws Throwable {
 
 		// Create WebDriverUtility object for handling waits and actions
 		WebDriverUtility we = new WebDriverUtility();
@@ -57,32 +58,10 @@ public class VerifyCloseBulkLinkingFunctionality extends BaseClass{
 		// Click on Apply Filter button to load data
 		we.waitAndClick(oe.getApplyFilter());
 
-		we.waitAndClick(oe.getBulkButton());
-
-		we.waitAndClick(oe.getCheckBOx());
-		
-		we.waitAndClick(oe.getBulkButton2());
-		we.waitAndClick(oe.getOEETargetTextFeild());
-
-		oe.getOEETargetTextFeild().clear();
-
-		oe.getOEETargetTextFeild().sendKeys("50");
-		
-		we.waitAndClick(oe.getCancelButton());
-		
-		we.waitAndClick(oe.getCloseBulkLinkButton());
-		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		// Verify popup is closed
-		wait.until(ExpectedConditions.invisibilityOf(oe.getUpdateButton()));
 
-		Assert.assertTrue(
-		    driver.findElements(By.xpath("//h4[text()='OEE Bulk Update']")).isEmpty(),
-		    "Bulk Update popup is still displayed."
-		);
+		WebElement table = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table")));
 
-		System.out.println("Close Bulk link  button functionality verified successfully.");
-		
-	}	
-
+		Assert.assertTrue(table.isDisplayed(), "Table is not displayed.");
+	}
 }
