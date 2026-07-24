@@ -1,77 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-16T17:39:36 IST" name="Default suite" finished-at="2026-07-16T17:40:02 IST" duration-ms="25781">
+  <suite started-at="2026-07-24T16:54:44 IST" name="Default suite" finished-at="2026-07-24T16:57:43 IST" duration-ms="179129">
     <groups>
     </groups>
-    <test started-at="2026-07-16T17:39:36 IST" name="Default test" finished-at="2026-07-16T17:40:02 IST" duration-ms="25781">
-      <class name="com.AddAssociates.VerifytheAssocitaesStatusChange">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.AddAssociates.VerifytheAssocitaesStatusChange@fa36558]" started-at="2026-07-16T17:39:36 IST" name="configBC" finished-at="2026-07-16T17:39:37 IST" duration-ms="1615" status="PASS">
+    <test started-at="2026-07-24T16:54:44 IST" name="Default test" finished-at="2026-07-24T16:57:43 IST" duration-ms="179129">
+      <class name="com.OverallSummary.VerifytheProductionLossAnalysisBarchart">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.OverallSummary.VerifytheProductionLossAnalysisBarchart@37f1104d]" started-at="2026-07-24T16:54:44 IST" name="configBC" finished-at="2026-07-24T16:54:45 IST" duration-ms="1663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.AddAssociates.VerifytheAssocitaesStatusChange@fa36558]" started-at="2026-07-16T17:39:37 IST" name="configBM" finished-at="2026-07-16T17:39:39 IST" duration-ms="1745" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.OverallSummary.VerifytheProductionLossAnalysisBarchart@37f1104d]" started-at="2026-07-24T16:54:45 IST" name="configBM" finished-at="2026-07-24T16:54:47 IST" duration-ms="1480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifytheAssocitaesStatusChange()[pri:0, instance:com.AddAssociates.VerifytheAssocitaesStatusChange@fa36558]" started-at="2026-07-16T17:39:39 IST" name="VerifytheAssocitaesStatusChange" finished-at="2026-07-16T17:40:02 IST" duration-ms="22383" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (b52f018b28b1697a71d18c1c2940cb73)] -> xpath: //label[@for="custom-switch-1868"]] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.116, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50841}, goog:processID: 29384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50841/devtoo..., se:cdpVersion: 150.0.7871.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b52f018b28b1697a71d18c1c2940cb73]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (b52f018b28b1697a71d18c1c2940cb73)] -> xpath: //label[@for="custom-switch-1868"]] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.116, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50841}, goog:processID: 29384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50841/devtoo..., se:cdpVersion: 150.0.7871.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b52f018b28b1697a71d18c1c2940cb73
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.AddAssociates.VerifytheAssocitaesStatusChange.VerifytheAssocitaesStatusChange(VerifytheAssocitaesStatusChange.java:38)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="VerifytheProductionLossAnalysisBarchart()[pri:0, instance:com.OverallSummary.VerifytheProductionLossAnalysisBarchart@37f1104d]" started-at="2026-07-24T16:54:47 IST" name="VerifytheProductionLossAnalysisBarchart" finished-at="2026-07-24T16:55:04 IST" duration-ms="16829" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifytheAssocitaesStatusChange -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.AddAssociates.VerifytheAssocitaesStatusChange@fa36558]" started-at="2026-07-16T17:40:02 IST" name="configAM" finished-at="2026-07-16T17:40:02 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- VerifytheProductionLossAnalysisBarchart -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.OverallSummary.VerifytheProductionLossAnalysisBarchart@37f1104d]" started-at="2026-07-24T16:55:04 IST" name="configAM" finished-at="2026-07-24T16:55:04 IST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-      </class> <!-- com.AddAssociates.VerifytheAssocitaesStatusChange -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.OverallSummary.VerifytheProductionLossAnalysisBarchart@37f1104d]" started-at="2026-07-24T16:55:04 IST" name="configAC" finished-at="2026-07-24T16:55:04 IST" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.OverallSummary.VerifytheProductionLossAnalysisBarchart -->
+      <class name="com.OverallSummary.VerifytheProductionLossTable">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.OverallSummary.VerifytheProductionLossTable@568ff82]" started-at="2026-07-24T16:55:23 IST" name="configBC" finished-at="2026-07-24T16:55:24 IST" duration-ms="1293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.OverallSummary.VerifytheProductionLossTable@568ff82]" started-at="2026-07-24T16:55:24 IST" name="configBM" finished-at="2026-07-24T16:55:26 IST" duration-ms="1445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheProductionLossTable()[pri:0, instance:com.OverallSummary.VerifytheProductionLossTable@568ff82]" started-at="2026-07-24T16:55:26 IST" name="VerifytheProductionLossTable" finished-at="2026-07-24T16:55:42 IST" duration-ms="16360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheProductionLossTable -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.OverallSummary.VerifytheProductionLossTable@568ff82]" started-at="2026-07-24T16:55:42 IST" name="configAM" finished-at="2026-07-24T16:55:42 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.OverallSummary.VerifytheProductionLossTable@568ff82]" started-at="2026-07-24T16:55:42 IST" name="configAC" finished-at="2026-07-24T16:55:42 IST" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.OverallSummary.VerifytheProductionLossTable -->
+      <class name="com.OverallSummary.VerifuytheOverallProductionLossData">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.OverallSummary.VerifuytheOverallProductionLossData@f2ff811]" started-at="2026-07-24T16:55:04 IST" name="configBC" finished-at="2026-07-24T16:55:05 IST" duration-ms="1197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.OverallSummary.VerifuytheOverallProductionLossData@f2ff811]" started-at="2026-07-24T16:55:05 IST" name="configBM" finished-at="2026-07-24T16:55:07 IST" duration-ms="1576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheOverallProductionData()[pri:0, instance:com.OverallSummary.VerifuytheOverallProductionLossData@f2ff811]" started-at="2026-07-24T16:55:07 IST" name="VerifytheOverallProductionData" finished-at="2026-07-24T16:55:22 IST" duration-ms="15649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheOverallProductionData -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.OverallSummary.VerifuytheOverallProductionLossData@f2ff811]" started-at="2026-07-24T16:55:22 IST" name="configAM" finished-at="2026-07-24T16:55:23 IST" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.OverallSummary.VerifuytheOverallProductionLossData@f2ff811]" started-at="2026-07-24T16:55:23 IST" name="configAC" finished-at="2026-07-24T16:55:23 IST" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.OverallSummary.VerifuytheOverallProductionLossData -->
+      <class name="com.OverallSummary.VerifytheOverallSummaryPageNavigation">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.OverallSummary.VerifytheOverallSummaryPageNavigation@2a266d09]" started-at="2026-07-24T16:55:51 IST" name="configBC" finished-at="2026-07-24T16:55:53 IST" duration-ms="1283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.OverallSummary.VerifytheOverallSummaryPageNavigation@2a266d09]" started-at="2026-07-24T16:55:53 IST" name="configBM" finished-at="2026-07-24T16:55:54 IST" duration-ms="1523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheOverallSummarypageNavigation()[pri:0, instance:com.OverallSummary.VerifytheOverallSummaryPageNavigation@2a266d09]" started-at="2026-07-24T16:55:54 IST" name="VerifytheOverallSummarypageNavigation" finished-at="2026-07-24T16:56:01 IST" duration-ms="6268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheOverallSummarypageNavigation -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.OverallSummary.VerifytheOverallSummaryPageNavigation@2a266d09]" started-at="2026-07-24T16:56:01 IST" name="configAM" finished-at="2026-07-24T16:56:01 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.OverallSummary.VerifytheOverallSummaryPageNavigation@2a266d09]" started-at="2026-07-24T16:56:01 IST" name="configAC" finished-at="2026-07-24T16:56:01 IST" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.OverallSummary.VerifytheOverallSummaryPageNavigation -->
+      <class name="com.OverallSummary.VerifytheWeightedAverageTrendGraph">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.OverallSummary.VerifytheWeightedAverageTrendGraph@50caa560]" started-at="2026-07-24T16:55:42 IST" name="configBC" finished-at="2026-07-24T16:55:44 IST" duration-ms="1217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.OverallSummary.VerifytheWeightedAverageTrendGraph@50caa560]" started-at="2026-07-24T16:55:44 IST" name="configBM" finished-at="2026-07-24T16:55:45 IST" duration-ms="1309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheWeightedAvaearageTrendGraph()[pri:0, instance:com.OverallSummary.VerifytheWeightedAverageTrendGraph@50caa560]" started-at="2026-07-24T16:55:45 IST" name="VerifytheWeightedAvaearageTrendGraph" finished-at="2026-07-24T16:55:51 IST" duration-ms="6125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheWeightedAvaearageTrendGraph -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.OverallSummary.VerifytheWeightedAverageTrendGraph@50caa560]" started-at="2026-07-24T16:55:51 IST" name="configAM" finished-at="2026-07-24T16:55:51 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.OverallSummary.VerifytheWeightedAverageTrendGraph@50caa560]" started-at="2026-07-24T16:55:51 IST" name="configAC" finished-at="2026-07-24T16:55:51 IST" duration-ms="321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.OverallSummary.VerifytheWeightedAverageTrendGraph -->
+      <class name="com.OverallSummary.VerifytheSkuSummaryTable">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.OverallSummary.VerifytheSkuSummaryTable@186f8716]" started-at="2026-07-24T16:56:23 IST" name="configBC" finished-at="2026-07-24T16:56:24 IST" duration-ms="1192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.OverallSummary.VerifytheSkuSummaryTable@186f8716]" started-at="2026-07-24T16:56:24 IST" name="configBM" finished-at="2026-07-24T16:56:26 IST" duration-ms="2093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheSkuSummaryTable()[pri:0, instance:com.OverallSummary.VerifytheSkuSummaryTable@186f8716]" started-at="2026-07-24T16:56:26 IST" name="VerifytheSkuSummaryTable" finished-at="2026-07-24T16:56:43 IST" duration-ms="16874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheSkuSummaryTable -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.OverallSummary.VerifytheSkuSummaryTable@186f8716]" started-at="2026-07-24T16:56:43 IST" name="configAM" finished-at="2026-07-24T16:56:43 IST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.OverallSummary.VerifytheSkuSummaryTable@186f8716]" started-at="2026-07-24T16:56:43 IST" name="configAC" finished-at="2026-07-24T16:56:43 IST" duration-ms="396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.OverallSummary.VerifytheSkuSummaryTable -->
+      <class name="com.OverallSummary.VerifytheSkuSummarytablePercentagewise">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.OverallSummary.VerifytheSkuSummarytablePercentagewise@5ab9e72c]" started-at="2026-07-24T16:56:01 IST" name="configBC" finished-at="2026-07-24T16:56:02 IST" duration-ms="1325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.OverallSummary.VerifytheSkuSummarytablePercentagewise@5ab9e72c]" started-at="2026-07-24T16:56:02 IST" name="configBM" finished-at="2026-07-24T16:56:05 IST" duration-ms="3104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheSkuSummmarytablePercentagewise()[pri:0, instance:com.OverallSummary.VerifytheSkuSummarytablePercentagewise@5ab9e72c]" started-at="2026-07-24T16:56:05 IST" name="VerifytheSkuSummmarytablePercentagewise" finished-at="2026-07-24T16:56:22 IST" duration-ms="16816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheSkuSummmarytablePercentagewise -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.OverallSummary.VerifytheSkuSummarytablePercentagewise@5ab9e72c]" started-at="2026-07-24T16:56:22 IST" name="configAM" finished-at="2026-07-24T16:56:22 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.OverallSummary.VerifytheSkuSummarytablePercentagewise@5ab9e72c]" started-at="2026-07-24T16:56:22 IST" name="configAC" finished-at="2026-07-24T16:56:23 IST" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.OverallSummary.VerifytheSkuSummarytablePercentagewise -->
+      <class name="com.OverallSummary.VerifytheWeightedAverageTrendGraphPrintdata">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.OverallSummary.VerifytheWeightedAverageTrendGraphPrintdata@1d8bd0de]" started-at="2026-07-24T16:56:43 IST" name="configBC" finished-at="2026-07-24T16:56:44 IST" duration-ms="1239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.OverallSummary.VerifytheWeightedAverageTrendGraphPrintdata@1d8bd0de]" started-at="2026-07-24T16:56:44 IST" name="configBM" finished-at="2026-07-24T16:56:46 IST" duration-ms="1469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheWeightedAverageTrendGraphPirintdata()[pri:0, instance:com.OverallSummary.VerifytheWeightedAverageTrendGraphPrintdata@1d8bd0de]" started-at="2026-07-24T16:56:46 IST" name="VerifytheWeightedAverageTrendGraphPirintdata" finished-at="2026-07-24T16:57:42 IST" duration-ms="56360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheWeightedAverageTrendGraphPirintdata -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.OverallSummary.VerifytheWeightedAverageTrendGraphPrintdata@1d8bd0de]" started-at="2026-07-24T16:57:42 IST" name="configAM" finished-at="2026-07-24T16:57:42 IST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.OverallSummary.VerifytheWeightedAverageTrendGraphPrintdata@1d8bd0de]" started-at="2026-07-24T16:57:42 IST" name="configAC" finished-at="2026-07-24T16:57:43 IST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.OverallSummary.VerifytheWeightedAverageTrendGraphPrintdata -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

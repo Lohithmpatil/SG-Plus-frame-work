@@ -79,7 +79,8 @@ public class VerifytheAddAssocoiateCancelFunctionality extends BaseClass {
 
 		ad.getUdanNO().sendKeys(udanno);
 
-		we.waitAndClick(ad.getSubmitBtn());
+		we.waitAndClick(ad.getCancelBtn());
+		// we.waitAndClick(ad.getSubmitBtn());
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		// Verify popup is closed
@@ -89,11 +90,10 @@ public class VerifytheAddAssocoiateCancelFunctionality extends BaseClass {
 
 		Assert.assertTrue(popupAfterCancel.isEmpty() || !popupAfterCancel.get(0).isDisplayed(),
 				"Popup is still displayed after clicking Cancel.");
-		
+
 		WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		// Wait until toast disappears
-		wait3.until(ExpectedConditions.invisibilityOfElementLocated(
-		        By.cssSelector(".Toastify__toast-body")));
+		wait3.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".Toastify__toast-body")));
 	}
 }

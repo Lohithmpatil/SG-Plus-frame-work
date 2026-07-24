@@ -97,7 +97,7 @@ public class AddAssociates {
 	@FindBy(xpath = "//input[@placeholder=\"Search by Name, Sap Code\"]")
 	private WebElement Searchfield;
 
-	@FindBy(xpath = "//label[@for=\"custom-switch-1868\"]")
+	@FindBy(xpath="//label[contains(@for,'custom-switch')]")
 	private WebElement StatusToggleBtn;
 
 	@FindBy(xpath = "//button[@aria-haspopup=\"true\"]")

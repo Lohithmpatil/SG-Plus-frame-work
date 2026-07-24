@@ -84,12 +84,13 @@ public class VerifytheBulkOEETargetFuntionality extends BaseClass {
 
 		Assert.assertEquals(actualMessage, "10 Equipment OEE target updated successfully",
 				"Success message is not matching.");
-		
+
 		WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		// Wait until toast disappears
 		wait3.until(ExpectedConditions.invisibilityOfElementLocated(
 		        By.cssSelector(".Toastify__toast-body")));
+		
 	}
 
 }

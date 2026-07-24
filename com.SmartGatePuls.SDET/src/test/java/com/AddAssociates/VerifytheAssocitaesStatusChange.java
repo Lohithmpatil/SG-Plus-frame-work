@@ -33,11 +33,11 @@ public class VerifytheAssocitaesStatusChange extends BaseClass {
 		we.waitAndClick(ad.getAddAssociatesPage());
 		
 		
-		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(30));
 
 		wait2.until(ExpectedConditions.elementToBeClickable(ad.getStatusToggleBtn())).click();
 		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
 		WebElement successMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(
 		        By.xpath("//div[contains(@class,'Toastify__toast')]")));

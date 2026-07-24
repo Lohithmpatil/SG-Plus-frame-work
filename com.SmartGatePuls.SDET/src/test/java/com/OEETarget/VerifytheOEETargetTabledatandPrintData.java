@@ -15,10 +15,10 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.OEETarget;
 
-public class VerifytheOEETargetTabledataandPrintData extends BaseClass {
+public class VerifytheOEETargetTabledatandPrintData extends BaseClass {
 
 	@Test
-	public void VerifytheOEETargetTabledataandPrintData() throws Throwable {
+	public void VerifytheOEETargetTabledatandPrintData() throws Throwable {
 
 		// Create WebDriverUtility object for handling waits and actions
 		WebDriverUtility we = new WebDriverUtility();

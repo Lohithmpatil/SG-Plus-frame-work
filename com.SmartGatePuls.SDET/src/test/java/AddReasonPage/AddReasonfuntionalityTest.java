@@ -139,5 +139,14 @@ public class AddReasonfuntionalityTest extends BaseClass {
 
 		// Print success message in console
 		System.out.println("SUCCESS MESSAGE VERIFIED: " + actualMessage);
+		
+		
+		
+
+		WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+		// Wait until toast disappears
+		wait3.until(ExpectedConditions.invisibilityOfElementLocated(
+		        By.cssSelector(".Toastify__toast-body")));
 	}
 }

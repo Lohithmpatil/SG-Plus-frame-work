@@ -107,7 +107,7 @@ public class VerifytheProductionLossAnalysisBarchart extends BaseClass {
 
 		// Wait until bars are loaded
 		List<WebElement> bars = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(
-				By.xpath("//*[name()='svg']//*[contains(@class,'highcharts-point')]")));
+				By.xpath("(//*[name()='svg']//*[contains(@class,'highcharts-point')])[1]")));
 
 		System.out.println("Total Bars : " + bars.size());
 

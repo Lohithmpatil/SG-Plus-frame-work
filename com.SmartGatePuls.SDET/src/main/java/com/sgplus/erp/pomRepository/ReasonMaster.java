@@ -89,13 +89,13 @@ public class ReasonMaster {
 	@FindBy(xpath = "//input[@id=\"formReasonsSapCode\"]")
 	private WebElement SAPcodefield;
 
-	@FindBy(xpath = "//label[text()='Area']/following::div[contains(@class,'dropdown-container')][1]")
+	@FindBy(xpath = "//label[contains(text(),'Area')]/following::div[@class='dropdown-heading'][1]")
 	private WebElement Areadropdown;
 
-	@FindBy(xpath = "//label[text()='Equipment']/following::div[contains(@class,'dropdown-container')][1]")
+	@FindBy(xpath = "//label[contains(text(),'Equipment')]/following::div[@class='dropdown-heading'][1]")
 	private WebElement Equipementsdropdown;
 
-	@FindBy(xpath = "//label[text()='Department']/following::div[contains(@class,'dropdown-container')][1]")
+	@FindBy(xpath = "//label[contains(text(),'Department')]/following::div[@class='dropdown-heading'][1]")
 	private WebElement Departmentdropdown;
 
 	@FindBy(xpath = "//button[text()=\"Submit\"]")
@@ -104,7 +104,7 @@ public class ReasonMaster {
 	@FindBy(xpath = "//button[text()=\"Cancel\"]")
 	private WebElement Cancelbutton;
 
-	@FindBy(xpath = "//input[@placeholder=\"Search\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Search reasons...\"]")
 	private WebElement searchfield;
 
 	@FindBy(xpath = "//a[text()=\" View\"]")
@@ -115,10 +115,17 @@ public class ReasonMaster {
 
 	@FindBy(xpath = "//a[text()=\" Delete\"]")
 	private WebElement Deletebutton;
-	
+
 	@FindBy(xpath = "//span[text()=\"TBM-PCR\"]")
 	private WebElement AreaCheckbox;
-	
+
+	@FindBy(xpath = "//button[normalize-space()='Search']")
+	private WebElement SearchBtn;
+
+	public WebElement getSearchBtn() {
+		return SearchBtn;
+	}
+
 	public WebElement getAreaCheckbox() {
 		return AreaCheckbox;
 	}
@@ -129,18 +136,17 @@ public class ReasonMaster {
 
 	@FindBy(xpath = "//span[text()=\"SCPTBD05\"]")
 	private WebElement EquipementsCheckbox;
-	
-	@FindBy(xpath = "//label[text()='Area']/following::div[contains(@class,'dropdown-container')][1]")
+
+	@FindBy(xpath = "//label[contains(text(),'Area')]/following::div[@class='dropdown-heading'][1]")
 	private WebElement CollpaseAreadropdown;
-	
 
 	public WebElement getCollpaseEquipementdropdown() {
 		return CollpaseEquipementdropdown;
 	}
 
-	@FindBy(xpath = "//label[text()='Equipment']/following::div[contains(@class,'dropdown-container')][1]")
+	@FindBy(xpath = "//label[contains(text(),'Equipment')]/following::div[@class='dropdown-heading'][1]")
 	private WebElement CollpaseEquipementdropdown;
-	
+
 	public WebElement getDepartmentCheckbox() {
 		return DepartmentCheckbox;
 	}
@@ -151,18 +157,17 @@ public class ReasonMaster {
 
 	@FindBy(xpath = "//span[text()=\"Electrical\"]")
 	private WebElement DepartmentCheckbox;
-	
-	@FindBy(xpath = "//label[text()='Department']/following::div[contains(@class,'dropdown-container')][1]")
+
+	@FindBy(xpath = "//label[contains(text(),'Department')]/following::div[@class='dropdown-heading'][1]")
 	private WebElement CollapseDepartmentdropdown;
 
-	
 	public WebElement getEdit3Dots() {
 		return Edit3Dots;
 	}
 
 	@FindBy(xpath = "//button[@aria-haspopup=\"true\"]")
 	private WebElement Edit3Dots;
-	
+
 	public WebElement getEditEquipementsCheckbox() {
 		return EditEquipementsCheckbox;
 	}
@@ -173,5 +178,94 @@ public class ReasonMaster {
 	public WebElement getCollpaseAreadropdown() {
 		return CollpaseAreadropdown;
 	}
+
+	/* ================= FILTER ================= */
+
+	@FindBy(xpath = "//i[@class='fa fa-filter']")
+	private WebElement FilterButton;
+
+	public WebElement getFilterButton() {
+		return FilterButton;
+	}
+
+	public void setFilterButton(WebElement filterButton) {
+		FilterButton = filterButton;
+	}
+
+	/* ================= BU ================= */
+
+	@FindBy(xpath = "//select[@class=\"form-control\"]")
+	private WebElement BUDropDown;
+
+	public WebElement getBUDropDown() {
+		return BUDropDown;
+	}
+
+	public WebElement getAreaDropDown() {
+		return AreaDropDown;
+	}
+
+	public WebElement getGroupDropDown() {
+		return GroupDropDown;
+	}
+
+	@FindBy(xpath = "//select[@class=\"form-control  \"]")
+	private WebElement AreaDropDown;
+
+	@FindBy(xpath = "//select[@class='form-control ']")
+	private WebElement GroupDropDown;
+
+	@FindBy(css = "[aria-labelledby=\"Equipments\"]")
+	private WebElement EquipementDropDown;
+
+	public WebElement getEquipementDropDown() {
+		return EquipementDropDown;
+	}
+
+	public WebElement getEquipementCheckbox() {
+		return EquipementCheckbox;
+	}
+
+	public WebElement getCollpaseEquipementsdropdown() {
+		return CollpaseEquipementsdropdown;
+	}
+
+	/* ================= APPLY FILTER ================= */
+
+	@FindBy(xpath = "//button[text()=\"Apply Filter\"]")
+	private WebElement ApplyFilter;
+
+	public WebElement getApplyFilter() {
+		return ApplyFilter;
+	}
+
+	@FindBy(xpath = "//input[@type='checkbox']")
+	private WebElement EquipementCheckbox;
+
+	@FindBy(xpath = "//div[@aria-labelledby=\"Equipments\"]")
+	private WebElement CollpaseEquipementsdropdown;
+
+	@FindBy(xpath = "//select[option[normalize-space()='Select Department Group']]")
+	private WebElement DepertmentGroupDown;
+
+	public WebElement getDepertmentGroupDown() {
+		return DepertmentGroupDown;
+	}
+
+
+
+	public WebElement getExportBtn() {
+		return ExportBtn;
+	}
+
+	public WebElement getDeartmentDropDown1() {
+		return DeartmentDropDown1;
+	}
+
+	@FindBy(xpath = "//select[option[normalize-space()='Select Department']]")
+	private WebElement DeartmentDropDown1;
+
+	@FindBy(xpath = "//button[@title=\"Export\"]")
+	private WebElement ExportBtn;
 
 }

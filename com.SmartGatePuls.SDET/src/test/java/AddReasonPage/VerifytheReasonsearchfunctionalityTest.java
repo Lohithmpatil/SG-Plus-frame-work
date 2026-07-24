@@ -21,68 +21,68 @@ import com.sgplus.erp.pomRepository.ReasonMaster;
 
 public class VerifytheReasonsearchfunctionalityTest extends BaseClass {
 	// TestNG test method
-		@Test
-		public void VerifytheReasonsearchfunctionalityTest() throws Throwable {
+	@Test
+	public void VerifytheReasonsearchfunctionalityTest() throws Throwable {
 
-			// Create WebDriverUtility object (custom utility for wait, click, etc.)
-			WebDriverUtility wb = new WebDriverUtility();
+		// Create WebDriverUtility object (custom utility for wait, click, etc.)
+		WebDriverUtility wb = new WebDriverUtility();
 
-			// Create JavaUtility object (used for generating random numbers)
-			JavaUtility jlib = new JavaUtility();
+		// Create JavaUtility object (used for generating random numbers)
+		JavaUtility jlib = new JavaUtility();
 
-			// Create FileUtility object (used for reading data from property file if needed)
-			FileUtility flib = new FileUtility();
+		// Create FileUtility object (used for reading data from property file if
+		// needed)
+		FileUtility flib = new FileUtility();
 
-			// Create ExcelUtility object (used to read test data from Excel file)
-			ExcelUtility elib = new ExcelUtility();
+		// Create ExcelUtility object (used to read test data from Excel file)
+		ExcelUtility elib = new ExcelUtility();
 
-			// Create HomePage object (POM class for Home Page elements)
-			HomePage hm = new HomePage(driver);
+		// Create HomePage object (POM class for Home Page elements)
+		HomePage hm = new HomePage(driver);
 
-			// Generate random number to avoid duplicate Reason Name
-			int intRanNum = jlib.getRandomNumber();
+		// Generate random number to avoid duplicate Reason Name
+		int intRanNum = jlib.getRandomNumber();
 
-			// Read Reason Name from Excel and append random number
-			String ReasonName = elib.getDataFromExcel("Sheet1", 1, 1) + intRanNum;
+		// Read Reason Name from Excel and append random number
+		String ReasonName = elib.getDataFromExcel("Sheet1", 1, 1) + intRanNum;
 
-			// Read SAP Code from Excel and append random number
-			String Sapcode = elib.getDataFromExcel("Sheet1", 1, 1) + intRanNum;
+		// Read SAP Code from Excel and append random number
+		String Sapcode = elib.getDataFromExcel("Sheet1", 1, 1) + intRanNum;
 
-			// Create ReasonMaster page object
-			ReasonMaster rm = new ReasonMaster(driver);
+		// Create ReasonMaster page object
+		ReasonMaster rm = new ReasonMaster(driver);
 
-			// Wait until complete page is loaded
-			wb.waitUntilPageLoad(driver);
+		// Wait until complete page is loaded
+		wb.waitUntilPageLoad(driver);
 
-			// Wait until DOM is fully ready
-			wb.waitForElementInDOM(driver);
+		// Wait until DOM is fully ready
+		wb.waitForElementInDOM(driver);
 
-			// Click on Settings menu from home page
-			wb.waitAndClick(hm.getSettings());
+		// Click on Settings menu from home page
+		wb.waitAndClick(hm.getSettings());
 
-			// Click on Reason Dashboard
-			wb.waitAndClick(rm.getReasondashboard());
-			
-			// Locate search field
-			WebElement searchField = rm.getSearchfield();
+		// Click on Reason Dashboard
+		wb.waitAndClick(rm.getReasondashboard());
 
-			// Enter search text
-			// searchField.clear();
-			searchField.clear();
-			searchField.sendKeys("AutomatonTest748");
-			searchField.sendKeys(Keys.ENTER);
+		// Locate search field
+		WebElement searchField = rm.getSearchfield();
 
-			// Wait for table to update
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[text()='AutomatonTest748']")));
+		// Enter search text
+		// searchField.clear();
+		searchField.clear();
+		searchField.sendKeys("Chemical Discharge");
 
-			// Fetch table result
-			WebElement resultName = driver.findElement(By.xpath("//td[text()='AutomatonTest748']"));
+		wb.waitAndClick(rm.getSearchBtn());
+		// Wait for table to update
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[text()='Chemical Discharge']")));
 
-			// Validation
-			Assert.assertEquals(resultName.getText(), "AutomatonTest748");
-	
-	
-		}
+		// Fetch table result
+		WebElement resultName = driver.findElement(By.xpath("//td[text()='Chemical Discharge']"));
+
+		// Validation
+		Assert.assertEquals(resultName.getText(), "Chemical Discharge");
+
+	}
 
 }

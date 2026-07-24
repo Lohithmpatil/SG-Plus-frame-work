@@ -1,0 +1,77 @@
+package AddReasonPage;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.sgplus.erp.genericutility.BaseClass;
+import com.sgplus.erp.genericutility.ExcelUtility;
+import com.sgplus.erp.genericutility.FileUtility;
+import com.sgplus.erp.genericutility.JavaUtility;
+import com.sgplus.erp.genericutility.WebDriverUtility;
+import com.sgplus.erp.pomRepository.HomePage;
+import com.sgplus.erp.pomRepository.OEEAssociatePerformancereoprtPage;
+import com.sgplus.erp.pomRepository.OEEdashboard;
+import com.sgplus.erp.pomRepository.ReasonMaster;
+
+public class VerifytheMasterReasonPageNavigation extends BaseClass {
+
+	@Test
+	public void VerifytheMasterReasonPageNavigation() throws Throwable {
+		// Create WebDriverUtility object (custom utility for wait, click, etc.)
+				WebDriverUtility wb = new WebDriverUtility();
+
+				// Create JavaUtility object (used for generating random numbers)
+				JavaUtility jlib = new JavaUtility();
+
+				// Create FileUtility object (used for reading data from property file if needed)
+				FileUtility flib = new FileUtility();
+
+				// Create ExcelUtility object (used to read test data from Excel file)
+				ExcelUtility elib = new ExcelUtility();
+
+				// Create HomePage object (POM class for Home Page elements)
+				HomePage hm = new HomePage(driver);
+
+						// Generate random number to avoid duplicate Reason Name
+				int intRanNum = jlib.getRandomNumber();
+
+				// Read Reason Name from Excel and append random number
+				String ReasonName = elib.getDataFromExcel("Sheet1", 1, 2) + intRanNum;
+
+				// Read SAP Code from Excel and append random number
+				String Sapcode = elib.getDataFromExcel("Sheet1", 1, 1) + intRanNum;
+
+				// Create ReasonMaster page object
+				ReasonMaster rm = new ReasonMaster(driver);
+
+				// Wait until complete page is loaded
+				wb.waitUntilPageLoad(driver);
+
+				// Wait until DOM is fully ready
+				wb.waitForElementInDOM(driver);
+
+				// Click on Settings menu from home page
+				wb.waitAndClick(hm.getSettings());
+
+				// Click on Reason Dashboard
+				wb.waitAndClick(rm.getReasondashboard());
+
+				 // ===== Validate Page Header =====
+
+		        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+		        WebElement cycleTimeHeader = wait.until(
+		                ExpectedConditions.visibilityOfElementLocated(
+		                        By.xpath("//span[text()=\"Settings/Reason Master\"]")));
+
+		        Assert.assertTrue(cycleTimeHeader.isDisplayed(),
+		                "Settings/Reason Masterheader is not displayed");
+	}
+}

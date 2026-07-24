@@ -93,6 +93,13 @@ public class VerifytheAddAsscociatesFuctionality extends BaseClass {
 		Assert.assertTrue(successMsg.isDisplayed(), "Success message is not displayed");
 		Assert.assertTrue(actualMessage.contains("New Associate created successfully"),
 		        "Success message is incorrect");
+		
+
+		WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+		// Wait until toast disappears
+		wait3.until(ExpectedConditions.invisibilityOfElementLocated(
+		        By.cssSelector(".Toastify__toast-body")));
 
 	}
 }
