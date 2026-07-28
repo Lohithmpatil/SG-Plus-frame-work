@@ -186,7 +186,7 @@ public class ReasonLinking {
     @FindBy(xpath = "//button[text()='OK']")
     private WebElement okForBulkLink;
 
-    @FindBy(xpath = "//div[@class='modal-footer']//button[text()='Cancel']")
+    @FindBy(xpath = "//button[text()=\"Cancel\"]")
     private WebElement cancelForBulkLink;
 
     @FindBy(xpath = "//label[text()='Source']/following-sibling::select")

@@ -1,4 +1,4 @@
-package AddReasonPage;
+package com.AddReasonPage;
 
 import java.time.Duration;
 import java.util.List;
@@ -18,11 +18,10 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.ReasonMaster;
 
-public class VerifyBasedonDepartmentReasonTest extends BaseClass {
+public class VerifythePrintheExistingReason extends BaseClass {
 
-	// TestNG test method
 	@Test
-	public void VerifyBasedonDepartmentReasonTest() throws Throwable {
+	public void VerifythePrintheExistingReason() throws Throwable {
 
 		// Create WebDriverUtility object (custom utility for wait, click, etc.)
 		WebDriverUtility wb = new WebDriverUtility();
@@ -63,53 +62,6 @@ public class VerifyBasedonDepartmentReasonTest extends BaseClass {
 
 		// Click on Reason Dashboard
 		wb.waitAndClick(rm.getReasondashboard());
-
-		wb.waitAndClick(rm.getFilterButton());
-
-		// Wait for the 'BU Dropdown' to be clickable and then click it
-		wb.waitAndClick(rm.getBUDropDown());
-
-		// Select "BU3" from the Business Unit dropdown
-		wb.select(rm.getBUDropDown(), "BU3");
-
-		// Wait for the 'Area Dropdown' to be clickable and then click it
-		wb.waitAndClick(rm.getAreaDropDown());
-
-		// Select "TBM-PCR" from the Area dropdown
-
-		wb.select(rm.getAreaDropDown(), "TBM-PCR");
-
-		// Wait for the 'Group Dropdown' to be clickable and then click it
-
-		wb.waitAndClick(rm.getGroupDropDown());
-
-		// Select "Unistage" from the Group dropdown
-
-		wb.select(rm.getGroupDropDown(), "Unistage");
-
-		// Commented out code: Wait and select an Equipment dropdown option (not being
-		// used)
-
-		wb.waitAndClick(rm.getEquipementDropDown());
-
-		// Selects Equipment checkbox
-		wb.waitAndClick(rm.getEquipementCheckbox());
-
-		// Collapses Equipment dropdown
-		wb.waitAndClick(rm.getCollpaseEquipementsdropdown());
-
-		wb.waitAndClick(rm.getApplyFilter());
-
-		wb.waitAndClick(rm.getDepertmentGroupDown());
-
-		wb.select(rm.getDepertmentGroupDown(), "Engineering");
-
-		wb.waitAndClick(rm.getDeartmentDropDown1());
-
-		wb.select(rm.getDeartmentDropDown1(), "Electrical");
-
-		wb.waitAndClick(rm.getSearchBtn());
-
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
 		// Wait until table rows are visible
@@ -134,6 +86,6 @@ public class VerifyBasedonDepartmentReasonTest extends BaseClass {
 			System.out.println();
 
 		}
-	}
 
+	}
 }

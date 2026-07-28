@@ -14,10 +14,14 @@
 			<package name="com.Settings.DepartmentGroup" />
 			<package name="com.RecipeMasterPage" />
 			<package name="com.OEEDashBoard" />
-			<package name="AddReasonPage" />
 			<package name="com.UserCreate" />
 			<package name="com.RoleCreateModule" />
 			<package name="com.RCAReport" />
+			<package name="com.AddAssociates" />
+			<package name="com.AddReasonPage" />
+			<package name="com.DowntimeTarget" />
+			<package name="com.OEETarget" />
+			<package name="com.OverallSummary" />
 		</packages>
 	</test> <!--
 	Test -->

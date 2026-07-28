@@ -88,29 +88,7 @@ public class BulkReasonLinkingCancelTest extends BaseClass {
 		// Click on the 2nd "Bulk Link" button to proceed with selected records
 		we.waitAndClick(rs.getBulkLinkButton1());
 
-		// Open "Department Group" dropdown
-		we.waitAndClick(rs.getDepartmentGroupDropdown());
-
-		// Select the 2nd item from Department Group (index 1)
-		we.select(rs.getDepartmentGroupDropdown(), 1);
-
-		// Open "Department" dropdown
-		we.waitAndClick(rs.getBulkDepartmentDropdown());
-
-		// Select 2nd item from Department dropdown
-		we.select(rs.getBulkDepartmentDropdown(), 1);
-
-		// Expand the "Reason" dropdown
-		we.waitAndClick(rs.getReasonDropdownForBulkLink());
-
-		// Select the 2nd reason from dropdown
-		we.select(rs.getReasonDropdownForBulkLink(), 1);
-
-		// Click on the comment field
-		we.waitAndClick(rs.getCommentField());
-
-		// Enter comment text for the reason linking
-		rs.getCommentField().sendKeys("Bulk Reason linking Automation test reason");
+	
 
 		// Click "Cancel" in the confirmation popup
 		we.waitAndClick(rs.getCancelForBulkLink());

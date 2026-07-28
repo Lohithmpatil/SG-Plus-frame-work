@@ -1,6 +1,7 @@
-package AddReasonPage;
+package com.AddReasonPage;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -17,7 +18,8 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.ReasonMaster;
 
-public class VerifytheExportFunctionality extends BaseClass {
+public class VerifyBasedonDepartmentReasonTest extends BaseClass {
+
 	// TestNG test method
 	@Test
 	public void VerifyBasedonDepartmentReasonTest() throws Throwable {
@@ -108,18 +110,30 @@ public class VerifytheExportFunctionality extends BaseClass {
 
 		wb.waitAndClick(rm.getSearchBtn());
 
-		wb.waitAndClick(rm.getExportBtn());
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-		WebElement exportBtn = rm.getExportBtn();
+		// Wait until table rows are visible
+		List<WebElement> rows = wait
+				.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//table/tbody/tr")));
 
+		Assert.assertTrue(rows.size() > 0, "No records found in the table.");
 
-		WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(20));
+		System.out.println("Total Records: " + rows.size());
 
-		// Wait until toast disappears
-		wait3.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".Toastify__toast-body")));
-		
+		// Print table data
+		for (int i = 0; i < rows.size(); i++) {
 
-		Assert.assertTrue(exportBtn.isDisplayed());
+			List<WebElement> columns = rows.get(i).findElements(By.tagName("td"));
 
+			System.out.print("Row " + (i + 1) + " : ");
+
+			for (WebElement column : columns) {
+				System.out.print(column.getText().trim() + " | ");
+			}
+
+			System.out.println();
+
+		}
 	}
+
 }

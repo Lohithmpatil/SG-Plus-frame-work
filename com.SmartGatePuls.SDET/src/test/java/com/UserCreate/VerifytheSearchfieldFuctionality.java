@@ -59,11 +59,11 @@ public class VerifytheSearchfieldFuctionality  extends BaseClass{
 
 			we.waitAndClick(us.getSearchhfield());
 
-			us.getSearchhfield().sendKeys("UserCreateTest734");
+			us.getSearchhfield().sendKeys("AutomationAdmin");
 			
 			us.getSearchhfield().sendKeys(Keys.ENTER);
 
-			String expectedUserName = "UserCreateTest734";
+			String expectedUserName = "AutomationAdmin";
 
 			// Verify user is displayed in the table
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
