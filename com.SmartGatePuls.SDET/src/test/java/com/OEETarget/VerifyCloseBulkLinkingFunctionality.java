@@ -13,8 +13,8 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.OEETarget;
 
-public class VerifyCloseBulkLinkingFunctionality extends BaseClass{
-	
+public class VerifyCloseBulkLinkingFunctionality extends BaseClass {
+
 	@Test
 	public void VerifyCloseBulkLinkingFunctionality() throws Throwable {
 
@@ -25,6 +25,11 @@ public class VerifyCloseBulkLinkingFunctionality extends BaseClass{
 		HomePage hm = new HomePage(driver);
 
 		OEETarget oe = new OEETarget(driver);
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
+
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
 
 		we.waitAndClick(hm.getSettings());
 		// Click on Cycle Time module from home page
@@ -60,29 +65,27 @@ public class VerifyCloseBulkLinkingFunctionality extends BaseClass{
 		we.waitAndClick(oe.getBulkButton());
 
 		we.waitAndClick(oe.getCheckBOx());
-		
+
 		we.waitAndClick(oe.getBulkButton2());
 		we.waitAndClick(oe.getOEETargetTextFeild());
 
 		oe.getOEETargetTextFeild().clear();
 
 		oe.getOEETargetTextFeild().sendKeys("50");
-		
+
 		we.waitAndClick(oe.getCancelButton());
-		
+
 		we.waitAndClick(oe.getCloseBulkLinkButton());
-		
+
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		// Verify popup is closed
 		wait.until(ExpectedConditions.invisibilityOf(oe.getUpdateButton()));
 
-		Assert.assertTrue(
-		    driver.findElements(By.xpath("//h4[text()='OEE Bulk Update']")).isEmpty(),
-		    "Bulk Update popup is still displayed."
-		);
+		Assert.assertTrue(driver.findElements(By.xpath("//h4[text()='OEE Bulk Update']")).isEmpty(),
+				"Bulk Update popup is still displayed.");
 
 		System.out.println("Close Bulk link  button functionality verified successfully.");
-		
-	}	
+
+	}
 
 }

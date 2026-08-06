@@ -12,69 +12,79 @@ import com.sgplus.erp.pomRepository.HomePage;
 
 public class VerifyNavigationToShiftViewPageTest extends BaseClass {
 
-    // Test method to verify the navigation to Shift View page
-    @Test
-    public void VerifyNavigationToShiftViewPageTest() throws Throwable {
+	// Test method to verify the navigation to Shift View page
+	@Test
+	public void VerifyNavigationToShiftViewPageTest() throws Throwable {
 
-        // Create utility object for custom WebDriver actions like waits and dropdowns
-        WebDriverUtility we = new WebDriverUtility();
+		// Create utility object for custom WebDriver actions like waits and dropdowns
+		WebDriverUtility we = new WebDriverUtility();
 
-        // Initialize HomePage object to interact with home screen elements (menu, etc.)
-        HomePage hm = new HomePage(driver);
+		// Initialize HomePage object to interact with home screen elements (menu, etc.)
+		HomePage hm = new HomePage(driver);
 
-        // Initialize DowntimeShiftview object to interact with elements specific to the Downtime Shiftview page
-        DowntimeShiftview ds = new DowntimeShiftview(driver);
+		// Initialize DowntimeShiftview object to interact with elements specific to the
+		// Downtime Shiftview page
+		DowntimeShiftview ds = new DowntimeShiftview(driver);
+		
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
 
-        // Wait for the 'DownTime' menu item to be clickable and then click it
-        we.waitAndClick(hm.getDownTime());
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
 
-        // Wait for the 'Shiftview Dashboard' button to be clickable and then click it
-        we.waitAndClick(ds.getShiftviewDashboard());
+		// Wait for the 'DownTime' menu item to be clickable and then click it
+		we.waitAndClick(hm.getDownTime());
 
-        // Wait for the 'Filter' button to be clickable and then click it
-        we.waitAndClick(ds.getFilterButton());
+		// Wait for the 'Shiftview Dashboard' button to be clickable and then click it
+		we.waitAndClick(ds.getShiftviewDashboard());
 
-        // Wait for the 'BU Dropdown' to be clickable and then click it
-        we.waitAndClick(ds.getBUDropDown());
+		// Wait for the 'Filter' button to be clickable and then click it
+		we.waitAndClick(ds.getFilterButton());
 
-        // Select "BU3" from the Business Unit dropdown
-        we.select(ds.getBUDropDown(), "BU3");
+		// Wait for the 'BU Dropdown' to be clickable and then click it
+		we.waitAndClick(ds.getBUDropDown());
 
-        // Wait for the 'Area Dropdown' to be clickable and then click it
-        we.waitAndClick(ds.getAreaDropDown());
+		// Select "BU3" from the Business Unit dropdown
+		we.select(ds.getBUDropDown(), "BU3");
 
-        // Select "TBM-PCR" from the Area dropdown
-        we.select(ds.getAreaDropDown(), "TBM-PCR");
+		// Wait for the 'Area Dropdown' to be clickable and then click it
+		we.waitAndClick(ds.getAreaDropDown());
 
-        // Wait for the 'Group Dropdown' to be clickable and then click it
-        we.waitAndClick(ds.getGroupDropDown());
+		// Select "TBM-PCR" from the Area dropdown
+		we.select(ds.getAreaDropDown(), "TBM-PCR");
 
-        // Select "Unistage" from the Group dropdown
-        we.select(ds.getGroupDropDown(), "Unistage");
+		// Wait for the 'Group Dropdown' to be clickable and then click it
+		we.waitAndClick(ds.getGroupDropDown());
 
-        // Commented out code: Wait and select an Equipment dropdown option (not being used)
-        // we.waitAndClick(ds.getEquipementDropDown());
-        // we.select(ds.getEquipementDropDown(), "PTBS01");
+		// Select "Unistage" from the Group dropdown
+		we.select(ds.getGroupDropDown(), "Unistage");
 
-        // Wait for the 'Shift Dropdown' to be clickable and then click it
-        we.waitAndClick(ds.getShiftDropDown());
+		// Commented out code: Wait and select an Equipment dropdown option (not being used)
+		// we.waitAndClick(ds.getEquipementDropDown());
+		// we.select(ds.getEquipementDropDown(), "PTBS01");
 
-        // Clears any existing text in the "From Date" input field (ensuring clean input)
-        driver.findElement(By.xpath("//input[@class=\"form-control\"]")).clear();
+		// Wait for the 'Shift Dropdown' to be clickable and then click it
+		we.waitAndClick(ds.getShiftDropDown());
 
-        // Inputs the date "01-01-2025" into the "From Date" field
-        driver.findElement(By.xpath("//input[@class=\"form-control\"]")).sendKeys("01-01-2025");
+		// Clears any existing text in the "From Date" input field (ensuring clean
+		// input)
+		driver.findElement(By.xpath("//input[@class=\"form-control\"]")).clear();
 
-        // Select "A" shift from the Shift dropdown
-        we.select(ds.getShiftDropDown(), "A");
+		// Inputs the date "01-01-2025" into the "From Date" field
+		driver.findElement(By.xpath("//input[@class=\"form-control\"]")).sendKeys("01-01-2025");
 
-        // Wait for the 'Apply Filter' button to be clickable and then click it
-        we.waitAndClick(ds.getApplyFilter());
+		// Select "A" shift from the Shift dropdown
+		we.select(ds.getShiftDropDown(), "A");
 
-        // Retrieve the page header text from the Downtime Shiftview page to confirm the page we navigated to
-        WebElement pageHeader = ds.getHeadertext();
+		// Wait for the 'Apply Filter' button to be clickable and then click it
+		we.waitAndClick(ds.getApplyFilter());
 
-        // Verifies that the page header is displayed, confirming we are on the correct page
-        Assert.assertTrue(pageHeader.isDisplayed(), "Failed to navigate to Downtime Enhancement Page.");
-    }
+		// Retrieve the page header text from the Downtime Shiftview page to confirm the
+		// page we navigated to
+		WebElement pageHeader = ds.getHeadertext();
+
+		// Verifies that the page header is displayed, confirming we are on the correct
+		// page
+		Assert.assertTrue(pageHeader.isDisplayed(), "Failed to navigate to Downtime Enhancement Page.");
+	}
 }

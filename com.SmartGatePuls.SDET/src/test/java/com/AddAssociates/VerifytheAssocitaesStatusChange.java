@@ -16,7 +16,6 @@ import com.sgplus.erp.pomRepository.HomePage;
 
 public class VerifytheAssocitaesStatusChange extends BaseClass {
 
-	
 	@Test
 	public void VerifytheAssocitaesStatusChange() throws Throwable {
 
@@ -27,31 +26,33 @@ public class VerifytheAssocitaesStatusChange extends BaseClass {
 		HomePage hm = new HomePage(driver);
 
 		AddAssociates ad = new AddAssociates(driver);
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
+
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
 
 		we.waitAndClick(hm.getSettings());
 
 		we.waitAndClick(ad.getAddAssociatesPage());
-		
-		
+
 		WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(30));
 
 		wait2.until(ExpectedConditions.elementToBeClickable(ad.getStatusToggleBtn())).click();
-		
+
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-		WebElement successMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(
-		        By.xpath("//div[contains(@class,'Toastify__toast')]")));
+		WebElement successMsg = wait.until(
+				ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class,'Toastify__toast')]")));
 
 		String actualMessage = successMsg.getText().trim();
 		String expectedMessage = "Status updated successfully";
 
-		Assert.assertEquals(actualMessage, expectedMessage,
-		        "Success message is not matching.");
-		
+		Assert.assertEquals(actualMessage, expectedMessage, "Success message is not matching.");
+
 		WebDriverWait wait3 = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		// Wait until toast disappears
-		wait3.until(ExpectedConditions.invisibilityOfElementLocated(
-		        By.cssSelector(".Toastify__toast-body")));
-}
+		wait3.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".Toastify__toast-body")));
+	}
 }

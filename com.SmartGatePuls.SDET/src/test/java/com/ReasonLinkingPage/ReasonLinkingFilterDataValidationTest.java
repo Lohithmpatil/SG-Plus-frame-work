@@ -23,7 +23,7 @@ public class ReasonLinkingFilterDataValidationTest extends BaseClass {  // Test 
 
 		// Initialize ReasonLinking POM to interact with Reason Linking page elements
 		com.sgplus.erp.pomRepository.ReasonLinking rs = new com.sgplus.erp.pomRepository.ReasonLinking(driver);
-
+		
 		// Click on the Downtime menu item on the homepage
 		we.waitAndClick(hm.getDownTime());
 

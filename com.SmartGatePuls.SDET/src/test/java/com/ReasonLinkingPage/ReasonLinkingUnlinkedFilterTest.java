@@ -37,7 +37,7 @@ public class ReasonLinkingUnlinkedFilterTest extends BaseClass {
 		// Create HomePage POM object using WebDriver instance
 
 		com.sgplus.erp.pomRepository.ReasonLinking rs = new com.sgplus.erp.pomRepository.ReasonLinking(driver);
-		// Create ReasonLinking POM object using WebDriver instance
+	
 
 		we.waitAndClick(hm.getDownTime());
 		// Wait for and click the "DownTime" menu option from HomePage

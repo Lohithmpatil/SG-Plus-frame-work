@@ -31,6 +31,12 @@ public class MonthWiseBarChartNavigationTest extends BaseClass {
 		// Initialize DowntimeAnalysisPage object to interact with downtime page
 		// elements
 		DowntimeAnalysisPage da = new DowntimeAnalysisPage(driver);
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
+
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
+
 
 		// Wait for and click the "Downtime" menu icon from the sidebar
 		we.waitAndClick(hm.getDownTime());

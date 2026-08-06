@@ -25,6 +25,12 @@ public class VerifytheDowntimeTimeTargetPageTitle extends BaseClass
 		HomePage hm = new HomePage(driver);
 
 		DowntimeTarget dt = new DowntimeTarget(driver);
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
+
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
+
 
 		we.waitAndClick(hm.getSettings());
 		// Click on Cycle Time module from home page

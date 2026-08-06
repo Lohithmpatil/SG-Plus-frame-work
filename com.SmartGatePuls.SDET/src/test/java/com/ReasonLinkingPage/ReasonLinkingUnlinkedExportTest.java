@@ -37,8 +37,7 @@ public class ReasonLinkingUnlinkedExportTest extends BaseClass {
 		// Instantiate HomePage POM using the WebDriver instance
 
 		com.sgplus.erp.pomRepository.ReasonLinking rs = new com.sgplus.erp.pomRepository.ReasonLinking(driver);
-		// Instantiate ReasonLinking POM using the WebDriver instance
-
+		
 		we.waitAndClick(hm.getDownTime());
 		// Wait for and click on the "DownTime" element from HomePage
 

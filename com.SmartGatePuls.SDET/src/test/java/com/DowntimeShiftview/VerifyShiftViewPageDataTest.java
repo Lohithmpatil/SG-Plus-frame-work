@@ -21,8 +21,6 @@ public class VerifyShiftViewPageDataTest extends BaseClass {
 	@Test
 	public void VerifyShiftViewPageDataTest() throws Throwable {
 
-		
-
 		// Create utility object for custom WebDriver actions like waits and dropdowns
 		WebDriverUtility we = new WebDriverUtility();
 
@@ -32,10 +30,15 @@ public class VerifyShiftViewPageDataTest extends BaseClass {
 		// Initialize DowntimeShiftview object to interact with elements specific to the
 		// Downtime Shiftview page
 		DowntimeShiftview ds = new DowntimeShiftview(driver);
-		
+
+		// Wait until the required elements are available in the DOM.
 		we.waitForElementInDOM(driver);
 
-		// Wait for the 'DownTime' menu item to be clickable and then click it
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
+
+
+// Wait for the 'DownTime' menu item to be clickable and then click it
 		we.waitAndClick(hm.getDownTime());
 
 		// Wait for the 'Shiftview Dashboard' button to be clickable and then click it
@@ -92,4 +95,3 @@ public class VerifyShiftViewPageDataTest extends BaseClass {
 
 	}
 }
-

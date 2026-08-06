@@ -16,10 +16,13 @@ public class ReasonLinkingLinkedFilterTest extends BaseClass {  // Defines the t
         WebDriverUtility we = new WebDriverUtility();  // Creates instance of WebDriverUtility for reusable methods
 
         HomePage hm = new HomePage(driver);  // Initializes HomePage object to interact with homepage elements
+   
 
         // Initializes ReasonLinking page object to interact with elements on Reason Linking page
         com.sgplus.erp.pomRepository.ReasonLinking rs = new com.sgplus.erp.pomRepository.ReasonLinking(driver);
 
+        // Synchronize the test by waiting for the page to load completely.
+        we.waitUntilPageLoad(driver);
         we.waitAndClick(hm.getDownTime());  // Waits for and clicks the "Downtime" link/menu on the HomePage
 
         we.waitAndClick(rs.getReasonLinking());  // Waits for and clicks the "Reason Linking" submenu/link

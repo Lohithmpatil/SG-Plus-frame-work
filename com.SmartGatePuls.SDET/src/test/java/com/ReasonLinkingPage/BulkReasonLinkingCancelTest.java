@@ -28,8 +28,6 @@ public class BulkReasonLinkingCancelTest extends BaseClass {
 		// Initialize ReasonLinking POM
 		com.sgplus.erp.pomRepository.ReasonLinking rs = new com.sgplus.erp.pomRepository.ReasonLinking(driver);
 
-		we.waitForElementInDOM(driver);
-
 		// Click on the "DownTime" menu in the sidebar
 		we.waitAndClick(hm.getDownTime());
 
@@ -77,7 +75,6 @@ public class BulkReasonLinkingCancelTest extends BaseClass {
 
 		// Click the "Bulk Link" button to start bulk linking
 		we.waitAndClick(rs.getBulkLinkButton());
-		
 
 		// Hover over the checkbox before clicking it (maybe for tooltip/UI reason)
 		we.mouseOverOnElement1(driver, rs.getCheckBoxForBulkLink());
@@ -88,12 +85,10 @@ public class BulkReasonLinkingCancelTest extends BaseClass {
 		// Click on the 2nd "Bulk Link" button to proceed with selected records
 		we.waitAndClick(rs.getBulkLinkButton1());
 
-	
-
 		// Click "Cancel" in the confirmation popup
 		we.waitAndClick(rs.getCancelForBulkLink());
 
-		//we.waitAndClick(rs.getCancelbutton1());
+		// we.waitAndClick(rs.getCancelbutton1());
 
 		// ✅ Wait for modal to disappear
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

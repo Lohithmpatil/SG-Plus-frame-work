@@ -27,6 +27,11 @@ public class VerifyAssociatesTableContainsData extends BaseClass {
 		HomePage hm = new HomePage(driver);
 
 		AddAssociates ad = new AddAssociates(driver);
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
+
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
 
 		we.waitAndClick(hm.getSettings());
 

@@ -34,11 +34,12 @@ public class ReasonLinkingSingleLinkTest extends BaseClass {
 		// Create HomePage POM object with driver
 
 		com.sgplus.erp.pomRepository.ReasonLinking rs = new com.sgplus.erp.pomRepository.ReasonLinking(driver);
-		// Create ReasonLinking POM object
-
+		
+		// Synchronize the test by waiting for DOM elements to be available.
 		we.waitForElementInDOM(driver);
-		// Wait for the DOM elements to be loaded before proceeding
 
+		// Synchronize the test by waiting for the page to load completely.
+		we.waitUntilPageLoad(driver);
 		we.waitAndClick(hm.getDownTime());
 		// Wait for and click the "DownTime" element from HomePage
 
@@ -97,10 +98,10 @@ public class ReasonLinkingSingleLinkTest extends BaseClass {
 		we.waitAndClick(rs.getDepartmentDropdown());
 		// Wait for and click Department dropdown
 
-		// we.select(rs.getDepartmentDropdown(), "Electrical");
+		 we.select(rs.getDepartmentDropdown(), "Electrical");
 		// (Commented out) Select "Electrical" from Department dropdown
 
-		we.select(rs.getDepartmentDropdown(), 1);
+		//we.select(rs.getDepartmentDropdown(), 1);
 		// Select the first option in Department dropdown (index-based)
 
 		// Click the dropdown to expand

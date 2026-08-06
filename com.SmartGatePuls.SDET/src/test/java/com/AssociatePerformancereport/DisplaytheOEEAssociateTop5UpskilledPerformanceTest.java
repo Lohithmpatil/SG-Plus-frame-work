@@ -33,7 +33,9 @@ public class  DisplaytheOEEAssociateTop5UpskilledPerformanceTest extends BaseCla
 		// Navigate to "OEE " module via the homepage
 
 		OEEAssociatePerformancereoprtPage aso = new OEEAssociatePerformancereoprtPage(driver);
-
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
+		
 		we.waitAndClick(hm.getOEE());
 
 		we.waitAndClick(aso.getAssociatePerformancePage());

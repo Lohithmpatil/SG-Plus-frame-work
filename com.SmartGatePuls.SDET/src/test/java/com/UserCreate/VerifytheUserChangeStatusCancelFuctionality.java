@@ -37,6 +37,11 @@ public class VerifytheUserChangeStatusCancelFuctionality extends BaseClass{
 		HomePage hm = new HomePage(driver);
 
 		UserCreate us = new UserCreate(driver);
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
+
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
 
 		// Generate a random number to make department group name unique
 		int intRanNum = jlib.getRandomNumber();

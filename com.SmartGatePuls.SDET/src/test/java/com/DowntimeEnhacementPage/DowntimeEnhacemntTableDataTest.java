@@ -25,6 +25,12 @@ public class DowntimeEnhacemntTableDataTest extends BaseClass {
 		// Creating DowntimeEnhacement object to access Downtime Enhancement page
 		// elements
 		DowntimeEnhacement de = new DowntimeEnhacement(driver);
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
+
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
+
 
 		// Waits until DownTime button is clickable and then clicks it
 		we.waitAndClick(hm.getDownTime());

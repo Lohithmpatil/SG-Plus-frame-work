@@ -25,9 +25,10 @@ public class BulkReasonLinkingFunctionalityTest extends BaseClass {
 
 		// Initialize ReasonLinking POM
 		com.sgplus.erp.pomRepository.ReasonLinking rs = new com.sgplus.erp.pomRepository.ReasonLinking(driver);
-		
-		we.waitForElementInDOM(driver);
 
+		// Synchronize the test by waiting for DOM elements to be available.
+		we.waitForElementInDOM(driver);
+		
 		// Click on the "DownTime" menu in the sidebar
 		we.waitAndClick(hm.getDownTime());
 

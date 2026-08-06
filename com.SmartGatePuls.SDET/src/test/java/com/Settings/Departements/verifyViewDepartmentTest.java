@@ -37,6 +37,11 @@ public class verifyViewDepartmentTest extends BaseClass {
 
 		// Create Departments POM object to access department-related elements
 		Departments dp = new Departments(driver);
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
+
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
 
 		// Generate a random number to make the department name unique
 		int intRanNum = jlib.getRandomNumber();

@@ -1,170 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest">
+      <class name="com.RCAReport.VerifytheTotalProductionData">
         <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="MonthWiseBarChartNavigationTest"/>
-        </methods>
-      </class> <!-- com.DowntimeAnalysisPage.MonthWiseBarChartNavigationTest -->
-      <class name="com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="DowntimeAnalysisDropdownValidationTest"/>
-        </methods>
-      </class> <!-- com.DowntimeAnalysisPage.DowntimeAnalysisDropdownValidationTest -->
-      <class name="com.OEEDashBoard.VerfiyanDisplaytheBestPerformingmachine">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifyDisplaytheBestPerformingMachine"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.OEEDashBoard.VerfiyanDisplaytheBestPerformingmachine -->
-      <class name="com.DowntimeShiftview.VerifyShiftBViewDisplaysDataForDifferentShiftsTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="VerifyShiftBViewDisplaysDataForDifferentShiftsTest"/>
-        </methods>
-      </class> <!-- com.DowntimeShiftview.VerifyShiftBViewDisplaysDataForDifferentShiftsTest -->
-      <class name="com.ReasonLinkingPage.BulkReasonLinkingFunctionalityTest">
-        <methods>
-          <include name="BulkReasonLinkingFunctionalityTest"/>
+          <include name="VerifytheTotalProductionData"/>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.ReasonLinkingPage.BulkReasonLinkingFunctionalityTest -->
-      <class name="com.OEEDashBoard.NoOfEquipemntFunctionalityTableTest">
+      </class> <!-- com.RCAReport.VerifytheTotalProductionData -->
+      <class name="com.RCAReport.VerifytheMachinepotentiolLossgraph">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="VerifytheMachinepotentiolLossgraph"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RCAReport.VerifytheMachinepotentiolLossgraph -->
+      <class name="com.RCAReport.VerifytheAggregatedSummaryTableisNotEmpty">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="NoOfEquipemntFunctionalityTableTest"/>
-        </methods>
-      </class> <!-- com.OEEDashBoard.NoOfEquipemntFunctionalityTableTest -->
-      <class name="com.ReasonLinkingPage.ReasonLinkingSingleLinkTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="ReasonLinkingFunctionalityTest"/>
+          <include name="VerifytheAggregatedSummaryTableisNotEmpty"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.ReasonLinkingPage.ReasonLinkingSingleLinkTest -->
-      <class name="com.DowntimeShiftview.VerifyShiftCViewDisplaysDataForDifferentShiftsTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifyShiftBViewDisplaysDataForDifferentShiftsTest"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.DowntimeShiftview.VerifyShiftCViewDisplaysDataForDifferentShiftsTest -->
-      <class name="com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="YearlyToMonthlyChartNavigationTest"/>
-        </methods>
-      </class> <!-- com.DowntimeAnalysisPage.YearlyToMonthlyChartNavigationTest -->
-      <class name="com.OverallSummary.VerifytheSkuSummarytablePercentagewise">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="VerifytheSkuSummmarytablePercentagewise"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.OverallSummary.VerifytheSkuSummarytablePercentagewise -->
-      <class name="com.RCAReport.VerifytheWieghtedAveragesSetValueData">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifytheWieghtedAveragesData"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.RCAReport.VerifytheWieghtedAveragesSetValueData -->
-      <class name="com.AddReasonPage.VerifytheReasonEditfunctionalityTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="VerifytheReasonEditfunctionalityTest"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.AddReasonPage.VerifytheReasonEditfunctionalityTest -->
-      <class name="com.RCAReport.VerifytheElementSummaryviewTableHeadersAndData">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifytheElementSummaryViewtableHeadersAndData"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.RCAReport.VerifytheElementSummaryviewTableHeadersAndData -->
-      <class name="com.OverallSummary.VerifytheWeightedAverageTrendGraphPrintdata">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifytheWeightedAverageTrendGraphPirintdata"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.OverallSummary.VerifytheWeightedAverageTrendGraphPrintdata -->
-      <class name="com.OEEDashBoard.VerifytheShiftproductionreportPeriodwise">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="VerifytheShiftproductionreportPeriodwise"/>
-        </methods>
-      </class> <!-- com.OEEDashBoard.VerifytheShiftproductionreportPeriodwise -->
-      <class name="com.OEETarget.VerifytheOEETargetTabledatandPrintData">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifytheOEETargetTabledatandPrintData"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.OEETarget.VerifytheOEETargetTabledatandPrintData -->
-      <class name="com.OEETarget.VerifytheBulkOEETargetFuntionality">
-        <methods>
-          <include name="VerifytheBulkOEETargetFuntionality"/>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.OEETarget.VerifytheBulkOEETargetFuntionality -->
-      <class name="com.OEEDashBoard.VerifytheShiftproductionreportEquipmentandPeriodwise">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifytheShiftproductionreportEquipmentandPeriodwise"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.OEEDashBoard.VerifytheShiftproductionreportEquipmentandPeriodwise -->
+      </class> <!-- com.RCAReport.VerifytheAggregatedSummaryTableisNotEmpty -->
       <class name="com.RCAReport.VeriftheMachinePotentialGrahpBarchart">
         <methods>
           <include name="configBM"/>
@@ -174,159 +39,24 @@
           <include name="configBC"/>
         </methods>
       </class> <!-- com.RCAReport.VeriftheMachinePotentialGrahpBarchart -->
-      <class name="com.AddAssociates.VerifytheAssocitaesStatusChange">
+      <class name="com.RCAReport.VerifytheGreenProductiondata">
         <methods>
           <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="VerifytheAssocitaesStatusChange"/>
-        </methods>
-      </class> <!-- com.AddAssociates.VerifytheAssocitaesStatusChange -->
-      <class name="com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate">
-        <methods>
-          <include name="VerifytheAssociatePerformanceLossreportSingleassociate"/>
-          <include name="configBM"/>
+          <include name="VerifytheGreenProductiondata"/>
           <include name="configAM"/>
           <include name="configAC"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate -->
-      <class name="com.DowntimeShiftview.VerifyShiftAViewDisplaysDataForDifferentShiftsTest">
+      </class> <!-- com.RCAReport.VerifytheGreenProductiondata -->
+      <class name="com.RCAReport.VerifytheRedProductionData">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
-          <include name="VerifyShiftAViewDisplaysDataForDifferentShiftsTest"/>
+          <include name="VerifytheRedProductionData"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.DowntimeShiftview.VerifyShiftAViewDisplaysDataForDifferentShiftsTest -->
-      <class name="com.DowntimeShiftview.VerifyNavigationToShiftViewPageTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifyNavigationToShiftViewPageTest"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.DowntimeShiftview.VerifyNavigationToShiftViewPageTest -->
-      <class name="com.CycleTimeDashboard.VerifytheRecipesdropdown">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="VerifytheRecipesdropdown"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.CycleTimeDashboard.VerifytheRecipesdropdown -->
-      <class name="com.OEEDashBoard.MachinlevelComparsiongraphNamesshowncorrectly">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifyMchinelevelComparisonGraphisdisplayedTest"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.OEEDashBoard.MachinlevelComparsiongraphNamesshowncorrectly -->
-      <class name="com.RecipeMasterPage.VerifyTheRecipeEditFunctionalityTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifytheRecipeEditfunctionalityTest"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.RecipeMasterPage.VerifyTheRecipeEditFunctionalityTest -->
-      <class name="com.RCAReport.VerifytheWeightedAveragesActulaValueData">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifytheWeightedAveragesActulaValueData"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.RCAReport.VerifytheWeightedAveragesActulaValueData -->
-      <class name="com.OEEDashBoard.OEEAssociatePerformanceLossReportTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="OEEAssociatePerformanceLossReportTest"/>
-        </methods>
-      </class> <!-- com.OEEDashBoard.OEEAssociatePerformanceLossReportTest -->
-      <class name="com.CycleTimeDashboard.verifyCycleTimeDashboardPageNavigationTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="verifyCycleTimeDashboardNavigationTest"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.CycleTimeDashboard.verifyCycleTimeDashboardPageNavigationTest -->
-      <class name="com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="VerfiytheOverAllPerformanceGraph"/>
-        </methods>
-      </class> <!-- com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph -->
-      <class name="com.OEEDashBoard.VerifytheShiftproductionreportEquipemntwise">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifytheShiftproductionreportEquipemntwise"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.OEEDashBoard.VerifytheShiftproductionreportEquipemntwise -->
-      <class name="com.RCAReport.VerifytheWeightedAveragesModeValuedata">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="VerifytheWeightedAveragesModeValuedata"/>
-        </methods>
-      </class> <!-- com.RCAReport.VerifytheWeightedAveragesModeValuedata -->
-      <class name="com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifytheAssociateperformancereportDropdown"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown -->
-      <class name="com.Settings.DepartmentGroup.verifyRequiredFieldValidationForNameTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="verifyRequiredFieldValidationForNameTest"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.Settings.DepartmentGroup.verifyRequiredFieldValidationForNameTest -->
-      <class name="com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingEquipement">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VeriftyheExportFeatureBySelectingEquipement"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.CycleTimeDashboard.VeriftyheExportFeatureBySelectingEquipement -->
-      <class name="com.AssociatePerformancereport.OEEAssociatePerformanceReportNavigationTest">
-        <methods>
-          <include name="OEEAssociatePerformanceReportNavigationTest"/>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.AssociatePerformancereport.OEEAssociatePerformanceReportNavigationTest -->
+      </class> <!-- com.RCAReport.VerifytheRedProductionData -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

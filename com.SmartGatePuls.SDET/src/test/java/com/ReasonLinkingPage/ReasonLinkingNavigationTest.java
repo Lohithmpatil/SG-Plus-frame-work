@@ -16,6 +16,9 @@ public class ReasonLinkingNavigationTest extends BaseClass {  // Declaring the t
 
         HomePage hm = new HomePage(driver);  // Initialize the HomePage object to access homepage elements
         com.sgplus.erp.pomRepository.ReasonLinking rs = new com.sgplus.erp.pomRepository.ReasonLinking(driver);  // Initialize ReasonLinking POM to access page elements
+     
+        // Synchronize the test by waiting for the page to load completely.
+        we.waitUntilPageLoad(driver);
 
         we.waitAndClick(hm.getDownTime());  // Wait for and click on the "DownTime" menu item on the homepage
 

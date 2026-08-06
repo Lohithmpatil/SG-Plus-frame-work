@@ -27,7 +27,11 @@ public class VerifytheWieghtedAveragesSetValueData extends BaseClass {
 
 		// Create CycleTimeDashboard object to access dashboard elements
 		RCAReport rc = new RCAReport(driver);
+		// Synchronize the test by waiting for DOM elements to be available.
+		we.waitForElementInDOM(driver);
 
+		// Synchronize the test by waiting for the page to load completely.
+		we.waitUntilPageLoad(driver);
 		// Click on Cycle Time module from home page
 		we.waitAndClick(hm.getCyletime());
 

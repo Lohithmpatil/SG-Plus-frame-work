@@ -25,7 +25,7 @@ public class ReasonLinkingCombinedTest extends BaseClass { // Test class that ex
 
 		// Create object of ReasonLinking POM to access Reason Linking page elements
 		com.sgplus.erp.pomRepository.ReasonLinking rs = new com.sgplus.erp.pomRepository.ReasonLinking(driver);
-
+		
 		// Click on "Downtime" tab in the home page menu
 		we.waitAndClick(hm.getDownTime());
 

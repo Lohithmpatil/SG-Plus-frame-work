@@ -27,6 +27,12 @@ public class VerifytheShiftproductionreportPeriodwise extends BaseClass {
 
 		// Initialize POM class for Downtime Dashboard page
 		OEEdashboard oe = new OEEdashboard(driver);
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
+
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
+
 		// Navigate to "OEE " module via the homepage
 
 		we.waitAndClick(hm.getOEE());

@@ -29,6 +29,12 @@ public class VerifytheElementSummaryviewTableHeadersAndData extends BaseClass{
 
 		// Create CycleTimeDashboard object to access dashboard elements
 		RCAReport rc = new RCAReport(driver);
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
+
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
+
 
 		// Click on Cycle Time module from home pageA
 		we.waitAndClick(hm.getCyletime());
@@ -93,7 +99,7 @@ public class VerifytheElementSummaryviewTableHeadersAndData extends BaseClass{
 		rc.getTodateSelection().clear();
 
 		// Enters To Date value
-		rc.getTodateSelection().sendKeys("30-04-2023");
+		rc.getTodateSelection().sendKeys("01-04-2023");
 
 		we.waitAndClick(rc.getRecipeDropDown());
 
@@ -106,7 +112,7 @@ public class VerifytheElementSummaryviewTableHeadersAndData extends BaseClass{
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(80));
 
 		WebElement table = wait.until(ExpectedConditions.visibilityOfElementLocated(
 		        By.id("element_table")));

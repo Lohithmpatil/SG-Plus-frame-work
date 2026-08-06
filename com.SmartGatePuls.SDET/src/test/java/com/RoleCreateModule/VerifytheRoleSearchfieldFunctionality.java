@@ -42,6 +42,11 @@ public class VerifytheRoleSearchfieldFunctionality extends BaseClass{
 
 		// Generate a random number to make department group name unique
 		int intRanNum = jlib.getRandomNumber();
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
+
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
 
 		// Read base group name from Excel and append random number
 

@@ -58,6 +58,7 @@ public class VerifyBasedonDepartmentgroupSearch extends BaseClass{
 
 			// Wait until DOM is fully ready
 			wb.waitForElementInDOM(driver);
+			
 
 			// Click on Settings menu from home page
 			wb.waitAndClick(hm.getSettings());

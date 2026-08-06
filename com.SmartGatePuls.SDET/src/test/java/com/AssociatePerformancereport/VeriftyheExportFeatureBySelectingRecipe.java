@@ -25,6 +25,8 @@ public class VeriftyheExportFeatureBySelectingRecipe extends BaseClass {
 
 		// Create CycleTimeDashboard object to access dashboard elements
 		CylceTimeDashboard cd = new CylceTimeDashboard(driver);
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
 
 		// Click on Cycle Time module from home page
 		we.waitAndClick(hm.getCyletime());

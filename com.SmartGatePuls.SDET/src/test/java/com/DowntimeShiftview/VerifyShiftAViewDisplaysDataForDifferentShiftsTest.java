@@ -24,6 +24,13 @@ public class VerifyShiftAViewDisplaysDataForDifferentShiftsTest extends BaseClas
 
         // Initialize DowntimeShiftview object to interact with elements specific to the Downtime Shiftview page
         DowntimeShiftview ds = new DowntimeShiftview(driver);
+        
+    	// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
+
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
+
 
         // Wait for the 'DownTime' menu item to be clickable and then click it
         we.waitAndClick(hm.getDownTime());

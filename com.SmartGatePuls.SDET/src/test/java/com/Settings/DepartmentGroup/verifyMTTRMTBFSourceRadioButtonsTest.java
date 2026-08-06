@@ -38,6 +38,11 @@ public class verifyMTTRMTBFSourceRadioButtonsTest extends BaseClass{
 
 		// Create DepartmentGroup page object to interact with Department Group screen
 		DepartmentGroup dg = new DepartmentGroup(driver);
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
+
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
 
 		// Generate a random number to make department group name unique
 		int intRanNum = jlib.getRandomNumber();

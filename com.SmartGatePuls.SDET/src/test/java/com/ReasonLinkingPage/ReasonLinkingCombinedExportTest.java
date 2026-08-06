@@ -28,7 +28,10 @@ public class ReasonLinkingCombinedExportTest extends BaseClass { // Test class e
 
 		// Initialize ReasonLinking POM
 		com.sgplus.erp.pomRepository.ReasonLinking rs = new com.sgplus.erp.pomRepository.ReasonLinking(driver);
+		// Synchronize the test by waiting for DOM elements to be available.
+		we.waitForElementInDOM(driver);
 
+		
 		// Click on the "Downtime" menu on the home page
 		we.waitAndClick(hm.getDownTime());
 

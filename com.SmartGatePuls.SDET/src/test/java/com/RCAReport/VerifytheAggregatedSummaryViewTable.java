@@ -29,6 +29,12 @@ public class VerifytheAggregatedSummaryViewTable extends BaseClass {
 
 		// Create CycleTimeDashboard object to access dashboard elements
 		RCAReport rc = new RCAReport(driver);
+		// Wait until the required elements are available in the DOM.
+		we.waitForElementInDOM(driver);
+
+		// Wait until the page loading is complete.
+		we.waitUntilPageLoad(driver);
+
 
 		// Click on Cycle Time module from home page
 		we.waitAndClick(hm.getCyletime());

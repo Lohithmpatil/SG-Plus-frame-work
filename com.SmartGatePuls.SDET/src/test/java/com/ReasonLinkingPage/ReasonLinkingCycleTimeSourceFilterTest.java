@@ -22,7 +22,12 @@ public class ReasonLinkingCycleTimeSourceFilterTest extends BaseClass {  // Test
 
 		// Instantiate ReasonLinking POM for elements specific to Reason Linking page
 		com.sgplus.erp.pomRepository.ReasonLinking rs = new com.sgplus.erp.pomRepository.ReasonLinking(driver);
+		// Synchronize the test by waiting for DOM elements to be available.
+		// Synchronize the test by waiting for DOM elements to be available.
+		we.waitForElementInDOM(driver);
 
+		// Synchronize the test by waiting for the page to load completely.
+		we.waitUntilPageLoad(driver);
 		// Click on "Downtime" menu tab from homepage
 		we.waitAndClick(hm.getDownTime());
 
