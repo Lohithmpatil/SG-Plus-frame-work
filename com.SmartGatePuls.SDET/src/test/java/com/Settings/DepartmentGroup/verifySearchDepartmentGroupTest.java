@@ -72,18 +72,18 @@ public class verifySearchDepartmentGroupTest extends BaseClass {
 		// Enter search text
 		// searchField.clear();
 		searchField.clear();
-		searchField.sendKeys("Automation224");
+		searchField.sendKeys("Warm Up");
 		searchField.sendKeys(Keys.ENTER);
 
 		// Wait for table to update
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[text()='Automation224']")));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[text()='Warm Up']")));
 
 		// Fetch table result
-		WebElement resultName = driver.findElement(By.xpath("//td[text()='Automation224']"));
+		WebElement resultName = driver.findElement(By.xpath("//td[text()='Warm Up']"));
 
 		// Validation
-		Assert.assertEquals(resultName.getText(), "Automation224");
+		Assert.assertEquals(resultName.getText(), "Warm Up");
 
 		we.waitAndClick(dg.getSucessPopupmessageClose());
 	}

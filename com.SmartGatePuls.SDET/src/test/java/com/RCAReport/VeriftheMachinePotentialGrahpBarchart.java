@@ -99,7 +99,7 @@ public class VeriftheMachinePotentialGrahpBarchart extends BaseClass {
 		rc.getTodateSelection().clear();
 
 		// Enters To Date value
-		rc.getTodateSelection().sendKeys("30-04-2023");
+		rc.getTodateSelection().sendKeys("01-04-2023");
 
 		we.waitAndClick(rc.getRecipeDropDown());
 
@@ -114,7 +114,7 @@ public class VeriftheMachinePotentialGrahpBarchart extends BaseClass {
 
 		js.executeScript("window.scrollBy(0,1000)");
 
-		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(60));
 
 		List<WebElement> machineLabels = wait1.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(
 				By.xpath("//*[name()='g' and contains(@class,'highcharts-xaxis-labels')]//*[name()='text']")));

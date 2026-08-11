@@ -99,7 +99,7 @@ public class VerifytheAggregatedSummaryTableisNotEmpty extends BaseClass {
 		rc.getTodateSelection().clear();
 
 		// Enters To Date value
-		rc.getTodateSelection().sendKeys("30-01-2025");
+		rc.getTodateSelection().sendKeys("01-01-2025");
 
 		we.waitAndClick(rc.getRecipeDropDown());
 

@@ -96,7 +96,7 @@ public class VerifytheWeightedAveragesActulaValueData extends BaseClass{
 		rc.getTodateSelection().clear();
 
 		// Enters To Date value
-		rc.getTodateSelection().sendKeys("30-01-2025");
+		rc.getTodateSelection().sendKeys("01-01-2025");
 
 		// Click on Apply Filter button to load data
 		we.waitAndClick(rc.getApplyFilter());

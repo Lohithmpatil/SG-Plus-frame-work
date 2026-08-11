@@ -64,8 +64,6 @@ public class VerifytheCancelBukUpdateFuctionality extends BaseClass {
 		we.waitAndClick(oe.getApplyFilter());
 
 		we.waitAndClick(oe.getBulkButton());
-		
-		we.waitAndClick(oe.getBulkButton());
 
 		we.waitAndClick(oe.getCheckBOx());
 		

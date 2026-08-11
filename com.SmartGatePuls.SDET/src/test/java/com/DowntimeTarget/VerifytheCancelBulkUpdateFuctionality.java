@@ -64,8 +64,6 @@ public class VerifytheCancelBulkUpdateFuctionality extends BaseClass {
 
 		we.waitAndClick(dt.getBulkButton());
 
-		we.waitAndClick(dt.getBulkButton());
-
 		we.waitAndClick(dt.getCheckBOx());
 
 		we.waitAndClick(dt.getBulkButton2());

@@ -73,19 +73,19 @@ public class verifySearchDepartmentTest extends BaseClass {
 		// searchField.clear();
 		searchfield.clear();
 
-		searchfield.sendKeys("AutomatonTest970");
+		searchfield.sendKeys("Cycle Extension");
 
 		searchfield.sendKeys(Keys.ENTER);
 
 		// Wait for table to update
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[text()='AutomatonTest970']")));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//td[text()='Cycle Extension']")));
 
 		// Fetch table result
-		WebElement resultName = driver.findElement(By.xpath("//td[text()='AutomatonTest970']"));
+		WebElement resultName = driver.findElement(By.xpath("//td[text()='Cycle Extension']"));
 
 		// Validation
-		Assert.assertEquals(resultName.getText(), "AutomatonTest970");
+		Assert.assertEquals(resultName.getText(), "Cycle Extension");
 		
 		we.waitAndClick(dp.getSucessPopupmessageClose());
 

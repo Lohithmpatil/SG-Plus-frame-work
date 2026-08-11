@@ -3,60 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.RCAReport.VerifytheTotalProductionData">
-        <methods>
-          <include name="VerifytheTotalProductionData"/>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.RCAReport.VerifytheTotalProductionData -->
-      <class name="com.RCAReport.VerifytheMachinepotentiolLossgraph">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="VerifytheMachinepotentiolLossgraph"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.RCAReport.VerifytheMachinepotentiolLossgraph -->
-      <class name="com.RCAReport.VerifytheAggregatedSummaryTableisNotEmpty">
+      <class name="com.UserCreate.VerifyAssignOnlySingleEquipementToUser">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
-          <include name="VerifytheAggregatedSummaryTableisNotEmpty"/>
           <include name="configBC"/>
+          <include name="VerifyAssignOnlySingleEquipementToUser"/>
         </methods>
-      </class> <!-- com.RCAReport.VerifytheAggregatedSummaryTableisNotEmpty -->
-      <class name="com.RCAReport.VeriftheMachinePotentialGrahpBarchart">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="VerifytheMachinePotentilaGraphBarchart"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.RCAReport.VeriftheMachinePotentialGrahpBarchart -->
-      <class name="com.RCAReport.VerifytheGreenProductiondata">
-        <methods>
-          <include name="configBM"/>
-          <include name="VerifytheGreenProductiondata"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.RCAReport.VerifytheGreenProductiondata -->
-      <class name="com.RCAReport.VerifytheRedProductionData">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifytheRedProductionData"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.RCAReport.VerifytheRedProductionData -->
+      </class> <!-- com.UserCreate.VerifyAssignOnlySingleEquipementToUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

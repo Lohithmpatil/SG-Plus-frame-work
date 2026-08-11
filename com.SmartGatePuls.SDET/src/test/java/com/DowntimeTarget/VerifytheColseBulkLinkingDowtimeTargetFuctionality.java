@@ -26,11 +26,7 @@ public class VerifytheColseBulkLinkingDowtimeTargetFuctionality extends BaseClas
 		DowntimeTarget dt = new DowntimeTarget(driver);
 		// Wait until the required elements are available in the DOM.
 		we.waitForElementInDOM(driver);
-
-		// Wait until the page loading is complete.
-		we.waitUntilPageLoad(driver);
-
-
+		
 		we.waitAndClick(hm.getSettings());
 		// Click on Cycle Time module from home page
 		we.waitAndClick(dt.getDowntimeTargetPage());
@@ -61,8 +57,6 @@ public class VerifytheColseBulkLinkingDowtimeTargetFuctionality extends BaseClas
 
 		// Click on Apply Filter button to load data
 		we.waitAndClick(dt.getApplyFilter());
-
-		we.waitAndClick(dt.getBulkButton());
 
 		we.waitAndClick(dt.getBulkButton());
 

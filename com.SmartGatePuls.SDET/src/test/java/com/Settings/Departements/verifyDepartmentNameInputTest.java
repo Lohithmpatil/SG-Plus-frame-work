@@ -78,7 +78,7 @@ public class verifyDepartmentNameInputTest extends BaseClass {
 		we.waitAndClick(dp.getGroupDropDown());
 
 		// Select "Engineering" from the Department Group dropdown
-		we.select(dp.getGroupDropDown(), "Automation613");
+		we.select(dp.getGroupDropDown(), "Automation968");
 
 		// Click on the Equipment dropdown
 		we.waitAndClick(dp.getEquipemetsDropDown());

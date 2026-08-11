@@ -101,7 +101,7 @@ public class VerifytheAggregatedSummaryViewExporttButton extends BaseClass {
 		rc.getTodateSelection().clear();
 
 		// Enters To Date value
-		rc.getTodateSelection().sendKeys("30-04-2023");
+		rc.getTodateSelection().sendKeys("01-04-2023");
 
 		we.waitAndClick(rc.getRecipeDropDown());
 

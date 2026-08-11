@@ -26,7 +26,7 @@ public class BaseClass {
 	// @BeforeSuite(groups = { "smokeTest", "regressionTest" })
 	public void configBS() {
 
-		System.out.println("========================connect to DB========================");
+		System.out.println("========================cseesesesewweweew323onnect to DB========================");
 	}
 
 	@Parameters("BROWSER")
