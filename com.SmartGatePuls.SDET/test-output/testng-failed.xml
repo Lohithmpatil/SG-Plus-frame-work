@@ -1,17 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.UserCreate.VerifyAssignOnlySingleEquipementToUser">
+      <class name="com.AddAssociates.VerifytheAssocitaesStatusChange">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
           <include name="configBC"/>
+          <include name="VerifytheAssocitaesStatusChange"/>
+        </methods>
+      </class> <!-- com.AddAssociates.VerifytheAssocitaesStatusChange -->
+      <class name="com.OEEDashBoard.OEEAssociatePerformanceLossReportTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="OEEAssociatePerformanceLossReportTest"/>
+        </methods>
+      </class> <!-- com.OEEDashBoard.OEEAssociatePerformanceLossReportTest -->
+      <class name="com.UserCreate.VerifytheResetPasswordFunctionality">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="VerifytheResetPasswordFunctionality"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.UserCreate.VerifytheResetPasswordFunctionality -->
+      <class name="com.UserCreate.VerifytheUserResetPasswordCancelFunctionality">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="VerifytheUserResetPasswordCancelFunctionality"/>
+        </methods>
+      </class> <!-- com.UserCreate.VerifytheUserResetPasswordCancelFunctionality -->
+      <class name="com.RecipeMasterPage.VerifyRecipeCodeFieldInputTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifyRecipeCodeFieldInputTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RecipeMasterPage.VerifyRecipeCodeFieldInputTest -->
+      <class name="com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="VerifytheAssociateperformancereportDropdown"/>
+        </methods>
+      </class> <!-- com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown -->
+      <class name="com.RoleCreateModule.VerifytheDeleteRoleCancelFunctionality">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="VerifytheDeleteRoleCancelFunctionality"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RoleCreateModule.VerifytheDeleteRoleCancelFunctionality -->
+      <class name="com.OverallSummary.VerifytheProductionLossAnalysisBarchart">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="VerifytheProductionLossAnalysisBarchart"/>
+        </methods>
+      </class> <!-- com.OverallSummary.VerifytheProductionLossAnalysisBarchart -->
+      <class name="com.UserCreate.VerifyAssignOnlySingleEquipementToUser">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
           <include name="VerifyAssignOnlySingleEquipementToUser"/>
+          <include name="configBC"/>
         </methods>
       </class> <!-- com.UserCreate.VerifyAssignOnlySingleEquipementToUser -->
+      <class name="com.RecipeMasterPage.VerifyProductionTypeDropdownFunctionalityTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifyProductionTypeDropdownFunctionalityTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RecipeMasterPage.VerifyProductionTypeDropdownFunctionalityTest -->
+      <class name="com.RCAReport.VerifyMachinewiseSummaryBarChart">
+        <methods>
+          <include name="VerifyMachinewiseSummaryBarChart"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RCAReport.VerifyMachinewiseSummaryBarChart -->
+      <class name="com.OEEDashBoard.MachinlevelComparsiongraphNamesshowncorrectly">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifyMchinelevelComparisonGraphisdisplayedTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.OEEDashBoard.MachinlevelComparsiongraphNamesshowncorrectly -->
+      <class name="com.AddReasonPage.VerifytheReasonEditfunctionalityTest">
+        <methods>
+          <include name="VerifytheReasonEditfunctionalityTest"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.AddReasonPage.VerifytheReasonEditfunctionalityTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

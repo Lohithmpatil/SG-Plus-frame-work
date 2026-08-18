@@ -3,24 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.Settings.Departements.verifyRequiredFieldValidationTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="verifyRequiredFieldValidationTest"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.Settings.Departements.verifyRequiredFieldValidationTest -->
-      <class name="com.Settings.Departements.verifySearchDepartmentTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifyAddDepartmentTest"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.Settings.Departements.verifySearchDepartmentTest -->
       <class name="com.AddAssociates.VerifytheAssocitaesStatusChange">
         <methods>
           <include name="configBM"/>
@@ -30,60 +12,42 @@
           <include name="VerifytheAssocitaesStatusChange"/>
         </methods>
       </class> <!-- com.AddAssociates.VerifytheAssocitaesStatusChange -->
-      <class name="com.Settings.Departements.VerifyAddDepartmentTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="VerifyAddDepartmentTest"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.Settings.Departements.VerifyAddDepartmentTest -->
-      <class name="com.Settings.Departements.verifyDepartmentNameInputTest">
+      <class name="com.OEEDashBoard.OEEAssociatePerformanceLossReportTest">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
-          <include name="verifyRequiredFieldValidationTest"/>
+          <include name="configBC"/>
+          <include name="OEEAssociatePerformanceLossReportTest"/>
+        </methods>
+      </class> <!-- com.OEEDashBoard.OEEAssociatePerformanceLossReportTest -->
+      <class name="com.UserCreate.VerifytheResetPasswordFunctionality">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="VerifytheResetPasswordFunctionality"/>
+          <include name="configAC"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.Settings.Departements.verifyDepartmentNameInputTest -->
-      <class name="com.ReasonLinkingPage.ReasonLinkingLinkedExportTest">
+      </class> <!-- com.UserCreate.VerifytheResetPasswordFunctionality -->
+      <class name="com.UserCreate.VerifytheUserResetPasswordCancelFunctionality">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
-          <include name="ReasonLinkingLinkedExportTest"/>
           <include name="configBC"/>
+          <include name="VerifytheUserResetPasswordCancelFunctionality"/>
         </methods>
-      </class> <!-- com.ReasonLinkingPage.ReasonLinkingLinkedExportTest -->
-      <class name="com.ReasonLinkingPage.BulkReasonLinkingFunctionalityTest">
-        <methods>
-          <include name="BulkReasonLinkingFunctionalityTest"/>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.ReasonLinkingPage.BulkReasonLinkingFunctionalityTest -->
-      <class name="com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByEquipementvalue">
-        <methods>
-          <include name="VerifytheTooltipdatabyselectingByEquipementvalue"/>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.CycleTimeDashboard.VerifytheTooltipdatabyselectingByEquipementvalue -->
-      <class name="com.ReasonLinkingPage.ReasonLinkingCycleTimeSourceFilterTest">
+      </class> <!-- com.UserCreate.VerifytheUserResetPasswordCancelFunctionality -->
+      <class name="com.RecipeMasterPage.VerifyRecipeCodeFieldInputTest">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
-          <include name="ReasonLinkingCycleTimeSourceFilterTest"/>
+          <include name="VerifyRecipeCodeFieldInputTest"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.ReasonLinkingPage.ReasonLinkingCycleTimeSourceFilterTest -->
+      </class> <!-- com.RecipeMasterPage.VerifyRecipeCodeFieldInputTest -->
       <class name="com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown">
         <methods>
           <include name="configBM"/>
@@ -93,15 +57,24 @@
           <include name="VerifytheAssociateperformancereportDropdown"/>
         </methods>
       </class> <!-- com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown -->
-      <class name="com.AssociatePerformancereport.VerifyExportfeature">
+      <class name="com.RoleCreateModule.VerifytheDeleteRoleCancelFunctionality">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="VerifytheDeleteRoleCancelFunctionality"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RoleCreateModule.VerifytheDeleteRoleCancelFunctionality -->
+      <class name="com.OverallSummary.VerifytheProductionLossAnalysisBarchart">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
           <include name="configBC"/>
-          <include name="VerifyExportfeature"/>
+          <include name="VerifytheProductionLossAnalysisBarchart"/>
         </methods>
-      </class> <!-- com.AssociatePerformancereport.VerifyExportfeature -->
+      </class> <!-- com.OverallSummary.VerifytheProductionLossAnalysisBarchart -->
       <class name="com.UserCreate.VerifyAssignOnlySingleEquipementToUser">
         <methods>
           <include name="configBM"/>
@@ -111,42 +84,15 @@
           <include name="configBC"/>
         </methods>
       </class> <!-- com.UserCreate.VerifyAssignOnlySingleEquipementToUser -->
-      <class name="com.UserCreate.VerifytheUserChangeStatusFuctionality">
+      <class name="com.RecipeMasterPage.VerifyProductionTypeDropdownFunctionalityTest">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
-          <include name="VerifytheUserChangeStatusFutionality"/>
+          <include name="VerifyProductionTypeDropdownFunctionalityTest"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.UserCreate.VerifytheUserChangeStatusFuctionality -->
-      <class name="com.UserCreate.VerifytheUserChangeStatusCancelFuctionality">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="VerifytheUserChangeStatusCancelFuctionality"/>
-        </methods>
-      </class> <!-- com.UserCreate.VerifytheUserChangeStatusCancelFuctionality -->
-      <class name="com.ReasonLinkingPage.ReasonLinkingUnlinkedExportTest">
-        <methods>
-          <include name="ReasonLinkingUnlinkedExportTest"/>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.ReasonLinkingPage.ReasonLinkingUnlinkedExportTest -->
-      <class name="com.UserCreate.VerifytheonlySingleGroupToUser">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="VerifytheonlySingleGroupToUser"/>
-        </methods>
-      </class> <!-- com.UserCreate.VerifytheonlySingleGroupToUser -->
+      </class> <!-- com.RecipeMasterPage.VerifyProductionTypeDropdownFunctionalityTest -->
       <class name="com.RCAReport.VerifyMachinewiseSummaryBarChart">
         <methods>
           <include name="VerifyMachinewiseSummaryBarChart"/>
@@ -156,24 +102,15 @@
           <include name="configBC"/>
         </methods>
       </class> <!-- com.RCAReport.VerifyMachinewiseSummaryBarChart -->
-      <class name="com.RoleCreateModule.VerifytheAddRoleFunctionality">
+      <class name="com.OEEDashBoard.MachinlevelComparsiongraphNamesshowncorrectly">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="VerifytheAddRoleFunctionality"/>
-        </methods>
-      </class> <!-- com.RoleCreateModule.VerifytheAddRoleFunctionality -->
-      <class name="com.UserCreate.UserDeleteCancelFuctionality">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="UserDeleteCancelFuctionality"/>
+          <include name="VerifyMchinelevelComparisonGraphisdisplayedTest"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.UserCreate.UserDeleteCancelFuctionality -->
+      </class> <!-- com.OEEDashBoard.MachinlevelComparsiongraphNamesshowncorrectly -->
       <class name="com.AddReasonPage.VerifytheReasonEditfunctionalityTest">
         <methods>
           <include name="VerifytheReasonEditfunctionalityTest"/>
@@ -183,15 +120,6 @@
           <include name="configBC"/>
         </methods>
       </class> <!-- com.AddReasonPage.VerifytheReasonEditfunctionalityTest -->
-      <class name="com.ReasonLinkingPage.ReasonLinkingHandlingSourceFilterTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="ReasonLinkingHandlingSourceFilterTest"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.ReasonLinkingPage.ReasonLinkingHandlingSourceFilterTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

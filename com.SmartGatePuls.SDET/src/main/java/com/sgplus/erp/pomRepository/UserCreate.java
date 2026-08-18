@@ -141,7 +141,7 @@ public class UserCreate {
 		return cancelbutton;
 	}
 
-	@FindBy(xpath = "//button[@type=\"submit\"]")
+	@FindBy(xpath = "//button[text()=\"Submit\"]")
 	private WebElement submitbutton;
 
 	@FindBy(xpath = "//button[text()=\"Cancel\"]")

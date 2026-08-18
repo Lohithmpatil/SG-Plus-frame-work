@@ -90,12 +90,12 @@ public class VerifyAssignOnlySingleEquipementToUser extends BaseClass {
 		we.waitAndClick(us.getFinalMixerboxGroupCheckbox());
 
 		we.waitAndClick(us.getMixerEquipementCheckCheckbox());
-		
+
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,500)");
-		
-		we.waitAndClick(us.getSubmitbutton());
 
+		we.waitAndClick(us.getSubmitbutton());
+		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		WebElement toast = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@role='alert']")));
@@ -108,14 +108,12 @@ public class VerifyAssignOnlySingleEquipementToUser extends BaseClass {
 		// Verify the message
 		Assert.assertTrue(actualMsg.contains("User created successfully"),
 				"User created failed. Actual message: " + actualMsg);
-		
+
 		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		// Wait until toast disappears
-		wait1.until(ExpectedConditions.invisibilityOfElementLocated(
-		        By.cssSelector(".Toastify__toast-body")));
+		wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".Toastify__toast-body")));
 
 	}
-	
-	
+
 }

@@ -8,8 +8,8 @@
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
-          <include name="configBC"/>
           <include name="VerifyAssignOnlySingleEquipementToUser"/>
+          <include name="configBC"/>
         </methods>
       </class> <!-- com.UserCreate.VerifyAssignOnlySingleEquipementToUser -->
     </classes>
