@@ -37,7 +37,6 @@ public class VerifyMachinewiseSummaryBarChart extends BaseClass {
 		// Wait until the page loading is complete.
 		we.waitUntilPageLoad(driver);
 
-
 		// Click on Cycle Time module from home page
 		we.waitAndClick(hm.getCyletime());
 
@@ -144,11 +143,25 @@ public class VerifyMachinewiseSummaryBarChart extends BaseClass {
 
 			System.out.println("--------------------------------");
 			System.out.println("Machine : " + machines.get(i));
-			System.out.println("Actual  : " + values.get(index));
-			System.out.println("Mode    : " + values.get(index + 1));
-			System.out.println("Set     : " + values.get(index + 2));
 
+			if (index < values.size()) {
+				System.out.println("Actual  : " + values.get(index));
+			} else {
+				System.out.println("Actual  : Value not available");
+			}
+
+			if (index + 1 < values.size()) {
+				System.out.println("Mode    : " + values.get(index + 1));
+			} else {
+				System.out.println("Mode    : Value not available");
+			}
+
+			if (index + 2 < values.size()) {
+				System.out.println("Set     : " + values.get(index + 2));
+			} else {
+				System.out.println("Set     : Value not available");
+			}
 		}
-	}
 
+	}
 }

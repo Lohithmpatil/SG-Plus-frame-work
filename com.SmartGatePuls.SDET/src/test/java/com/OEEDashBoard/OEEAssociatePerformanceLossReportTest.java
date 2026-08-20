@@ -69,7 +69,7 @@ public class OEEAssociatePerformanceLossReportTest extends BaseClass {
 		// Commented out code: Wait and select an Equipment dropdown option (not being
 		// used)
 		we.waitAndClick(aso.getEquipementDropDown());
-		we.select(aso.getEquipementDropDown(), "All");
+		we.select(aso.getEquipementDropDown(), "SCPTBS01");
 
 		we.waitAndClick(aso.getEquipementDropDown());
 

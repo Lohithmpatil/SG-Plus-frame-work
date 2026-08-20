@@ -17,8 +17,7 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.UserCreate;
 
-public class VerifytheUserChangeStatusFuctionality extends BaseClass{
-	
+public class VerifytheUserChangeStatusFuctionality extends BaseClass {
 
 	@Test
 	public void VerifytheUserChangeStatusFutionality() throws Throwable {
@@ -64,29 +63,26 @@ public class VerifytheUserChangeStatusFuctionality extends BaseClass{
 		we.waitAndClick(us.getDots3());
 
 		we.waitAndClick(us.getChnageStatusButton());
-		
-	we.waitAndClick(us.getYesStatusChangeButton());
-	
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-	WebElement toast = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@role='alert']")));
+		we.waitAndClick(us.getYesStatusChangeButton());
 
-	String actualMsg = toast.getText();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-	// Print the message in Console
-	System.out.println("Success Message: " + actualMsg);
+		WebElement toast = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@role='alert']")));
 
-	// Verify the message
-	Assert.assertTrue(actualMsg.contains(" user status changed"),
-			"User Change status failed. Actual message: " + actualMsg);
+		String actualMsg = toast.getText();
 
-	
-	WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(15));
+		// Print the message in Console
+		System.out.println("Success Message: " + actualMsg);
 
-	// Wait until toast disappears
-	wait1.until(ExpectedConditions.invisibilityOfElementLocated(
-	        By.cssSelector(".Toastify__toast-body")));
+		// Verify the message
+		Assert.assertTrue(actualMsg.contains(" user status changed"),
+				"User Change status failed. Actual message: " + actualMsg);
 
-		
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+		// Wait until toast disappears
+		wait1.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".Toastify__toast-body")));
+
 	}
 }

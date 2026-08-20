@@ -1,10 +1,13 @@
 package com.OEEDashBoard;
 
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,7 +16,7 @@ import com.sgplus.erp.genericutility.WebDriverUtility;
 import com.sgplus.erp.pomRepository.HomePage;
 import com.sgplus.erp.pomRepository.OEEdashboard;
 
-public class MachinlevelComparsiongraphNamesshowncorrectly extends BaseClass {
+public class MachinlevelComparsiongraphNameshowncorrectly extends BaseClass {
 	@Test
 	public void VerifyMchinelevelComparisonGraphisdisplayedTest() throws Throwable {
 		// Initialize WebDriver utility for custom waits and actions
@@ -110,12 +113,16 @@ public class MachinlevelComparsiongraphNamesshowncorrectly extends BaseClass {
 		// WebElement chart = driver.findElement(By.id("group_bar_chart"));
 		Assert.assertTrue(chart.isDisplayed(), "Bar chart is not displayed");
 
-		List<WebElement> machineLabels = driver.findElements(By.xpath("//*[name()='text']"));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+		List<WebElement> machineLabels = wait
+				.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//*[name()='text']")));
+
+		List<String> expectedLegend = Arrays.asList("OEE", "AVAILABILITY", "QUALITY", "PERFORMANCE");
+
 		for (WebElement label : machineLabels) {
 			System.out.println(label.getText());
-			
-			List<String> expectedLegend = Arrays.asList("OEE", "AVAILABILITY", "QUALITY", "PERFORMANCE");
-
 		}
+
 	}
 }

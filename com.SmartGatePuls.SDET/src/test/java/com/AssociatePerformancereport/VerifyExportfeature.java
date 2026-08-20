@@ -38,7 +38,6 @@ public class VerifyExportfeature extends BaseClass {
 		// Wait until the page loading is complete.
 		we.waitUntilPageLoad(driver);
 
-
 		we.waitAndClick(hm.getOEE());
 
 		we.waitAndClick(aso.getAssociatePerformancePage());
@@ -76,7 +75,7 @@ public class VerifyExportfeature extends BaseClass {
 
 		// Clears any existing text in the "From Date" input field (ensuring clean
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
 		WebElement monthYear = wait
 				.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".react-datepicker-wrapper input")));

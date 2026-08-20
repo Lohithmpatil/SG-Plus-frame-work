@@ -3,15 +3,24 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.UserCreate.VerifyAssignOnlySingleEquipementToUser">
+      <class name="com.UserCreate.VerifytheAddUserFunctionality">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
-          <include name="VerifyAssignOnlySingleEquipementToUser"/>
+          <include name="VerifytheAddUserFunctionality"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.UserCreate.VerifyAssignOnlySingleEquipementToUser -->
+      </class> <!-- com.UserCreate.VerifytheAddUserFunctionality -->
+      <class name="com.UserCreate.UserDeleteCancelFuctionality">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="UserDeleteCancelFuctionality"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.UserCreate.UserDeleteCancelFuctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
