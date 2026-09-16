@@ -3,42 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.AddAssociates.VerifytheAssocitaesStatusChange">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="VerifytheAssocitaesStatusChange"/>
-        </methods>
-      </class> <!-- com.AddAssociates.VerifytheAssocitaesStatusChange -->
-      <class name="com.OEEDashBoard.OEEAssociatePerformanceLossReportTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="OEEAssociatePerformanceLossReportTest"/>
-        </methods>
-      </class> <!-- com.OEEDashBoard.OEEAssociatePerformanceLossReportTest -->
-      <class name="com.UserCreate.VerifytheResetPasswordFunctionality">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="VerifytheResetPasswordFunctionality"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.UserCreate.VerifytheResetPasswordFunctionality -->
-      <class name="com.UserCreate.VerifytheUserResetPasswordCancelFunctionality">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="VerifytheUserResetPasswordCancelFunctionality"/>
-        </methods>
-      </class> <!-- com.UserCreate.VerifytheUserResetPasswordCancelFunctionality -->
       <class name="com.RecipeMasterPage.VerifyRecipeCodeFieldInputTest">
         <methods>
           <include name="configBM"/>
@@ -48,6 +12,15 @@
           <include name="configBC"/>
         </methods>
       </class> <!-- com.RecipeMasterPage.VerifyRecipeCodeFieldInputTest -->
+      <class name="com.DowntimeShiftview.VerifyShiftBViewDisplaysDataForDifferentShiftsTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="VerifyShiftBViewDisplaysDataForDifferentShiftsTest"/>
+        </methods>
+      </class> <!-- com.DowntimeShiftview.VerifyShiftBViewDisplaysDataForDifferentShiftsTest -->
       <class name="com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown">
         <methods>
           <include name="configBM"/>
@@ -57,69 +30,60 @@
           <include name="VerifytheAssociateperformancereportDropdown"/>
         </methods>
       </class> <!-- com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown -->
-      <class name="com.RoleCreateModule.VerifytheDeleteRoleCancelFunctionality">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="VerifytheDeleteRoleCancelFunctionality"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.RoleCreateModule.VerifytheDeleteRoleCancelFunctionality -->
-      <class name="com.OverallSummary.VerifytheProductionLossAnalysisBarchart">
+      <class name="com.AssociatePerformancereport.VerifyExportfeature">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
           <include name="configBC"/>
-          <include name="VerifytheProductionLossAnalysisBarchart"/>
+          <include name="VerifyExportfeature"/>
         </methods>
-      </class> <!-- com.OverallSummary.VerifytheProductionLossAnalysisBarchart -->
-      <class name="com.UserCreate.VerifyAssignOnlySingleEquipementToUser">
+      </class> <!-- com.AssociatePerformancereport.VerifyExportfeature -->
+      <class name="com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate">
         <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifyAssignOnlySingleEquipementToUser"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.UserCreate.VerifyAssignOnlySingleEquipementToUser -->
-      <class name="com.RecipeMasterPage.VerifyProductionTypeDropdownFunctionalityTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifyProductionTypeDropdownFunctionalityTest"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.RecipeMasterPage.VerifyProductionTypeDropdownFunctionalityTest -->
-      <class name="com.RCAReport.VerifyMachinewiseSummaryBarChart">
-        <methods>
-          <include name="VerifyMachinewiseSummaryBarChart"/>
+          <include name="VerifytheAssociatePerformanceLossreportSingleassociate"/>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.RCAReport.VerifyMachinewiseSummaryBarChart -->
-      <class name="com.OEEDashBoard.MachinlevelComparsiongraphNamesshowncorrectly">
+      </class> <!-- com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate -->
+      <class name="com.AddAssociates.VerifytheAssocitaesStatusChange">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
-          <include name="VerifyMchinelevelComparisonGraphisdisplayedTest"/>
+          <include name="configBC"/>
+          <include name="VerifytheAssocitaesStatusChange"/>
+        </methods>
+      </class> <!-- com.AddAssociates.VerifytheAssocitaesStatusChange -->
+      <class name="com.DowntimeShiftview.VerifyShiftViewPageDataTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifyShiftViewPageDataTest"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.OEEDashBoard.MachinlevelComparsiongraphNamesshowncorrectly -->
-      <class name="com.AddReasonPage.VerifytheReasonEditfunctionalityTest">
+      </class> <!-- com.DowntimeShiftview.VerifyShiftViewPageDataTest -->
+      <class name="com.Settings.DepartmentGroup.verifySearchDepartmentGroupTest">
         <methods>
-          <include name="VerifytheReasonEditfunctionalityTest"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="verifySearchDepartmentGroupTest"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.Settings.DepartmentGroup.verifySearchDepartmentGroupTest -->
+      <class name="com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph">
+        <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
           <include name="configBC"/>
+          <include name="VerfiytheOverAllPerformanceGraph"/>
         </methods>
-      </class> <!-- com.AddReasonPage.VerifytheReasonEditfunctionalityTest -->
+      </class> <!-- com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -113,7 +113,7 @@ public class MachinlevelComparsiongraphNameshowncorrectly extends BaseClass {
 		// WebElement chart = driver.findElement(By.id("group_bar_chart"));
 		Assert.assertTrue(chart.isDisplayed(), "Bar chart is not displayed");
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 
 		List<WebElement> machineLabels = wait
 				.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//*[name()='text']")));

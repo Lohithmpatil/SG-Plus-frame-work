@@ -1,215 +1,301 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="12" failed="2" skipped="0">
+<testng-results ignored="0" total="17" passed="16" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-20T17:20:57 IST" name="Default suite" finished-at="2026-08-20T17:57:10 IST" duration-ms="2173434">
+  <suite started-at="2026-09-10T16:11:11 IST" name="Default suite" finished-at="2026-09-10T16:18:03 IST" duration-ms="411748">
     <groups>
     </groups>
-    <test started-at="2026-08-20T17:20:57 IST" name="Default test" finished-at="2026-08-20T17:57:10 IST" duration-ms="2173434">
-      <class name="com.UserCreate.VerifytheUserResetPasswordCancelFunctionality">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.UserCreate.VerifytheUserResetPasswordCancelFunctionality@1d8bd0de]" started-at="2026-08-20T17:20:57 IST" name="configBC" finished-at="2026-08-20T17:20:59 IST" duration-ms="1871" status="PASS">
+    <test started-at="2026-09-10T16:11:11 IST" name="Default test" finished-at="2026-09-10T16:18:03 IST" duration-ms="411748">
+      <class name="com.RCAReport.VerifytheElementWiseSummaryViewTable">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifytheElementWiseSummaryViewTable@ba54932]" started-at="2026-09-10T16:11:11 IST" name="configBC" finished-at="2026-09-10T16:11:18 IST" duration-ms="6389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.UserCreate.VerifytheUserResetPasswordCancelFunctionality@1d8bd0de]" started-at="2026-08-20T17:20:59 IST" name="configBM" finished-at="2026-08-20T17:21:00 IST" duration-ms="1413" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifytheElementWiseSummaryViewTable@ba54932]" started-at="2026-09-10T16:11:18 IST" name="configBM" finished-at="2026-09-10T16:11:20 IST" duration-ms="2317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifytheUserResetPasswordCancelFunctionality()[pri:0, instance:com.UserCreate.VerifytheUserResetPasswordCancelFunctionality@1d8bd0de]" started-at="2026-08-20T17:21:00 IST" name="VerifytheUserResetPasswordCancelFunctionality" finished-at="2026-08-20T17:22:03 IST" duration-ms="62580" status="PASS">
+        <test-method signature="VerifytheElementWiseSummaryViewTable()[pri:0, instance:com.RCAReport.VerifytheElementWiseSummaryViewTable@ba54932]" started-at="2026-09-10T16:11:20 IST" name="VerifytheElementWiseSummaryViewTable" finished-at="2026-09-10T16:11:34 IST" duration-ms="13928" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifytheUserResetPasswordCancelFunctionality -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.UserCreate.VerifytheUserResetPasswordCancelFunctionality@1d8bd0de]" started-at="2026-08-20T17:22:03 IST" name="configAM" finished-at="2026-08-20T17:22:03 IST" duration-ms="48" status="PASS">
+        </test-method> <!-- VerifytheElementWiseSummaryViewTable -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifytheElementWiseSummaryViewTable@ba54932]" started-at="2026-09-10T16:11:34 IST" name="configAM" finished-at="2026-09-10T16:11:34 IST" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.UserCreate.VerifytheUserResetPasswordCancelFunctionality@1d8bd0de]" started-at="2026-08-20T17:22:03 IST" name="configAC" finished-at="2026-08-20T17:22:03 IST" duration-ms="305" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifytheElementWiseSummaryViewTable@ba54932]" started-at="2026-09-10T16:11:34 IST" name="configAC" finished-at="2026-09-10T16:11:35 IST" duration-ms="1016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.UserCreate.VerifytheUserResetPasswordCancelFunctionality -->
-      <class name="com.UserCreate.VerifytheUserViewFuctionality">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.UserCreate.VerifytheUserViewFuctionality@28975c28]" started-at="2026-08-20T17:22:15 IST" name="configBC" finished-at="2026-08-20T17:22:16 IST" duration-ms="1248" status="PASS">
+      </class> <!-- com.RCAReport.VerifytheElementWiseSummaryViewTable -->
+      <class name="com.RCAReport.VerifytheAggregatedSummaryViewTable">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifytheAggregatedSummaryViewTable@3cc1435c]" started-at="2026-09-10T16:11:52 IST" name="configBC" finished-at="2026-09-10T16:11:55 IST" duration-ms="3375" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.UserCreate.VerifytheUserViewFuctionality@28975c28]" started-at="2026-08-20T17:22:16 IST" name="configBM" finished-at="2026-08-20T17:22:17 IST" duration-ms="1265" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifytheAggregatedSummaryViewTable@3cc1435c]" started-at="2026-09-10T16:11:55 IST" name="configBM" finished-at="2026-09-10T16:11:57 IST" duration-ms="2140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifytheUserViewFuctionality()[pri:0, instance:com.UserCreate.VerifytheUserViewFuctionality@28975c28]" started-at="2026-08-20T17:22:17 IST" name="VerifytheUserViewFuctionality" finished-at="2026-08-20T17:22:50 IST" duration-ms="32816" status="PASS">
+        <test-method signature="VerifytheAggregatedSummaryViewTable()[pri:0, instance:com.RCAReport.VerifytheAggregatedSummaryViewTable@3cc1435c]" started-at="2026-09-10T16:11:57 IST" name="VerifytheAggregatedSummaryViewTable" finished-at="2026-09-10T16:12:11 IST" duration-ms="13587" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifytheUserViewFuctionality -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.UserCreate.VerifytheUserViewFuctionality@28975c28]" started-at="2026-08-20T17:22:50 IST" name="configAM" finished-at="2026-08-20T17:22:50 IST" duration-ms="89" status="PASS">
+        </test-method> <!-- VerifytheAggregatedSummaryViewTable -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifytheAggregatedSummaryViewTable@3cc1435c]" started-at="2026-09-10T16:12:11 IST" name="configAM" finished-at="2026-09-10T16:12:11 IST" duration-ms="211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.UserCreate.VerifytheUserViewFuctionality@28975c28]" started-at="2026-08-20T17:22:50 IST" name="configAC" finished-at="2026-08-20T17:22:51 IST" duration-ms="427" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifytheAggregatedSummaryViewTable@3cc1435c]" started-at="2026-09-10T16:12:11 IST" name="configAC" finished-at="2026-09-10T16:12:12 IST" duration-ms="1006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.UserCreate.VerifytheUserViewFuctionality -->
-      <class name="com.UserCreate.VerifytheUserChangeStatusFuctionality">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.UserCreate.VerifytheUserChangeStatusFuctionality@ba54932]" started-at="2026-08-20T17:22:03 IST" name="configBC" finished-at="2026-08-20T17:22:04 IST" duration-ms="1422" status="PASS">
+      </class> <!-- com.RCAReport.VerifytheAggregatedSummaryViewTable -->
+      <class name="com.RCAReport.VerifytheRCAReportPageNavigation">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifytheRCAReportPageNavigation@236e3f4e]" started-at="2026-09-10T16:11:35 IST" name="configBC" finished-at="2026-09-10T16:11:38 IST" duration-ms="2755" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.UserCreate.VerifytheUserChangeStatusFuctionality@ba54932]" started-at="2026-08-20T17:22:04 IST" name="configBM" finished-at="2026-08-20T17:22:06 IST" duration-ms="1482" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifytheRCAReportPageNavigation@236e3f4e]" started-at="2026-09-10T16:11:38 IST" name="configBM" finished-at="2026-09-10T16:11:41 IST" duration-ms="2578" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifytheUserChangeStatusFutionality()[pri:0, instance:com.UserCreate.VerifytheUserChangeStatusFuctionality@ba54932]" started-at="2026-08-20T17:22:06 IST" name="VerifytheUserChangeStatusFutionality" finished-at="2026-08-20T17:22:14 IST" duration-ms="8088" status="PASS">
+        <test-method signature="VerifytheRCAReportPageNavigation()[pri:0, instance:com.RCAReport.VerifytheRCAReportPageNavigation@236e3f4e]" started-at="2026-09-10T16:11:41 IST" name="VerifytheRCAReportPageNavigation" finished-at="2026-09-10T16:11:50 IST" duration-ms="9164" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifytheUserChangeStatusFutionality -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.UserCreate.VerifytheUserChangeStatusFuctionality@ba54932]" started-at="2026-08-20T17:22:14 IST" name="configAM" finished-at="2026-08-20T17:22:15 IST" duration-ms="670" status="PASS">
+        </test-method> <!-- VerifytheRCAReportPageNavigation -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifytheRCAReportPageNavigation@236e3f4e]" started-at="2026-09-10T16:11:50 IST" name="configAM" finished-at="2026-09-10T16:11:51 IST" duration-ms="1036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.UserCreate.VerifytheUserChangeStatusFuctionality@ba54932]" started-at="2026-08-20T17:22:15 IST" name="configAC" finished-at="2026-08-20T17:22:15 IST" duration-ms="374" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifytheRCAReportPageNavigation@236e3f4e]" started-at="2026-09-10T16:11:51 IST" name="configAC" finished-at="2026-09-10T16:11:52 IST" duration-ms="833" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.UserCreate.VerifytheUserChangeStatusFuctionality -->
-      <class name="com.UserCreate.VerifytheEditpageNavigation">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.UserCreate.VerifytheEditpageNavigation@3943a2be]" started-at="2026-08-20T17:22:51 IST" name="configBC" finished-at="2026-08-20T17:22:52 IST" duration-ms="1334" status="PASS">
+      </class> <!-- com.RCAReport.VerifytheRCAReportPageNavigation -->
+      <class name="com.RCAReport.VerifytheSkus">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifytheSkus@dd0c991]" started-at="2026-09-10T16:12:29 IST" name="configBC" finished-at="2026-09-10T16:12:32 IST" duration-ms="3588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.UserCreate.VerifytheEditpageNavigation@3943a2be]" started-at="2026-08-20T17:22:52 IST" name="configBM" finished-at="2026-08-20T17:22:53 IST" duration-ms="1297" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifytheSkus@dd0c991]" started-at="2026-09-10T16:12:32 IST" name="configBM" finished-at="2026-09-10T16:12:35 IST" duration-ms="2279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifytheEditpageNavigation()[pri:0, instance:com.UserCreate.VerifytheEditpageNavigation@3943a2be]" started-at="2026-08-20T17:22:53 IST" name="VerifytheEditpageNavigation" finished-at="2026-08-20T17:23:26 IST" duration-ms="32658" status="PASS">
+        <test-method signature="VerifytheSkus()[pri:0, instance:com.RCAReport.VerifytheSkus@dd0c991]" started-at="2026-09-10T16:12:35 IST" name="VerifytheSkus" finished-at="2026-09-10T16:12:45 IST" duration-ms="10780" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifytheEditpageNavigation -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.UserCreate.VerifytheEditpageNavigation@3943a2be]" started-at="2026-08-20T17:23:26 IST" name="configAM" finished-at="2026-08-20T17:23:26 IST" duration-ms="40" status="PASS">
+        </test-method> <!-- VerifytheSkus -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifytheSkus@dd0c991]" started-at="2026-09-10T16:12:45 IST" name="configAM" finished-at="2026-09-10T16:12:46 IST" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.UserCreate.VerifytheEditpageNavigation@3943a2be]" started-at="2026-08-20T17:23:26 IST" name="configAC" finished-at="2026-08-20T17:23:26 IST" duration-ms="392" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifytheSkus@dd0c991]" started-at="2026-09-10T16:12:46 IST" name="configAC" finished-at="2026-09-10T16:12:46 IST" duration-ms="791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.UserCreate.VerifytheEditpageNavigation -->
-      <class name="com.UserCreate.VerifytheUserEditFunctionality">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.UserCreate.VerifytheUserEditFunctionality@157853da]" started-at="2026-08-20T17:34:01 IST" name="configBC" finished-at="2026-08-20T17:34:03 IST" duration-ms="1490" status="PASS">
+      </class> <!-- com.RCAReport.VerifytheSkus -->
+      <class name="com.RCAReport.VerifytheGreenProductiondata">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifytheGreenProductiondata@6bf0219d]" started-at="2026-09-10T16:12:12 IST" name="configBC" finished-at="2026-09-10T16:12:16 IST" duration-ms="3703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.UserCreate.VerifytheUserEditFunctionality@157853da]" started-at="2026-08-20T17:34:03 IST" name="configBM" finished-at="2026-08-20T17:34:04 IST" duration-ms="1429" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifytheGreenProductiondata@6bf0219d]" started-at="2026-09-10T16:12:16 IST" name="configBM" finished-at="2026-09-10T16:12:18 IST" duration-ms="1946" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifytheUserEditFunctionality()[pri:0, instance:com.UserCreate.VerifytheUserEditFunctionality@157853da]" started-at="2026-08-20T17:34:04 IST" name="VerifytheUserEditFunctionality" finished-at="2026-08-20T17:34:14 IST" duration-ms="9773" status="PASS">
+        <test-method signature="VerifytheGreenProductiondata()[pri:0, instance:com.RCAReport.VerifytheGreenProductiondata@6bf0219d]" started-at="2026-09-10T16:12:18 IST" name="VerifytheGreenProductiondata" finished-at="2026-09-10T16:12:27 IST" duration-ms="9829" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifytheUserEditFunctionality -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.UserCreate.VerifytheUserEditFunctionality@157853da]" started-at="2026-08-20T17:34:14 IST" name="configAM" finished-at="2026-08-20T17:34:14 IST" duration-ms="503" status="PASS">
+        </test-method> <!-- VerifytheGreenProductiondata -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifytheGreenProductiondata@6bf0219d]" started-at="2026-09-10T16:12:27 IST" name="configAM" finished-at="2026-09-10T16:12:28 IST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.UserCreate.VerifytheUserEditFunctionality@157853da]" started-at="2026-08-20T17:34:14 IST" name="configAC" finished-at="2026-08-20T17:34:17 IST" duration-ms="2186" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifytheGreenProductiondata@6bf0219d]" started-at="2026-09-10T16:12:28 IST" name="configAC" finished-at="2026-09-10T16:12:29 IST" duration-ms="936" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.UserCreate.VerifytheUserEditFunctionality -->
-      <class name="com.UserCreate.VerifyAssignOnlySingleEquipementToUser">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.UserCreate.VerifyAssignOnlySingleEquipementToUser@343570b7]" started-at="2026-08-20T17:23:26 IST" name="configBC" finished-at="2026-08-20T17:23:28 IST" duration-ms="1318" status="PASS">
+      </class> <!-- com.RCAReport.VerifytheGreenProductiondata -->
+      <class name="com.RCAReport.VerifytheRunningCTModeANDTargetCT">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifytheRunningCTModeANDTargetCT@5f16132a]" started-at="2026-09-10T16:12:46 IST" name="configBC" finished-at="2026-09-10T16:12:49 IST" duration-ms="2821" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.UserCreate.VerifyAssignOnlySingleEquipementToUser@343570b7]" started-at="2026-08-20T17:23:28 IST" name="configBM" finished-at="2026-08-20T17:23:29 IST" duration-ms="1327" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifytheRunningCTModeANDTargetCT@5f16132a]" started-at="2026-09-10T16:12:49 IST" name="configBM" finished-at="2026-09-10T16:12:52 IST" duration-ms="2292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifyAssignOnlySingleEquipementToUser()[pri:0, instance:com.UserCreate.VerifyAssignOnlySingleEquipementToUser@343570b7]" started-at="2026-08-20T17:23:29 IST" name="VerifyAssignOnlySingleEquipementToUser" finished-at="2026-08-20T17:34:00 IST" duration-ms="630959" status="PASS">
+        <test-method signature="VerifytheRunningCTModeANDTargetCT()[pri:0, instance:com.RCAReport.VerifytheRunningCTModeANDTargetCT@5f16132a]" started-at="2026-09-10T16:12:52 IST" name="VerifytheRunningCTModeANDTargetCT" finished-at="2026-09-10T16:13:05 IST" duration-ms="13012" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyAssignOnlySingleEquipementToUser -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.UserCreate.VerifyAssignOnlySingleEquipementToUser@343570b7]" started-at="2026-08-20T17:34:00 IST" name="configAM" finished-at="2026-08-20T17:34:01 IST" duration-ms="416" status="PASS">
+        </test-method> <!-- VerifytheRunningCTModeANDTargetCT -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifytheRunningCTModeANDTargetCT@5f16132a]" started-at="2026-09-10T16:13:05 IST" name="configAM" finished-at="2026-09-10T16:13:05 IST" duration-ms="279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.UserCreate.VerifyAssignOnlySingleEquipementToUser@343570b7]" started-at="2026-08-20T17:34:01 IST" name="configAC" finished-at="2026-08-20T17:34:01 IST" duration-ms="749" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifytheRunningCTModeANDTargetCT@5f16132a]" started-at="2026-09-10T16:13:05 IST" name="configAC" finished-at="2026-09-10T16:13:06 IST" duration-ms="1502" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.UserCreate.VerifyAssignOnlySingleEquipementToUser -->
-      <class name="com.UserCreate.VerifytheSearchfieldFuctionality">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.UserCreate.VerifytheSearchfieldFuctionality@236e3f4e]" started-at="2026-08-20T17:35:23 IST" name="configBC" finished-at="2026-08-20T17:35:25 IST" duration-ms="1388" status="PASS">
+      </class> <!-- com.RCAReport.VerifytheRunningCTModeANDTargetCT -->
+      <class name="com.RCAReport.VerifyMachinewiseSummaryBarChart">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifyMachinewiseSummaryBarChart@69fb6037]" started-at="2026-09-10T16:13:06 IST" name="configBC" finished-at="2026-09-10T16:13:12 IST" duration-ms="5771" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.UserCreate.VerifytheSearchfieldFuctionality@236e3f4e]" started-at="2026-08-20T17:35:25 IST" name="configBM" finished-at="2026-08-20T17:35:26 IST" duration-ms="1378" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifyMachinewiseSummaryBarChart@69fb6037]" started-at="2026-09-10T16:13:12 IST" name="configBM" finished-at="2026-09-10T16:13:15 IST" duration-ms="2558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifytheSearchfieldFuctionality()[pri:0, instance:com.UserCreate.VerifytheSearchfieldFuctionality@236e3f4e]" started-at="2026-08-20T17:35:26 IST" name="VerifytheSearchfieldFuctionality" finished-at="2026-08-20T17:35:58 IST" duration-ms="31780" status="PASS">
+        <test-method signature="VerifyMachinewiseSummaryBarChart()[pri:0, instance:com.RCAReport.VerifyMachinewiseSummaryBarChart@69fb6037]" started-at="2026-09-10T16:13:15 IST" name="VerifyMachinewiseSummaryBarChart" finished-at="2026-09-10T16:13:29 IST" duration-ms="14644" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifytheSearchfieldFuctionality -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.UserCreate.VerifytheSearchfieldFuctionality@236e3f4e]" started-at="2026-08-20T17:35:58 IST" name="configAM" finished-at="2026-08-20T17:35:58 IST" duration-ms="82" status="PASS">
+        </test-method> <!-- VerifyMachinewiseSummaryBarChart -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifyMachinewiseSummaryBarChart@69fb6037]" started-at="2026-09-10T16:13:29 IST" name="configAM" finished-at="2026-09-10T16:13:30 IST" duration-ms="209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.UserCreate.VerifytheSearchfieldFuctionality@236e3f4e]" started-at="2026-08-20T17:35:58 IST" name="configAC" finished-at="2026-08-20T17:35:59 IST" duration-ms="548" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifyMachinewiseSummaryBarChart@69fb6037]" started-at="2026-09-10T16:13:30 IST" name="configAC" finished-at="2026-09-10T16:13:32 IST" duration-ms="2764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.UserCreate.VerifytheSearchfieldFuctionality -->
-      <class name="com.UserCreate.VerifytheUserChangeStatusCancelFuctionality">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.UserCreate.VerifytheUserChangeStatusCancelFuctionality@71c3b41]" started-at="2026-08-20T17:34:17 IST" name="configBC" finished-at="2026-08-20T17:34:18 IST" duration-ms="1393" status="PASS">
+      </class> <!-- com.RCAReport.VerifyMachinewiseSummaryBarChart -->
+      <class name="com.RCAReport.VerifytheAggregatedSummaryViewExporttButton">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifytheAggregatedSummaryViewExporttButton@36d585c]" started-at="2026-09-10T16:13:32 IST" name="configBC" finished-at="2026-09-10T16:13:35 IST" duration-ms="2860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.UserCreate.VerifytheUserChangeStatusCancelFuctionality@71c3b41]" started-at="2026-08-20T17:34:18 IST" name="configBM" finished-at="2026-08-20T17:34:20 IST" duration-ms="1871" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifytheAggregatedSummaryViewExporttButton@36d585c]" started-at="2026-09-10T16:13:35 IST" name="configBM" finished-at="2026-09-10T16:13:38 IST" duration-ms="2993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifytheUserChangeStatusCancelFuctionality()[pri:0, instance:com.UserCreate.VerifytheUserChangeStatusCancelFuctionality@71c3b41]" started-at="2026-08-20T17:34:20 IST" name="VerifytheUserChangeStatusCancelFuctionality" finished-at="2026-08-20T17:35:23 IST" duration-ms="62944" status="PASS">
+        <test-method signature="VerifytheAggregatedSummaryViewExportButton()[pri:0, instance:com.RCAReport.VerifytheAggregatedSummaryViewExporttButton@36d585c]" started-at="2026-09-10T16:13:38 IST" name="VerifytheAggregatedSummaryViewExportButton" finished-at="2026-09-10T16:13:51 IST" duration-ms="13084" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifytheUserChangeStatusCancelFuctionality -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.UserCreate.VerifytheUserChangeStatusCancelFuctionality@71c3b41]" started-at="2026-08-20T17:35:23 IST" name="configAM" finished-at="2026-08-20T17:35:23 IST" duration-ms="56" status="PASS">
+        </test-method> <!-- VerifytheAggregatedSummaryViewExportButton -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifytheAggregatedSummaryViewExporttButton@36d585c]" started-at="2026-09-10T16:13:51 IST" name="configAM" finished-at="2026-09-10T16:13:51 IST" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.UserCreate.VerifytheUserChangeStatusCancelFuctionality@71c3b41]" started-at="2026-08-20T17:35:23 IST" name="configAC" finished-at="2026-08-20T17:35:23 IST" duration-ms="580" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifytheAggregatedSummaryViewExporttButton@36d585c]" started-at="2026-09-10T16:13:51 IST" name="configAC" finished-at="2026-09-10T16:13:53 IST" duration-ms="1059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.UserCreate.VerifytheUserChangeStatusCancelFuctionality -->
-      <class name="com.UserCreate.UserDeleteCancelFuctionality">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.UserCreate.UserDeleteCancelFuctionality@3cc1435c]" started-at="2026-08-20T17:35:59 IST" name="configBC" finished-at="2026-08-20T17:36:00 IST" duration-ms="1365" status="PASS">
+      </class> <!-- com.RCAReport.VerifytheAggregatedSummaryViewExporttButton -->
+      <class name="com.RCAReport.VerifytheRedProductionData">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifytheRedProductionData@87a85e1]" started-at="2026-09-10T16:13:53 IST" name="configBC" finished-at="2026-09-10T16:13:57 IST" duration-ms="4366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.UserCreate.UserDeleteCancelFuctionality@3cc1435c]" started-at="2026-08-20T17:36:00 IST" name="configBM" finished-at="2026-08-20T17:36:02 IST" duration-ms="2376" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifytheRedProductionData@87a85e1]" started-at="2026-09-10T16:13:57 IST" name="configBM" finished-at="2026-09-10T16:14:01 IST" duration-ms="4404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="UserDeleteCancelFuctionality()[pri:0, instance:com.UserCreate.UserDeleteCancelFuctionality@3cc1435c]" started-at="2026-08-20T17:36:02 IST" name="UserDeleteCancelFuctionality" finished-at="2026-08-20T17:56:09 IST" duration-ms="1206128" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
+        <test-method signature="VerifytheRedProductionData()[pri:0, instance:com.RCAReport.VerifytheRedProductionData@87a85e1]" started-at="2026-09-10T16:14:01 IST" name="VerifytheRedProductionData" finished-at="2026-09-10T16:14:14 IST" duration-ms="12403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheRedProductionData -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifytheRedProductionData@87a85e1]" started-at="2026-09-10T16:14:14 IST" name="configAM" finished-at="2026-09-10T16:14:14 IST" duration-ms="330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifytheRedProductionData@87a85e1]" started-at="2026-09-10T16:14:14 IST" name="configAC" finished-at="2026-09-10T16:14:15 IST" duration-ms="1311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.RCAReport.VerifytheRedProductionData -->
+      <class name="com.RCAReport.VerifytheWeightedAveragesModeValuedata">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifytheWeightedAveragesModeValuedata@671a5887]" started-at="2026-09-10T16:14:15 IST" name="configBC" finished-at="2026-09-10T16:14:19 IST" duration-ms="3150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifytheWeightedAveragesModeValuedata@671a5887]" started-at="2026-09-10T16:14:19 IST" name="configBM" finished-at="2026-09-10T16:14:21 IST" duration-ms="2493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheWeightedAveragesModeValuedata()[pri:0, instance:com.RCAReport.VerifytheWeightedAveragesModeValuedata@671a5887]" started-at="2026-09-10T16:14:21 IST" name="VerifytheWeightedAveragesModeValuedata" finished-at="2026-09-10T16:14:33 IST" duration-ms="11766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheWeightedAveragesModeValuedata -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifytheWeightedAveragesModeValuedata@671a5887]" started-at="2026-09-10T16:14:33 IST" name="configAM" finished-at="2026-09-10T16:14:33 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifytheWeightedAveragesModeValuedata@671a5887]" started-at="2026-09-10T16:14:33 IST" name="configAC" finished-at="2026-09-10T16:14:34 IST" duration-ms="1015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.RCAReport.VerifytheWeightedAveragesModeValuedata -->
+      <class name="com.RCAReport.VerifytheMachinepotentiolLossgraph">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifytheMachinepotentiolLossgraph@5552768b]" started-at="2026-09-10T16:14:34 IST" name="configBC" finished-at="2026-09-10T16:14:37 IST" duration-ms="2921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifytheMachinepotentiolLossgraph@5552768b]" started-at="2026-09-10T16:14:37 IST" name="configBM" finished-at="2026-09-10T16:14:39 IST" duration-ms="2494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheMachinepotentiolLossgraph()[pri:0, instance:com.RCAReport.VerifytheMachinepotentiolLossgraph@5552768b]" started-at="2026-09-10T16:14:39 IST" name="VerifytheMachinepotentiolLossgraph" finished-at="2026-09-10T16:14:51 IST" duration-ms="11248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheMachinepotentiolLossgraph -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifytheMachinepotentiolLossgraph@5552768b]" started-at="2026-09-10T16:14:51 IST" name="configAM" finished-at="2026-09-10T16:14:51 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifytheMachinepotentiolLossgraph@5552768b]" started-at="2026-09-10T16:14:51 IST" name="configAC" finished-at="2026-09-10T16:14:52 IST" duration-ms="995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.RCAReport.VerifytheMachinepotentiolLossgraph -->
+      <class name="com.RCAReport.VerifytheAggregatedSummaryTableisNotEmpty">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifytheAggregatedSummaryTableisNotEmpty@3c947bc5]" started-at="2026-09-10T16:14:52 IST" name="configBC" finished-at="2026-09-10T16:14:56 IST" duration-ms="4591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifytheAggregatedSummaryTableisNotEmpty@3c947bc5]" started-at="2026-09-10T16:14:56 IST" name="configBM" finished-at="2026-09-10T16:14:59 IST" duration-ms="2083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheAggregatedSummaryTableisNotEmpty()[pri:0, instance:com.RCAReport.VerifytheAggregatedSummaryTableisNotEmpty@3c947bc5]" started-at="2026-09-10T16:14:59 IST" name="VerifytheAggregatedSummaryTableisNotEmpty" finished-at="2026-09-10T16:15:13 IST" duration-ms="14361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheAggregatedSummaryTableisNotEmpty -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifytheAggregatedSummaryTableisNotEmpty@3c947bc5]" started-at="2026-09-10T16:15:13 IST" name="configAM" finished-at="2026-09-10T16:15:13 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifytheAggregatedSummaryTableisNotEmpty@3c947bc5]" started-at="2026-09-10T16:15:13 IST" name="configAC" finished-at="2026-09-10T16:15:14 IST" duration-ms="826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.RCAReport.VerifytheAggregatedSummaryTableisNotEmpty -->
+      <class name="com.RCAReport.VerifytheTotalProductionData">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifytheTotalProductionData@1356d4d4]" started-at="2026-09-10T16:16:32 IST" name="configBC" finished-at="2026-09-10T16:16:34 IST" duration-ms="2971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifytheTotalProductionData@1356d4d4]" started-at="2026-09-10T16:16:34 IST" name="configBM" finished-at="2026-09-10T16:16:56 IST" duration-ms="21404" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[invalid session id
+              <![CDATA[unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=152.0.7977.84)
 Build info: version: '4.38.0', revision: '6b412e825c'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [10c9328947122dd3b7aa90dfd21f2032, findElement {value=//div[text()="Delete User"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53981}, goog:processID: 35980, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53981/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 10c9328947122dd3b7aa90dfd21f2032]]>
+Command: [1b913a6f7c199c31270d480c78ce76bc, get {url=http://192.168.5.77:3000/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.84, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56137}, goog:processID: 23848, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56137/devtoo..., se:cdpVersion: 152.0.7977.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b913a6f7c199c31270d480c78ce76bc]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=152.0.7977.84)
 Build info: version: '4.38.0', revision: '6b412e825c'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [10c9328947122dd3b7aa90dfd21f2032, findElement {value=//div[text()="Delete User"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53981}, goog:processID: 35980, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53981/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 10c9328947122dd3b7aa90dfd21f2032
+Command: [1b913a6f7c199c31270d480c78ce76bc, get {url=http://192.168.5.77:3000/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.84, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56137}, goog:processID: 23848, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56137/devtoo..., se:cdpVersion: 152.0.7977.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b913a6f7c199c31270d480c78ce76bc
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -220,83 +306,8 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:574)
-at org.openqa.selenium.support.ui.ExpectedConditions$20.apply(ExpectedConditions.java:570)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at com.UserCreate.UserDeleteCancelFuctionality.UserDeleteCancelFuctionality(UserDeleteCancelFuctionality.java:71)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserDeleteCancelFuctionality -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.UserCreate.UserDeleteCancelFuctionality@3cc1435c]" started-at="2026-08-20T17:56:09 IST" name="configAM" finished-at="2026-08-20T17:56:09 IST" duration-ms="7" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [10c9328947122dd3b7aa90dfd21f2032, findElement {value=//span[text()="Logout"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53981}, goog:processID: 35980, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53981/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 10c9328947122dd3b7aa90dfd21f2032]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.38.0', revision: '6b412e825c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [10c9328947122dd3b7aa90dfd21f2032, findElement {value=//span[text()="Logout"], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53981}, goog:processID: 35980, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53981/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 10c9328947122dd3b7aa90dfd21f2032
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at com.sgplus.erp.genericutility.BaseClass.configAM(BaseClass.java:65)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
+at com.sgplus.erp.genericutility.BaseClass.configBM(BaseClass.java:51)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -304,8 +315,7 @@ at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTi
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
@@ -330,178 +340,31 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.UserCreate.UserDeleteCancelFuctionality@3cc1435c]" started-at="2026-08-20T17:56:09 IST" name="configAC" finished-at="2026-08-20T17:56:09 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAC -->
-      </class> <!-- com.UserCreate.UserDeleteCancelFuctionality -->
-      <class name="com.UserCreate.VerifytheResetPasswordFunctionality">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.UserCreate.VerifytheResetPasswordFunctionality@dd0c991]" started-at="2026-08-20T17:56:23 IST" name="configBC" finished-at="2026-08-20T17:56:25 IST" duration-ms="1149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.UserCreate.VerifytheResetPasswordFunctionality@dd0c991]" started-at="2026-08-20T17:56:25 IST" name="configBM" finished-at="2026-08-20T17:56:26 IST" duration-ms="1328" status="PASS">
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="VerifytheResetPasswordFunctionality()[pri:0, instance:com.UserCreate.VerifytheResetPasswordFunctionality@dd0c991]" started-at="2026-08-20T17:56:26 IST" name="VerifytheResetPasswordFunctionality" finished-at="2026-08-20T17:56:35 IST" duration-ms="9152" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifytheResetPasswordFunctionality -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.UserCreate.VerifytheResetPasswordFunctionality@dd0c991]" started-at="2026-08-20T17:56:35 IST" name="configAM" finished-at="2026-08-20T17:56:36 IST" duration-ms="610" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.UserCreate.VerifytheResetPasswordFunctionality@dd0c991]" started-at="2026-08-20T17:56:36 IST" name="configAC" finished-at="2026-08-20T17:56:36 IST" duration-ms="375" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAC -->
-      </class> <!-- com.UserCreate.VerifytheResetPasswordFunctionality -->
-      <class name="com.UserCreate.VerifytheonlySingleGroupToUser">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.UserCreate.VerifytheonlySingleGroupToUser@6bf0219d]" started-at="2026-08-20T17:56:09 IST" name="configBC" finished-at="2026-08-20T17:56:10 IST" duration-ms="1369" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.UserCreate.VerifytheonlySingleGroupToUser@6bf0219d]" started-at="2026-08-20T17:56:10 IST" name="configBM" finished-at="2026-08-20T17:56:11 IST" duration-ms="1264" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method signature="VerifytheonlySingleGroupToUser()[pri:0, instance:com.UserCreate.VerifytheonlySingleGroupToUser@6bf0219d]" started-at="2026-08-20T17:56:11 IST" name="VerifytheonlySingleGroupToUser" finished-at="2026-08-20T17:56:21 IST" duration-ms="9812" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifytheonlySingleGroupToUser -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.UserCreate.VerifytheonlySingleGroupToUser@6bf0219d]" started-at="2026-08-20T17:56:21 IST" name="configAM" finished-at="2026-08-20T17:56:22 IST" duration-ms="603" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.UserCreate.VerifytheonlySingleGroupToUser@6bf0219d]" started-at="2026-08-20T17:56:22 IST" name="configAC" finished-at="2026-08-20T17:56:23 IST" duration-ms="1856" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAC -->
-      </class> <!-- com.UserCreate.VerifytheonlySingleGroupToUser -->
-      <class name="com.UserCreate.VerifytheDeleteUserFunctionality">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.UserCreate.VerifytheDeleteUserFunctionality@5f16132a]" started-at="2026-08-20T17:56:36 IST" name="configBC" finished-at="2026-08-20T17:56:37 IST" duration-ms="1272" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.UserCreate.VerifytheDeleteUserFunctionality@5f16132a]" started-at="2026-08-20T17:56:37 IST" name="configBM" finished-at="2026-08-20T17:56:39 IST" duration-ms="1320" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method signature="VerifytheDeleteUserFunctionality()[pri:0, instance:com.UserCreate.VerifytheDeleteUserFunctionality@5f16132a]" started-at="2026-08-20T17:56:39 IST" name="VerifytheDeleteUserFunctionality" finished-at="2026-08-20T17:56:47 IST" duration-ms="8320" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifytheDeleteUserFunctionality -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.UserCreate.VerifytheDeleteUserFunctionality@5f16132a]" started-at="2026-08-20T17:56:47 IST" name="configAM" finished-at="2026-08-20T17:56:48 IST" duration-ms="528" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.UserCreate.VerifytheDeleteUserFunctionality@5f16132a]" started-at="2026-08-20T17:56:48 IST" name="configAC" finished-at="2026-08-20T17:56:48 IST" duration-ms="354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAC -->
-      </class> <!-- com.UserCreate.VerifytheDeleteUserFunctionality -->
-      <class name="com.UserCreate.VerifyAssignOnlySingleAreaToUser">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.UserCreate.VerifyAssignOnlySingleAreaToUser@69fb6037]" started-at="2026-08-20T17:56:48 IST" name="configBC" finished-at="2026-08-20T17:56:49 IST" duration-ms="1279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.UserCreate.VerifyAssignOnlySingleAreaToUser@69fb6037]" started-at="2026-08-20T17:56:49 IST" name="configBM" finished-at="2026-08-20T17:56:51 IST" duration-ms="1366" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method signature="VerifyAssignOnlySingleAreaToUser()[pri:0, instance:com.UserCreate.VerifyAssignOnlySingleAreaToUser@69fb6037]" started-at="2026-08-20T17:56:51 IST" name="VerifyAssignOnlySingleAreaToUser" finished-at="2026-08-20T17:57:01 IST" duration-ms="10176" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyAssignOnlySingleAreaToUser -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.UserCreate.VerifyAssignOnlySingleAreaToUser@69fb6037]" started-at="2026-08-20T17:57:01 IST" name="configAM" finished-at="2026-08-20T17:57:01 IST" duration-ms="582" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.UserCreate.VerifyAssignOnlySingleAreaToUser@69fb6037]" started-at="2026-08-20T17:57:01 IST" name="configAC" finished-at="2026-08-20T17:57:02 IST" duration-ms="376" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAC -->
-      </class> <!-- com.UserCreate.VerifyAssignOnlySingleAreaToUser -->
-      <class name="com.UserCreate.VerifytheAddUserFunctionality">
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.UserCreate.VerifytheAddUserFunctionality@36d585c]" started-at="2026-08-20T17:57:02 IST" name="configBC" finished-at="2026-08-20T17:57:03 IST" duration-ms="1164" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.UserCreate.VerifytheAddUserFunctionality@36d585c]" started-at="2026-08-20T17:57:03 IST" name="configBM" finished-at="2026-08-20T17:57:04 IST" duration-ms="1393" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBM -->
-        <test-method signature="VerifytheAddUserFunctionality()[pri:0, instance:com.UserCreate.VerifytheAddUserFunctionality@36d585c]" started-at="2026-08-20T17:57:04 IST" name="VerifytheAddUserFunctionality" finished-at="2026-08-20T17:57:09 IST" duration-ms="4716" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="VerifytheTotalProductionData()[pri:0, instance:com.RCAReport.VerifytheTotalProductionData@1356d4d4]" started-at="2026-09-10T16:16:56 IST" name="VerifytheTotalProductionData" finished-at="2026-09-10T16:16:56 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[User creation failed expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: User creation failed expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.UserCreate.VerifytheAddUserFunctionality.VerifytheAddUserFunctionality(VerifytheAddUserFunctionality.java:113)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifytheAddUserFunctionality -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.UserCreate.VerifytheAddUserFunctionality@36d585c]" started-at="2026-08-20T17:57:09 IST" name="configAM" finished-at="2026-08-20T17:57:10 IST" duration-ms="1097" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (1457, 42). Other element would receive the click: <div id="qcg02wphb" class="Toastify__toast Toastify__toast--error">...</div>
-  (Session info: chrome=151.0.7922.138)
+              <![CDATA[unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=152.0.7977.84)
 Build info: version: '4.38.0', revision: '6b412e825c'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2980256ceb18dc69b009f558f940dbe3, clickElement {id=f.72358A5BB2D7965ED011E301DF9FDAFC.d.2D110D1B2E33F6A360ED99433CA3F4B0.e.84}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61783}, goog:processID: 33360, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61783/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2980256ceb18dc69b009f558f940dbe3)] -> xpath: //span[text()="Logout"]]
-Session ID: 2980256ceb18dc69b009f558f940dbe3]]>
+Command: [1b913a6f7c199c31270d480c78ce76bc, get {url=http://192.168.5.77:3000/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.84, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56137}, goog:processID: 23848, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56137/devtoo..., se:cdpVersion: 152.0.7977.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b913a6f7c199c31270d480c78ce76bc]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (1457, 42). Other element would receive the click: <div id="qcg02wphb" class="Toastify__toast Toastify__toast--error">...</div>
-  (Session info: chrome=151.0.7922.138)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=152.0.7977.84)
 Build info: version: '4.38.0', revision: '6b412e825c'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2980256ceb18dc69b009f558f940dbe3, clickElement {id=f.72358A5BB2D7965ED011E301DF9FDAFC.d.2D110D1B2E33F6A360ED99433CA3F4B0.e.84}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.138, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61783}, goog:processID: 33360, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61783/devtoo..., se:cdpVersion: 151.0.7922.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2980256ceb18dc69b009f558f940dbe3)] -> xpath: //span[text()="Logout"]]
-Session ID: 2980256ceb18dc69b009f558f940dbe3
+Command: [1b913a6f7c199c31270d480c78ce76bc, get {url=http://192.168.5.77:3000/login}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.84, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\W066520\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56137}, goog:processID: 23848, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56137/devtoo..., se:cdpVersion: 152.0.7977.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b913a6f7c199c31270d480c78ce76bc
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -512,13 +375,8 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at com.sgplus.erp.genericutility.BaseClass.configAM(BaseClass.java:65)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
+at com.sgplus.erp.genericutility.BaseClass.configBM(BaseClass.java:51)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -526,8 +384,7 @@ at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTi
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
 at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
@@ -552,15 +409,107 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheTotalProductionData -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifytheTotalProductionData@1356d4d4]" started-at="2026-09-10T16:16:56 IST" name="configAM" finished-at="2026-09-10T16:16:56 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.UserCreate.VerifytheAddUserFunctionality@36d585c]" started-at="2026-08-20T17:57:10 IST" name="configAC" finished-at="2026-08-20T17:57:10 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifytheTotalProductionData@1356d4d4]" started-at="2026-09-10T16:16:56 IST" name="configAC" finished-at="2026-09-10T16:16:56 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-      </class> <!-- com.UserCreate.VerifytheAddUserFunctionality -->
+      </class> <!-- com.RCAReport.VerifytheTotalProductionData -->
+      <class name="com.RCAReport.VeriftheMachinePotentialGrahpBarchart">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VeriftheMachinePotentialGrahpBarchart@c03cf28]" started-at="2026-09-10T16:16:56 IST" name="configBC" finished-at="2026-09-10T16:16:59 IST" duration-ms="2604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VeriftheMachinePotentialGrahpBarchart@c03cf28]" started-at="2026-09-10T16:16:59 IST" name="configBM" finished-at="2026-09-10T16:17:30 IST" duration-ms="31728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheMachinePotentilaGraphBarchart()[pri:0, instance:com.RCAReport.VeriftheMachinePotentialGrahpBarchart@c03cf28]" started-at="2026-09-10T16:17:30 IST" name="VerifytheMachinePotentilaGraphBarchart" finished-at="2026-09-10T16:17:44 IST" duration-ms="13832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheMachinePotentilaGraphBarchart -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VeriftheMachinePotentialGrahpBarchart@c03cf28]" started-at="2026-09-10T16:17:44 IST" name="configAM" finished-at="2026-09-10T16:17:44 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VeriftheMachinePotentialGrahpBarchart@c03cf28]" started-at="2026-09-10T16:17:44 IST" name="configAC" finished-at="2026-09-10T16:17:45 IST" duration-ms="946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.RCAReport.VeriftheMachinePotentialGrahpBarchart -->
+      <class name="com.RCAReport.VerifytheElementSummaryviewTableHeadersAndData">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifytheElementSummaryviewTableHeadersAndData@55f616cf]" started-at="2026-09-10T16:15:31 IST" name="configBC" finished-at="2026-09-10T16:15:34 IST" duration-ms="3304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifytheElementSummaryviewTableHeadersAndData@55f616cf]" started-at="2026-09-10T16:15:34 IST" name="configBM" finished-at="2026-09-10T16:15:37 IST" duration-ms="2753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheElementSummaryViewtableHeadersAndData()[pri:0, instance:com.RCAReport.VerifytheElementSummaryviewTableHeadersAndData@55f616cf]" started-at="2026-09-10T16:15:37 IST" name="VerifytheElementSummaryViewtableHeadersAndData" finished-at="2026-09-10T16:16:30 IST" duration-ms="53879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheElementSummaryViewtableHeadersAndData -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifytheElementSummaryviewTableHeadersAndData@55f616cf]" started-at="2026-09-10T16:16:30 IST" name="configAM" finished-at="2026-09-10T16:16:31 IST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifytheElementSummaryviewTableHeadersAndData@55f616cf]" started-at="2026-09-10T16:16:31 IST" name="configAC" finished-at="2026-09-10T16:16:32 IST" duration-ms="827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.RCAReport.VerifytheElementSummaryviewTableHeadersAndData -->
+      <class name="com.RCAReport.VerifytheWieghtedAveragesSetValueData">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifytheWieghtedAveragesSetValueData@609db43b]" started-at="2026-09-10T16:15:14 IST" name="configBC" finished-at="2026-09-10T16:15:17 IST" duration-ms="3177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifytheWieghtedAveragesSetValueData@609db43b]" started-at="2026-09-10T16:15:17 IST" name="configBM" finished-at="2026-09-10T16:15:19 IST" duration-ms="2201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheWieghtedAveragesData()[pri:0, instance:com.RCAReport.VerifytheWieghtedAveragesSetValueData@609db43b]" started-at="2026-09-10T16:15:19 IST" name="VerifytheWieghtedAveragesData" finished-at="2026-09-10T16:15:29 IST" duration-ms="9856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheWieghtedAveragesData -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifytheWieghtedAveragesSetValueData@609db43b]" started-at="2026-09-10T16:15:29 IST" name="configAM" finished-at="2026-09-10T16:15:29 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifytheWieghtedAveragesSetValueData@609db43b]" started-at="2026-09-10T16:15:29 IST" name="configAC" finished-at="2026-09-10T16:15:31 IST" duration-ms="1026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.RCAReport.VerifytheWieghtedAveragesSetValueData -->
+      <class name="com.RCAReport.VerifytheWeightedAveragesActulaValueData">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.RCAReport.VerifytheWeightedAveragesActulaValueData@1329eff]" started-at="2026-09-10T16:17:45 IST" name="configBC" finished-at="2026-09-10T16:17:48 IST" duration-ms="2916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.RCAReport.VerifytheWeightedAveragesActulaValueData@1329eff]" started-at="2026-09-10T16:17:48 IST" name="configBM" finished-at="2026-09-10T16:17:51 IST" duration-ms="2844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="VerifytheWeightedAveragesActulaValueData()[pri:0, instance:com.RCAReport.VerifytheWeightedAveragesActulaValueData@1329eff]" started-at="2026-09-10T16:17:51 IST" name="VerifytheWeightedAveragesActulaValueData" finished-at="2026-09-10T16:18:02 IST" duration-ms="10828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytheWeightedAveragesActulaValueData -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.RCAReport.VerifytheWeightedAveragesActulaValueData@1329eff]" started-at="2026-09-10T16:18:02 IST" name="configAM" finished-at="2026-09-10T16:18:02 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.RCAReport.VerifytheWeightedAveragesActulaValueData@1329eff]" started-at="2026-09-10T16:18:02 IST" name="configAC" finished-at="2026-09-10T16:18:03 IST" duration-ms="901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.RCAReport.VerifytheWeightedAveragesActulaValueData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

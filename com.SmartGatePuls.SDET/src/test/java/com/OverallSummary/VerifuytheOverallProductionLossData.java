@@ -106,8 +106,7 @@ public class VerifuytheOverallProductionLossData extends BaseClass {
 
 		// Wait until the first value is visible
 		wait.until(ExpectedConditions.visibilityOfElementLocated(
-		    By.xpath("//div[@class='d-flex justify-content-between align-items-center mt-4']")
-		));
+		    By.xpath("//div[@class='d-flex justify-content-between align-items-center mt-4']")));
 
 		List<WebElement> rows = driver.findElements(
 		    By.xpath("//div[@class='d-flex justify-content-between align-items-center mt-4']")
