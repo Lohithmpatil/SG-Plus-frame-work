@@ -3,24 +3,42 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.RecipeMasterPage.VerifyRecipeCodeFieldInputTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifyRecipeCodeFieldInputTest"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.RecipeMasterPage.VerifyRecipeCodeFieldInputTest -->
-      <class name="com.DowntimeShiftview.VerifyShiftBViewDisplaysDataForDifferentShiftsTest">
+      <class name="com.Settings.DepartmentGroup.verifyNameTextboxBehaviorTest">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
           <include name="configBC"/>
-          <include name="VerifyShiftBViewDisplaysDataForDifferentShiftsTest"/>
+          <include name="verifyNameTextboxBehaviorTest"/>
         </methods>
-      </class> <!-- com.DowntimeShiftview.VerifyShiftBViewDisplaysDataForDifferentShiftsTest -->
+      </class> <!-- com.Settings.DepartmentGroup.verifyNameTextboxBehaviorTest -->
+      <class name="com.CycleTimeDashboard.VerifytheMinutevalueTooltipdata">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="VeirfytheMinutevalueTooltipdata"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.CycleTimeDashboard.VerifytheMinutevalueTooltipdata -->
+      <class name="com.CycleTimeDashboard.VerifytehMinuteSetValue">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VeirfytheMinutesetvalue"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.CycleTimeDashboard.VerifytehMinuteSetValue -->
+      <class name="com.UserCreate.VerifyAssignOnlySingleAreaToUser">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="VerifyAssignOnlySingleAreaToUser"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.UserCreate.VerifyAssignOnlySingleAreaToUser -->
       <class name="com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown">
         <methods>
           <include name="configBM"/>
@@ -30,24 +48,6 @@
           <include name="VerifytheAssociateperformancereportDropdown"/>
         </methods>
       </class> <!-- com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown -->
-      <class name="com.AssociatePerformancereport.VerifyExportfeature">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-          <include name="VerifyExportfeature"/>
-        </methods>
-      </class> <!-- com.AssociatePerformancereport.VerifyExportfeature -->
-      <class name="com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate">
-        <methods>
-          <include name="VerifytheAssociatePerformanceLossreportSingleassociate"/>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.AssociatePerformancereport.VerifytheAssociatePerformanceLossreportSingleassociate -->
       <class name="com.AddAssociates.VerifytheAssocitaesStatusChange">
         <methods>
           <include name="configBM"/>
@@ -57,33 +57,60 @@
           <include name="VerifytheAssocitaesStatusChange"/>
         </methods>
       </class> <!-- com.AddAssociates.VerifytheAssocitaesStatusChange -->
-      <class name="com.DowntimeShiftview.VerifyShiftViewPageDataTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="configAC"/>
-          <include name="VerifyShiftViewPageDataTest"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.DowntimeShiftview.VerifyShiftViewPageDataTest -->
-      <class name="com.Settings.DepartmentGroup.verifySearchDepartmentGroupTest">
-        <methods>
-          <include name="configBM"/>
-          <include name="configAM"/>
-          <include name="verifySearchDepartmentGroupTest"/>
-          <include name="configAC"/>
-          <include name="configBC"/>
-        </methods>
-      </class> <!-- com.Settings.DepartmentGroup.verifySearchDepartmentGroupTest -->
-      <class name="com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph">
+      <class name="com.OverallSummary.VerifytheProductionLossAnalysisBarchart">
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
           <include name="configBC"/>
-          <include name="VerfiytheOverAllPerformanceGraph"/>
+          <include name="VerifytheProductionLossAnalysisBarchart"/>
         </methods>
-      </class> <!-- com.AssociatePerformancereport.VerfiytheOverAllPerformanceGraph -->
+      </class> <!-- com.OverallSummary.VerifytheProductionLossAnalysisBarchart -->
+      <class name="com.CycleTimeDashboard.verifyCycleTimeDataTable">
+        <methods>
+          <include name="verifCycleTimeDataTable"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.CycleTimeDashboard.verifyCycleTimeDataTable -->
+      <class name="com.RecipeMasterPage.VerifySAPCodeFieldInputTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifySAPCodeFieldInputTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RecipeMasterPage.VerifySAPCodeFieldInputTest -->
+      <class name="com.UserCreate.VerifytheUserChangeStatusFuctionality">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifytheUserChangeStatusFutionality"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.UserCreate.VerifytheUserChangeStatusFuctionality -->
+      <class name="com.UserCreate.UserDeleteCancelFuctionality">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="UserDeleteCancelFuctionality"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.UserCreate.UserDeleteCancelFuctionality -->
+      <class name="com.AddReasonPage.VerifytheReasonEditfunctionalityTest">
+        <methods>
+          <include name="VerifytheReasonEditfunctionalityTest"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.AddReasonPage.VerifytheReasonEditfunctionalityTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

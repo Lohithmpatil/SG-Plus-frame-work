@@ -1,17 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.RCAReport.VerifytheTotalProductionData">
+      <class name="com.Settings.DepartmentGroup.verifyNameTextboxBehaviorTest">
         <methods>
-          <include name="VerifytheTotalProductionData"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="verifyNameTextboxBehaviorTest"/>
+        </methods>
+      </class> <!-- com.Settings.DepartmentGroup.verifyNameTextboxBehaviorTest -->
+      <class name="com.CycleTimeDashboard.VerifytheMinutevalueTooltipdata">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="VeirfytheMinutevalueTooltipdata"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.CycleTimeDashboard.VerifytheMinutevalueTooltipdata -->
+      <class name="com.CycleTimeDashboard.VerifytehMinuteSetValue">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VeirfytheMinutesetvalue"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.CycleTimeDashboard.VerifytehMinuteSetValue -->
+      <class name="com.UserCreate.VerifyAssignOnlySingleAreaToUser">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="VerifyAssignOnlySingleAreaToUser"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.UserCreate.VerifyAssignOnlySingleAreaToUser -->
+      <class name="com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="VerifytheAssociateperformancereportDropdown"/>
+        </methods>
+      </class> <!-- com.AssociatePerformancereport.VerifytheAssociateperformancereportDropdown -->
+      <class name="com.AddAssociates.VerifytheAssocitaesStatusChange">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="VerifytheAssocitaesStatusChange"/>
+        </methods>
+      </class> <!-- com.AddAssociates.VerifytheAssocitaesStatusChange -->
+      <class name="com.OverallSummary.VerifytheProductionLossAnalysisBarchart">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="VerifytheProductionLossAnalysisBarchart"/>
+        </methods>
+      </class> <!-- com.OverallSummary.VerifytheProductionLossAnalysisBarchart -->
+      <class name="com.CycleTimeDashboard.verifyCycleTimeDataTable">
+        <methods>
+          <include name="verifCycleTimeDataTable"/>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAC"/>
           <include name="configBC"/>
         </methods>
-      </class> <!-- com.RCAReport.VerifytheTotalProductionData -->
+      </class> <!-- com.CycleTimeDashboard.verifyCycleTimeDataTable -->
+      <class name="com.RecipeMasterPage.VerifySAPCodeFieldInputTest">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifySAPCodeFieldInputTest"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.RecipeMasterPage.VerifySAPCodeFieldInputTest -->
+      <class name="com.UserCreate.VerifytheUserChangeStatusFuctionality">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="VerifytheUserChangeStatusFutionality"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.UserCreate.VerifytheUserChangeStatusFuctionality -->
+      <class name="com.UserCreate.UserDeleteCancelFuctionality">
+        <methods>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="UserDeleteCancelFuctionality"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.UserCreate.UserDeleteCancelFuctionality -->
+      <class name="com.AddReasonPage.VerifytheReasonEditfunctionalityTest">
+        <methods>
+          <include name="VerifytheReasonEditfunctionalityTest"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="configAC"/>
+          <include name="configBC"/>
+        </methods>
+      </class> <!-- com.AddReasonPage.VerifytheReasonEditfunctionalityTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
